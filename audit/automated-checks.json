@@ -1,0 +1,62 @@
+{
+  "result": "pass",
+  "textFiles": 65,
+  "foundationTokens": 233,
+  "semanticRolesPerTheme": 110,
+  "libraryEntries": 40,
+  "checks": [
+    "deterministic generation",
+    "JSON parsing",
+    "token reference resolution",
+    "DTCG subset validation",
+    "Stitch copy parity",
+    "escaping and state contracts",
+    "internal-content scan",
+    "repository allowlist",
+    "local links",
+    "selected contrast pairs"
+  ],
+  "contrasts": [
+    {
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 10.35
+    },
+    {
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 19.28
+    },
+    {
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 14.63
+    },
+    {
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 18.94
+    },
+    {
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 20.17
+    },
+    {
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 16.83
+    }
+  ],
+  "limits": [
+    "DTCG subset checks are not an independent full-spec certification.",
+    "Figma/Stitch/native/framework imports are not executed here.",
+    "Browser task evidence is recorded separately."
+  ]
+}

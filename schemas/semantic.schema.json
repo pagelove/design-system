@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pagelove semantic theme source",
+  "description": "Canonical CSS role-to-foundation aliases. Alias existence is checked by scripts/check.mjs.",
+  "type": "object",
+  "required": ["light", "dark"],
+  "additionalProperties": false,
+  "properties": {
+    "light": { "$ref": "#/$defs/theme" },
+    "dark": { "$ref": "#/$defs/theme" }
+  },
+  "$defs": {
+    "theme": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": { "pattern": "^[a-z][a-z0-9-]*$" },
+      "additionalProperties": { "type": "string", "pattern": "^var\\(--color-[a-z0-9-]+\\)$" }
+    }
+  }
+}

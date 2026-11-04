@@ -1,0 +1,21 @@
+# Pagelove Design System
+
+> Portable public design files for accessible, document-first apps. Start with the design guide and choose task-relevant documentation. Generated exports share canonical token sources.
+
+## Guides
+
+- [Overview](https://github.com/pagelove/design-system/blob/main/README.md): Formats, authority and quick start.
+- [Design](https://github.com/pagelove/design-system/blob/main/DESIGN.md): Stitch-compatible visual guide.
+- [Foundations](https://github.com/pagelove/design-system/blob/main/docs/foundations.md): Themes, scales and optional profiles.
+- [Components](https://github.com/pagelove/design-system/blob/main/docs/components.md): Native controls, states and integration limits.
+- [Document-first](https://github.com/pagelove/design-system/blob/main/docs/document-first.md): Domain models, editing, persistence and recovery.
+- [Games](https://github.com/pagelove/design-system/blob/main/docs/games.md): Player experience, input, state, audio and performance.
+- [Accessibility](https://github.com/pagelove/design-system/blob/main/docs/accessibility.md): Contrast, focus, targets and responsive checks.
+- [Formats](https://github.com/pagelove/design-system/blob/main/docs/formats.md): Conversion contracts and limitations.
+
+## Data and examples
+
+- [Foundations JSON](https://github.com/pagelove/design-system/blob/main/tokens/foundations.json): Editable values.
+- [Semantic JSON](https://github.com/pagelove/design-system/blob/main/tokens/semantic.json): Editable light/dark roles.
+- [Catalog HTML](https://github.com/pagelove/design-system/blob/main/examples/catalog.html): Offline-capable component examples.
+- [Full context](https://github.com/pagelove/design-system/blob/main/llms-full.txt): Combined guidance, preserving attribution.

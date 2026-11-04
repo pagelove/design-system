@@ -1,0 +1,404 @@
+
+===== DESIGN.md =====
+
+---
+"name": "Pagelove App Foundations"
+"colors":
+  "primary": "#334155"
+  "neutral": "#ffffff"
+  "accent": "#1f64f1"
+  "border": "#cbd5e1"
+"typography":
+  "heading":
+    "fontFamily": "Source Serif 4"
+    "fontSize": "2rem"
+    "fontWeight": 400
+    "lineHeight": 1.2
+  "body":
+    "fontFamily": "Inter"
+    "fontSize": "1rem"
+    "fontWeight": 400
+    "lineHeight": 1.5
+"rounded":
+  "card": "12px"
+  "button": "100px"
+"spacing":
+  "small": "8px"
+  "medium": "16px"
+  "large": "32px"
+---
+
+# Pagelove App Foundations
+
+## Overview
+
+Build calm, readable applications with visible structure and one clear next action per task. Pair editorial serif headings with precise sans-serif controls and monospace technical examples. Prefer meaningful content, neutral separators and generous spacing over decorative panels. The values above describe the selected starting style; the complete scales and roles live in the token files.
+
+Default: the supplied public app library. Dark mode is available through semantic theme roles, not automatic color inversion. Optional editorial and invitation profiles retain a distinct brand palette.
+
+## Colors
+
+Use purpose-named text, background, button, border and status roles. Keep panels neutral. Use functional color on error/focus/selection states with explicit labels, not decorative card rails. The app library provides independent light and dark role mappings. Check contrast in each actual composition; a palette value is not a blanket accessibility approval.
+
+## Typography
+
+Use the declared serif for headings, sans-serif for body and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
+
+## Layout
+
+Use the published website grid: 4 columns at 320–479px, 8 at 480–1023px, and 12 from 1024px. Gutters are 16px on smaller screens and 24px on desktop. Outer margins are 16px, 32px and 64px by range. Console layouts retain 16px gutters/margins. Stack dense regions on narrow screens; use natural scrolling and preserve browser zoom.
+
+Use meaningful semantic HTML for document-based application content, stable resource IDs and DOM-backed editing. Keep efficient specialized runtimes where justified. Token JSON is design interchange, not the default application domain model. Read docs/document-first.md when implementing persistence and editors.
+
+## Elevation & Depth
+
+Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only when they communicate layering. Avoid glossy device frames, continuous ambient motion and gradients that dominate a reading surface. Honor reduced motion while preserving visible loading and status text.
+
+## Shapes
+
+Buttons may be pill-shaped; utility icon actions can be rounded or squared. Cards have subtly rounded corners. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
+
+## Components
+
+Use native buttons for actions and links for navigation. Support default, hover, pressed, focus, disabled and loading states. Keep labels available during pending work. Forms need visible labels, associated hints/errors and current-value serialization. Passwords use native masking; verification codes should support paste and autofill. Group related checkboxes/radios with a legend; use named switches for settings.
+
+Progress must distinguish indeterminate work, actual percent, completion and failure. A local preview or accepted request is not proof of shared persistence or delivery. Preserve dirty work and provide a recovery action after conflicts or failures.
+
+## Do's and Don'ts
+
+- Do use the canonical tokens, public component contracts and meaningful status labels.
+- Do make the primary task usable with keyboard, narrow layouts and enlarged text.
+- Do show loading, empty, error and recovery states with useful next steps.
+- Do retain original design files and add portable exports with explicit conversion limits.
+- Do not add decorative northeast arrow icons or colored panel side rails.
+- Do not invent backend capabilities, supported imports or verification results.
+- Do not include private account metadata, operating procedures or non-Pagelove repository links.
+
+
+===== docs/foundations.md =====
+
+# Foundations
+
+## Principles
+
+Make the task readable before adding visual emphasis. Pair editorial headings with precise controls and code. Keep structure visible through spacing, neutral dividers and meaningful labels. Give each task one clear primary next step. Use concrete language and show the state the application actually knows.
+
+Cards and boxes use neutral borders without colored side rails. Functional error/focus/selection outlines on controls are allowed; decorative panel borders are not. Use ordinary action text or meaningful icons instead of decorative northeast arrows.
+
+## Default app library
+
+The canonical foundation contains nine color families: polo blue, purple, olive, old rose, hot pink, neon carrot, cornflower blue, malachite and torch red. Preserve the full scales for flexibility; choose semantic roles for ordinary components. Having a bright raw color does not make it a default background or text color.
+
+Semantic themes cover background, border, button, icon, link and text, in light and dark modes. `--text-regular`, `--background-surface-light`, `--button-strong-default` and similar roles are resolved separately in each theme. Set `data-theme="dark"` or `data-theme="light"` on a document or scoped region. Test contrast in each actual context.
+
+The public library supplies four gradients: purple storm, soft bloom, dawn bloom and sky whisper. Their directions and stop positions are preserved in canonical data. Use gradients selectively for branded emphasis. Keep text on a readable solid surface unless its whole background range has been checked.
+
+## Typography
+
+Display: Source Serif 4, with Georgia/serif fallbacks. The published family stack also names Source Serif Pro; it is retained in foundation exports for fidelity. Body/UI: Inter with platform sans-serif fallbacks. Code: Fira Code with system monospace fallbacks. No network font dependency is needed to read the examples. Bundle separately licensed font files for exact production rendering.
+
+The published font-size scale ranges from 10px to 96px. Font weights are 400, 450 and 500. Text styles combine the foundation family, weight, size, line height and letter spacing. They are reference styles, not blanket approval for 10px body text, tight tracking, or line heights shorter than large display glyphs. The app layer uses 16px body text, a 1.5 line-height, normal body tracking and wrapping labels. Check localization, diacritics and 200% text enlargement.
+
+Spacing uses 0, 2, 4, 6, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 112, 128, 144 and 160 CSS pixels. Names such as `space-075` are scale identifiers, not literal pixel values; `--space-075` is 6px.
+
+## Grids
+
+| Website viewport | Columns | Gutter | Outer margin |
+| --- | --- | --- | --- |
+| 320–479px | 4 | 16px | 16px |
+| 480–767px | 8 | 16px | 32px |
+| 768–1023px | 8 | 16px | 32px |
+| 1024–1512px | 12 | 24px | 64px |
+| 1513px and wider | 12 | 24px | 64px |
+
+The console grid retains 16px gutters and margins: 4 columns at 320–479px, 8 at 480–1023px, then 12. Its larger breakpoints are 1024, 1440 and 1768px. These are layout references, not reasons to crop content below 320px. Use readable content measures and allow narrow content to stack.
+
+## Motion
+
+Published defaults: hover 300ms, exit 500ms, skeleton 1s and spin 800ms; standard easing is ease-in-out. Preserve content while status changes and avoid animating every section. The original exit pattern fades and blurs in place before closing the gap; urgent instructions must stay present long enough to read. The recommended app layer disables decorative animation for reduced motion, including the source library's slower-but-continuing spinner. Keep visible loading text when motion stops.
+
+## Optional profiles
+
+Editorial: white, slate ink `#45556C`, Source Serif 4 headings, Inter body and quiet neutral rules. Restrained lavender/olive accents are available. Lighter reference text `#90A1B9` is not approved for body text on white; use the stronger semantic roles or verify an appropriate large-text context.
+
+Invitation: blue-black `#0C0E1A`, navy surfaces, warm off-white `#E8E4DF`, Fraunces headings, Inter Tight body, JetBrains Mono code, with dusty lavender/clay/rose accents. Low-opacity borders are decorative separators, not sufficient boundaries for every control. Check muted text and gradients independently.
+
+These profiles supply values as `--profile-*` properties and dedicated DESIGN.md files. Integrations must deliberately map profile values to the app's semantic roles; changing `data-profile` alone does not retheme all components.
+
+
+===== docs/components.md =====
+
+# Component contracts
+
+The [catalog](../examples/catalog.html) is an offline-capable HTML/CSS reference with optional local preview interactions. [components/index.mjs](../components/index.mjs) exports escaped HTML helpers. It does not connect persistence or services. All user-supplied strings are escaped; helpers validate variants and require visible field/choice labels. Load [styles/app.css](../styles/app.css) once.
+
+## Buttons and icon buttons
+
+Use a native button for an action, with an explicit type. Use an anchor with a meaningful destination for navigation. `pl-button` supports strong, regular, light, outlined, outlined-gradient, borderless and borderless-gradient appearances, with lg/md/sm/xs sizes. Icon buttons add `pl-button--icon`; squared buttons add `pl-button--square`.
+
+Represent default, hover, pressed, focus, disabled, loading and skeleton states. Focus must remain visible. Disable a pending action when duplicate activation is invalid and keep an accessible label while its appearance changes. Skeletons are placeholders, not actionable unlabeled controls. Every icon-only action needs an accessible name describing its purpose. The recommended app layer expands small library sizes to at least 44px targets. It does not change the foundation scale.
+
+## Links
+
+Use `pl-link--default` for standalone links and `pl-link--inline` for links in prose. Native underline, visited state, focus and useful link text matter more than decorative icons. Do not make a disabled-looking anchor navigate unexpectedly; if there is no destination, describe availability as text.
+
+## Fields: basic, password and phone
+
+Use `pl-field` with a visible label, `pl-field__control`, `pl-field__input` and an optional `pl-field__hint`. Labels reference a stable unique input ID. Associate hints and errors with `aria-describedby`; set `aria-invalid="true"` for an invalid value. Do not substitute placeholder text for a label. Keep a value when validation fails and explain the correction.
+
+Use native input types and appropriate autocomplete/inputmode. Password fields use the browser's `type="password"` rather than a second string masked with asterisks; changing visibility keeps the same underlying value. The catalog provides a named visibility button with pressed state. Do not log or store passwords in a component demo. Phone input accepts an international number; a country selector is optional and must not silently reinterpret stored data. Actual phone verification requires a separate service contract.
+
+## Verification codes and segmented PIN
+
+The source library includes segmented PIN cells, 4–8 digits, with empty/incorrect error feedback. This repository recommends one native input with numeric input mode, one-time-code autocomplete and a visible digit-count hint. It preserves paste, autofill and a single accessible name without custom key movement. This is an intentional adaptation, not a claim to reproduce the original segmented interaction.
+
+If implementing segmented cells, define paste distribution, backspace, selection, focus order, error clearing and current-value serialization. Keep an equivalent accessible single-field route. A component only collects a code; it does not establish its validity or security.
+
+## Checkbox, radio and switch
+
+Use native checkboxes for independent selections; a group can use a fieldset and legend. Use same-name native radio buttons for exclusive selections, with one group legend. A switch uses a native checkbox with `role="switch"` for a labeled setting; state must remain available to assistive technology. Labels form part of the target.
+
+The library supports left/right labels and top-aligned switch labels, plus disabled/loading/skeleton appearances. A loading appearance alone must not leave an action repeatable when the operation needs duplicate protection. Native states and application acceptance remain distinct. Keep skeleton labels present or provide a named loading region rather than interactive placeholders.
+
+## Progress indicators
+
+Indeterminate progress has a name and no invented percentage. Determinate progress has bounds and an actual value. The source library includes radial sizes xxs/xs/sm/md/lg/xl (16/24/32/40/48/56px) and progress/done/error presentations. Adjacent visible text must explain completion or failure and the available next action.
+
+The helper provides a radial determinate indicator; the catalog also demonstrates native `progress`. Clamp numeric values to the supported range and reject non-finite values. Progress reaching 100% is evidence only for the measured operation, not proof of external delivery. Reduced-motion mode stops decorative spin while preserving the loading label.
+
+## Integration limits
+
+React, Vue and Svelte files are small usage examples, not compiled framework packages. Native Swift/Kotlin outputs are dictionaries of CSS strings, not platform colors, dp/sp or SwiftUI views. The library's CSS is preserved separately; the recommended app layer makes documented readability, target-size, native-input and reduced-motion adaptations. Consult [the source inventory](../reference/library-inventory.json) for every observed public story and variant.
+
+
+===== docs/document-first.md =====
+
+# Document-first development for applications
+
+Adapted from Pagelove, *Document-first development for websites and applications*, edition 2.4 (2026). Changes: condensed and reorganized for a public design system; platform-specific evidence, operations, private examples and internal references omitted. This adaptation is CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Distributed source: https://github.com/pagelove/design-system/blob/main/docs/document-first.md.
+
+## Model the information before the interface
+
+Identify the entities, relationships and operations that matter to the user. Prefer semantic HTML for document-based domain information and the live DOM as its editable client working model. Make meaningful resources independently understandable and addressable through stable IDs or URLs. Addressability does not imply public access.
+
+An article, catalog record, workflow item, scene or quest can be a bounded document resource. A document is not a requirement to create one file per object or use a specific database. Transactions, binary assets, simulation buffers and established external systems can retain more suitable representations.
+
+## Declare authority
+
+For every value, identify whether it is authoritative, derived, cached, a local draft, pending confirmation, accepted or historical. Name the owner, schema/version, allowed operations and persistence boundary. Do not keep independently editable HTML and JSON copies of the same domain fields. Derived views must be rebuildable from their declared source.
+
+This repository's JSON token files are a justified design-tool interchange format. They describe design values rather than replacing document-based app content. JSON transport envelopes, receipts and revision metadata likewise do not create another editable domain authority.
+
+Choose aggregate boundaries that support the required consistency. Shared constraints across several records need a transaction, enforced operation or explicit recovery policy that actually provides the promised guarantee.
+
+## Separate meaning, appearance and behavior
+
+Use headings, lists, tables, articles, forms and native controls to express meaning. Apply visual styles through tokens and CSS. Attach behavior through named commands, scoped bindings and documented events/results. Keep temporary menus, focus state and selection overlays outside persisted content unless they are deliberate domain values.
+
+An editor is a view over the model. Identify its source resource and exact editable root. Read the current form-control properties when serializing: HTML attributes and `outerHTML` alone do not necessarily contain the current input, checkbox or selection values. Validate bounded values and preserve allowed nested structure. Do not replace a complete resource with a partial extracted fragment.
+
+Composed views must retain provenance: identify their source and supported mutation target. If origin or permission is ambiguous, keep the view read-only. Check actual platform capabilities before relying on routing, composition, subscriptions or declarative schemas.
+
+## Enforce writes where they become durable
+
+Client-side constraints improve experience but do not establish authorization, uniqueness or trusted shared results. Establish which actual read/write path checks actor permissions, shape, ownership, references and invariants. A trusted authoring endpoint can have a different contract from an application mutation endpoint.
+
+For concurrency, use supported atomic conditional writes, revision checks or a suitable transaction. On a conflict, keep the user's draft and explain compare/reload/reapply choices. Do not silently overwrite current accepted data or retry a consequential action with an unknown outcome.
+
+Freeze a pending command's identity and payload while it is in flight. Retrying the same intent should follow a declared duplicate/receipt policy. Distinguish a local save, queued request, server acceptance and external delivery. A timeout is not proof of failure or success; reconcile against supported receipts before resubmitting an irreversible operation.
+
+## Design recovery
+
+Define behavior for refresh, back/forward navigation, account changes, loss of connectivity, stale revisions and interrupted writes. Scope local storage/queues to the actor and resource. Preserve unsent work; clearly label offline drafts. Incoming changes must not silently overwrite dirty work or trigger an outgoing save loop. Specify subscription gaps, reset and reconnection behavior.
+
+Release code separately from user-managed content. Version stored formats, define compatibility and validate before switching readers. Test restoration or forward repair for consequential changes. A backup is not verified until an isolated restore succeeds.
+
+## Keep the experience usable
+
+Provide a useful reading experience without unnecessary JavaScript. Preserve native controls, keyboard paths, visible focus, field errors and status. Show data freshness when it affects decisions. Explain empty, loading, partial, stale, denied and failed states with a useful next action.
+
+Measure the workload before choosing an optimization: document size, network, layout, painting, query work, simulation and graphics can have different bottlenecks. Keep efficient specialized runtimes where appropriate; avoid forcing every transient value into the DOM. Use summaries, pagination and bounded work when they improve the actual task.
+
+## Apply the guide proportionately
+
+1. Scope the feature and select its application profile.
+2. Choose the HTML/DOM default or record a concrete representation exception.
+3. Define resources, stable IDs, authority, formats and supported operations.
+4. Establish actual enforcement with a valid case and a case that must be rejected.
+5. Implement the scoped view/editor and explicit behavior.
+6. Handle applicable drafts, conflicts, retries, incoming changes and recovery.
+7. Verify exact operation paths separately from browser task behavior.
+8. Report changes, evidence, exceptions and remaining gaps.
+
+## Application profiles
+
+| Profile | Additional focus |
+| --- | --- |
+| Publishing and documentation | Readable semantic content, navigation, metadata, progressive enhancement |
+| Catalogs and directories | Stable record IDs, filtering, useful no-results, source provenance |
+| Analytics and dashboards | Units, aggregation windows, freshness, accessible table alternatives |
+| Workflows and transactions | Permissions, bounded operations, concurrency, receipts and recovery |
+| Editors and creative tools | Scoped bindings, draft safety, undo, import validation and round-trip fidelity |
+| Games and simulations | Authored content vs runtime state, responsive controls, checkpoints and bounded rendering |
+
+## Exception record
+
+Record the requirement, why HTML/DOM is unsuitable, owner, authoritative representation, derivation/reference relationship, validation and recovery. Required external JSON integration or specialized simulation buffers can justify an exception. A preference for duplicating editable data does not establish one.
+
+## Evidence and completion
+
+Maintain a compact record of the changed revision, environment, operation, actor, expected result, actual result and limitation. Check validation, rejection, concurrency and restoration where applicable. Separately inspect keyboard tasks, responsive layout, control prefill/current values and browser recovery. Mark each applicable check pass, fail, pending or not applicable with a reason. A local fixture does not prove deployment behavior, and a screenshot does not prove an entire task.
+
+
+===== docs/games.md =====
+
+# Game and simulation experience
+
+Adapted from Pagelove contributors, *Web Game Development Handbook*, edition 2.14.0 (2026), MIT licensed. This public summary selects reusable interaction, architecture, performance and recovery guidance; project-specific integrations and operational references are omitted. See LICENSE.
+
+## First playable experience
+
+State the player's goal, controls and win/loss conditions before play. Start with a complete small journey: start, act, understand feedback, pause, resume, reach a result and retry or continue. Make the next action clear. Give immediate visible feedback; optional music, effects and haptics supplement it. Do not claim that passing technical checks establishes enjoyment.
+
+Introduce mechanics through a short safe first action or optional help. Returning players should be able to find controls again without replaying a long tutorial. Keep score, completion and earned rewards distinct. Describe which result is local and which is accepted by a shared service.
+
+## State and content
+
+Separate authored levels/rules, runtime simulation, rendered output, player preferences and durable progress. Prefer semantic HTML for document-based authored content and DOM-backed editing. Use a specialized runtime representation for simulation where justified; preserve stable source identity and a declared rebuild/conversion path.
+
+Keep test play separate from authoring. A test run should not silently publish a level, consume real inventory or submit a ranked score. Validate imported content before applying it atomically. Undo and checkpoints must refer to compatible rules/content versions. Define what a checkpoint includes and whether restore is all-or-nothing.
+
+## Input and mobile layout
+
+Use native DOM controls for menus, help and settings. Map keyboard, pointer and touch to the same validated actions. Provide selection/action alternatives to required dragging and avoid hover-only information. For ordinary discrete actions, activate once on click/release. Continuous held actions need explicit ownership and cancellation.
+
+Track independent contacts by pointer ID when simultaneous actions are needed. Handle release, pointer cancellation, lost capture, focus loss, hidden pages, dialogs and removed controls. Cleanup must be idempotent; releasing one input source must not cancel another source's still-held action. Require fresh input after interruption when appropriate.
+
+At the normal adopted scale, fit a bounded playfield, essential status and primary controls together so ordinary mobile play does not require page scrolling. Allow natural scrolling for help, forms and enlarged-text fallback. Do not disable browser zoom to meet the fit target. Account for safe-area insets, browser chrome, orientation and virtual keyboards. Resizing should not accidentally change physics or competitive field of view.
+
+Frequent targets start at 44×44 CSS pixels; 48px targets with 8–12px separation can be useful for play controls. These are project defaults rather than universal web requirements. Separate restart, purchase and destructive actions from rapid play. Avoid global gesture suppression; scope any exclusive manipulation region narrowly.
+
+## Feedback, accessibility and audio
+
+Show selected, pressed, unavailable, cooldown, pending and rejected states with visible meaning. Preserve readable text and focus outside the playfield. Supply appropriate alternatives for motion, flashing, audio cues and time pressure. Keep essential help reachable while paused.
+
+Audio starts through supported user activation and has separate music/effects controls when useful. Handle muted/denied playback without blocking progress. Bound active voices, decode work, loops and resource ownership. Pause or adapt audio when the document is hidden according to the declared game policy; never promise to pause an authoritative multiplayer world just because one client hides.
+
+## Performance and resilience
+
+Profile representative play before optimizing. Separate CPU simulation, layout, drawing, GPU work, compositing, asset loading and memory costs. Set frame/input/memory budgets for the supported environment, measure sustained play and cold effects, and record the measurement boundary. Device-pixel-ratio caps, batching, caching, lower effect quality and workers are conditional optimizations, not default requirements.
+
+Keep render data derived. Dispose observers, listeners, timers, textures, buffers and audio nodes at clear lifecycle boundaries. A graphics-context loss or optional API failure needs a visible recovery path. Preserve meaningful progress through refresh/back/history return according to the game's save contract. Never label a local score as verified shared acceptance.
+
+## Genre-specific emphasis
+
+| Category | Essential checks |
+| --- | --- |
+| Arcade/action | Timing, collision clarity, independent inputs and fast retry |
+| Platform/exploration | Camera, movement feedback, readable hazards and checkpoint restore |
+| Puzzle/procedural | Solvability, deterministic seeds, hint policy and undo |
+| Card/board/turn-based | Legal actions, turn ownership, hidden information and exact scoring |
+| Narrative | Reading pace, branch persistence, accessible choices and localization |
+| Rhythm | Declared timing/calibration, audio lifecycle and non-audio feedback |
+| Asynchronous multiplayer | Versioned rules, duplicate commands, receipts and calendar/timezone boundaries |
+| Real-time multiplayer | Server authority, disconnect behavior, reconciliation and bounded latency claims |
+
+## Acceptance walkthrough
+
+Test start/play/pause/resume/result/retry, then refresh or history return at meaningful points. Inspect portrait/landscape, short-height windows, keyboard-only operation, enlarged text, slow/offline behavior and optional audio/fullscreen denial. Real browser input establishes more than synthetic event dispatch, but desktop emulation does not prove actual phone behavior. Keep unsupported environment claims explicit.
+
+
+===== docs/accessibility.md =====
+
+# Accessibility and responsive behavior
+
+Target WCAG 2.2 AA for the consuming application and evaluate complete tasks. This repository supplies patterns; it does not certify applications built from them. The standard is available at https://www.w3.org/TR/WCAG22/.
+
+- Text generally needs 4.5:1 contrast; qualifying large text needs 3:1. Check actual backgrounds, alpha blending, gradients and every theme. Meaningful control boundaries and visual states need applicable non-text contrast. Decorative separators are a different case.
+- Preserve semantic landmarks and heading order. Label fields and groups, name icon buttons, describe meaningful images, and hide decorative graphics from assistive technology.
+- All actions need a keyboard path with visible focus. Dialogs require an appropriate focus lifecycle and escape/recovery behavior. Do not hide essential actions behind hover or a gesture alone.
+- Associate errors with fields and describe a correction. Announce meaningful asynchronous status without making every progress tick a disruptive alert. Do not use color alone for status or selection.
+- Use 44px targets as this design system's default for frequent controls. WCAG 2.2 AA's target-size criterion uses 24px with exceptions; the 44px criterion is AAA with its own exceptions. Design defaults and conformance rules are distinct.
+- Reflow at 320 CSS pixels, preserve zoom and inspect 200% text enlargement. Tables or inherently two-dimensional content can have a deliberate scroll region with context; ordinary form controls and essential actions must remain reachable.
+- Allow wrapping and long translated/RTL text. Use logical properties when practical. Do not rely on a font family declaration to guarantee that a particular font loaded.
+- Honor reduced motion; keep visible feedback when animations stop. Avoid flashing and unnecessary autoplay. Audio needs a useful independent control and a non-audio path to essential meaning.
+- Check browser contrast modes, pointer/keyboard switching, virtual keyboard occlusion and safe-area clearance. Desktop emulation is useful but does not prove physical-device behavior.
+
+Run automated checks where available, then inspect the actual task separately. Record build, environment, input path, result and limits. Missing screen-reader or device evidence stays pending rather than becoming a pass.
+
+
+===== docs/patterns.md =====
+
+# Application patterns
+
+## Settings and forms
+
+Present related settings in named groups with visible labels. Choose whether changes apply immediately or on Save, and explain that behavior. Keep pending, accepted and rejected state distinct. Preserve dirty work on a failed request. For shared state, handle a changed revision explicitly rather than overwriting newer data.
+
+## Collections and detail views
+
+Use stable IDs and meaningful item names. Keep filters, counts and empty/no-results explanations connected. Preserve context when moving into a detail view and back. Distinguish no matching items, no permission and an unavailable source. A read-only detail page can still expose useful source/freshness information.
+
+## Editors
+
+Keep the authored resource separate from preview UI and temporary tools. Use semantic HTML/DOM-backed editing for document-based information. Validate imports before replacement, preserve complete structure on round trips, and define undo, drafts and version compatibility. A preview or test run must not silently publish work.
+
+## Dashboards and reports
+
+Show units, relevant time windows and source freshness. Provide text/table equivalents for meaningful charts. A status should reflect the evidence actually known, with an explicit unknown state when appropriate. Do not make decorative metrics look like verified business outcomes.
+
+## Editorial pages
+
+Use a minimal header, readable serif heading, short explanation, concrete evidence and one primary next step. Vary narrative, code, diagrams and comparisons instead of repeating an identical card grid. A light editorial profile and a dark invitation profile are available without forcing every app to use a marketing layout.
+
+## Presentations and reading views
+
+For an HTML deck, 1280×720 with roughly 72px side clearance is a starting canvas. Use approximately 50px headings, 72px cover titles, 27px body and 23px short code examples; verify at actual scaled viewing size. Reduce content instead of shrinking everything. Provide a semantic reading view that reflows without depending on presenter JavaScript. Notes and presenter tooling are separate from the audience content.
+
+## Sharing and handoff
+
+Explain the output's destination and actual save/share state. Provide meaningful page titles and descriptions, responsive imagery and alternative text. Retain source and license notices. Treat a copied link, saved local draft, service acceptance and final delivery as distinct outcomes.
+
+
+===== docs/formats.md =====
+
+# Formats and conversion contracts
+
+The canonical foundation and semantic JSON files are the editable design values. `npm run build` deterministically generates exports. Component source and guidance remain authored files. An adapter must identify its source and limitations; never maintain competing manually edited exports.
+
+## Supported representations
+
+- Markdown and plain text: human/agent guidance and context bundles. README and AGENTS.md are entry points. `llms.txt` is an optional documentation index, not a guaranteed ingestion mechanism.
+- JSON: canonical design interchange and resolved exports. This is a design-tool requirement, not a new default for application domain data.
+- JSON Schema: `schemas/semantic.schema.json` describes the semantic source's shape and alias syntax using draft 2020-12. Alias resolution is separately checked by the build. Other interchange outputs do not claim this schema applies to them.
+- DTCG 2025.10: typed color, dimension, number, font, duration, cubic-bezier and gradient values. Load `foundations.tokens.json` plus exactly one of `light.tokens.json` or `dark.tokens.json`. Modes are separate files rather than an invented DTCG theme field. Specification: https://www.designtokens.org/TR/2025.10/format/.
+- DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Exported typography properties remain individual tokens; named text-style combinations are in canonical JSON and CSS classes.
+- Tokens Studio JSON: global foundation set plus light and dark semantic sets. Enable global and one theme at a time. Non-color global values use `other` to preserve CSS strings; specialized plugin typography, gradients and native type transforms need target-specific mapping. No plugin import has been claimed tested.
+- YAML, XML and CSV: portable structured views. XML is a repository interchange schema, not an Android resource file. YAML scalars are quoted to preserve leading-zero scale IDs and CSS strings.
+- CSS, Sass and Less: CSS supplies runtime theme aliases; Sass contains resolved theme maps and Less contains light-mode string variables. Native CSS custom properties remain the preferred browser runtime.
+- ES module, CommonJS and TypeScript: resolved theme dictionaries; no UI framework dependency. TypeScript adds literal keys/types.
+- Swift and Kotlin: portable dictionaries of CSS strings. Parse CSS colors and deliberately map px/rem/em/seconds/fonts to native conventions. These do not pretend CSS pixels are dp, sp, iOS points or physical pixels. Gradients and easing require explicit native adapters.
+- HTML and SVG: semantic component examples and inspectable vector palette. Preview screenshots, when present, are supplemental visual evidence and never the editable token source.
+- Stitch DESIGN.md: structured YAML values plus descriptive Markdown. The root and `.stitch` copies are generated from the same design template; optional profiles have separate guides. No private project IDs or live account metadata are distributed.
+- React TSX, Vue SFC and Svelte: small button integration examples. Compile them in the consuming framework/version; they are source examples, not installed framework packages.
+
+## Adding more formats
+
+Preserve originals when supplied, document licensing/provenance and provide portable exports where useful. Do not rename JSON to `.fig`, `.sketch` or another proprietary extension and claim native compatibility. Add a generation path, a bounded validation check and an explicit loss/limitation note for every new adapter.
+
+File readability does not guarantee automatic discovery or accurate visual interpretation. Supply a short entry point, relevant examples and explicit values. Keep guidance concise enough to load by task rather than requiring an entire repository in one context window.
+
+
+===== NOTICE.md =====
+
+# Notices and attribution
+
+Copyright (c) 2026 Pagelove contributors.
+
+New design-system code, tokens, examples and documentation are offered under MIT except where a file states otherwise.
+
+`docs/document-first.md` adapts Pagelove, *Document-first development for websites and applications*, edition 2.4 (2026), under Creative Commons Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/. It is condensed, reorganized and sanitized for this public distribution. Its license remains CC BY 4.0, including when reproduced in the generated context bundle. Public adaptation: https://github.com/pagelove/design-system/blob/main/docs/document-first.md.
+
+`docs/games.md` adapts Pagelove contributors, *Web Game Development Handbook*, edition 2.14.0 (2026), under MIT. The MIT copyright and grant are retained in LICENSE.
+
+The observed public design library and supplied design reference are credited in reference/PROVENANCE.md. External standards, names and tools retain their own rights. Font files and logos are not included; font-family declarations do not grant font redistribution rights. No trademark license is granted.

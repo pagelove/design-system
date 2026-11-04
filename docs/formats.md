@@ -1,0 +1,25 @@
+# Formats and conversion contracts
+
+The canonical foundation and semantic JSON files are the editable design values. `npm run build` deterministically generates exports. Component source and guidance remain authored files. An adapter must identify its source and limitations; never maintain competing manually edited exports.
+
+## Supported representations
+
+- Markdown and plain text: human/agent guidance and context bundles. README and AGENTS.md are entry points. `llms.txt` is an optional documentation index, not a guaranteed ingestion mechanism.
+- JSON: canonical design interchange and resolved exports. This is a design-tool requirement, not a new default for application domain data.
+- JSON Schema: `schemas/semantic.schema.json` describes the semantic source's shape and alias syntax using draft 2020-12. Alias resolution is separately checked by the build. Other interchange outputs do not claim this schema applies to them.
+- DTCG 2025.10: typed color, dimension, number, font, duration, cubic-bezier and gradient values. Load `foundations.tokens.json` plus exactly one of `light.tokens.json` or `dark.tokens.json`. Modes are separate files rather than an invented DTCG theme field. Specification: https://www.designtokens.org/TR/2025.10/format/.
+- DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Exported typography properties remain individual tokens; named text-style combinations are in canonical JSON and CSS classes.
+- Tokens Studio JSON: global foundation set plus light and dark semantic sets. Enable global and one theme at a time. Non-color global values use `other` to preserve CSS strings; specialized plugin typography, gradients and native type transforms need target-specific mapping. No plugin import has been claimed tested.
+- YAML, XML and CSV: portable structured views. XML is a repository interchange schema, not an Android resource file. YAML scalars are quoted to preserve leading-zero scale IDs and CSS strings.
+- CSS, Sass and Less: CSS supplies runtime theme aliases; Sass contains resolved theme maps and Less contains light-mode string variables. Native CSS custom properties remain the preferred browser runtime.
+- ES module, CommonJS and TypeScript: resolved theme dictionaries; no UI framework dependency. TypeScript adds literal keys/types.
+- Swift and Kotlin: portable dictionaries of CSS strings. Parse CSS colors and deliberately map px/rem/em/seconds/fonts to native conventions. These do not pretend CSS pixels are dp, sp, iOS points or physical pixels. Gradients and easing require explicit native adapters.
+- HTML and SVG: semantic component examples and inspectable vector palette. Preview screenshots, when present, are supplemental visual evidence and never the editable token source.
+- Stitch DESIGN.md: structured YAML values plus descriptive Markdown. The root and `.stitch` copies are generated from the same design template; optional profiles have separate guides. No private project IDs or live account metadata are distributed.
+- React TSX, Vue SFC and Svelte: small button integration examples. Compile them in the consuming framework/version; they are source examples, not installed framework packages.
+
+## Adding more formats
+
+Preserve originals when supplied, document licensing/provenance and provide portable exports where useful. Do not rename JSON to `.fig`, `.sketch` or another proprietary extension and claim native compatibility. Add a generation path, a bounded validation check and an explicit loss/limitation note for every new adapter.
+
+File readability does not guarantee automatic discovery or accurate visual interpretation. Supply a short entry point, relevant examples and explicit values. Keep guidance concise enough to load by task rather than requiring an entire repository in one context window.

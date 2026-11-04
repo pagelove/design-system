@@ -1,0 +1,35 @@
+{
+  "editorial": {
+    "background": "#FFFFFF",
+    "text-primary": "#45556C",
+    "text-secondary-reference": "#90A1B9",
+    "text-muted-reference": "#6F7E94",
+    "text-warm": "#65644A",
+    "border": "#E2E8F0",
+    "button-primary": "#1D293D",
+    "nav-hover": "#2D3A4E",
+    "accent": "#7B6BB5",
+    "gradient-main": "linear-gradient(95.1deg, #7B6BB5 0%, #646444 100%)",
+    "gradient-hover": "linear-gradient(157.71deg, #6D66CB 2.31%, #9F6467 97.12%)",
+    "font-heading": "\"Source Serif 4\", Georgia, serif",
+    "font-body": "Inter, system-ui, sans-serif",
+    "font-code": "\"Fira Code\", monospace"
+  },
+  "invitation": {
+    "background": "#0C0E1A",
+    "surface": "#131525",
+    "surface-raised": "#1A1C30",
+    "border": "rgba(255,255,255,0.06)",
+    "text-primary": "#E8E4DF",
+    "text-secondary-reference": "rgba(232,228,223,0.6)",
+    "text-muted-reference": "rgba(232,228,223,0.4)",
+    "accent-lavender": "#B8B0D8",
+    "accent-warm": "#C9A88C",
+    "accent-rose": "#D4A99A",
+    "gradient-cta": "linear-gradient(135deg, #C9A88C 0%, #B8B0D8 50%, #8A8AAA 100%)",
+    "gradient-headline": "linear-gradient(135deg, #B8B0D8 0%, #D4A99A 100%)",
+    "font-heading": "Fraunces, Georgia, serif",
+    "font-body": "\"Inter Tight\", system-ui, sans-serif",
+    "font-code": "\"JetBrains Mono\", monospace"
+  }
+}

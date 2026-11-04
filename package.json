@@ -1,0 +1,14 @@
+{
+  "name": "@pagelove/design-system",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "description": "Portable design foundations, accessible components, and document-first app guidance",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=22" }
+}
