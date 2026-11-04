@@ -16,7 +16,7 @@ The initial edition was checked on November 4, 2026. Machine-readable static res
 
 ## Corrections during verification
 
-The preview server originally served the catalog at `/` without redirecting, causing its relative script URL to resolve incorrectly. The server now redirects to `/examples/catalog.html`. Interaction checks were rerun at that canonical path. One browser lookup by label did not resolve the appearance selector; the observed combobox role was used successfully.
+The preview server originally served the catalog at `/` without redirecting, causing its relative script URL to resolve incorrectly. The server now redirects to `/examples/catalog.html`. Interaction checks were rerun at that canonical path. After server restart, root navigation was also verified to redirect and execute the interaction successfully. One browser lookup by label did not resolve the appearance selector; the observed combobox role was used successfully.
 
 ## Limits
 

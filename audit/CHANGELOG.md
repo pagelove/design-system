@@ -20,3 +20,14 @@
 - Verification: Build/check pass; XML and SVG parse; JavaScript syntax checks pass. Browser verified desktop and 390/320px reflow, local task feedback, native validation, selections, password visibility and keyboard activation. Evidence and limits: reference/VERIFICATION.md and audit/automated-checks.json.
 - Corrections: Fixed preview-root relative-script routing and reran interactions at the canonical path. Used the observed combobox role after one unsuccessful label lookup. DS-001's initial timestamp was approximate; this entry records actual execution time rather than claiming an exact earlier event time.
 - Publication: Pending initial commit and remote verification.
+
+## DS-003 — Publication verified
+
+- UTC: 2026-11-04T23:19:34.2528197Z
+- Actor: Codex
+- Plan reference: DS-001 and DS-002.
+- Change: Published the initial 69-file edition to the requested public repository; recorded the publication receipt and refreshed release evidence/hashes.
+- Why: Complete the authorized public design-system delivery with a reproducible handoff.
+- Affected: audit/CHANGELOG.md, audit/automated-checks.json, audit/files.sha256 and the refreshed overview screenshot; reference/VERIFICATION.md entry-point confirmation.
+- Verification: GitHub returned public visibility and main commit df44cbd47f284445e9c914bc7bb4a4e9847216d8, matching the clean local checkout. Restarted the corrected preview server; browser navigation from the root redirected to the catalog and the primary action updated its visible status. Final static checks and file hashes are refreshed below this publication record.
+- Scope limits: Native/framework compilation and live Stitch/Figma imports remain unexecuted as documented; no private source files were uploaded.
