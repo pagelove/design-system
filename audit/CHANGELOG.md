@@ -114,3 +114,12 @@
 - Licenses: Font copyright holders and OFL terms retained; parenthetical upstream repository URLs omitted to preserve the collection's repository-link restriction. All other source/license attribution preserved.
 - Affected: designs, styles, examples, font assets/licenses, schemas, scripts, generated exports/guides, previews, README/NOTICE, documentation and audit hashes.
 - Publication: Prepared for normal push after final checks.
+
+## DS-012 — Product polish publication receipt
+
+- UTC: 2026-11-05T22:03:28.5451367Z
+- Actor: Codex
+- Plan reference: DS-010/DS-011.
+- Change: Published implementation 78dfbbf12c4abe9f8172ac2b565a9969a1e315dc and verified GitHub main matches the clean local implementation checkout. Normalized trailing whitespace in bundled font notices without changing terms and refreshed file hashes.
+- Affected: audit/CHANGELOG.md, audit/files.sha256 and font notice whitespace.
+- Verification: Complete static checks and browser evidence are recorded in DS-011. This follow-up closes the publication record.

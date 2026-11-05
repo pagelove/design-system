@@ -7,4 +7,3 @@ Families: Inter, Source Serif 4, Fraunces, Inter Tight, Fira Code and JetBrains 
 Retrieved from the Google Fonts CSS service and its official font distribution on November 5, 2026. Family information: https://fonts.google.com/ . Font loading uses font-display: swap; no third-party font request is made by the previews. Native applications must register the files using platform APIs. Additional scripts, styles or weights may require additional licensed font assets.
 
 Copyright holders and license text are retained. Parenthetical upstream repository URLs have been omitted from copyright headings to follow this collection's repository-link policy.
-
