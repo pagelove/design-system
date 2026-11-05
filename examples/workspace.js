@@ -7,10 +7,7 @@ let currentScreen = 'overview', currentCollection = 'fieldnotes';
 const collectionById = id => collections.find(el => el.dataset.collection === id);
 function applySelection() {
   const params = new URLSearchParams(location.search);
-  const requested = catalog.designs.find(d => d.id === params.get('design'));
-  const design = requested || catalog.designs.find(d => d.id === catalog.defaultDesign);
-  const fallback = requested ? design.defaultMode : catalog.defaultMode;
-  const mode = design.modes.includes(params.get('mode')) ? params.get('mode') : fallback;
+  const {design,mode}=window.DesignSelection.resolve(catalog,params.get('design'),params.get('mode'));
   designSelect.value = design.id;
   modeSelect.replaceChildren(...design.modes.map(m => new Option(m[0].toUpperCase() + m.slice(1), m)));
   modeSelect.value = mode;

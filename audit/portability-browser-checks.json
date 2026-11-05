@@ -1,0 +1,477 @@
+{
+  "result": "pass",
+  "standalone": [
+    {
+      "background": "rgb(255, 255, 255)",
+      "fieldHeight": 56,
+      "fieldRadius": "8px",
+      "focus": "display-name",
+      "mode": "light",
+      "scheme": "light",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Classic · Standalone design",
+      "workspace": "../../examples/workspace.html?design=classic&mode=light"
+    },
+    {
+      "background": "rgb(0, 2, 8)",
+      "fieldHeight": 56,
+      "fieldRadius": "8px",
+      "focus": "display-name",
+      "mode": "dark",
+      "scheme": "dark",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Classic · Standalone design",
+      "workspace": "../../examples/workspace.html?design=classic&mode=dark"
+    },
+    {
+      "background": "rgb(250, 247, 241)",
+      "fieldHeight": 56,
+      "fieldRadius": "4px",
+      "focus": "display-name",
+      "mode": "light",
+      "scheme": "light",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Editorial · Standalone design",
+      "workspace": "../../examples/workspace.html?design=editorial&mode=light"
+    },
+    {
+      "background": "rgb(12, 20, 32)",
+      "fieldHeight": 56,
+      "fieldRadius": "4px",
+      "focus": "display-name",
+      "mode": "dark",
+      "scheme": "dark",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Editorial · Standalone design",
+      "workspace": "../../examples/workspace.html?design=editorial&mode=dark"
+    },
+    {
+      "background": "rgb(241, 245, 233)",
+      "fieldHeight": 56,
+      "fieldRadius": "10px",
+      "focus": "display-name",
+      "mode": "light",
+      "scheme": "light",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Forest · Standalone design",
+      "workspace": "../../examples/workspace.html?design=forest&mode=light"
+    },
+    {
+      "background": "rgb(13, 28, 20)",
+      "fieldHeight": 56,
+      "fieldRadius": "10px",
+      "focus": "display-name",
+      "mode": "dark",
+      "scheme": "dark",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Forest · Standalone design",
+      "workspace": "../../examples/workspace.html?design=forest&mode=dark"
+    },
+    {
+      "background": "rgb(16, 13, 23)",
+      "fieldHeight": 56,
+      "fieldRadius": "6px",
+      "focus": "display-name",
+      "mode": "dark",
+      "scheme": "dark",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Midnight · Standalone design",
+      "workspace": "../../examples/workspace.html?design=midnight&mode=dark"
+    },
+    {
+      "background": "rgb(12, 14, 26)",
+      "fieldHeight": 56,
+      "fieldRadius": "10px",
+      "focus": "display-name",
+      "mode": "dark",
+      "scheme": "dark",
+      "styles": [
+        "../../styles/fonts.css",
+        "../../styles/library-components.css",
+        "../../styles/base.css",
+        "styles/theme.css"
+      ],
+      "title": "Invitation · Standalone design",
+      "workspace": "../../examples/workspace.html?design=invitation&mode=dark"
+    }
+  ],
+  "standaloneMobile": [
+    {
+      "border": "rgb(100, 116, 139) 0px 0px 0px 1px inset",
+      "expectedBorder": "#64748b",
+      "height": 56,
+      "mode": "light",
+      "radius": "8px",
+      "scroll": 305,
+      "title": "Classic · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(100, 116, 139) 0px 0px 0px 1px inset",
+      "expectedBorder": "#64748b",
+      "height": 56,
+      "mode": "dark",
+      "radius": "8px",
+      "scroll": 305,
+      "title": "Classic · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(113, 108, 101) 0px 0px 0px 1px inset",
+      "expectedBorder": "#716c65",
+      "height": 56,
+      "mode": "light",
+      "radius": "4px",
+      "scroll": 305,
+      "title": "Editorial · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(113, 108, 101) 0px 0px 0px 1px inset",
+      "expectedBorder": "#716c65",
+      "height": 56,
+      "mode": "dark",
+      "radius": "4px",
+      "scroll": 305,
+      "title": "Editorial · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(107, 127, 105) 0px 0px 0px 1px inset",
+      "expectedBorder": "#6b7f69",
+      "height": 56,
+      "mode": "light",
+      "radius": "10px",
+      "scroll": 305,
+      "title": "Forest · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(107, 127, 105) 0px 0px 0px 1px inset",
+      "expectedBorder": "#6b7f69",
+      "height": 56,
+      "mode": "dark",
+      "radius": "10px",
+      "scroll": 305,
+      "title": "Forest · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(120, 105, 142) 0px 0px 0px 1px inset",
+      "expectedBorder": "#78698e",
+      "height": 56,
+      "mode": "dark",
+      "radius": "6px",
+      "scroll": 305,
+      "title": "Midnight · Standalone design",
+      "width": 305
+    },
+    {
+      "border": "rgb(127, 119, 114) 0px 0px 0px 1px inset",
+      "expectedBorder": "#7f7772",
+      "height": 56,
+      "mode": "dark",
+      "radius": "10px",
+      "scroll": 305,
+      "title": "Invitation · Standalone design",
+      "width": 305
+    }
+  ],
+  "workspace": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Overview · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Fieldnotes · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Settings · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Overview · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Fieldnotes · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Settings · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Overview · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Fieldnotes · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Settings · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Overview · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Fieldnotes · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Settings · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Overview · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Fieldnotes · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scroll": 305,
+      "title": "Settings · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Overview · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Fieldnotes · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Settings · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Overview · Midnight · Studio",
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Fieldnotes · Midnight · Studio",
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Settings · Midnight · Studio",
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Overview · Invitation · Studio",
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Fieldnotes · Invitation · Studio",
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scroll": 305,
+      "title": "Settings · Invitation · Studio",
+      "width": 305
+    }
+  ],
+  "catalog": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "radius": "8px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "radius": "8px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "radius": "4px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "radius": "4px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "radius": "10px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "radius": "10px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "radius": "6px",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "radius": "10px",
+      "scroll": 305,
+      "width": 305
+    }
+  ],
+  "enlargedAfterSplit": {
+    "font": "32px",
+    "scroll": 305,
+    "width": 305
+  },
+  "selection": {
+    "qualityAfterChange": "http://127.0.0.1:4173/examples/quality.html?design=classic&mode=light",
+    "qualityAfterReload": {
+      "design": "classic",
+      "mode": "light"
+    },
+    "qualityAfterBack": {
+      "design": "forest",
+      "mode": "dark"
+    },
+    "qualityAfterForward": {
+      "design": "classic",
+      "mode": "light"
+    },
+    "currentDefault": {
+      "design": "midnight",
+      "mode": "dark"
+    }
+  },
+  "standaloneForm": "Preview accepted locally. Nothing was saved or sent.",
+  "notes": [
+    "Keyboard focus reached the input in all eight modes; settled Invitation focus outline was rgb(184,176,216), solid.",
+    "Rendered wrapper borders, radii and heights measured directly, not inferred only from tokens.",
+    "A missing selection script during integration was corrected and a script-order regression check added."
+  ],
+  "limits": [
+    "No native/proprietary import or framework compilation performed.",
+    "Supported flat DTCG contract checked; not independent full-spec certification."
+  ]
+}

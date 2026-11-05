@@ -3,9 +3,7 @@ const designSelect=document.querySelector('#design'),modeSelect=document.querySe
 for(const design of catalog.designs){const option=document.createElement('option');option.value=design.id;option.textContent=design.name+(design.id===catalog.defaultDesign?' (default)':'');designSelect.append(option);}
 designSelect.firstElementChild.remove();
 function selectDesign(id,mode,writeURL=false){
- const design=catalog.designs.find(d=>d.id===id)||catalog.designs.find(d=>d.id===catalog.defaultDesign);
- const fallback=design.id===catalog.defaultDesign?catalog.defaultMode:design.defaultMode;
- const selectedMode=design.modes.includes(mode)?mode:fallback;
+ const {design,mode:selectedMode}=window.DesignSelection.resolve(catalog,id,mode);
  designSelect.value=design.id;modeSelect.replaceChildren();
  for(const name of design.modes){const option=document.createElement('option');option.value=name;option.textContent=name[0].toUpperCase()+name.slice(1);modeSelect.append(option);}
  modeSelect.value=selectedMode;modeSelect.disabled=design.modes.length===1;

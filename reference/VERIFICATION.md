@@ -55,3 +55,13 @@ Stitch import, Tokens Studio import, native compilation, and React/Vue/Svelte co
 ## Review acceptance evidence
 
 The revision review checks generated heading metadata against the design's canonical size and tracking, adds control/focus/error-outline contrast checks and exercises all three addressable collections. Browser diagnostics now load the actual local font faces at weights 400/500/600 and expose failures; computed font-family alone is not treated as font-loading proof. Explicit reduced motion is exercised through the preview settings. Prior verification limits remain historical; see the newest review record for current coverage.
+
+## Portability review (0.3.2)
+
+- Executed ES module/CommonJS adapters and CSV round trips for the root plus all five design bundles; values match canonical resolved exports.
+- Validated emitted DTCG types, units, values, alias types and original-CSS coverage. Negative fixtures reject unsupported types, negative durations and mismatched aliases. This is repository contract validation, not independent full-spec certification.
+- Independently loaded eight standalone modes with only fonts/library/base/selected-theme styles. Native color schemes, keyboard field focus, mode-preserving links and mobile bounds passed.
+- Measured rendered field wrapper borders/radii/heights in all eight modes, correcting a previously ineffective inner-input border override. Controls are 56px high with 44px native input targets.
+- Rechecked 24 workspace screen/mode cases and eight catalog cases at narrow width, plus a 200% text case after the shared-style extraction. No horizontal overflow was observed.
+- Quality-page design/mode selection now survives reload and back/forward. Alternate-default selection fixtures cover global Forest/dark versus explicitly selected Forest/light. A dependency-order issue found during integration was fixed and regression-checked.
+- Evidence: audit/portability-browser-checks.json and audit/design-automated-checks.json. Native/proprietary imports, framework compilation, assistive technology and physical devices remain unverified.

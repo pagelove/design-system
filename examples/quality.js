@@ -1,8 +1,6 @@
 const catalog = window.designCatalog;
 const $ = selector => document.querySelector(selector);
-const params = new URLSearchParams(location.search);
-let design = catalog.designs.find(d => d.id === params.get('design')) || catalog.designs.find(d => d.id === catalog.defaultDesign);
-let mode = design.modes.includes(params.get('mode')) ? params.get('mode') : (params.has('design') ? design.defaultMode : catalog.defaultMode);
+let design, mode;
 for (const item of catalog.designs) $('#design').add(new Option(item.name, item.id));
 let fontRun = 0;
 async function inspectFonts() {
@@ -42,9 +40,12 @@ function render() {
   $('#workspace').href = `workspace.html?design=${design.id}&mode=${mode}`;
   inspectFonts(); inspectMotion();
 }
-$('#design').addEventListener('change', () => { design = catalog.designs.find(d => d.id === $('#design').value); mode = design.defaultMode; render(); });
-$('#mode').addEventListener('change', () => { mode = $('#mode').value; render(); });
+function readSelection(){const params=new URLSearchParams(location.search);({design,mode}=window.DesignSelection.resolve(catalog,params.get('design'),params.get('mode')));render();}
+function select(id,requestedMode){({design,mode}=window.DesignSelection.resolve(catalog,id,requestedMode));const url=new URL(location.href);url.searchParams.set('design',design.id);url.searchParams.set('mode',mode);try{history.pushState(null,'',url);}catch{/* Local-file selection remains usable without history. */}render();}
+$('#design').addEventListener('change',()=>select($('#design').value,null));
+$('#mode').addEventListener('change',()=>select(design.id,$('#mode').value));
+window.addEventListener('popstate',readSelection);
 $('#reduce-motion').addEventListener('change', inspectMotion);
 matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', inspectMotion);
 $('#sample-action').addEventListener('click', () => { $('#action-status').textContent = 'Action confirmed locally.'; });
-render();
+readSelection();

@@ -1,3 +1,4 @@
+:root { color-scheme: var(--design-color-scheme); }
 /* Generated from tokens/foundations.json. */
 :root {
   --color-polo-blue-0: #f3efff;

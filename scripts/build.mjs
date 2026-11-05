@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {sourceRoot,loadDesigns,readJSON} from './designs.mjs';
+import {toDtcg} from './dtcg.mjs';
 const requested=readJSON('designs/catalog.json');
 if(process.env.DESIGN_DEFAULT)requested.defaultDesign=process.env.DESIGN_DEFAULT;
 if(process.env.DESIGN_MODE)requested.defaultMode=process.env.DESIGN_MODE;
@@ -32,7 +33,7 @@ function resolve(k,map,trail=[]){if(trail.includes(k))throw Error('Cycle '+[...t
 for(const mode of modes){const m={...base,...semantic[mode]};resolved[mode]=Object.fromEntries(Object.keys(m).map(k=>[k,resolve(k,m)]));}
 json('exports/tokens.json',{design:design.id,defaultMode,foundations:base,semantic,profiles,resolved});
 put('styles/appearance.css',block(':root',design.appearance));
-put('styles/theme.css',fs.readFileSync(path.join(root,'styles/foundations.css'),'utf8')+fs.readFileSync(path.join(root,'styles/semantic.css'),'utf8')+block(':root',{...design.appearance,'design-color-scheme':defaultMode})+modes.map(mode=>block(`[data-theme="${mode}"]`,{'design-color-scheme':mode})).join(''));
+put('styles/theme.css',':root { color-scheme: var(--design-color-scheme); }\n'+fs.readFileSync(path.join(root,'styles/foundations.css'),'utf8')+fs.readFileSync(path.join(root,'styles/semantic.css'),'utf8')+block(':root',{...design.appearance,'design-color-scheme':defaultMode})+modes.map(mode=>block(`[data-theme="${mode}"]`,{'design-color-scheme':mode})).join(''));
 // JSON is a valid YAML 1.2 document. Use block YAML to improve human readability.
 const yaml=o=>Object.entries(o).map(([k,v])=>`${JSON.stringify(k)}:${v&&typeof v==='object'&&!Array.isArray(v)?'\n'+yaml(v).split('\n').filter(Boolean).map(x=>'  '+x).join('\n'): ' '+JSON.stringify(v)}\n`).join('');
 put('exports/tokens.yaml',yaml({design:design.id,defaultMode,foundations:base,semantic,profiles}));
@@ -47,22 +48,7 @@ put('exports/_tokens.scss','// Generated resolved values. @use this module and s
 put('exports/tokens.less','// Generated initial-mode aliases, followed by explicit mode-prefixed values.\n'+Object.entries(resolved[defaultMode]).map(([k,v])=>`@${k}: ~${JSON.stringify(v)};`).join('\n')+'\n'+Object.entries(resolved).flatMap(([mode,values])=>Object.entries(values).map(([k,v])=>`@${mode}-${k}: ~${JSON.stringify(v)};`)).join('\n'));
 put('exports/Tokens.swift','// Generated portable CSS-string values. Convert units and colors explicitly for native UI.\nenum DesignTokens {\n'+Object.entries(resolved).map(([m,v])=>`  static let ${m}: [String: String] = [\n${Object.entries(v).map(([k,x])=>`    ${JSON.stringify(k)}: ${JSON.stringify(x)},`).join('\n')}\n  ]`).join('\n')+'\n}');
 put('exports/Tokens.kt','// Generated portable CSS-string values, not Android dp/sp or Compose Color values.\nobject DesignTokens {\n'+Object.entries(resolved).map(([m,v])=>`  val ${m}: Map<String, String> = mapOf(\n${Object.entries(v).map(([k,x])=>`    ${JSON.stringify(k)} to ${JSON.stringify(x).replaceAll('$','\\$')},`).join('\n')}\n  )`).join('\n')+'\n}');
-const color=v=>{const h=v.slice(1);const hex=h.length===3?[...h].map(x=>x+x).join(''):h;return{colorSpace:'srgb',components:[0,2,4].map(i=>parseInt(hex.slice(i,i+2),16)/255),alpha:1,hex:'#'+hex.toUpperCase()};};
-const dtcg={};
-for(const [k,v]of Object.entries(base)){
- let type,value,description='Published foundation value.';
- if(/^#[\da-f]{3,6}$/i.test(v)){type='color';value=color(v);}
- else if(v.startsWith('var(')){type=k.startsWith('design-')?'fontFamily':'dimension';value=v.replace(/var\(--([\w-]+)\)/g,'{$1}');}
- else if(k.startsWith('gradient-')){type='gradient';value=f.gradient[k.slice(9)].stops.map(([ref,pos])=>({color:`{color-${ref}}`,position:parseFloat(pos)/100}));description='Color stops; CSS direction is recorded in extensions.';}
- else if(/^-?[\d.]+(?:px|rem)$/.test(v)){type='dimension';value={value:parseFloat(v),unit:v.endsWith('rem')?'rem':'px'};}
- else if(k.startsWith('font-family-')){type='fontFamily';value=v.split(',').map(x=>x.trim().replace(/^['"]|['"]$/g,''));}
- else if(k.startsWith('font-weight-')){type='fontWeight';value=Number(v);}
- else if(k.startsWith('motion-duration-')){type='duration';value={value:parseFloat(v),unit:v.endsWith('ms')?'ms':'s'};}
- else if(k.startsWith('motion-easing-')){type='cubicBezier';value=v==='ease-in-out'?[.42,0,.58,1]:[.6,.4,.4,.6];}
- else if(k.startsWith('design-')){type='string';value=v;}
- else {type='number';value=parseFloat(v);if(v.endsWith('em'))description='Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.';}
- dtcg[k]={$type:type,$value:value,$description:description,$extensions:{'com.pagelove.design-system':{css:v}}};
-}
+const dtcg=toDtcg(base,f.gradient);
 json('tokens/foundations.tokens.json',dtcg);
 for(const mode of modes)json(`tokens/${mode}.tokens.json`,Object.fromEntries(Object.entries(semantic[mode]).map(([k,v])=>[k,{$type:'color',$value:v.replace(/^var\(--([\w-]+)\)$/,'{$1}'),$description:`${mode} mode semantic role: ${k}.` }])));
 const studio={global:Object.fromEntries(Object.entries(base).map(([k,v])=>[k,{value:resolved[defaultMode][k],type:k.startsWith('color-')?'color':'other',description:'Portable CSS string; check target tool conversion.'}])),...Object.fromEntries(modes.map(mode=>[mode,Object.fromEntries(Object.entries(semantic[mode]).map(([k,v])=>[k,{value:v.replace(/^var\(--([\w-]+)\)$/,'{$1}'),type:'color'}]))])),$metadata:{tokenSetOrder:['global',...modes]}};
@@ -86,8 +72,10 @@ for(const design of designs)built.set(design.id,buildDesign(design,path.join(out
 const selected=designs.find(d=>d.id===catalog.defaultDesign);
 buildDesign(selected,outputRoot,catalog.defaultMode);
 
-const index={...catalog,designs:designs.map(d=>({id:d.id,name:d.name,description:d.description,modes:Object.keys(d.modes),defaultMode:d.defaultMode,guide:'designs/'+d.id+'/DESIGN.md',exports:'designs/'+d.id+'/exports/',preview:'examples/workspace.html?design='+d.id,previewImage:'designs/'+d.id+'/previews/workspace-'+d.defaultMode+'.png'}))};
+const index={...catalog,designs:designs.map(d=>({id:d.id,name:d.name,description:d.description,modes:Object.keys(d.modes),defaultMode:d.defaultMode,guide:'designs/'+d.id+'/DESIGN.md',exports:'designs/'+d.id+'/exports/',preview:'examples/workspace.html?design='+d.id,previewImage:'designs/'+d.id+'/previews/workspace-'+d.defaultMode+'.png',standalonePreview:'designs/'+d.id+'/preview.html'}))};
 const putRoot=(p,v)=>{const file=path.join(outputRoot,p);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,v);};
+const standaloneTemplate=fs.readFileSync(path.join(sourceRoot,'templates/standalone.html.tmpl'),'utf8');
+for(const d of designs){const escapeHTML=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');putRoot('designs/'+d.id+'/preview.html',standaloneTemplate.replaceAll('{{NAME}}',escapeHTML(d.name)).replaceAll('{{ID}}',d.id).replace('{{OPTIONS}}',Object.keys(d.modes).map(mode=>'<option value="'+mode+'"'+(mode===d.defaultMode?' selected':'')+'>'+mode+'</option>').join('')));}
 putRoot('designs/index.json',JSON.stringify(index,null,2)+'\n');
 putRoot('examples/design-catalog.js','// Generated from designs/catalog.json and design definitions.\nwindow.designCatalog = '+JSON.stringify(index,null,2)+';\n');
 let css='/* Generated selectable design bundles. Default is set by designs/catalog.json. */\n';

@@ -16,7 +16,8 @@ window.designCatalog = {
       "guide": "designs/classic/DESIGN.md",
       "exports": "designs/classic/exports/",
       "preview": "examples/workspace.html?design=classic",
-      "previewImage": "designs/classic/previews/workspace-light.png"
+      "previewImage": "designs/classic/previews/workspace-light.png",
+      "standalonePreview": "designs/classic/preview.html"
     },
     {
       "id": "editorial",
@@ -30,7 +31,8 @@ window.designCatalog = {
       "guide": "designs/editorial/DESIGN.md",
       "exports": "designs/editorial/exports/",
       "preview": "examples/workspace.html?design=editorial",
-      "previewImage": "designs/editorial/previews/workspace-light.png"
+      "previewImage": "designs/editorial/previews/workspace-light.png",
+      "standalonePreview": "designs/editorial/preview.html"
     },
     {
       "id": "forest",
@@ -44,7 +46,8 @@ window.designCatalog = {
       "guide": "designs/forest/DESIGN.md",
       "exports": "designs/forest/exports/",
       "preview": "examples/workspace.html?design=forest",
-      "previewImage": "designs/forest/previews/workspace-light.png"
+      "previewImage": "designs/forest/previews/workspace-light.png",
+      "standalonePreview": "designs/forest/preview.html"
     },
     {
       "id": "midnight",
@@ -57,7 +60,8 @@ window.designCatalog = {
       "guide": "designs/midnight/DESIGN.md",
       "exports": "designs/midnight/exports/",
       "preview": "examples/workspace.html?design=midnight",
-      "previewImage": "designs/midnight/previews/workspace-dark.png"
+      "previewImage": "designs/midnight/previews/workspace-dark.png",
+      "standalonePreview": "designs/midnight/preview.html"
     },
     {
       "id": "invitation",
@@ -70,7 +74,8 @@ window.designCatalog = {
       "guide": "designs/invitation/DESIGN.md",
       "exports": "designs/invitation/exports/",
       "preview": "examples/workspace.html?design=invitation",
-      "previewImage": "designs/invitation/previews/workspace-dark.png"
+      "previewImage": "designs/invitation/previews/workspace-dark.png",
+      "standalonePreview": "designs/invitation/preview.html"
     }
   ]
 };

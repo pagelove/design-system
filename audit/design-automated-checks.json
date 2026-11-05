@@ -1,6 +1,83 @@
 {
   "result": "pass",
-  "textFiles": 234,
+  "portability": [
+    {
+      "bundle": "root",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/classic/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/editorial/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/forest/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/midnight/",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/invitation/",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    }
+  ],
+  "textFiles": 247,
   "designs": 5,
   "defaultDesign": "midnight",
   "defaultMode": "dark",

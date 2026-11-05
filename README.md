@@ -60,3 +60,7 @@ Explore [the workspace](examples/workspace.html) for matching overview, collecti
 ![Midnight workspace overview](designs/midnight/previews/workspace-dark.png)
 
 The app examples also expose per-collection URLs, local draft creation, derived counts and 100–200% reading preferences. [Quality checks](examples/quality.html) report real font loading and effective motion settings. See the [polish review](reference/POLISH-REVIEW.md) for gaps found and revisions.
+
+## Use one design independently
+
+Each design includes a standalone integration example: [Classic](designs/classic/preview.html), [Editorial](designs/editorial/preview.html), [Forest](designs/forest/preview.html), [Midnight](designs/midnight/preview.html), [Invitation](designs/invitation/preview.html). These load only that design’s theme plus shared fonts/components/base styling. See [integration instructions](docs/designs.md) and the [portability review](reference/PORTABILITY-REVIEW.md).

@@ -3634,9 +3634,35 @@
     }
   },
   "design-shadow-panel": {
-    "$type": "string",
-    "$value": "none",
-    "$description": "Published foundation value.",
+    "$type": "shadow",
+    "$value": {
+      "color": {
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0,
+          0
+        ],
+        "alpha": 0
+      },
+      "offsetX": {
+        "value": 0,
+        "unit": "px"
+      },
+      "offsetY": {
+        "value": 0,
+        "unit": "px"
+      },
+      "blur": {
+        "value": 0,
+        "unit": "px"
+      },
+      "spread": {
+        "value": 0,
+        "unit": "px"
+      }
+    },
+    "$description": "No shadow, represented by a transparent zero-size shadow. Original CSS is none.",
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "none"
@@ -3709,9 +3735,9 @@
     }
   },
   "design-heading-tracking": {
-    "$type": "string",
-    "$value": "-.025em",
-    "$description": "Published foundation value.",
+    "$type": "number",
+    "$value": -0.025,
+    "$description": "Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.",
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "-.025em"
@@ -3719,8 +3745,11 @@
     }
   },
   "design-transition-duration": {
-    "$type": "string",
-    "$value": "160ms",
+    "$type": "duration",
+    "$value": {
+      "value": 160,
+      "unit": "ms"
+    },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {

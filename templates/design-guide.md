@@ -14,7 +14,7 @@ Use purpose-named text, background, button, border and status roles. Keep panels
 
 ## Typography
 
-Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. The repository bundles OFL-licensed regular, medium and semibold fonts in assets/fonts; styles/fonts.css loads them locally. Include that stylesheet alongside standalone theme files, or use styles/app.css. Preserve the supplied font licenses. Avoid squeezing long content into small captions.
+Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. The repository bundles OFL-licensed regular, medium and semibold fonts in assets/fonts; styles/fonts.css loads them locally. Include that stylesheet alongside standalone theme files, or use styles/app.css. Preserve the supplied font licenses. For an independent single-design integration, load shared fonts, library-components.css and base.css, then the selected theme.css; follow that design’s preview.html and docs/designs.md. Avoid squeezing long content into small captions.
 
 ## Layout
 

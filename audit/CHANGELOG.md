@@ -157,3 +157,24 @@
 - Change: Published reviewed implementation 795fabc86e16fc147b4563c480d2d778ddfe246b and verified GitHub main matches the clean local checkout.
 - Affected: audit/CHANGELOG.md and audit/files.sha256.
 - Verification: Final checks and browser coverage are recorded in DS-014 and reference/POLISH-REVIEW.md. This audit-only follow-up closes the publication record.
+
+## DS-016 — Portability and integration review plan
+
+- UTC: 2026-11-05T22:48:00.2322830Z
+- Actor: Codex
+- Request: Fresh review against the design collection and premium-polish goals.
+- Findings: DTCG exports contain unsupported string types and weak type checks; standalone themes lack a complete demonstrated loading path; default-mode handling differs among previews, and quality selections are not URL/history backed. Export checks mostly verify file existence rather than consuming adapters.
+- Plan: Emit supported DTCG types and validate their contracts; separate shared base styling from collection selection and generate per-design standalone examples; share one selection resolver across previews and preserve quality URLs/history; execute JS adapters and compare CSV values; document and browser-check the corrected integration paths.
+- Verification: Pending. Midnight/dark remains default. Consulted the official DTCG 2025.10 format specification.
+
+## DS-017 — Portability and integration revisions implemented
+
+- UTC: 2026-11-05T22:58:48.7294551Z
+- Actor: Codex
+- Plan reference: DS-016.
+- Change: Replaced unsupported DTCG string values with supported typed representations; added strict alias/value checks and executable JS/CSV parity checks. Extracted shared base CSS and generated five independent design previews with native color scheme and mode-preserving links/history. Unified collection preview selection and quality URL/history behavior. Corrected the actually painted field wrapper border/radius and excess height.
+- Why: Make the portable formats and independent integrations match the advertised design contract, and verify rendered controls rather than token values alone.
+- Verification: Build/check and syntax checks pass. Six export bundles consumed successfully; eight standalone modes and existing narrow layouts pass. Keyboard field focus, local form behavior, quality selection/reload/history, and invalid/alternate-default cases checked. See reference/PORTABILITY-REVIEW.md and the latest audit evidence for scope and limits.
+- Affected: Build/validation scripts, shared base/app styles, generated DTCG/theme files and standalone previews, preview selection scripts, guides/context/docs, screenshots, package version and audit records.
+- Source: Official DTCG 2025.10 format specification, linked in the review and format contract. No native import certification is claimed.
+- Publication: Prepared for normal push after final checks.

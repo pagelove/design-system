@@ -24,7 +24,7 @@ The original profile JSON is reference-only. Choose `data-design`, not `data-pro
 
 Load `styles/app.css` and put `data-design` plus an available `data-theme` on the HTML element. Omitting both uses the configured default. Typography, geometry, backgrounds and browser control color scheme follow the selection. Nested regions can demonstrate tokens, as the gallery does; whole-document selection is recommended for apps.
 
-For one design, load shared component styles and that design's `styles/theme.css` last. This supplies complete foundations, semantics and appearance, defaults to the design's initial mode, and recognizes its supported modes. It is intended for one design per document. Shared CSS still supplies structure and accessibility adjustments.
+For one design, load `styles/fonts.css`, `styles/library-components.css`, `styles/base.css`, then that design's `styles/theme.css`. Add `styles/product.css` if using the product compositions. Do not also load `styles/app.css` or `styles/designs.css`: those are the multi-design entry point. Each generated `designs/<id>/preview.html` demonstrates this independent path, including supported modes, native color scheme and local interactions. Preserve relative font paths and font licenses when copying assets. `styles/base.css` is the shared structure/accessibility layer; theme files supply foundations, semantics and appearance.
 
 The preview uses URL parameters (`?design=forest&mode=dark`), not a hidden saved preference. Changing designs resets to that design's initial mode. Back/forward restores earlier selections. A generated catalog script allows local-file previews without JSON fetches.
 
@@ -43,3 +43,5 @@ Shared-source changes can affect every design. Exports do not imply verified pro
 The complete app preview is examples/workspace.html. It shares the selection contract with the component catalog and adds URL-addressable overview, project and settings screens. Load styles/product.css after styles/app.css for these reusable compositions. New designs must include the product appearance keys listed in schemas/design.schema.json. Read docs/polish.md for the acceptance standard.
 
 Collection links use `collection=fieldnotes`, `collection=ways` or `collection=beginnings` alongside the design/mode/screen parameters. Unknown collections fall back to Fieldnotes. Reading size and motion are local preview preferences and do not redefine the selected design or its export defaults.
+
+All collection previews use examples/selection.js for the same selection rules. Quality and standalone mode selections are URL-backed and restore through browser history. Per-design standalone previews use local defaults, independently of the collection default.
