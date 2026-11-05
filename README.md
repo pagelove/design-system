@@ -12,7 +12,7 @@ Multiple complete designs, shared accessible components, and portable files for 
 | [Midnight](designs/midnight/DESIGN.md) | Deep plum workspace, lavender links, compact geometry | Dark |
 | [Invitation](designs/invitation/DESIGN.md) | Blue-black, warm off-white, literary serif typography | Dark |
 
-**Initial default: Classic / light.** The current setting is in [designs/catalog.json](designs/catalog.json). Root `DESIGN.md`, `.stitch/DESIGN.md`, `exports/` and token exports are generated for that default. Each design has the same formats under `designs/<id>/`.
+**Default: Midnight / dark.** The current setting is in [designs/catalog.json](designs/catalog.json). Root `DESIGN.md`, `.stitch/DESIGN.md`, `exports/` and token exports are generated for that default. Each design has the same formats under `designs/<id>/`.
 
 Open [the design gallery](examples/designs.html) or [the interactive component preview](examples/catalog.html). Both work from local files. The preview selects design and mode independently, shows only supported modes, and keeps choices in its URL. Without JavaScript, the component page uses the configured default; the gallery still links to each design's files.
 

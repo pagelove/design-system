@@ -4,17 +4,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        1,
-        1,
+        0.9529411764705882,
+        0.9372549019607843,
         1
       ],
       "alpha": 1,
-      "hex": "#FFFFFF"
+      "hex": "#F3EFFF"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#ffffff"
+        "css": "#f3efff"
       }
     }
   },
@@ -23,17 +23,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.9725490196078431,
-        0.9803921568627451,
-        0.9882352941176471
+        0.9098039215686274,
+        0.8862745098039215,
+        0.9686274509803922
       ],
       "alpha": 1,
-      "hex": "#F8FAFC"
+      "hex": "#E8E2F7"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#f8fafc"
+        "css": "#e8e2f7"
       }
     }
   },
@@ -42,17 +42,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.9450980392156862,
-        0.9607843137254902,
-        0.9764705882352941
+        0.8627450980392157,
+        0.8313725490196079,
+        0.9254901960784314
       ],
       "alpha": 1,
-      "hex": "#F1F5F9"
+      "hex": "#DCD4EC"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#f1f5f9"
+        "css": "#dcd4ec"
       }
     }
   },
@@ -61,17 +61,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.8862745098039215,
-        0.9098039215686274,
-        0.9411764705882353
+        0.788235294117647,
+        0.7490196078431373,
+        0.8627450980392157
       ],
       "alpha": 1,
-      "hex": "#E2E8F0"
+      "hex": "#C9BFDC"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#e2e8f0"
+        "css": "#c9bfdc"
       }
     }
   },
@@ -80,17 +80,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.796078431372549,
-        0.8352941176470589,
-        0.8823529411764706
+        0.6823529411764706,
+        0.6352941176470588,
+        0.7764705882352941
       ],
       "alpha": 1,
-      "hex": "#CBD5E1"
+      "hex": "#AEA2C6"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#cbd5e1"
+        "css": "#aea2c6"
       }
     }
   },
@@ -99,17 +99,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.5803921568627451,
-        0.6392156862745098,
-        0.7215686274509804
+        0.5725490196078431,
+        0.5176470588235295,
+        0.6745098039215687
       ],
       "alpha": 1,
-      "hex": "#94A3B8"
+      "hex": "#9284AC"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#94a3b8"
+        "css": "#9284ac"
       }
     }
   },
@@ -118,17 +118,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.39215686274509803,
-        0.4549019607843137,
-        0.5450980392156862
+        0.47058823529411764,
+        0.4117647058823529,
+        0.5568627450980392
       ],
       "alpha": 1,
-      "hex": "#64748B"
+      "hex": "#78698E"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#64748b"
+        "css": "#78698e"
       }
     }
   },
@@ -137,17 +137,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.2784313725490196,
-        0.3333333333333333,
-        0.4117647058823529
+        0.36470588235294116,
+        0.3137254901960784,
+        0.4392156862745098
       ],
       "alpha": 1,
-      "hex": "#475569"
+      "hex": "#5D5070"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#475569"
+        "css": "#5d5070"
       }
     }
   },
@@ -156,17 +156,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.2,
-        0.2549019607843137,
-        0.3333333333333333
+        0.27058823529411763,
+        0.2235294117647059,
+        0.32941176470588235
       ],
       "alpha": 1,
-      "hex": "#334155"
+      "hex": "#453954"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#334155"
+        "css": "#453954"
       }
     }
   },
@@ -175,17 +175,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.11764705882352941,
-        0.1607843137254902,
-        0.23137254901960785
+        0.2,
+        0.1568627450980392,
+        0.24705882352941178
       ],
       "alpha": 1,
-      "hex": "#1E293B"
+      "hex": "#33283F"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#1e293b"
+        "css": "#33283f"
       }
     }
   },
@@ -194,17 +194,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.058823529411764705,
-        0.09019607843137255,
-        0.16470588235294117
+        0.1411764705882353,
+        0.10980392156862745,
+        0.18823529411764706
       ],
       "alpha": 1,
-      "hex": "#0F172A"
+      "hex": "#241C30"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#0f172a"
+        "css": "#241c30"
       }
     }
   },
@@ -213,17 +213,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.00784313725490196,
-        0.023529411764705882,
-        0.09019607843137255
+        0.09803921568627451,
+        0.07450980392156863,
+        0.12941176470588237
       ],
       "alpha": 1,
-      "hex": "#020617"
+      "hex": "#191321"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#020617"
+        "css": "#191321"
       }
     }
   },
@@ -232,17 +232,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0,
-        0.00784313725490196,
-        0.03137254901960784
+        0.06274509803921569,
+        0.050980392156862744,
+        0.09019607843137255
       ],
       "alpha": 1,
-      "hex": "#000208"
+      "hex": "#100D17"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#000208"
+        "css": "#100d17"
       }
     }
   },
@@ -1296,17 +1296,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.9333333333333333,
-        0.9647058823529412,
+        0.9568627450980393,
+        0.9372549019607843,
         1
       ],
       "alpha": 1,
-      "hex": "#EEF6FF"
+      "hex": "#F4EFFF"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#eef6ff"
+        "css": "#f4efff"
       }
     }
   },
@@ -1315,17 +1315,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.8549019607843137,
-        0.9176470588235294,
+        0.9137254901960784,
+        0.8705882352941177,
         1
       ],
       "alpha": 1,
-      "hex": "#DAEAFF"
+      "hex": "#E9DEFF"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#daeaff"
+        "css": "#e9deff"
       }
     }
   },
@@ -1334,17 +1334,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.7411764705882353,
-        0.8588235294117647,
+        0.8431372549019608,
+        0.7686274509803922,
         1
       ],
       "alpha": 1,
-      "hex": "#BDDBFF"
+      "hex": "#D7C4FF"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#bddbff"
+        "css": "#d7c4ff"
       }
     }
   },
@@ -1353,17 +1353,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.5647058823529412,
-        0.7764705882352941,
-        1
+        0.7725490196078432,
+        0.6627450980392157,
+        0.9686274509803922
       ],
       "alpha": 1,
-      "hex": "#90C6FF"
+      "hex": "#C5A9F7"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#90c6ff"
+        "css": "#c5a9f7"
       }
     }
   },
@@ -1372,17 +1372,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.34901960784313724,
-        0.6509803921568628,
-        1
+        0.7058823529411765,
+        0.5686274509803921,
+        0.9254901960784314
       ],
       "alpha": 1,
-      "hex": "#59A6FF"
+      "hex": "#B491EC"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#59a6ff"
+        "css": "#b491ec"
       }
     }
   },
@@ -1391,17 +1391,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.20784313725490197,
-        0.5176470588235295,
-        0.9882352941176471
+        0.5764705882352941,
+        0.4392156862745098,
+        0.8117647058823529
       ],
       "alpha": 1,
-      "hex": "#3584FC"
+      "hex": "#9370CF"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#3584fc"
+        "css": "#9370cf"
       }
     }
   },
@@ -1410,17 +1410,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.12156862745098039,
-        0.39215686274509803,
-        0.9450980392156862
+        0.4627450980392157,
+        0.32941176470588235,
+        0.6745098039215687
       ],
       "alpha": 1,
-      "hex": "#1F64F1"
+      "hex": "#7654AC"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#1f64f1"
+        "css": "#7654ac"
       }
     }
   },
@@ -1429,17 +1429,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.09019607843137255,
-        0.3058823529411765,
-        0.8705882352941177
+        0.37254901960784315,
+        0.25098039215686274,
+        0.5568627450980392
       ],
       "alpha": 1,
-      "hex": "#174EDE"
+      "hex": "#5F408E"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#174ede"
+        "css": "#5f408e"
       }
     }
   },
@@ -1448,17 +1448,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.09803921568627451,
-        0.25098039215686274,
-        0.7058823529411765
+        0.30196078431372547,
+        0.2,
+        0.4549019607843137
       ],
       "alpha": 1,
-      "hex": "#1940B4"
+      "hex": "#4D3374"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#1940b4"
+        "css": "#4d3374"
       }
     }
   },
@@ -1467,17 +1467,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.10196078431372549,
-        0.22745098039215686,
-        0.5568627450980392
+        0.24313725490196078,
+        0.16470588235294117,
+        0.3607843137254902
       ],
       "alpha": 1,
-      "hex": "#1A3A8E"
+      "hex": "#3E2A5C"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#1a3a8e"
+        "css": "#3e2a5c"
       }
     }
   },
@@ -1486,17 +1486,17 @@
     "$value": {
       "colorSpace": "srgb",
       "components": [
-        0.08235294117647059,
-        0.1450980392156863,
-        0.33725490196078434
+        0.14901960784313725,
+        0.10980392156862745,
+        0.21568627450980393
       ],
       "alpha": 1,
-      "hex": "#152556"
+      "hex": "#261C37"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "#152556"
+        "css": "#261c37"
       }
     }
   },
@@ -2252,15 +2252,14 @@
   "font-family-brand": {
     "$type": "fontFamily",
     "$value": [
-      "Source Serif Pro",
-      "Source Serif 4",
-      "Georgia",
-      "serif"
+      "Inter",
+      "system-ui",
+      "sans-serif"
     ],
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "'Source Serif Pro', 'Source Serif 4', Georgia, serif"
+        "css": "Inter, system-ui, sans-serif"
       }
     }
   },
@@ -3565,36 +3564,36 @@
   "design-radius-card": {
     "$type": "dimension",
     "$value": {
-      "value": 12,
+      "value": 8,
       "unit": "px"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "12px"
+        "css": "8px"
       }
     }
   },
   "design-radius-button": {
     "$type": "dimension",
     "$value": {
-      "value": 100,
+      "value": 8,
       "unit": "px"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "100px"
+        "css": "8px"
       }
     }
   },
   "design-heading-family": {
     "$type": "fontFamily",
-    "$value": "{font-family-brand}",
+    "$value": "{font-family-secondary}",
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "var(--font-family-brand)"
+        "css": "var(--font-family-secondary)"
       }
     }
   },
@@ -3611,26 +3610,26 @@
   "design-content-width": {
     "$type": "dimension",
     "$value": {
-      "value": 1120,
+      "value": 1200,
       "unit": "px"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "1120px"
+        "css": "1200px"
       }
     }
   },
   "design-section-gap": {
     "$type": "dimension",
     "$value": {
-      "value": 24,
+      "value": 20,
       "unit": "px"
     },
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "24px"
+        "css": "20px"
       }
     }
   },

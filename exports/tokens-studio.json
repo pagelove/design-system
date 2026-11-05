@@ -1,67 +1,67 @@
 {
   "global": {
     "color-polo-blue-0": {
-      "value": "#ffffff",
+      "value": "#f3efff",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-50": {
-      "value": "#f8fafc",
+      "value": "#e8e2f7",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-100": {
-      "value": "#f1f5f9",
+      "value": "#dcd4ec",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-200": {
-      "value": "#e2e8f0",
+      "value": "#c9bfdc",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-300": {
-      "value": "#cbd5e1",
+      "value": "#aea2c6",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-400": {
-      "value": "#94a3b8",
+      "value": "#9284ac",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-500": {
-      "value": "#64748b",
+      "value": "#78698e",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-600": {
-      "value": "#475569",
+      "value": "#5d5070",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-700": {
-      "value": "#334155",
+      "value": "#453954",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-800": {
-      "value": "#1e293b",
+      "value": "#33283f",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-900": {
-      "value": "#0f172a",
+      "value": "#241c30",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-950": {
-      "value": "#020617",
+      "value": "#191321",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-polo-blue-1000": {
-      "value": "#000208",
+      "value": "#100d17",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -341,57 +341,57 @@
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-50": {
-      "value": "#eef6ff",
+      "value": "#f4efff",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-100": {
-      "value": "#daeaff",
+      "value": "#e9deff",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-200": {
-      "value": "#bddbff",
+      "value": "#d7c4ff",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-300": {
-      "value": "#90c6ff",
+      "value": "#c5a9f7",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-400": {
-      "value": "#59a6ff",
+      "value": "#b491ec",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-500": {
-      "value": "#3584fc",
+      "value": "#9370cf",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-600": {
-      "value": "#1f64f1",
+      "value": "#7654ac",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-700": {
-      "value": "#174ede",
+      "value": "#5f408e",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-800": {
-      "value": "#1940b4",
+      "value": "#4d3374",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-900": {
-      "value": "#1a3a8e",
+      "value": "#3e2a5c",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
     "color-cornflower-blue-950": {
-      "value": "#152556",
+      "value": "#261c37",
       "type": "color",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -511,7 +511,7 @@
       "description": "Portable CSS string; check target tool conversion."
     },
     "gradient-soft-bloom": {
-      "value": "linear-gradient(to left, #dbc7c6 0%, #cbd5e1 100%)",
+      "value": "linear-gradient(to left, #dbc7c6 0%, #aea2c6 100%)",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -521,7 +521,7 @@
       "description": "Portable CSS string; check target tool conversion."
     },
     "gradient-sky-whisper": {
-      "value": "linear-gradient(to left, #ffffff 0%, #e2e8f0 25%, #e2e8f0 75%, #ffffff 100%)",
+      "value": "linear-gradient(to left, #f3efff 0%, #c9bfdc 25%, #c9bfdc 75%, #f3efff 100%)",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -621,7 +621,7 @@
       "description": "Portable CSS string; check target tool conversion."
     },
     "font-family-brand": {
-      "value": "'Source Serif Pro', 'Source Serif 4', Georgia, serif",
+      "value": "Inter, system-ui, sans-serif",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -1166,17 +1166,17 @@
       "description": "Portable CSS string; check target tool conversion."
     },
     "design-radius-card": {
-      "value": "12px",
+      "value": "8px",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
     "design-radius-button": {
-      "value": "100px",
+      "value": "8px",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
     "design-heading-family": {
-      "value": "'Source Serif Pro', 'Source Serif 4', Georgia, serif",
+      "value": "Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -1186,12 +1186,12 @@
       "description": "Portable CSS string; check target tool conversion."
     },
     "design-content-width": {
-      "value": "1120px",
+      "value": "1200px",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
     "design-section-gap": {
-      "value": "24px",
+      "value": "20px",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
     },
@@ -1199,448 +1199,6 @@
       "value": "none",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
-    }
-  },
-  "light": {
-    "background-brand-light": {
-      "value": "{color-olive-50}",
-      "type": "color"
-    },
-    "background-brand-regular": {
-      "value": "{color-olive-200}",
-      "type": "color"
-    },
-    "background-brand-strong": {
-      "value": "{color-olive-400}",
-      "type": "color"
-    },
-    "background-danger-light": {
-      "value": "{color-torch-red-50}",
-      "type": "color"
-    },
-    "background-danger-regular": {
-      "value": "{color-torch-red-200}",
-      "type": "color"
-    },
-    "background-danger-strong": {
-      "value": "{color-torch-red-400}",
-      "type": "color"
-    },
-    "background-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
-    },
-    "background-discovery-light": {
-      "value": "{color-purple-50}",
-      "type": "color"
-    },
-    "background-discovery-regular": {
-      "value": "{color-purple-200}",
-      "type": "color"
-    },
-    "background-discovery-strong": {
-      "value": "{color-purple-400}",
-      "type": "color"
-    },
-    "background-elevation-light": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
-    },
-    "background-elevation-regular": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "background-elevation-strong": {
-      "value": "{color-polo-blue-200}",
-      "type": "color"
-    },
-    "background-information-light": {
-      "value": "{color-cornflower-blue-50}",
-      "type": "color"
-    },
-    "background-information-regular": {
-      "value": "{color-cornflower-blue-200}",
-      "type": "color"
-    },
-    "background-information-strong": {
-      "value": "{color-cornflower-blue-400}",
-      "type": "color"
-    },
-    "background-neutral-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "background-neutral-pressed": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "background-neutral-selected": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "background-success-light": {
-      "value": "{color-malachite-50}",
-      "type": "color"
-    },
-    "background-success-regular": {
-      "value": "{color-malachite-200}",
-      "type": "color"
-    },
-    "background-success-strong": {
-      "value": "{color-malachite-400}",
-      "type": "color"
-    },
-    "background-surface-light": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
-    },
-    "background-surface-regular": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "background-surface-strong": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "background-warning-light": {
-      "value": "{color-neon-carrot-50}",
-      "type": "color"
-    },
-    "background-warning-regular": {
-      "value": "{color-neon-carrot-200}",
-      "type": "color"
-    },
-    "background-warning-strong": {
-      "value": "{color-neon-carrot-400}",
-      "type": "color"
-    },
-    "border-brand": {
-      "value": "{color-olive-500}",
-      "type": "color"
-    },
-    "border-danger": {
-      "value": "{color-torch-red-200}",
-      "type": "color"
-    },
-    "border-danger-light": {
-      "value": "{color-torch-red-200}",
-      "type": "color"
-    },
-    "border-danger-strong": {
-      "value": "{color-torch-red-600}",
-      "type": "color"
-    },
-    "border-disabled": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "border-discovery": {
-      "value": "{color-purple-200}",
-      "type": "color"
-    },
-    "border-focused": {
-      "value": "{color-cornflower-blue-400}",
-      "type": "color"
-    },
-    "border-information": {
-      "value": "{color-cornflower-blue-200}",
-      "type": "color"
-    },
-    "border-inverse": {
-      "value": "{color-polo-blue-700}",
-      "type": "color"
-    },
-    "border-light": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "border-regular": {
-      "value": "{color-polo-blue-300}",
-      "type": "color"
-    },
-    "border-selected": {
-      "value": "{color-cornflower-blue-600}",
-      "type": "color"
-    },
-    "border-strong": {
-      "value": "{color-polo-blue-400}",
-      "type": "color"
-    },
-    "border-success": {
-      "value": "{color-malachite-200}",
-      "type": "color"
-    },
-    "border-warning": {
-      "value": "{color-neon-carrot-200}",
-      "type": "color"
-    },
-    "button-borderless-icon-default": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
-    },
-    "button-borderless-icon-disabled": {
-      "value": "{color-polo-blue-400}",
-      "type": "color"
-    },
-    "button-borderless-icon-hovered": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
-    },
-    "button-borderless-icon-pressed": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-borderless-icon-selected": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-borderless-text-default": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
-    },
-    "button-borderless-text-disabled": {
-      "value": "{color-polo-blue-400}",
-      "type": "color"
-    },
-    "button-borderless-text-hovered": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
-    },
-    "button-borderless-text-pressed": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-borderless-text-selected": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-gradient-bg-default": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
-    },
-    "button-gradient-bg-disabled": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
-    },
-    "button-gradient-bg-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "button-gradient-bg-pressed": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "button-gradient-bg-selected": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "button-regular-default": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "button-regular-disabled": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "button-regular-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "button-regular-pressed": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
-    },
-    "button-regular-text": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
-    },
-    "button-secondary-icon-default": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
-    },
-    "button-secondary-icon-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
-    },
-    "button-secondary-icon-hovered": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
-    },
-    "button-secondary-icon-pressed": {
-      "value": "{color-polo-blue-1000}",
-      "type": "color"
-    },
-    "button-secondary-icon-selected": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-secondary-text-default": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
-    },
-    "button-secondary-text-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
-    },
-    "button-secondary-text-hovered": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
-    },
-    "button-secondary-text-pressed": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-secondary-text-selected": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-strong-default": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
-    },
-    "button-strong-disabled": {
-      "value": "{color-polo-blue-300}",
-      "type": "color"
-    },
-    "button-strong-hovered": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
-    },
-    "button-strong-pressed": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
-    },
-    "button-strong-text": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
-    },
-    "icon-brand": {
-      "value": "{color-olive-700}",
-      "type": "color"
-    },
-    "icon-danger": {
-      "value": "{color-torch-red-700}",
-      "type": "color"
-    },
-    "icon-disabled": {
-      "value": "{color-polo-blue-400}",
-      "type": "color"
-    },
-    "icon-discovery": {
-      "value": "{color-purple-700}",
-      "type": "color"
-    },
-    "icon-information": {
-      "value": "{color-cornflower-blue-700}",
-      "type": "color"
-    },
-    "icon-inverse": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "icon-light": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
-    },
-    "icon-regular": {
-      "value": "{color-polo-blue-700}",
-      "type": "color"
-    },
-    "icon-selected": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
-    },
-    "icon-strong": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
-    },
-    "icon-success": {
-      "value": "{color-malachite-700}",
-      "type": "color"
-    },
-    "icon-warning": {
-      "value": "{color-neon-carrot-700}",
-      "type": "color"
-    },
-    "link-icon-default": {
-      "value": "{color-cornflower-blue-600}",
-      "type": "color"
-    },
-    "link-icon-hover": {
-      "value": "{color-cornflower-blue-700}",
-      "type": "color"
-    },
-    "link-icon-inverse": {
-      "value": "{color-cornflower-blue-300}",
-      "type": "color"
-    },
-    "link-icon-pressed": {
-      "value": "{color-cornflower-blue-800}",
-      "type": "color"
-    },
-    "link-text-default": {
-      "value": "{color-cornflower-blue-600}",
-      "type": "color"
-    },
-    "link-text-hover": {
-      "value": "{color-cornflower-blue-700}",
-      "type": "color"
-    },
-    "link-text-pressed": {
-      "value": "{color-cornflower-blue-800}",
-      "type": "color"
-    },
-    "link-text-visited": {
-      "value": "{color-cornflower-blue-500}",
-      "type": "color"
-    },
-    "text-brand": {
-      "value": "{color-olive-700}",
-      "type": "color"
-    },
-    "text-danger": {
-      "value": "{color-torch-red-700}",
-      "type": "color"
-    },
-    "text-disabled": {
-      "value": "{color-polo-blue-400}",
-      "type": "color"
-    },
-    "text-discovery": {
-      "value": "{color-purple-700}",
-      "type": "color"
-    },
-    "text-information": {
-      "value": "{color-cornflower-blue-700}",
-      "type": "color"
-    },
-    "text-inverse": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
-    },
-    "text-light": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
-    },
-    "text-regular": {
-      "value": "{color-polo-blue-700}",
-      "type": "color"
-    },
-    "text-selected": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
-    },
-    "text-strong": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
-    },
-    "text-success": {
-      "value": "{color-malachite-700}",
-      "type": "color"
-    },
-    "text-warning": {
-      "value": "{color-neon-carrot-700}",
-      "type": "color"
     }
   },
   "dark": {
@@ -2088,7 +1646,6 @@
   "$metadata": {
     "tokenSetOrder": [
       "global",
-      "light",
       "dark"
     ]
   }

@@ -1,9 +1,9 @@
 {
   "result": "pass",
-  "textFiles": 218,
+  "textFiles": 217,
   "designs": 5,
-  "defaultDesign": "classic",
-  "defaultMode": "light",
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
   "semanticRolesPerMode": 110,
   "libraryEntries": 40,
   "checks": [

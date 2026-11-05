@@ -63,3 +63,23 @@
 - Why: Complete the requested public-repository update with explicit delivery evidence.
 - Affected: audit/CHANGELOG.md and audit/files.sha256.
 - Verification: Five designs and eight mode combinations are available; Classic/light remains the configured default. The alternate-default build, static checks, browser design/mode/history behavior and strict mobile bounds passed as recorded in the design verification files. Root source documents and license attribution remain preserved. The publication receipt records the implementation commit; this subsequent audit-only commit closes the record.
+
+## DS-007 — Midnight default plan
+
+- UTC: 2026-11-05T21:44:12.7497262Z
+- Actor: Codex
+- Request: Set Midnight as the default.
+- Plan: Set catalog default to midnight/dark, rebuild all derived default files, update current-default documentation and previews, run checks, verify the unselected browser entry point and publish.
+- Affected: designs/catalog.json, README.md, generated default files/index/gallery, previews and audit evidence.
+- Verification: Pending; checkout clean at start.
+
+## DS-008 — Midnight default implemented
+
+- UTC: 2026-11-05T21:45:28.6880478Z
+- Actor: Codex
+- Plan reference: DS-007; user explicitly selected Midnight.
+- Change: Set midnight/dark as catalog default, rebuilt derived root files and index/gallery, updated the README and verification note, removed unsupported root light-mode tokens and refreshed default/gallery previews.
+- Why: Make Midnight the starting design for unspecified selections across formats and browser entry points.
+- Verification: Build and complete checks pass. Browser with no selection parameters chose Midnight/dark; its mode selector is dark-only, background is rgb(16,13,23), and native color scheme is dark. Other designs remain selectable. File hashes refreshed for this change.
+- Affected: Catalog, README, root default guides/styles/token exports, generated index/gallery and previews, verification and audit files.
+- Publication: Prepared for normal push; receipt follows after verification.

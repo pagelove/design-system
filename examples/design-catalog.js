@@ -1,8 +1,8 @@
 // Generated from designs/catalog.json and design definitions.
 window.designCatalog = {
   "version": 1,
-  "defaultDesign": "classic",
-  "defaultMode": "light",
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
   "designs": [
     {
       "id": "classic",

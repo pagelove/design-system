@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "defaultDesign": "classic",
-  "defaultMode": "light",
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
   "designs": [
     {
       "id": "classic"

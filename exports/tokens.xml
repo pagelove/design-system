@@ -1,371 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <design-system version="0.1.0">
-  <theme name="light">
-    <token name="color-polo-blue-0" value="#ffffff"/>
-    <token name="color-polo-blue-50" value="#f8fafc"/>
-    <token name="color-polo-blue-100" value="#f1f5f9"/>
-    <token name="color-polo-blue-200" value="#e2e8f0"/>
-    <token name="color-polo-blue-300" value="#cbd5e1"/>
-    <token name="color-polo-blue-400" value="#94a3b8"/>
-    <token name="color-polo-blue-500" value="#64748b"/>
-    <token name="color-polo-blue-600" value="#475569"/>
-    <token name="color-polo-blue-700" value="#334155"/>
-    <token name="color-polo-blue-800" value="#1e293b"/>
-    <token name="color-polo-blue-900" value="#0f172a"/>
-    <token name="color-polo-blue-950" value="#020617"/>
-    <token name="color-polo-blue-1000" value="#000208"/>
-    <token name="color-purple-50" value="#f1f4fc"/>
-    <token name="color-purple-100" value="#e6eaf9"/>
-    <token name="color-purple-200" value="#ced5f2"/>
-    <token name="color-purple-300" value="#b6bfeb"/>
-    <token name="color-purple-400" value="#999fe0"/>
-    <token name="color-purple-500" value="#7f80d5"/>
-    <token name="color-purple-600" value="#6c66c5"/>
-    <token name="color-purple-700" value="#5c55ad"/>
-    <token name="color-purple-800" value="#4c478c"/>
-    <token name="color-purple-900" value="#413f70"/>
-    <token name="color-purple-950" value="#272541"/>
-    <token name="color-olive-50" value="#fafbf8"/>
-    <token name="color-olive-100" value="#f5f6f3"/>
-    <token name="color-olive-200" value="#e9e7e2"/>
-    <token name="color-olive-300" value="#d9d7ce"/>
-    <token name="color-olive-400" value="#aeaa98"/>
-    <token name="color-olive-500" value="#7f7a65"/>
-    <token name="color-olive-600" value="#666550"/>
-    <token name="color-olive-700" value="#494737"/>
-    <token name="color-olive-800" value="#2c2821"/>
-    <token name="color-olive-900" value="#1f1d14"/>
-    <token name="color-olive-950" value="#0e0c07"/>
-    <token name="color-old-rose-50" value="#faf6f6"/>
-    <token name="color-old-rose-100" value="#f5efee"/>
-    <token name="color-old-rose-200" value="#e8dbda"/>
-    <token name="color-old-rose-300" value="#dbc7c6"/>
-    <token name="color-old-rose-400" value="#c7a7a5"/>
-    <token name="color-old-rose-500" value="#af8584"/>
-    <token name="color-old-rose-600" value="#976768"/>
-    <token name="color-old-rose-700" value="#7d5355"/>
-    <token name="color-old-rose-800" value="#6a474a"/>
-    <token name="color-old-rose-900" value="#5c3f42"/>
-    <token name="color-old-rose-950" value="#312021"/>
-    <token name="color-hot-pink-50" value="#fef1f9"/>
-    <token name="color-hot-pink-100" value="#fee5f5"/>
-    <token name="color-hot-pink-200" value="#ffcbec"/>
-    <token name="color-hot-pink-300" value="#ffa1da"/>
-    <token name="color-hot-pink-400" value="#ff66bf"/>
-    <token name="color-hot-pink-500" value="#fa3aa4"/>
-    <token name="color-hot-pink-600" value="#ea1882"/>
-    <token name="color-hot-pink-700" value="#cc0a66"/>
-    <token name="color-hot-pink-800" value="#a80c54"/>
-    <token name="color-hot-pink-900" value="#8c0f49"/>
-    <token name="color-hot-pink-950" value="#560128"/>
-    <token name="color-neon-carrot-50" value="#fff8ed"/>
-    <token name="color-neon-carrot-100" value="#ffefd4"/>
-    <token name="color-neon-carrot-200" value="#ffdba8"/>
-    <token name="color-neon-carrot-300" value="#ffc071"/>
-    <token name="color-neon-carrot-400" value="#ff9d3c"/>
-    <token name="color-neon-carrot-500" value="#fe7d11"/>
-    <token name="color-neon-carrot-600" value="#ef6107"/>
-    <token name="color-neon-carrot-700" value="#c64808"/>
-    <token name="color-neon-carrot-800" value="#9d390f"/>
-    <token name="color-neon-carrot-900" value="#7e3110"/>
-    <token name="color-neon-carrot-950" value="#441606"/>
-    <token name="color-cornflower-blue-50" value="#eef6ff"/>
-    <token name="color-cornflower-blue-100" value="#daeaff"/>
-    <token name="color-cornflower-blue-200" value="#bddbff"/>
-    <token name="color-cornflower-blue-300" value="#90c6ff"/>
-    <token name="color-cornflower-blue-400" value="#59a6ff"/>
-    <token name="color-cornflower-blue-500" value="#3584fc"/>
-    <token name="color-cornflower-blue-600" value="#1f64f1"/>
-    <token name="color-cornflower-blue-700" value="#174ede"/>
-    <token name="color-cornflower-blue-800" value="#1940b4"/>
-    <token name="color-cornflower-blue-900" value="#1a3a8e"/>
-    <token name="color-cornflower-blue-950" value="#152556"/>
-    <token name="color-malachite-50" value="#f0fdf0"/>
-    <token name="color-malachite-100" value="#ddfbdf"/>
-    <token name="color-malachite-200" value="#bdf5c1"/>
-    <token name="color-malachite-300" value="#89ec91"/>
-    <token name="color-malachite-400" value="#4dd959"/>
-    <token name="color-malachite-500" value="#27c035"/>
-    <token name="color-malachite-600" value="#1a9f26"/>
-    <token name="color-malachite-700" value="#187d22"/>
-    <token name="color-malachite-800" value="#186320"/>
-    <token name="color-malachite-900" value="#16511d"/>
-    <token name="color-malachite-950" value="#062d0b"/>
-    <token name="color-torch-red-50" value="#fff1f2"/>
-    <token name="color-torch-red-100" value="#ffe0e1"/>
-    <token name="color-torch-red-200" value="#ffc6c9"/>
-    <token name="color-torch-red-300" value="#ff9fa4"/>
-    <token name="color-torch-red-400" value="#ff676e"/>
-    <token name="color-torch-red-500" value="#fb2c36"/>
-    <token name="color-torch-red-600" value="#e91923"/>
-    <token name="color-torch-red-700" value="#c4111a"/>
-    <token name="color-torch-red-800" value="#a21219"/>
-    <token name="color-torch-red-900" value="#86161b"/>
-    <token name="color-torch-red-950" value="#490609"/>
-    <token name="gradient-purple-storm" value="linear-gradient(to left, #666550 0%, #6c66c5 100%)"/>
-    <token name="gradient-soft-bloom" value="linear-gradient(to left, #dbc7c6 0%, #cbd5e1 100%)"/>
-    <token name="gradient-dawn-bloom" value="linear-gradient(to left, #dbc7c6 0%, #b6bfeb 100%)"/>
-    <token name="gradient-sky-whisper" value="linear-gradient(to left, #ffffff 0%, #e2e8f0 25%, #e2e8f0 75%, #ffffff 100%)"/>
-    <token name="space-0" value="0px"/>
-    <token name="space-100" value="8px"/>
-    <token name="space-150" value="12px"/>
-    <token name="space-200" value="16px"/>
-    <token name="space-250" value="20px"/>
-    <token name="space-300" value="24px"/>
-    <token name="space-400" value="32px"/>
-    <token name="space-500" value="40px"/>
-    <token name="space-600" value="48px"/>
-    <token name="space-800" value="64px"/>
-    <token name="space-1000" value="80px"/>
-    <token name="space-1200" value="96px"/>
-    <token name="space-1400" value="112px"/>
-    <token name="space-1600" value="128px"/>
-    <token name="space-1800" value="144px"/>
-    <token name="space-2000" value="160px"/>
-    <token name="space-025" value="2px"/>
-    <token name="space-050" value="4px"/>
-    <token name="space-075" value="6px"/>
-    <token name="font-family-brand" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
-    <token name="font-family-secondary" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
-    <token name="font-family-code" value="'Fira Code', ui-monospace, Menlo, Consolas, monospace"/>
-    <token name="font-weight-400" value="400"/>
-    <token name="font-weight-450" value="450"/>
-    <token name="font-weight-500" value="500"/>
-    <token name="font-size-50" value="10px"/>
-    <token name="font-size-100" value="12px"/>
-    <token name="font-size-150" value="14px"/>
-    <token name="font-size-200" value="16px"/>
-    <token name="font-size-250" value="18px"/>
-    <token name="font-size-300" value="20px"/>
-    <token name="font-size-350" value="24px"/>
-    <token name="font-size-400" value="28px"/>
-    <token name="font-size-450" value="32px"/>
-    <token name="font-size-500" value="36px"/>
-    <token name="font-size-550" value="40px"/>
-    <token name="font-size-600" value="44px"/>
-    <token name="font-size-650" value="48px"/>
-    <token name="font-size-700" value="56px"/>
-    <token name="font-size-750" value="64px"/>
-    <token name="font-size-800" value="72px"/>
-    <token name="font-size-850" value="80px"/>
-    <token name="font-size-900" value="88px"/>
-    <token name="font-size-950" value="96px"/>
-    <token name="line-height-25" value="6px"/>
-    <token name="line-height-50" value="8px"/>
-    <token name="line-height-75" value="10px"/>
-    <token name="line-height-100" value="12px"/>
-    <token name="line-height-125" value="14px"/>
-    <token name="line-height-150" value="16px"/>
-    <token name="line-height-175" value="18px"/>
-    <token name="line-height-200" value="20px"/>
-    <token name="line-height-225" value="22px"/>
-    <token name="line-height-250" value="24px"/>
-    <token name="line-height-275" value="26px"/>
-    <token name="line-height-300" value="28px"/>
-    <token name="line-height-325" value="30px"/>
-    <token name="line-height-350" value="32px"/>
-    <token name="line-height-375" value="34px"/>
-    <token name="line-height-400" value="36px"/>
-    <token name="line-height-425" value="40px"/>
-    <token name="line-height-450" value="42px"/>
-    <token name="line-height-475" value="44px"/>
-    <token name="line-height-500" value="48px"/>
-    <token name="line-height-525" value="50px"/>
-    <token name="line-height-550" value="52px"/>
-    <token name="line-height-575" value="56px"/>
-    <token name="line-height-600" value="58px"/>
-    <token name="line-height-625" value="60px"/>
-    <token name="line-height-650" value="64px"/>
-    <token name="line-height-675" value="66px"/>
-    <token name="line-height-700" value="68px"/>
-    <token name="line-height-725" value="72px"/>
-    <token name="line-height-750" value="74px"/>
-    <token name="line-height-775" value="76px"/>
-    <token name="line-height-800" value="80px"/>
-    <token name="line-height-825" value="82px"/>
-    <token name="line-height-850" value="84px"/>
-    <token name="line-height-875" value="88px"/>
-    <token name="line-height-900" value="90px"/>
-    <token name="line-height-925" value="92px"/>
-    <token name="line-height-950" value="96px"/>
-    <token name="line-height-975" value="98px"/>
-    <token name="line-height-1000" value="104px"/>
-    <token name="line-height-1025" value="106px"/>
-    <token name="letter-spacing-100" value="-0.02em"/>
-    <token name="letter-spacing-200" value="-0.04em"/>
-    <token name="letter-spacing-300" value="-0.06em"/>
-    <token name="motion-duration-hover" value="300ms"/>
-    <token name="motion-duration-skeleton" value="1s"/>
-    <token name="motion-duration-exit" value="500ms"/>
-    <token name="motion-duration-spin" value="0.8s"/>
-    <token name="motion-easing-standard" value="ease-in-out"/>
-    <token name="motion-easing-spin" value="cubic-bezier(0.6, 0.4, 0.4, 0.6)"/>
-    <token name="motion-blur-exit" value="4px"/>
-    <token name="grid-website-xxs-columns" value="4"/>
-    <token name="grid-website-xxs-gutter" value="16px"/>
-    <token name="grid-website-xxs-margin" value="16px"/>
-    <token name="grid-website-xs-columns" value="8"/>
-    <token name="grid-website-xs-gutter" value="16px"/>
-    <token name="grid-website-xs-margin" value="32px"/>
-    <token name="grid-website-s-columns" value="8"/>
-    <token name="grid-website-s-gutter" value="16px"/>
-    <token name="grid-website-s-margin" value="32px"/>
-    <token name="grid-website-m-columns" value="12"/>
-    <token name="grid-website-m-gutter" value="24px"/>
-    <token name="grid-website-m-margin" value="64px"/>
-    <token name="grid-website-l-columns" value="12"/>
-    <token name="grid-website-l-gutter" value="24px"/>
-    <token name="grid-website-l-margin" value="64px"/>
-    <token name="grid-console-xxs-columns" value="4"/>
-    <token name="grid-console-xxs-gutter" value="16px"/>
-    <token name="grid-console-xxs-margin" value="16px"/>
-    <token name="grid-console-xs-columns" value="8"/>
-    <token name="grid-console-xs-gutter" value="16px"/>
-    <token name="grid-console-xs-margin" value="16px"/>
-    <token name="grid-console-s-columns" value="8"/>
-    <token name="grid-console-s-gutter" value="16px"/>
-    <token name="grid-console-s-margin" value="16px"/>
-    <token name="grid-console-m-columns" value="12"/>
-    <token name="grid-console-m-gutter" value="16px"/>
-    <token name="grid-console-m-margin" value="16px"/>
-    <token name="grid-console-l-columns" value="12"/>
-    <token name="grid-console-l-gutter" value="16px"/>
-    <token name="grid-console-l-margin" value="16px"/>
-    <token name="grid-console-xl-columns" value="12"/>
-    <token name="grid-console-xl-gutter" value="16px"/>
-    <token name="grid-console-xl-margin" value="16px"/>
-    <token name="design-radius-card" value="12px"/>
-    <token name="design-radius-button" value="100px"/>
-    <token name="design-heading-family" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
-    <token name="design-body-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
-    <token name="design-content-width" value="1120px"/>
-    <token name="design-section-gap" value="24px"/>
-    <token name="design-shadow-panel" value="none"/>
-    <token name="background-brand-light" value="#fafbf8"/>
-    <token name="background-brand-regular" value="#e9e7e2"/>
-    <token name="background-brand-strong" value="#aeaa98"/>
-    <token name="background-danger-light" value="#fff1f2"/>
-    <token name="background-danger-regular" value="#ffc6c9"/>
-    <token name="background-danger-strong" value="#ff676e"/>
-    <token name="background-disabled" value="#64748b"/>
-    <token name="background-discovery-light" value="#f1f4fc"/>
-    <token name="background-discovery-regular" value="#ced5f2"/>
-    <token name="background-discovery-strong" value="#999fe0"/>
-    <token name="background-elevation-light" value="#ffffff"/>
-    <token name="background-elevation-regular" value="#f1f5f9"/>
-    <token name="background-elevation-strong" value="#e2e8f0"/>
-    <token name="background-information-light" value="#eef6ff"/>
-    <token name="background-information-regular" value="#bddbff"/>
-    <token name="background-information-strong" value="#59a6ff"/>
-    <token name="background-neutral-hovered" value="#f8fafc"/>
-    <token name="background-neutral-pressed" value="#f1f5f9"/>
-    <token name="background-neutral-selected" value="#f8fafc"/>
-    <token name="background-success-light" value="#f0fdf0"/>
-    <token name="background-success-regular" value="#bdf5c1"/>
-    <token name="background-success-strong" value="#4dd959"/>
-    <token name="background-surface-light" value="#ffffff"/>
-    <token name="background-surface-regular" value="#f8fafc"/>
-    <token name="background-surface-strong" value="#f1f5f9"/>
-    <token name="background-warning-light" value="#fff8ed"/>
-    <token name="background-warning-regular" value="#ffdba8"/>
-    <token name="background-warning-strong" value="#ff9d3c"/>
-    <token name="border-brand" value="#7f7a65"/>
-    <token name="border-danger" value="#ffc6c9"/>
-    <token name="border-danger-light" value="#ffc6c9"/>
-    <token name="border-danger-strong" value="#e91923"/>
-    <token name="border-disabled" value="#f1f5f9"/>
-    <token name="border-discovery" value="#ced5f2"/>
-    <token name="border-focused" value="#59a6ff"/>
-    <token name="border-information" value="#bddbff"/>
-    <token name="border-inverse" value="#334155"/>
-    <token name="border-light" value="#f1f5f9"/>
-    <token name="border-regular" value="#cbd5e1"/>
-    <token name="border-selected" value="#1f64f1"/>
-    <token name="border-strong" value="#94a3b8"/>
-    <token name="border-success" value="#bdf5c1"/>
-    <token name="border-warning" value="#ffdba8"/>
-    <token name="button-borderless-icon-default" value="#475569"/>
-    <token name="button-borderless-icon-disabled" value="#94a3b8"/>
-    <token name="button-borderless-icon-hovered" value="#1e293b"/>
-    <token name="button-borderless-icon-pressed" value="#0f172a"/>
-    <token name="button-borderless-icon-selected" value="#0f172a"/>
-    <token name="button-borderless-text-default" value="#475569"/>
-    <token name="button-borderless-text-disabled" value="#94a3b8"/>
-    <token name="button-borderless-text-hovered" value="#1e293b"/>
-    <token name="button-borderless-text-pressed" value="#0f172a"/>
-    <token name="button-borderless-text-selected" value="#0f172a"/>
-    <token name="button-gradient-bg-default" value="#ffffff"/>
-    <token name="button-gradient-bg-disabled" value="#ffffff"/>
-    <token name="button-gradient-bg-hovered" value="#f8fafc"/>
-    <token name="button-gradient-bg-pressed" value="#f1f5f9"/>
-    <token name="button-gradient-bg-selected" value="#f1f5f9"/>
-    <token name="button-regular-default" value="#f1f5f9"/>
-    <token name="button-regular-disabled" value="#f8fafc"/>
-    <token name="button-regular-hovered" value="#f8fafc"/>
-    <token name="button-regular-pressed" value="#f1f5f9"/>
-    <token name="button-regular-text" value="#1e293b"/>
-    <token name="button-secondary-icon-default" value="#475569"/>
-    <token name="button-secondary-icon-disabled" value="#64748b"/>
-    <token name="button-secondary-icon-hovered" value="#020617"/>
-    <token name="button-secondary-icon-pressed" value="#000208"/>
-    <token name="button-secondary-icon-selected" value="#0f172a"/>
-    <token name="button-secondary-text-default" value="#475569"/>
-    <token name="button-secondary-text-disabled" value="#64748b"/>
-    <token name="button-secondary-text-hovered" value="#1e293b"/>
-    <token name="button-secondary-text-pressed" value="#0f172a"/>
-    <token name="button-secondary-text-selected" value="#0f172a"/>
-    <token name="button-strong-default" value="#1e293b"/>
-    <token name="button-strong-disabled" value="#cbd5e1"/>
-    <token name="button-strong-hovered" value="#0f172a"/>
-    <token name="button-strong-pressed" value="#020617"/>
-    <token name="button-strong-text" value="#ffffff"/>
-    <token name="icon-brand" value="#494737"/>
-    <token name="icon-danger" value="#c4111a"/>
-    <token name="icon-disabled" value="#94a3b8"/>
-    <token name="icon-discovery" value="#5c55ad"/>
-    <token name="icon-information" value="#174ede"/>
-    <token name="icon-inverse" value="#f8fafc"/>
-    <token name="icon-light" value="#64748b"/>
-    <token name="icon-regular" value="#334155"/>
-    <token name="icon-selected" value="#020617"/>
-    <token name="icon-strong" value="#020617"/>
-    <token name="icon-success" value="#187d22"/>
-    <token name="icon-warning" value="#c64808"/>
-    <token name="link-icon-default" value="#1f64f1"/>
-    <token name="link-icon-hover" value="#174ede"/>
-    <token name="link-icon-inverse" value="#90c6ff"/>
-    <token name="link-icon-pressed" value="#1940b4"/>
-    <token name="link-text-default" value="#1f64f1"/>
-    <token name="link-text-hover" value="#174ede"/>
-    <token name="link-text-pressed" value="#1940b4"/>
-    <token name="link-text-visited" value="#3584fc"/>
-    <token name="text-brand" value="#494737"/>
-    <token name="text-danger" value="#c4111a"/>
-    <token name="text-disabled" value="#94a3b8"/>
-    <token name="text-discovery" value="#5c55ad"/>
-    <token name="text-information" value="#174ede"/>
-    <token name="text-inverse" value="#f8fafc"/>
-    <token name="text-light" value="#64748b"/>
-    <token name="text-regular" value="#334155"/>
-    <token name="text-selected" value="#020617"/>
-    <token name="text-strong" value="#020617"/>
-    <token name="text-success" value="#187d22"/>
-    <token name="text-warning" value="#c64808"/>
-  </theme>
   <theme name="dark">
-    <token name="color-polo-blue-0" value="#ffffff"/>
-    <token name="color-polo-blue-50" value="#f8fafc"/>
-    <token name="color-polo-blue-100" value="#f1f5f9"/>
-    <token name="color-polo-blue-200" value="#e2e8f0"/>
-    <token name="color-polo-blue-300" value="#cbd5e1"/>
-    <token name="color-polo-blue-400" value="#94a3b8"/>
-    <token name="color-polo-blue-500" value="#64748b"/>
-    <token name="color-polo-blue-600" value="#475569"/>
-    <token name="color-polo-blue-700" value="#334155"/>
-    <token name="color-polo-blue-800" value="#1e293b"/>
-    <token name="color-polo-blue-900" value="#0f172a"/>
-    <token name="color-polo-blue-950" value="#020617"/>
-    <token name="color-polo-blue-1000" value="#000208"/>
+    <token name="color-polo-blue-0" value="#f3efff"/>
+    <token name="color-polo-blue-50" value="#e8e2f7"/>
+    <token name="color-polo-blue-100" value="#dcd4ec"/>
+    <token name="color-polo-blue-200" value="#c9bfdc"/>
+    <token name="color-polo-blue-300" value="#aea2c6"/>
+    <token name="color-polo-blue-400" value="#9284ac"/>
+    <token name="color-polo-blue-500" value="#78698e"/>
+    <token name="color-polo-blue-600" value="#5d5070"/>
+    <token name="color-polo-blue-700" value="#453954"/>
+    <token name="color-polo-blue-800" value="#33283f"/>
+    <token name="color-polo-blue-900" value="#241c30"/>
+    <token name="color-polo-blue-950" value="#191321"/>
+    <token name="color-polo-blue-1000" value="#100d17"/>
     <token name="color-purple-50" value="#f1f4fc"/>
     <token name="color-purple-100" value="#e6eaf9"/>
     <token name="color-purple-200" value="#ced5f2"/>
@@ -421,17 +69,17 @@
     <token name="color-neon-carrot-800" value="#9d390f"/>
     <token name="color-neon-carrot-900" value="#7e3110"/>
     <token name="color-neon-carrot-950" value="#441606"/>
-    <token name="color-cornflower-blue-50" value="#eef6ff"/>
-    <token name="color-cornflower-blue-100" value="#daeaff"/>
-    <token name="color-cornflower-blue-200" value="#bddbff"/>
-    <token name="color-cornflower-blue-300" value="#90c6ff"/>
-    <token name="color-cornflower-blue-400" value="#59a6ff"/>
-    <token name="color-cornflower-blue-500" value="#3584fc"/>
-    <token name="color-cornflower-blue-600" value="#1f64f1"/>
-    <token name="color-cornflower-blue-700" value="#174ede"/>
-    <token name="color-cornflower-blue-800" value="#1940b4"/>
-    <token name="color-cornflower-blue-900" value="#1a3a8e"/>
-    <token name="color-cornflower-blue-950" value="#152556"/>
+    <token name="color-cornflower-blue-50" value="#f4efff"/>
+    <token name="color-cornflower-blue-100" value="#e9deff"/>
+    <token name="color-cornflower-blue-200" value="#d7c4ff"/>
+    <token name="color-cornflower-blue-300" value="#c5a9f7"/>
+    <token name="color-cornflower-blue-400" value="#b491ec"/>
+    <token name="color-cornflower-blue-500" value="#9370cf"/>
+    <token name="color-cornflower-blue-600" value="#7654ac"/>
+    <token name="color-cornflower-blue-700" value="#5f408e"/>
+    <token name="color-cornflower-blue-800" value="#4d3374"/>
+    <token name="color-cornflower-blue-900" value="#3e2a5c"/>
+    <token name="color-cornflower-blue-950" value="#261c37"/>
     <token name="color-malachite-50" value="#f0fdf0"/>
     <token name="color-malachite-100" value="#ddfbdf"/>
     <token name="color-malachite-200" value="#bdf5c1"/>
@@ -455,9 +103,9 @@
     <token name="color-torch-red-900" value="#86161b"/>
     <token name="color-torch-red-950" value="#490609"/>
     <token name="gradient-purple-storm" value="linear-gradient(to left, #666550 0%, #6c66c5 100%)"/>
-    <token name="gradient-soft-bloom" value="linear-gradient(to left, #dbc7c6 0%, #cbd5e1 100%)"/>
+    <token name="gradient-soft-bloom" value="linear-gradient(to left, #dbc7c6 0%, #aea2c6 100%)"/>
     <token name="gradient-dawn-bloom" value="linear-gradient(to left, #dbc7c6 0%, #b6bfeb 100%)"/>
-    <token name="gradient-sky-whisper" value="linear-gradient(to left, #ffffff 0%, #e2e8f0 25%, #e2e8f0 75%, #ffffff 100%)"/>
+    <token name="gradient-sky-whisper" value="linear-gradient(to left, #f3efff 0%, #c9bfdc 25%, #c9bfdc 75%, #f3efff 100%)"/>
     <token name="space-0" value="0px"/>
     <token name="space-100" value="8px"/>
     <token name="space-150" value="12px"/>
@@ -477,7 +125,7 @@
     <token name="space-025" value="2px"/>
     <token name="space-050" value="4px"/>
     <token name="space-075" value="6px"/>
-    <token name="font-family-brand" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="font-family-brand" value="Inter, system-ui, sans-serif"/>
     <token name="font-family-secondary" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
     <token name="font-family-code" value="'Fira Code', ui-monospace, Menlo, Consolas, monospace"/>
     <token name="font-weight-400" value="400"/>
@@ -586,12 +234,12 @@
     <token name="grid-console-xl-columns" value="12"/>
     <token name="grid-console-xl-gutter" value="16px"/>
     <token name="grid-console-xl-margin" value="16px"/>
-    <token name="design-radius-card" value="12px"/>
-    <token name="design-radius-button" value="100px"/>
-    <token name="design-heading-family" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="design-radius-card" value="8px"/>
+    <token name="design-radius-button" value="8px"/>
+    <token name="design-heading-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
     <token name="design-body-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
-    <token name="design-content-width" value="1120px"/>
-    <token name="design-section-gap" value="24px"/>
+    <token name="design-content-width" value="1200px"/>
+    <token name="design-section-gap" value="20px"/>
     <token name="design-shadow-panel" value="none"/>
     <token name="background-brand-light" value="#0e0c07"/>
     <token name="background-brand-regular" value="#2c2821"/>
@@ -599,25 +247,25 @@
     <token name="background-danger-light" value="#490609"/>
     <token name="background-danger-regular" value="#a21219"/>
     <token name="background-danger-strong" value="#e91923"/>
-    <token name="background-disabled" value="#64748b"/>
+    <token name="background-disabled" value="#78698e"/>
     <token name="background-discovery-light" value="#272541"/>
     <token name="background-discovery-regular" value="#4c478c"/>
     <token name="background-discovery-strong" value="#6c66c5"/>
-    <token name="background-elevation-light" value="#000208"/>
-    <token name="background-elevation-regular" value="#0f172a"/>
-    <token name="background-elevation-strong" value="#1e293b"/>
-    <token name="background-information-light" value="#152556"/>
-    <token name="background-information-regular" value="#1940b4"/>
-    <token name="background-information-strong" value="#1f64f1"/>
-    <token name="background-neutral-hovered" value="#020617"/>
-    <token name="background-neutral-pressed" value="#0f172a"/>
-    <token name="background-neutral-selected" value="#020617"/>
+    <token name="background-elevation-light" value="#100d17"/>
+    <token name="background-elevation-regular" value="#241c30"/>
+    <token name="background-elevation-strong" value="#33283f"/>
+    <token name="background-information-light" value="#261c37"/>
+    <token name="background-information-regular" value="#4d3374"/>
+    <token name="background-information-strong" value="#7654ac"/>
+    <token name="background-neutral-hovered" value="#191321"/>
+    <token name="background-neutral-pressed" value="#241c30"/>
+    <token name="background-neutral-selected" value="#191321"/>
     <token name="background-success-light" value="#062d0b"/>
     <token name="background-success-regular" value="#186320"/>
     <token name="background-success-strong" value="#1a9f26"/>
-    <token name="background-surface-light" value="#000208"/>
-    <token name="background-surface-regular" value="#020617"/>
-    <token name="background-surface-strong" value="#0f172a"/>
+    <token name="background-surface-light" value="#100d17"/>
+    <token name="background-surface-regular" value="#191321"/>
+    <token name="background-surface-strong" value="#241c30"/>
     <token name="background-warning-light" value="#441606"/>
     <token name="background-warning-regular" value="#9d390f"/>
     <token name="background-warning-strong" value="#ef6107"/>
@@ -625,82 +273,82 @@
     <token name="border-danger" value="#a21219"/>
     <token name="border-danger-light" value="#a21219"/>
     <token name="border-danger-strong" value="#ff676e"/>
-    <token name="border-disabled" value="#0f172a"/>
+    <token name="border-disabled" value="#241c30"/>
     <token name="border-discovery" value="#4c478c"/>
-    <token name="border-focused" value="#59a6ff"/>
-    <token name="border-information" value="#1940b4"/>
-    <token name="border-inverse" value="#cbd5e1"/>
-    <token name="border-light" value="#0f172a"/>
-    <token name="border-regular" value="#1e293b"/>
-    <token name="border-selected" value="#90c6ff"/>
-    <token name="border-strong" value="#334155"/>
+    <token name="border-focused" value="#b491ec"/>
+    <token name="border-information" value="#4d3374"/>
+    <token name="border-inverse" value="#aea2c6"/>
+    <token name="border-light" value="#241c30"/>
+    <token name="border-regular" value="#33283f"/>
+    <token name="border-selected" value="#c5a9f7"/>
+    <token name="border-strong" value="#453954"/>
     <token name="border-success" value="#186320"/>
     <token name="border-warning" value="#9d390f"/>
-    <token name="button-borderless-icon-default" value="#f1f5f9"/>
-    <token name="button-borderless-icon-disabled" value="#64748b"/>
-    <token name="button-borderless-icon-hovered" value="#f8fafc"/>
-    <token name="button-borderless-icon-pressed" value="#ffffff"/>
-    <token name="button-borderless-icon-selected" value="#f1f5f9"/>
-    <token name="button-borderless-text-default" value="#f1f5f9"/>
-    <token name="button-borderless-text-disabled" value="#64748b"/>
-    <token name="button-borderless-text-hovered" value="#f8fafc"/>
-    <token name="button-borderless-text-pressed" value="#ffffff"/>
-    <token name="button-borderless-text-selected" value="#f1f5f9"/>
-    <token name="button-gradient-bg-default" value="#000208"/>
-    <token name="button-gradient-bg-disabled" value="#000208"/>
-    <token name="button-gradient-bg-hovered" value="#020617"/>
-    <token name="button-gradient-bg-pressed" value="#0f172a"/>
-    <token name="button-gradient-bg-selected" value="#0f172a"/>
-    <token name="button-regular-default" value="#0f172a"/>
-    <token name="button-regular-disabled" value="#020617"/>
-    <token name="button-regular-hovered" value="#020617"/>
-    <token name="button-regular-pressed" value="#0f172a"/>
-    <token name="button-regular-text" value="#e2e8f0"/>
-    <token name="button-secondary-icon-default" value="#f1f5f9"/>
-    <token name="button-secondary-icon-disabled" value="#64748b"/>
-    <token name="button-secondary-icon-hovered" value="#f8fafc"/>
-    <token name="button-secondary-icon-pressed" value="#ffffff"/>
-    <token name="button-secondary-icon-selected" value="#f1f5f9"/>
-    <token name="button-secondary-text-default" value="#f1f5f9"/>
-    <token name="button-secondary-text-disabled" value="#64748b"/>
-    <token name="button-secondary-text-hovered" value="#f8fafc"/>
-    <token name="button-secondary-text-pressed" value="#ffffff"/>
-    <token name="button-secondary-text-selected" value="#f1f5f9"/>
-    <token name="button-strong-default" value="#e2e8f0"/>
-    <token name="button-strong-disabled" value="#475569"/>
-    <token name="button-strong-hovered" value="#cbd5e1"/>
-    <token name="button-strong-pressed" value="#94a3b8"/>
-    <token name="button-strong-text" value="#000208"/>
+    <token name="button-borderless-icon-default" value="#dcd4ec"/>
+    <token name="button-borderless-icon-disabled" value="#78698e"/>
+    <token name="button-borderless-icon-hovered" value="#e8e2f7"/>
+    <token name="button-borderless-icon-pressed" value="#f3efff"/>
+    <token name="button-borderless-icon-selected" value="#dcd4ec"/>
+    <token name="button-borderless-text-default" value="#dcd4ec"/>
+    <token name="button-borderless-text-disabled" value="#78698e"/>
+    <token name="button-borderless-text-hovered" value="#e8e2f7"/>
+    <token name="button-borderless-text-pressed" value="#f3efff"/>
+    <token name="button-borderless-text-selected" value="#dcd4ec"/>
+    <token name="button-gradient-bg-default" value="#100d17"/>
+    <token name="button-gradient-bg-disabled" value="#100d17"/>
+    <token name="button-gradient-bg-hovered" value="#191321"/>
+    <token name="button-gradient-bg-pressed" value="#241c30"/>
+    <token name="button-gradient-bg-selected" value="#241c30"/>
+    <token name="button-regular-default" value="#241c30"/>
+    <token name="button-regular-disabled" value="#191321"/>
+    <token name="button-regular-hovered" value="#191321"/>
+    <token name="button-regular-pressed" value="#241c30"/>
+    <token name="button-regular-text" value="#c9bfdc"/>
+    <token name="button-secondary-icon-default" value="#dcd4ec"/>
+    <token name="button-secondary-icon-disabled" value="#78698e"/>
+    <token name="button-secondary-icon-hovered" value="#e8e2f7"/>
+    <token name="button-secondary-icon-pressed" value="#f3efff"/>
+    <token name="button-secondary-icon-selected" value="#dcd4ec"/>
+    <token name="button-secondary-text-default" value="#dcd4ec"/>
+    <token name="button-secondary-text-disabled" value="#78698e"/>
+    <token name="button-secondary-text-hovered" value="#e8e2f7"/>
+    <token name="button-secondary-text-pressed" value="#f3efff"/>
+    <token name="button-secondary-text-selected" value="#dcd4ec"/>
+    <token name="button-strong-default" value="#c9bfdc"/>
+    <token name="button-strong-disabled" value="#5d5070"/>
+    <token name="button-strong-hovered" value="#aea2c6"/>
+    <token name="button-strong-pressed" value="#9284ac"/>
+    <token name="button-strong-text" value="#100d17"/>
     <token name="icon-brand" value="#d9d7ce"/>
     <token name="icon-danger" value="#ff9fa4"/>
-    <token name="icon-disabled" value="#475569"/>
+    <token name="icon-disabled" value="#5d5070"/>
     <token name="icon-discovery" value="#b6bfeb"/>
-    <token name="icon-information" value="#90c6ff"/>
-    <token name="icon-inverse" value="#020617"/>
-    <token name="icon-light" value="#cbd5e1"/>
-    <token name="icon-regular" value="#f1f5f9"/>
-    <token name="icon-selected" value="#f8fafc"/>
-    <token name="icon-strong" value="#ffffff"/>
+    <token name="icon-information" value="#c5a9f7"/>
+    <token name="icon-inverse" value="#191321"/>
+    <token name="icon-light" value="#aea2c6"/>
+    <token name="icon-regular" value="#dcd4ec"/>
+    <token name="icon-selected" value="#e8e2f7"/>
+    <token name="icon-strong" value="#f3efff"/>
     <token name="icon-success" value="#89ec91"/>
     <token name="icon-warning" value="#ffc071"/>
-    <token name="link-icon-default" value="#59a6ff"/>
-    <token name="link-icon-hover" value="#90c6ff"/>
-    <token name="link-icon-inverse" value="#1f64f1"/>
-    <token name="link-icon-pressed" value="#bddbff"/>
-    <token name="link-text-default" value="#59a6ff"/>
-    <token name="link-text-hover" value="#90c6ff"/>
-    <token name="link-text-pressed" value="#bddbff"/>
-    <token name="link-text-visited" value="#3584fc"/>
+    <token name="link-icon-default" value="#b491ec"/>
+    <token name="link-icon-hover" value="#c5a9f7"/>
+    <token name="link-icon-inverse" value="#7654ac"/>
+    <token name="link-icon-pressed" value="#d7c4ff"/>
+    <token name="link-text-default" value="#b491ec"/>
+    <token name="link-text-hover" value="#c5a9f7"/>
+    <token name="link-text-pressed" value="#d7c4ff"/>
+    <token name="link-text-visited" value="#9370cf"/>
     <token name="text-brand" value="#d9d7ce"/>
     <token name="text-danger" value="#ff9fa4"/>
-    <token name="text-disabled" value="#475569"/>
+    <token name="text-disabled" value="#5d5070"/>
     <token name="text-discovery" value="#b6bfeb"/>
-    <token name="text-information" value="#90c6ff"/>
-    <token name="text-inverse" value="#020617"/>
-    <token name="text-light" value="#cbd5e1"/>
-    <token name="text-regular" value="#f1f5f9"/>
-    <token name="text-selected" value="#f8fafc"/>
-    <token name="text-strong" value="#ffffff"/>
+    <token name="text-information" value="#c5a9f7"/>
+    <token name="text-inverse" value="#191321"/>
+    <token name="text-light" value="#aea2c6"/>
+    <token name="text-regular" value="#dcd4ec"/>
+    <token name="text-selected" value="#e8e2f7"/>
+    <token name="text-strong" value="#f3efff"/>
     <token name="text-success" value="#89ec91"/>
     <token name="text-warning" value="#ffc071"/>
   </theme>

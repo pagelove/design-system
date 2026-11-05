@@ -1,5 +1,9 @@
 # Verification of the initial public edition
 
+## Default selection update — November 5, 2026
+
+The configured default is now Midnight/dark, following the user's explicit selection. Rebuilt all default guides, styles, tokens and exports; removed the unsupported root light-mode DTCG file. Full checks passed. Browser navigation without design/mode parameters selected Midnight, disabled the dark-only mode selector, and rendered background rgb(16, 13, 23) with native dark color scheme. The gallery and default overview previews were refreshed. Earlier Classic/light references below describe the previous release.
+
 ## Collection update — November 5, 2026
 
 The multi-design edition is recorded in `audit/design-automated-checks.json`, `audit/design-browser-checks.json` and `audit/design-mobile-checks.json`.

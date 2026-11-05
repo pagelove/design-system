@@ -2,15 +2,15 @@
 ===== DESIGN.md =====
 
 ---
-"name": "Classic"
+"name": "Midnight"
 "colors":
-  "primary": "#334155"
-  "neutral": "#ffffff"
-  "accent": "#1f64f1"
-  "border": "#cbd5e1"
+  "primary": "#dcd4ec"
+  "neutral": "#100d17"
+  "accent": "#b491ec"
+  "border": "#33283f"
 "typography":
   "heading":
-    "fontFamily": "Source Serif Pro"
+    "fontFamily": "Inter"
     "fontSize": "2rem"
     "fontWeight": 400
     "lineHeight": 1.2
@@ -20,21 +20,21 @@
     "fontWeight": 400
     "lineHeight": 1.5
 "rounded":
-  "card": "12px"
-  "button": "100px"
+  "card": "8px"
+  "button": "8px"
 "spacing":
   "small": "8px"
   "medium": "16px"
-  "large": "24px"
+  "large": "20px"
 ---
 
-# Classic
+# Midnight
 
 ## Overview
 
 Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Available modes: light, dark. Initial mode: light.
+Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion. Available modes: dark. Initial mode: dark.
 
 ## Colors
 
