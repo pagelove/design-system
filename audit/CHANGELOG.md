@@ -53,3 +53,13 @@
 - Corrections: A failed patch matched an incomplete paragraph and was reapplied with full context; a separate multi-operation replacement was split into supported operations. A redirected JSON check output was temporarily empty while the checker scanned it; results are now captured before writing. Contained decorative button effects after stricter client-width inspection found overflow; corrected Forest guide font metadata to match resolved runtime appearance.
 - Limitations: Physical-device and assistive-technology checks, live tool imports and native/framework compilation remain unexecuted. See reference/VERIFICATION.md. No private operational content or external-organization repository references were added.
 - Publication: Pending reviewed commit and remote verification.
+
+## DS-006 — Collection publication verified
+
+- UTC: 2026-11-05T21:16:41.6272930Z
+- Actor: Codex
+- Plan reference: DS-004; implementation DS-005.
+- Change: Published the multi-design edition and verified GitHub main at 7b4c2c02eb9931599ad9e567c87d52122eb1057c, matching the local clean checkout. Recorded the receipt and refreshed final file hashes.
+- Why: Complete the requested public-repository update with explicit delivery evidence.
+- Affected: audit/CHANGELOG.md and audit/files.sha256.
+- Verification: Five designs and eight mode combinations are available; Classic/light remains the configured default. The alternate-default build, static checks, browser design/mode/history behavior and strict mobile bounds passed as recorded in the design verification files. Root source documents and license attribution remain preserved. The publication receipt records the implementation commit; this subsequent audit-only commit closes the record.
