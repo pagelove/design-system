@@ -83,3 +83,13 @@
 - Verification: Build and complete checks pass. Browser with no selection parameters chose Midnight/dark; its mode selector is dark-only, background is rgb(16,13,23), and native color scheme is dark. Other designs remain selectable. File hashes refreshed for this change.
 - Affected: Catalog, README, root default guides/styles/token exports, generated index/gallery and previews, verification and audit files.
 - Publication: Prepared for normal push; receipt follows after verification.
+
+
+## DS-009 — Default publication receipt
+
+- UTC: 2026-11-05T21:45:52.4574919Z
+- Actor: Codex
+- Plan reference: DS-007/DS-008.
+- Change: Published Midnight/dark as default and verified main at ee2b3d10bcb9f806b3d2cde41b316c711007bebd, matching the clean local checkout.
+- Affected: audit/CHANGELOG.md and audit/files.sha256 for the final receipt.
+- Verification: Functional/static checks and browser result recorded in DS-008; this is an audit-only closure.
