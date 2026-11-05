@@ -178,3 +178,12 @@
 - Affected: Build/validation scripts, shared base/app styles, generated DTCG/theme files and standalone previews, preview selection scripts, guides/context/docs, screenshots, package version and audit records.
 - Source: Official DTCG 2025.10 format specification, linked in the review and format contract. No native import certification is claimed.
 - Publication: Prepared for normal push after final checks.
+
+## DS-018 — Portability revision publication receipt
+
+- UTC: 2026-11-05T22:59:47.7037792Z
+- Actor: Codex
+- Plan reference: DS-016/DS-017.
+- Change: Published implementation 4c62d00e98c374ec441f75d01df79e21bc6bb402 and verified GitHub main matches the clean local checkout.
+- Affected: audit/CHANGELOG.md and audit/files.sha256.
+- Verification: Final export/browser checks and explicit limitations are recorded in reference/PORTABILITY-REVIEW.md and DS-017. This audit-only follow-up closes the publication record.
