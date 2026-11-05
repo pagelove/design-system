@@ -148,3 +148,12 @@
 - Publication: Prepared for normal push after final checks.
 
 - DS-014 final follow-up: Retained action labels during loading in HTML/framework examples and added explicit skeleton accessible names. Helper assertions and all eight catalog pending-label checks pass; framework compilation is still not claimed.
+
+## DS-015 — Review revision publication receipt
+
+- UTC: 2026-11-05T22:33:34.9413619Z
+- Actor: Codex
+- Plan reference: DS-013/DS-014.
+- Change: Published reviewed implementation 795fabc86e16fc147b4563c480d2d778ddfe246b and verified GitHub main matches the clean local checkout.
+- Affected: audit/CHANGELOG.md and audit/files.sha256.
+- Verification: Final checks and browser coverage are recorded in DS-014 and reference/POLISH-REVIEW.md. This audit-only follow-up closes the publication record.
