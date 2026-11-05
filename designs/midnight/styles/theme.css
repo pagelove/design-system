@@ -247,6 +247,10 @@
   --design-title-size: 2.75rem;
   --design-heading-tracking: -.04em;
   --design-transition-duration: 160ms;
+  --design-text-small: 0.875rem;
+  --design-text-caption: 0.75rem;
+  --design-title-size-mobile: 2.25rem;
+  --design-press-offset: 1px;
 }
 /* Generated from tokens/semantic.json. */
 :root {
@@ -290,7 +294,7 @@
   --border-light: var(--color-polo-blue-900);
   --border-regular: var(--color-polo-blue-800);
   --border-selected: var(--color-cornflower-blue-300);
-  --border-strong: var(--color-polo-blue-700);
+  --border-strong: var(--color-polo-blue-500);
   --border-success: var(--color-malachite-800);
   --border-warning: var(--color-neon-carrot-800);
   --button-borderless-icon-default: var(--color-polo-blue-100);
@@ -402,7 +406,7 @@
   --border-light: var(--color-polo-blue-900);
   --border-regular: var(--color-polo-blue-800);
   --border-selected: var(--color-cornflower-blue-300);
-  --border-strong: var(--color-polo-blue-700);
+  --border-strong: var(--color-polo-blue-500);
   --border-success: var(--color-malachite-800);
   --border-warning: var(--color-neon-carrot-800);
   --button-borderless-icon-default: var(--color-polo-blue-100);
@@ -488,6 +492,10 @@
   --design-title-size: 2.75rem;
   --design-heading-tracking: -.04em;
   --design-transition-duration: 160ms;
+  --design-text-small: 0.875rem;
+  --design-text-caption: 0.75rem;
+  --design-title-size-mobile: 2.25rem;
+  --design-press-offset: 1px;
   --design-color-scheme: dark;
 }
 [data-theme="dark"] {

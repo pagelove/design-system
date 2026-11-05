@@ -248,6 +248,10 @@
     <token name="design-title-size" value="2.75rem"/>
     <token name="design-heading-tracking" value="-.04em"/>
     <token name="design-transition-duration" value="160ms"/>
+    <token name="design-text-small" value="0.875rem"/>
+    <token name="design-text-caption" value="0.75rem"/>
+    <token name="design-title-size-mobile" value="2.25rem"/>
+    <token name="design-press-offset" value="1px"/>
     <token name="background-brand-light" value="#0e0c07"/>
     <token name="background-brand-regular" value="#2c2821"/>
     <token name="background-brand-strong" value="#666550"/>
@@ -288,7 +292,7 @@
     <token name="border-light" value="#241c30"/>
     <token name="border-regular" value="#33283f"/>
     <token name="border-selected" value="#c5a9f7"/>
-    <token name="border-strong" value="#453954"/>
+    <token name="border-strong" value="#78698e"/>
     <token name="border-success" value="#186320"/>
     <token name="border-warning" value="#9d390f"/>
     <token name="button-borderless-icon-default" value="#dcd4ec"/>

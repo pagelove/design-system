@@ -1,6 +1,6 @@
 {
   "result": "pass",
-  "textFiles": 230,
+  "textFiles": 234,
   "designs": 5,
   "defaultDesign": "midnight",
   "defaultMode": "dark",
@@ -19,7 +19,9 @@
     "internal-content scan",
     "repository allowlist",
     "local links",
-    "selected contrast pairs across designs"
+    "selected contrast pairs across designs",
+    "control and focus contrast",
+    "guide title and tracking parity"
   ],
   "contrasts": [
     {
@@ -525,6 +527,344 @@
       "fg": "button-strong-text",
       "bg": "button-strong-pressed",
       "ratio": 6.52
+    }
+  ],
+  "controlContrasts": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.76
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.55
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 5.06
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 4.83
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.54
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.34
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.36
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.24
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 8.22
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 8
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 7.33
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 7.13
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.87
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.54
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 4.73
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 4.41
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.24
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.96
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 3.55
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 7.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 6.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.53
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 6.1
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 3.9
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.64
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 5.93
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 5.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.1
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.82
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.08
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.72
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 6.92
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.22
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 5.67
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 3.86
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.64
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 7.51
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 7.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.79
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 6.41
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.38
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.12
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 9.37
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 8.81
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.78
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 6.38
     }
   ],
   "limits": [

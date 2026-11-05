@@ -39,3 +39,5 @@ The helper provides a radial determinate indicator; the catalog also demonstrate
 ## Integration limits
 
 React, Vue and Svelte files are small usage examples, not compiled framework packages. Native Swift/Kotlin outputs are dictionaries of CSS strings, not platform colors, dp/sp or SwiftUI views. The library's CSS is preserved separately; the recommended app layer makes documented readability, target-size, native-input and reduced-motion adaptations. Consult [the source inventory](../reference/library-inventory.json) for every observed public story and variant.
+
+Pending button helpers and framework examples preserve the supplied action label and append an in-progress indication. Skeleton helper buttons remain disabled and retain an explicit accessible name even when their visual text is hidden. Framework examples still require compilation and integration tests in the consuming application.

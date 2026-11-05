@@ -33,3 +33,13 @@ Settings demonstrate required-field and email validation, field-associated error
 ## Acceptance standard
 
 Inspect every supported design/mode at desktop and 320px widths, including all three screens, loaded fonts, long content, keyboard paths, focus, empty results, invalid submissions, pending/completed actions and reduced-motion behavior. Compare scrollWidth to clientWidth for overflow. Verify contrast for the actual composition. Export checks ensure portable values stay synchronized; they do not certify all accessibility or proprietary tool imports.
+
+## Review refinements
+
+The title size in each generated DESIGN.md and Stitch guide now describes the same maximum title size and tracking used by the app. Mobile titles use design-title-size-mobile. Product content width follows design-content-width; action/label text uses design-text-small and supplementary metadata uses design-text-caption. Decorative artwork labels retain fixed sizes to avoid cropping when reading text is enlarged.
+
+Control boundaries use border-strong and focus uses border-focused. Automated checks cover these roles and error outlines against both page and panel surfaces at a minimum contrast ratio of 3:1; ordinary text checks remain at 4.5:1. This is a targeted check, not blanket accessibility certification.
+
+Collection links carry a collection ID in the URL. Each collection's HTML article owns its items; counts, progress and overview summaries are derived from those articles. Creating an item updates the current collection only. Changing designs or screens preserves local edits until reload. Settings capture submitted values, keep later edits marked unsaved and disable Save only when pending or unchanged. Reset cancels pending work and restores the original preview.
+
+The settings screen offers 100%, 125% and 200% reading sizes and a reduced-motion preference. These apply immediately for preview and reset on reload. Device reduced-motion preferences always take precedence. See [quality checks](../examples/quality.html) for actual font loading at all three supplied weights and effective transition durations. Native browser zoom, screen readers and physical devices require separate testing.

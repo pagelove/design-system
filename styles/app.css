@@ -10,7 +10,7 @@
 
 /* Recommended application layer; intentional accessibility/reading adaptations. */
 * { box-sizing: border-box; }
-html { color-scheme: var(--design-color-scheme,light); }
+html { scrollbar-gutter:stable; color-scheme: var(--design-color-scheme,light); }
 body { margin: 0; color: var(--text-regular); background: var(--background-surface-light); font: 400 1rem/1.5 var(--design-body-family,var(--font-family-secondary)); letter-spacing: normal; }
 h1,h2,h3 { font-family: var(--design-heading-family,var(--font-family-brand)); font-weight: 400; line-height: 1.2; color: var(--text-strong); overflow-wrap: anywhere; }
 h1 { font-size: clamp(2rem,5vw,var(--design-title-size,3.5rem)); letter-spacing:var(--design-heading-tracking,normal); }
@@ -57,3 +57,11 @@ summary { min-height:44px; padding-block:10px; cursor:pointer; }
  .pl-checkbox__input,.pl-radio__input { position:static; opacity:1; width:24px; height:24px; }
  .pl-checkbox__box,.pl-radio__dot { display:none; }
 }
+
+/* Explicit user preference mirrors the device reduced-motion safeguard. */
+html[data-motion="reduce"] *,html[data-motion="reduce"] *::before,html[data-motion="reduce"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html[data-motion="reduce"]{--design-press-offset:0px}
+@media(prefers-reduced-motion:reduce){:root{--design-press-offset:0px}}
+.pl-field:not(.is-error) .pl-field__input:not(:disabled){border-color:var(--border-strong)}
+
+.ds-workspace-link{width:min(100% - 32px,var(--design-content-width,1120px));margin:16px auto;padding:0}.ds-workspace-link a{display:inline-flex;align-items:center;min-height:44px}

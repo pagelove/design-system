@@ -247,4 +247,8 @@
   --design-title-size: 2.75rem;
   --design-heading-tracking: -.035em;
   --design-transition-duration: 160ms;
+  --design-text-small: 0.875rem;
+  --design-text-caption: 0.75rem;
+  --design-title-size-mobile: 2.25rem;
+  --design-press-offset: 1px;
 }

@@ -247,6 +247,10 @@
   --design-title-size: 2.75rem;
   --design-heading-tracking: -.025em;
   --design-transition-duration: 160ms;
+  --design-text-small: 0.875rem;
+  --design-text-caption: 0.75rem;
+  --design-title-size-mobile: 2.25rem;
+  --design-press-offset: 1px;
 }
 /* Generated from tokens/semantic.json. */
 :root {
@@ -284,13 +288,13 @@
   --border-danger-strong: var(--color-torch-red-600);
   --border-disabled: var(--color-polo-blue-100);
   --border-discovery: var(--color-purple-200);
-  --border-focused: var(--color-cornflower-blue-400);
+  --border-focused: var(--color-cornflower-blue-600);
   --border-information: var(--color-cornflower-blue-200);
   --border-inverse: var(--color-polo-blue-700);
   --border-light: var(--color-polo-blue-100);
   --border-regular: var(--color-polo-blue-300);
   --border-selected: var(--color-cornflower-blue-600);
-  --border-strong: var(--color-polo-blue-400);
+  --border-strong: var(--color-polo-blue-500);
   --border-success: var(--color-malachite-200);
   --border-warning: var(--color-neon-carrot-200);
   --button-borderless-icon-default: var(--color-polo-blue-600);
@@ -396,13 +400,13 @@
   --border-danger-strong: var(--color-torch-red-600);
   --border-disabled: var(--color-polo-blue-100);
   --border-discovery: var(--color-purple-200);
-  --border-focused: var(--color-cornflower-blue-400);
+  --border-focused: var(--color-cornflower-blue-600);
   --border-information: var(--color-cornflower-blue-200);
   --border-inverse: var(--color-polo-blue-700);
   --border-light: var(--color-polo-blue-100);
   --border-regular: var(--color-polo-blue-300);
   --border-selected: var(--color-cornflower-blue-600);
-  --border-strong: var(--color-polo-blue-400);
+  --border-strong: var(--color-polo-blue-500);
   --border-success: var(--color-malachite-200);
   --border-warning: var(--color-neon-carrot-200);
   --button-borderless-icon-default: var(--color-polo-blue-600);
@@ -514,7 +518,7 @@
   --border-light: var(--color-polo-blue-900);
   --border-regular: var(--color-polo-blue-800);
   --border-selected: var(--color-cornflower-blue-300);
-  --border-strong: var(--color-polo-blue-700);
+  --border-strong: var(--color-polo-blue-500);
   --border-success: var(--color-malachite-800);
   --border-warning: var(--color-neon-carrot-800);
   --button-borderless-icon-default: var(--color-polo-blue-100);
@@ -600,6 +604,10 @@
   --design-title-size: 2.75rem;
   --design-heading-tracking: -.025em;
   --design-transition-duration: 160ms;
+  --design-text-small: 0.875rem;
+  --design-text-caption: 0.75rem;
+  --design-title-size-mobile: 2.25rem;
+  --design-press-offset: 1px;
   --design-color-scheme: light;
 }
 [data-theme="light"] {

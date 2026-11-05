@@ -1234,6 +1234,26 @@
       "value": "160ms",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-text-small": {
+      "value": "0.875rem",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-text-caption": {
+      "value": "0.75rem",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-title-size-mobile": {
+      "value": "2.25rem",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-press-offset": {
+      "value": "1px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
     }
   },
   "light": {
@@ -1374,7 +1394,7 @@
       "type": "color"
     },
     "border-focused": {
-      "value": "{color-cornflower-blue-400}",
+      "value": "{color-cornflower-blue-600}",
       "type": "color"
     },
     "border-information": {
@@ -1398,7 +1418,7 @@
       "type": "color"
     },
     "border-strong": {
-      "value": "{color-polo-blue-400}",
+      "value": "{color-polo-blue-500}",
       "type": "color"
     },
     "border-success": {
@@ -1840,7 +1860,7 @@
       "type": "color"
     },
     "border-strong": {
-      "value": "{color-polo-blue-700}",
+      "value": "{color-polo-blue-500}",
       "type": "color"
     },
     "border-success": {

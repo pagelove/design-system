@@ -69,7 +69,11 @@
         "design-radius-input",
         "design-title-size",
         "design-heading-tracking",
-        "design-transition-duration"
+        "design-transition-duration",
+        "design-text-small",
+        "design-text-caption",
+        "design-title-size-mobile",
+        "design-press-offset"
       ],
       "additionalProperties": {
         "type": "string"

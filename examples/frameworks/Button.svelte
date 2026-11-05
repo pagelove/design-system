@@ -3,4 +3,4 @@
 import type { Snippet } from 'svelte';
 let {busy=false,disabled=false,children,onclick}:{busy?:boolean;disabled?:boolean;children:Snippet;onclick?:(event:MouseEvent)=>void}=$props();
 </script>
-<button type="button" class="pl-button pl-button--strong pl-button--lg" disabled={disabled || busy} aria-busy={busy || undefined} {onclick}>{#if busy}Working…{:else}{@render children()}{/if}</button>
+<button type="button" class="pl-button pl-button--strong pl-button--lg" disabled={disabled || busy} aria-busy={busy || undefined} {onclick}>{@render children()}{#if busy}<span> — in progress</span>{/if}</button>

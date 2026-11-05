@@ -41,3 +41,5 @@ Shared-source changes can affect every design. Exports do not imply verified pro
 ## Product compositions
 
 The complete app preview is examples/workspace.html. It shares the selection contract with the component catalog and adds URL-addressable overview, project and settings screens. Load styles/product.css after styles/app.css for these reusable compositions. New designs must include the product appearance keys listed in schemas/design.schema.json. Read docs/polish.md for the acceptance standard.
+
+Collection links use `collection=fieldnotes`, `collection=ways` or `collection=beginnings` alongside the design/mode/screen parameters. Unknown collections fall back to Fieldnotes. Reading size and motion are local preview preferences and do not redefine the selected design or its export defaults.

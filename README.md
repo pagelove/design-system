@@ -58,3 +58,5 @@ Explore [the workspace](examples/workspace.html) for matching overview, collecti
 
 
 ![Midnight workspace overview](designs/midnight/previews/workspace-dark.png)
+
+The app examples also expose per-collection URLs, local draft creation, derived counts and 100–200% reading preferences. [Quality checks](examples/quality.html) report real font loading and effective motion settings. See the [polish review](reference/POLISH-REVIEW.md) for gaps found and revisions.

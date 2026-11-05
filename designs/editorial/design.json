@@ -5,9 +5,14 @@
   "defaultMode": "light",
   "modes": {
     "light": {
-      "link-text-default": "var(--color-cornflower-blue-700)"
+      "link-text-default": "var(--color-cornflower-blue-700)",
+      "border-strong": "var(--color-polo-blue-500)",
+      "border-focused": "var(--color-cornflower-blue-600)"
     },
-    "dark": {}
+    "dark": {
+      "border-strong": "var(--color-polo-blue-500)",
+      "border-focused": "var(--color-cornflower-blue-400)"
+    }
   },
   "foundations": {
     "color": {
@@ -42,7 +47,11 @@
     "design-radius-input": "4px",
     "design-title-size": "3rem",
     "design-heading-tracking": "-.03em",
-    "design-transition-duration": "160ms"
+    "design-transition-duration": "160ms",
+    "design-text-small": "0.875rem",
+    "design-text-caption": "0.75rem",
+    "design-title-size-mobile": "2.25rem",
+    "design-press-offset": "1px"
   },
   "guidance": "Use warm paper surfaces, slate ink, square-edged reading panels and understated actions. Prefer long-form content and clear type hierarchy. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract."
 }

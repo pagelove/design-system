@@ -201,7 +201,7 @@
   },
   "border-strong": {
     "$type": "color",
-    "$value": "{color-polo-blue-700}",
+    "$value": "{color-polo-blue-500}",
     "$description": "dark mode semantic role: border-strong."
   },
   "border-success": {

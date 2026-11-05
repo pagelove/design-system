@@ -4,7 +4,10 @@
   "description": "Blue-black surfaces, warm off-white text and literary display typography.",
   "defaultMode": "dark",
   "modes": {
-    "dark": {}
+    "dark": {
+      "border-strong": "var(--color-polo-blue-500)",
+      "border-focused": "var(--color-cornflower-blue-400)"
+    }
   },
   "foundations": {
     "color": {
@@ -59,7 +62,11 @@
     "design-radius-input": "10px",
     "design-title-size": "3.125rem",
     "design-heading-tracking": "-.025em",
-    "design-transition-duration": "160ms"
+    "design-transition-duration": "160ms",
+    "design-text-small": "0.875rem",
+    "design-text-caption": "0.75rem",
+    "design-title-size-mobile": "2.25rem",
+    "design-press-offset": "1px"
   },
   "guidance": "Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract."
 }

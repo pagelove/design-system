@@ -171,7 +171,7 @@
   },
   "border-focused": {
     "$type": "color",
-    "$value": "{color-cornflower-blue-400}",
+    "$value": "{color-cornflower-blue-600}",
     "$description": "light mode semantic role: border-focused."
   },
   "border-information": {
@@ -201,7 +201,7 @@
   },
   "border-strong": {
     "$type": "color",
-    "$value": "{color-polo-blue-400}",
+    "$value": "{color-polo-blue-500}",
     "$description": "light mode semantic role: border-strong."
   },
   "border-success": {

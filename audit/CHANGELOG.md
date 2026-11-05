@@ -123,3 +123,28 @@
 - Change: Published implementation 78dfbbf12c4abe9f8172ac2b565a9969a1e315dc and verified GitHub main matches the clean local implementation checkout. Normalized trailing whitespace in bundled font notices without changing terms and refreshed file hashes.
 - Affected: audit/CHANGELOG.md, audit/files.sha256 and font notice whitespace.
 - Verification: Complete static checks and browser evidence are recorded in DS-011. This follow-up closes the publication record.
+
+## DS-013 — Review and revision plan
+
+- UTC: 2026-11-05T22:15:09.7238471Z
+- Actor: Codex
+- Request: Review the premium-polish goals, identify gaps and revise the implementation.
+- Findings: Guide heading metadata differs from runtime; product width ignores design width; compact metadata/actions and faint control boundaries undermine readability; collection cards share a destination and counts become stale; save completion ignores edits made while pending; font loading and reduced-motion execution have weak evidence.
+- Plan: Align canonical/export/runtime values; strengthen control contrast and responsive typography; implement addressable collection content with derived summaries; make local save state truthful; add a reduced-motion preference and browser-visible font verification; rerun representative interactions and all responsive combinations; publish review evidence.
+- Affected: Canonical definitions and generated formats, product styles/examples, checks, documentation, previews and audit records.
+- Verification: Pending. Midnight/dark remains default.
+
+## DS-014 — Review gaps addressed
+
+- UTC: 2026-11-05T22:30:51.2611773Z
+- Actor: Codex
+- Plan reference: DS-013.
+- Change: Aligned guide/Stitch typography with canonical title size/tracking; added readable label/caption/mobile-title values; used per-design product widths; strengthened neutral controls and focus/error outlines. Built separate collection documents with derived counts and isolated drafts. Corrected pending-save dirty tracking and reset; added immediate reading-size/reduced-motion preferences and real font diagnostics. Fixed scrollbar gutters, enlarged-button wrapping and catalog-to-app selection preservation. Updated portable outputs, guides and previews.
+- Why: Close the concrete gaps between the premium-polish goals, running examples and previous verification claims.
+- Verification: Build/check and syntax checks pass. Browser evidence covers 160 app layout cases plus eight catalog mode checks, with no horizontal overflow after revisions. Actual font loading passed for all 18 files; reduced motion produces 0s transitions in all eight modes. Validation, first-error focus, pending-save edits, reset, long titles/names, collection counts, empty recovery, Escape/return focus, history and invalid selection fallback passed. No browser warnings/errors observed in the checked run.
+- Limits: Explicit reduced motion was exercised; OS preference switching, native browser zoom, screen-reader/physical-device reviews and proprietary/native imports were not tested. The app remains a local preview with no service persistence.
+- Affected: Canonical design definitions, schemas/checks/build, shared app/product CSS, workspace/catalog/quality examples, generated guides/exports, documentation, screenshots and audit evidence/hashes.
+- Evidence: reference/POLISH-REVIEW.md, audit/polish-review-browser.json, audit/design-automated-checks.json.
+- Publication: Prepared for normal push after final checks.
+
+- DS-014 final follow-up: Retained action labels during loading in HTML/framework examples and added explicit skeleton accessible names. Helper assertions and all eight catalog pending-label checks pass; framework compilation is still not claimed.

@@ -11,6 +11,7 @@ function selectDesign(id,mode,writeURL=false){
  modeSelect.value=selectedMode;modeSelect.disabled=design.modes.length===1;
  document.documentElement.dataset.design=design.id;document.documentElement.dataset.theme=selectedMode;
  document.querySelector('#design-description').textContent=design.name+' — '+design.description+' '+(design.modes.length===1?'Available in '+selectedMode+' mode.':'Choose light or dark mode.');
+ document.querySelector('#workspace-link').href=`workspace.html?design=${design.id}&mode=${selectedMode}`;
  document.querySelector('#design-guide').href='../'+design.guide;document.querySelector('#design-exports').href='../'+design.exports+'tokens.json';
  document.querySelector('#foundations img').src='../designs/'+design.id+'/assets/palette.svg';
  document.querySelector('#palette-link').href='../designs/'+design.id+'/assets/palette.svg';document.querySelector('#foundation-guide').href='../'+design.guide;

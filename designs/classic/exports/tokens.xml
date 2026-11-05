@@ -248,6 +248,10 @@
     <token name="design-title-size" value="2.75rem"/>
     <token name="design-heading-tracking" value="-.025em"/>
     <token name="design-transition-duration" value="160ms"/>
+    <token name="design-text-small" value="0.875rem"/>
+    <token name="design-text-caption" value="0.75rem"/>
+    <token name="design-title-size-mobile" value="2.25rem"/>
+    <token name="design-press-offset" value="1px"/>
     <token name="background-brand-light" value="#fafbf8"/>
     <token name="background-brand-regular" value="#e9e7e2"/>
     <token name="background-brand-strong" value="#aeaa98"/>
@@ -282,13 +286,13 @@
     <token name="border-danger-strong" value="#e91923"/>
     <token name="border-disabled" value="#f1f5f9"/>
     <token name="border-discovery" value="#ced5f2"/>
-    <token name="border-focused" value="#59a6ff"/>
+    <token name="border-focused" value="#1f64f1"/>
     <token name="border-information" value="#bddbff"/>
     <token name="border-inverse" value="#334155"/>
     <token name="border-light" value="#f1f5f9"/>
     <token name="border-regular" value="#cbd5e1"/>
     <token name="border-selected" value="#1f64f1"/>
-    <token name="border-strong" value="#94a3b8"/>
+    <token name="border-strong" value="#64748b"/>
     <token name="border-success" value="#bdf5c1"/>
     <token name="border-warning" value="#ffdba8"/>
     <token name="button-borderless-icon-default" value="#475569"/>
@@ -607,6 +611,10 @@
     <token name="design-title-size" value="2.75rem"/>
     <token name="design-heading-tracking" value="-.025em"/>
     <token name="design-transition-duration" value="160ms"/>
+    <token name="design-text-small" value="0.875rem"/>
+    <token name="design-text-caption" value="0.75rem"/>
+    <token name="design-title-size-mobile" value="2.25rem"/>
+    <token name="design-press-offset" value="1px"/>
     <token name="background-brand-light" value="#0e0c07"/>
     <token name="background-brand-regular" value="#2c2821"/>
     <token name="background-brand-strong" value="#666550"/>
@@ -647,7 +655,7 @@
     <token name="border-light" value="#0f172a"/>
     <token name="border-regular" value="#1e293b"/>
     <token name="border-selected" value="#90c6ff"/>
-    <token name="border-strong" value="#334155"/>
+    <token name="border-strong" value="#64748b"/>
     <token name="border-success" value="#186320"/>
     <token name="border-warning" value="#9d390f"/>
     <token name="button-borderless-icon-default" value="#f1f5f9"/>

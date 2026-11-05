@@ -3727,5 +3727,57 @@
         "css": "160ms"
       }
     }
+  },
+  "design-text-small": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.875,
+      "unit": "rem"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "0.875rem"
+      }
+    }
+  },
+  "design-text-caption": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.75,
+      "unit": "rem"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "0.75rem"
+      }
+    }
+  },
+  "design-title-size-mobile": {
+    "$type": "dimension",
+    "$value": {
+      "value": 2.25,
+      "unit": "rem"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "2.25rem"
+      }
+    }
+  },
+  "design-press-offset": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "1px"
+      }
+    }
   }
 }

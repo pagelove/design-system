@@ -1,0 +1,2048 @@
+{
+  "result": "pass",
+  "layouts": [
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "light",
+      "title": "Overview · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "light",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "light",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "light",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "light",
+      "title": "Settings · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "dark",
+      "title": "Overview · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "dark",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "dark",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "dark",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "classic",
+      "mainScroll": 1120,
+      "mainWidth": 1120,
+      "mode": "dark",
+      "title": "Settings · Classic · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "light",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "light",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "light",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "light",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "light",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "dark",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "dark",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "dark",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "dark",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "editorial",
+      "mainScroll": 1040,
+      "mainWidth": 1040,
+      "mode": "dark",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "light",
+      "title": "Overview · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "light",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "light",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "light",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "light",
+      "title": "Settings · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "dark",
+      "title": "Overview · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "dark",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "dark",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "dark",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "forest",
+      "mainScroll": 1160,
+      "mainWidth": 1160,
+      "mode": "dark",
+      "title": "Settings · Forest · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "midnight",
+      "mainScroll": 1200,
+      "mainWidth": 1200,
+      "mode": "dark",
+      "title": "Overview · Midnight · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "midnight",
+      "mainScroll": 1200,
+      "mainWidth": 1200,
+      "mode": "dark",
+      "title": "Fieldnotes · Midnight · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "midnight",
+      "mainScroll": 1200,
+      "mainWidth": 1200,
+      "mode": "dark",
+      "title": "Ways of seeing · Midnight · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "midnight",
+      "mainScroll": 1200,
+      "mainWidth": 1200,
+      "mode": "dark",
+      "title": "Small beginnings · Midnight · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "midnight",
+      "mainScroll": 1200,
+      "mainWidth": 1200,
+      "mode": "dark",
+      "title": "Settings · Midnight · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "invitation",
+      "mainScroll": 1080,
+      "mainWidth": 1080,
+      "mode": "dark",
+      "title": "Overview · Invitation · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "invitation",
+      "mainScroll": 1080,
+      "mainWidth": 1080,
+      "mode": "dark",
+      "title": "Fieldnotes · Invitation · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "invitation",
+      "mainScroll": 1080,
+      "mainWidth": 1080,
+      "mode": "dark",
+      "title": "Ways of seeing · Invitation · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "invitation",
+      "mainScroll": 1080,
+      "mainWidth": 1080,
+      "mode": "dark",
+      "title": "Small beginnings · Invitation · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 1425,
+      "bodyWidth": 1425,
+      "design": "invitation",
+      "mainScroll": 1080,
+      "mainWidth": 1080,
+      "mode": "dark",
+      "title": "Settings · Invitation · Studio",
+      "viewport": 1440,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Overview · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Settings · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Overview · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "classic",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Settings · Classic · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "editorial",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Overview · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "light",
+      "title": "Settings · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Overview · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "forest",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Settings · Forest · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "midnight",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Overview · Midnight · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "midnight",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Fieldnotes · Midnight · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "midnight",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Ways of seeing · Midnight · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "midnight",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Small beginnings · Midnight · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "midnight",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Settings · Midnight · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "invitation",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Overview · Invitation · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "invitation",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Fieldnotes · Invitation · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "invitation",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Ways of seeing · Invitation · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "invitation",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Small beginnings · Invitation · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 753,
+      "bodyWidth": 753,
+      "design": "invitation",
+      "mainScroll": 573,
+      "mainWidth": 573,
+      "mode": "dark",
+      "title": "Settings · Invitation · Studio",
+      "viewport": 768,
+      "textSize": "standard"
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Overview · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Settings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Overview · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Settings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Overview · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "standard",
+      "title": "Settings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Overview · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Settings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Overview · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Fieldnotes · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Ways of seeing · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Small beginnings · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Settings · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Overview · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Fieldnotes · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Ways of seeing · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Small beginnings · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "standard",
+      "title": "Settings · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Overview · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Settings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Overview · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "classic",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Settings · Classic · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Overview · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "editorial",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Settings · Editorial · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Overview · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "light",
+      "textSize": "extra-large",
+      "title": "Settings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Overview · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "forest",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Settings · Forest · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Overview · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "midnight",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Settings · Midnight · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Overview · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Fieldnotes · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Ways of seeing · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Small beginnings · Invitation · Studio",
+      "viewport": 320
+    },
+    {
+      "bodyScroll": 305,
+      "bodyWidth": 305,
+      "design": "invitation",
+      "mainScroll": 305,
+      "mainWidth": 305,
+      "mode": "dark",
+      "textSize": "extra-large",
+      "title": "Settings · Invitation · Studio",
+      "viewport": 320
+    }
+  ],
+  "fontLoading": [
+    {
+      "design": "classic",
+      "results": [
+        "Heading · Source Serif 4 400 · Loaded local font",
+        "Heading · Source Serif 4 500 · Loaded local font",
+        "Heading · Source Serif 4 600 · Loaded local font",
+        "Body · Inter 400 · Loaded local font",
+        "Body · Inter 500 · Loaded local font",
+        "Body · Inter 600 · Loaded local font",
+        "Code · Fira Code 400 · Loaded local font",
+        "Code · Fira Code 500 · Loaded local font",
+        "Code · Fira Code 600 · Loaded local font"
+      ]
+    },
+    {
+      "design": "editorial",
+      "results": [
+        "Heading · Source Serif 4 400 · Loaded local font",
+        "Heading · Source Serif 4 500 · Loaded local font",
+        "Heading · Source Serif 4 600 · Loaded local font",
+        "Body · Inter 400 · Loaded local font",
+        "Body · Inter 500 · Loaded local font",
+        "Body · Inter 600 · Loaded local font",
+        "Code · Fira Code 400 · Loaded local font",
+        "Code · Fira Code 500 · Loaded local font",
+        "Code · Fira Code 600 · Loaded local font"
+      ]
+    },
+    {
+      "design": "forest",
+      "results": [
+        "Heading · Inter 400 · Loaded local font",
+        "Heading · Inter 500 · Loaded local font",
+        "Heading · Inter 600 · Loaded local font",
+        "Body · Inter 400 · Loaded local font",
+        "Body · Inter 500 · Loaded local font",
+        "Body · Inter 600 · Loaded local font",
+        "Code · Fira Code 400 · Loaded local font",
+        "Code · Fira Code 500 · Loaded local font",
+        "Code · Fira Code 600 · Loaded local font"
+      ]
+    },
+    {
+      "design": "midnight",
+      "results": [
+        "Heading · Inter 400 · Loaded local font",
+        "Heading · Inter 500 · Loaded local font",
+        "Heading · Inter 600 · Loaded local font",
+        "Body · Inter 400 · Loaded local font",
+        "Body · Inter 500 · Loaded local font",
+        "Body · Inter 600 · Loaded local font",
+        "Code · Fira Code 400 · Loaded local font",
+        "Code · Fira Code 500 · Loaded local font",
+        "Code · Fira Code 600 · Loaded local font"
+      ]
+    },
+    {
+      "design": "invitation",
+      "results": [
+        "Heading · Fraunces 400 · Loaded local font",
+        "Heading · Fraunces 500 · Loaded local font",
+        "Heading · Fraunces 600 · Loaded local font",
+        "Body · Inter Tight 400 · Loaded local font",
+        "Body · Inter Tight 500 · Loaded local font",
+        "Body · Inter Tight 600 · Loaded local font",
+        "Code · JetBrains Mono 400 · Loaded local font",
+        "Code · JetBrains Mono 500 · Loaded local font",
+        "Code · JetBrains Mono 600 · Loaded local font"
+      ]
+    }
+  ],
+  "motion": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "transition": "0s"
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "transition": "0s"
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "transition": "0s"
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "transition": "0s"
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "transition": "0s"
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "transition": "0s"
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "transition": "0s"
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "transition": "0s"
+    }
+  ],
+  "interactions": {
+    "invalidEvidence": {
+      "focus": "name",
+      "invalid": "true",
+      "status": "Check the highlighted fields."
+    },
+    "resetEvidence": "Alex Lee",
+    "draftEvidence": {
+      "body": 305,
+      "collection": "ways",
+      "count": "3 shown",
+      "scroll": 305
+    },
+    "emptyEvidence": true,
+    "focusEvidence": {
+      "dialogOpen": false,
+      "focus": "Add a note"
+    },
+    "longTitleReflow": {
+      "scroll": 305,
+      "textSize": "extra-large",
+      "width": 305
+    },
+    "longNameReflow": {
+      "scroll": 305,
+      "textSize": "extra-large",
+      "width": 305
+    },
+    "pendingSave": "Submitted preferences saved. Your newer edits are still unsaved. Save remained enabled.",
+    "history": "Back returned to Ways of seeing; collection retained."
+  },
+  "correctedDuringReview": [
+    "Reserved scrollbar gutter after visual inspection exposed obscured right margins.",
+    "Constrained and wrapped Save button after Classic at 200% text exceeded the content width."
+  ],
+  "limits": [
+    "Explicit reduced-motion path executed; OS preference switching not automated.",
+    "200% reading size tested; native browser zoom and screen readers not tested.",
+    "Local example state only; no live service or proprietary/native import verification."
+  ],
+  "catalog": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=classic&mode=light"
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=classic&mode=dark"
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=editorial&mode=light"
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=editorial&mode=dark"
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=forest&mode=light"
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=forest&mode=dark"
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=midnight&mode=dark"
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305,
+      "workspaceLink": "workspace.html?design=invitation&mode=dark"
+    }
+  ],
+  "selectionFallback": {
+    "design": "midnight",
+    "mode": "dark",
+    "title": "Overview · Midnight · Studio"
+  },
+  "pendingActionLabels": [
+    {
+      "busy": "true",
+      "design": "classic",
+      "disabled": true,
+      "mode": "light",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "classic",
+      "disabled": true,
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "editorial",
+      "disabled": true,
+      "mode": "light",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "editorial",
+      "disabled": true,
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "forest",
+      "disabled": true,
+      "mode": "light",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "forest",
+      "disabled": true,
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "midnight",
+      "disabled": true,
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305
+    },
+    {
+      "busy": "true",
+      "design": "invitation",
+      "disabled": true,
+      "mode": "dark",
+      "scroll": 305,
+      "width": 305
+    }
+  ]
+}

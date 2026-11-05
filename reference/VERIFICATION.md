@@ -51,3 +51,7 @@ Stitch import, Tokens Studio import, native compilation, and React/Vue/Svelte co
 - Expanded static contrast checks cover text on page/panel/inset surfaces and primary hover/pressed states. Editorial light links were darkened after the panel contrast check failed. All checked pairs now pass 4.5:1.
 - Build/check pass, including alternate defaults, portable formats, Stitch parity, public-content scan, links and font headers/licenses. Motion media rules were inspected in CSS; the browser tool does not expose reduced-motion preference emulation. Screen-reader, physical-device and proprietary import testing remain outside this verification.
 - The example has no service persistence. Created stories and settings are explicitly local and reset on reload. Earlier screenshot/evidence files remain historical unless explicitly refreshed.
+
+## Review acceptance evidence
+
+The revision review checks generated heading metadata against the design's canonical size and tracking, adds control/focus/error-outline contrast checks and exercises all three addressable collections. Browser diagnostics now load the actual local font faces at weights 400/500/600 and expose failures; computed font-family alone is not treated as font-loading proof. Explicit reduced motion is exercised through the preview settings. Prior verification limits remain historical; see the newest review record for current coverage.
