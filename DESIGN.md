@@ -31,7 +31,7 @@
 
 Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion. Available modes: dark. Initial mode: dark.
+Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: dark. Initial mode: dark.
 
 ## Colors
 
@@ -39,7 +39,7 @@ Use purpose-named text, background, button, border and status roles. Keep panels
 
 ## Typography
 
-Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
+Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. The repository bundles OFL-licensed regular, medium and semibold fonts in assets/fonts; styles/fonts.css loads them locally. Include that stylesheet alongside standalone theme files, or use styles/app.css. Preserve the supplied font licenses. Avoid squeezing long content into small captions.
 
 ## Layout
 
@@ -54,6 +54,10 @@ Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only
 ## Shapes
 
 Apply this design's declared card and button radii. Utility icon actions can remain rounded or squared according to purpose. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
+
+## Product polish
+
+Use the exported design-page-padding, design-panel-padding, design-row-padding, design-radius-input, design-title-size, design-heading-tracking and design-transition-duration values. Follow docs/polish.md and examples/workspace.html for overview, collection/detail and settings compositions. Preserve readable metadata, 44px controls and all error, empty, pending and recovery states.
 
 ## Components
 

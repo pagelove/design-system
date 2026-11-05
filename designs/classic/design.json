@@ -15,7 +15,14 @@
     "design-body-family": "var(--font-family-secondary)",
     "design-content-width": "1120px",
     "design-section-gap": "24px",
-    "design-shadow-panel": "none"
+    "design-shadow-panel": "none",
+    "design-page-padding": "40px",
+    "design-panel-padding": "24px",
+    "design-row-padding": "20px",
+    "design-radius-input": "8px",
+    "design-title-size": "2.75rem",
+    "design-heading-tracking": "-.025em",
+    "design-transition-duration": "160ms"
   },
-  "guidance": "Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces."
+  "guidance": "Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract."
 }

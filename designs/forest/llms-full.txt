@@ -34,7 +34,7 @@
 
 Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Use clearly sage-tinted page backgrounds rather than white, evergreen primary actions and rounded utility panels. Keep headings sans-serif and the visual tone grounded. Available modes: light, dark. Initial mode: light.
+Use clearly sage-tinted page backgrounds rather than white, evergreen primary actions and rounded utility panels. Keep headings sans-serif and the visual tone grounded. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: light, dark. Initial mode: light.
 
 ## Colors
 
@@ -42,7 +42,7 @@ Use purpose-named text, background, button, border and status roles. Keep panels
 
 ## Typography
 
-Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
+Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. The repository bundles OFL-licensed regular, medium and semibold fonts in assets/fonts; styles/fonts.css loads them locally. Include that stylesheet alongside standalone theme files, or use styles/app.css. Preserve the supplied font licenses. Avoid squeezing long content into small captions.
 
 ## Layout
 
@@ -57,6 +57,10 @@ Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only
 ## Shapes
 
 Apply this design's declared card and button radii. Utility icon actions can remain rounded or squared according to purpose. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
+
+## Product polish
+
+Use the exported design-page-padding, design-panel-padding, design-row-padding, design-radius-input, design-title-size, design-heading-tracking and design-transition-duration values. Follow docs/polish.md and examples/workspace.html for overview, collection/detail and settings compositions. Preserve readable metadata, 44px controls and all error, empty, pending and recovery states.
 
 ## Components
 
@@ -116,6 +120,49 @@ The preview uses URL parameters (`?design=forest&mode=dark`), not a hidden saved
 5. Build and check. Compare real components in every mode, inspect mobile/keyboard/error/loading states and add a screenshot. Check contrast in actual contexts.
 
 Shared-source changes can affect every design. Exports do not imply verified proprietary native files or live tool imports.
+
+## Product compositions
+
+The complete app preview is examples/workspace.html. It shares the selection contract with the component catalog and adds URL-addressable overview, project and settings screens. Load styles/product.css after styles/app.css for these reusable compositions. New designs must include the product appearance keys listed in schemas/design.schema.json. Read docs/polish.md for the acceptance standard.
+
+
+===== docs/polish.md =====
+
+# Product polish contract
+
+The same three working app compositions are available in every design at [the workspace preview](../examples/workspace.html): overview, collection/detail and settings. Midnight/dark remains the default. Use the design and mode controls to compare supported combinations. The component catalog remains the reference for individual controls.
+
+## A distinct character, consistent craft
+
+| Design | Direction | Composition |
+| --- | --- | --- |
+| Classic | Precise and professional | Source Serif 4 headings, Inter controls, balanced density and quiet separators |
+| Editorial | Warm and literary | Paper surfaces, generous serif titles, longer reading measures and square panels |
+| Forest | Grounded and calm | Soft sage surfaces, sans-serif hierarchy, rounded containers and comfortable spacing |
+| Midnight | Focused and sophisticated | Plum surfaces, tightly tracked sans-serif titles, compact rows and restrained lavender actions |
+| Invitation | Expressive and intimate | Fraunces titles, Inter Tight controls, warm text and generous blue-black compositions |
+
+## Typography and rhythm
+
+Load styles/app.css to include bundled fonts. Standalone theme consumers must also load styles/fonts.css, preserving its relative asset paths. Native consumers must register the supplied fonts with their own platform. Regular, medium and semibold weights are included; italic and other weights use platform synthesis/fallback unless separately supplied. System fallbacks remain intentional during font loading and for missing glyphs. Preserve each OFL license when distributing fonts.
+
+Canonical appearance values export page padding, panel padding, row padding, input radius, title size, heading tracking and interaction duration in every format. Use 16px base body copy, 1.5–1.7 reading line-height, no more than 65 characters in prose measures, and tabular numerals for comparable metrics. Small metadata is supplementary; never use it for essential actions or instructions. Main titles shrink to 36px on narrow screens; controls remain at least 44px high.
+
+## Surfaces and composition
+
+Use the light surface role for the page, regular for panels and strong for inset artwork or progress tracks. Keep borders neutral. Reserve functional color for actions, focus and named states. Avoid wrapping every line in a card: combine open metrics, lists with separators, a single focal project and smaller secondary information. An editorial title treatment replaces stock decoration in the sample project artwork.
+
+styles/product.css provides reusable app shell, navigation, metrics, project panels, activity lists, collections, forms, dialog and status compositions. At narrow sizes the sidebar becomes horizontal navigation, columns stack and all content remains in natural document flow. Avoid fixed content heights and truncated task labels. The product CSS requires app.css and is shared across all selected designs.
+
+## Interaction quality
+
+Actions need default, hover, pressed, focus, disabled and pending states. Use 160ms color/border feedback; no ambient motion. Reduced motion removes transitions and pressed movement. Navigation is URL-addressable, preserves design selection and supports browser history. Search has a useful empty state and clear-search recovery. The create-story dialog supports Escape, native focus containment and return focus. New text uses textContent, never HTML interpolation.
+
+Settings demonstrate required-field and email validation, field-associated errors, first-error focus, saving, completion and reset. The settings demo does not simulate a server: edits and created stories last only until reload. A real application must add persistence, permission failures, conflict recovery and network failure/retry behavior appropriate to its service. Do not imply the preview provides those capabilities.
+
+## Acceptance standard
+
+Inspect every supported design/mode at desktop and 320px widths, including all three screens, loaded fonts, long content, keyboard paths, focus, empty results, invalid submissions, pending/completed actions and reduced-motion behavior. Compare scrollWidth to clientWidth for overflow. Verify contrast for the actual composition. Export checks ensure portable values stay synchronized; they do not certify all accessibility or proprietary tool imports.
 
 
 ===== docs/foundations.md =====
@@ -447,3 +494,7 @@ New design-system code, tokens, examples and documentation are offered under MIT
 `docs/games.md` adapts Pagelove contributors, *Web Game Development Handbook*, edition 2.14.0 (2026), under MIT. The MIT copyright and grant are retained in LICENSE.
 
 The observed public design library and supplied design reference are credited in reference/PROVENANCE.md. External standards, names and tools retain their own rights. Font files and logos are not included; font-family declarations do not grant font redistribution rights. No trademark license is granted.
+
+## Bundled fonts
+
+The fonts in assets/fonts are licensed separately under the SIL Open Font License 1.1. See assets/fonts/README.md and each family's OFL notice. These assets are not covered by the repository MIT license.

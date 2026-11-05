@@ -241,6 +241,13 @@
   "design-content-width": "1080px"
   "design-section-gap": "32px"
   "design-shadow-panel": "none"
+  "design-page-padding": "48px"
+  "design-panel-padding": "32px"
+  "design-row-padding": "24px"
+  "design-radius-input": "10px"
+  "design-title-size": "3.125rem"
+  "design-heading-tracking": "-.025em"
+  "design-transition-duration": "160ms"
 "semantic":
   "dark":
     "background-brand-light": "var(--color-olive-950)"

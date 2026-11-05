@@ -130,7 +130,7 @@ Generated from canonical sources. CSS units are preserved.
 | `space-025` | `2px` |
 | `space-050` | `4px` |
 | `space-075` | `6px` |
-| `font-family-brand` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `font-family-brand` | `'Source Serif 4', Georgia, serif` |
 | `font-family-secondary` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
 | `font-family-code` | `'Fira Code', ui-monospace, Menlo, Consolas, monospace` |
 | `font-weight-400` | `400` |
@@ -241,11 +241,18 @@ Generated from canonical sources. CSS units are preserved.
 | `grid-console-xl-margin` | `16px` |
 | `design-radius-card` | `4px` |
 | `design-radius-button` | `6px` |
-| `design-heading-family` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `design-heading-family` | `'Source Serif 4', Georgia, serif` |
 | `design-body-family` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
 | `design-content-width` | `1040px` |
 | `design-section-gap` | `32px` |
 | `design-shadow-panel` | `none` |
+| `design-page-padding` | `48px` |
+| `design-panel-padding` | `32px` |
+| `design-row-padding` | `24px` |
+| `design-radius-input` | `4px` |
+| `design-title-size` | `3rem` |
+| `design-heading-tracking` | `-.03em` |
+| `design-transition-duration` | `160ms` |
 | `background-brand-light` | `#fafbf8` |
 | `background-brand-regular` | `#e9e7e2` |
 | `background-brand-strong` | `#aeaa98` |
@@ -340,7 +347,7 @@ Generated from canonical sources. CSS units are preserved.
 | `link-icon-hover` | `#174ede` |
 | `link-icon-inverse` | `#90c6ff` |
 | `link-icon-pressed` | `#1940b4` |
-| `link-text-default` | `#1f64f1` |
+| `link-text-default` | `#174ede` |
 | `link-text-hover` | `#174ede` |
 | `link-text-pressed` | `#1940b4` |
 | `link-text-visited` | `#3584fc` |
@@ -485,7 +492,7 @@ Generated from canonical sources. CSS units are preserved.
 | `space-025` | `2px` |
 | `space-050` | `4px` |
 | `space-075` | `6px` |
-| `font-family-brand` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `font-family-brand` | `'Source Serif 4', Georgia, serif` |
 | `font-family-secondary` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
 | `font-family-code` | `'Fira Code', ui-monospace, Menlo, Consolas, monospace` |
 | `font-weight-400` | `400` |
@@ -596,11 +603,18 @@ Generated from canonical sources. CSS units are preserved.
 | `grid-console-xl-margin` | `16px` |
 | `design-radius-card` | `4px` |
 | `design-radius-button` | `6px` |
-| `design-heading-family` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `design-heading-family` | `'Source Serif 4', Georgia, serif` |
 | `design-body-family` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
 | `design-content-width` | `1040px` |
 | `design-section-gap` | `32px` |
 | `design-shadow-panel` | `none` |
+| `design-page-padding` | `48px` |
+| `design-panel-padding` | `32px` |
+| `design-row-padding` | `24px` |
+| `design-radius-input` | `4px` |
+| `design-title-size` | `3rem` |
+| `design-heading-tracking` | `-.03em` |
+| `design-transition-duration` | `160ms` |
 | `background-brand-light` | `#0e0c07` |
 | `background-brand-regular` | `#2c2821` |
 | `background-brand-strong` | `#666550` |

@@ -12,7 +12,7 @@ export function loadDesigns(catalog=readJSON('designs/catalog.json')){
   const definition=readJSON(`designs/${entry.id}/design.json`);
   if(definition.id!==entry.id)throw Error('Design ID mismatch: '+entry.id);
   for(const key of ['name','description','guidance'])if(typeof definition[key]!=='string'||!definition[key].trim())throw Error('Missing '+key+': '+entry.id);
-  for(const key of ['design-radius-card','design-radius-button','design-heading-family','design-body-family','design-content-width','design-section-gap','design-shadow-panel'])if(typeof definition.appearance?.[key]!=='string')throw Error('Missing appearance '+key+': '+entry.id);
+  for(const key of ['design-radius-card','design-radius-button','design-heading-family','design-body-family','design-content-width','design-section-gap','design-shadow-panel',"design-page-padding","design-panel-padding","design-row-padding","design-radius-input","design-title-size","design-heading-tracking","design-transition-duration"])if(typeof definition.appearance?.[key]!=='string')throw Error('Missing appearance '+key+': '+entry.id);
   const modes=Object.keys(definition.modes);if(!modes.length||modes.some(m=>!['light','dark'].includes(m))||!modes.includes(definition.defaultMode))throw Error('Invalid modes: '+entry.id);
   const semantic=Object.fromEntries(modes.map(mode=>[mode,{...roles[mode],...definition.modes[mode]}]));
   for(const mode of modes){if(Object.keys(semantic[mode]).length!==Object.keys(roles[mode]).length)throw Error('Unknown semantic role: '+entry.id);for(const v of Object.values(semantic[mode]))if(typeof v!=='string'||!/^var\(--color-[a-z0-9-]+\)$/.test(v))throw Error('Invalid semantic alias: '+entry.id);}

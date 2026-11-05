@@ -240,4 +240,11 @@
   --design-content-width: 1200px;
   --design-section-gap: 20px;
   --design-shadow-panel: none;
+  --design-page-padding: 40px;
+  --design-panel-padding: 24px;
+  --design-row-padding: 18px;
+  --design-radius-input: 6px;
+  --design-title-size: 2.75rem;
+  --design-heading-tracking: -.04em;
+  --design-transition-duration: 160ms;
 }

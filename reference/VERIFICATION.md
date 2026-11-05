@@ -41,3 +41,13 @@ The preview server originally served the catalog at `/` without redirecting, cau
 These are bounded source and browser checks, not a full accessibility audit. Real-phone behavior, assistive technology, 200% text enlargement, actual reduced-motion browser emulation and every CSS variant remain unverified. Reduced-motion CSS was inspected, but the mode was not forced in this browser session. The selected contrast checks do not certify every role/background combination.
 
 Stitch import, Tokens Studio import, native compilation, and React/Vue/Svelte compilation were not executed. Their adapters are documented source formats, not claims of tested end-to-end tool integration. DTCG checks cover the generated subset, not an independent complete conformance certification. The catalog performs local demonstrations only; no backend, shared-save or deployment guarantee is implied.
+
+## Product polish edition (0.3.0)
+
+- Five designs / eight supported modes retain distinct fonts, palettes and geometry; Midnight/dark is still the default.
+- Added shared product compositions: overview, collection/detail and settings; all 24 screen/mode combinations were checked at desktop and 320px width. No horizontal overflow was found (scrollWidth equals clientWidth).
+- Browser checks covered required/email validation and first-error focus, Enter submission, pending/completed status, reset, no-results recovery, safe local story creation, Escape/return focus and browser history. No browser warning/error logs appeared during the checked interactions. Evidence: audit/polish-browser-checks.json.
+- Bundled 18 TrueType files across six OFL font families. Local font declarations and computed families were inspected with screenshots; this is not glyph-by-glyph font coverage certification.
+- Expanded static contrast checks cover text on page/panel/inset surfaces and primary hover/pressed states. Editorial light links were darkened after the panel contrast check failed. All checked pairs now pass 4.5:1.
+- Build/check pass, including alternate defaults, portable formats, Stitch parity, public-content scan, links and font headers/licenses. Motion media rules were inspected in CSS; the browser tool does not expose reduced-motion preference emulation. Screen-reader, physical-device and proprietary import testing remain outside this verification.
+- The example has no service persistence. Created stories and settings are explicitly local and reset on reload. Earlier screenshot/evidence files remain historical unless explicitly refreshed.

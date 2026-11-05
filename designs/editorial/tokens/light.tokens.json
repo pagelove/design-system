@@ -471,7 +471,7 @@
   },
   "link-text-default": {
     "$type": "color",
-    "$value": "{color-cornflower-blue-600}",
+    "$value": "{color-cornflower-blue-700}",
     "$description": "light mode semantic role: link-text-default."
   },
   "link-text-hover": {

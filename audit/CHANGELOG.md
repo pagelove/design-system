@@ -93,3 +93,24 @@
 - Change: Published Midnight/dark as default and verified main at ee2b3d10bcb9f806b3d2cde41b316c711007bebd, matching the clean local checkout.
 - Affected: audit/CHANGELOG.md and audit/files.sha256 for the final receipt.
 - Verification: Functional/static checks and browser result recorded in DS-008; this is an audit-only closure.
+
+## DS-010 — Complete app polish plan
+
+- UTC: 2026-11-05T21:53:15.1478733Z
+- Actor: Codex
+- Request: Apply the proposed premium product design pass to all five designs.
+- Plan: Bundle licensed fonts; add reusable density, hierarchy and interaction tokens; build matching overview, project detail and settings screens with useful empty/error/loading states; update portable guides and exports; inspect every supported mode at desktop/mobile sizes and publish verified changes.
+- Affected: Canonical designs, shared styles, examples, fonts/licenses, generated formats, documentation and audit evidence.
+- Verification: Pending. Midnight/dark remains the default.
+
+## DS-011 — Product polish implemented
+
+- UTC: 2026-11-05T22:02:12.7733256Z
+- Actor: Codex
+- Plan reference: DS-010.
+- Change: Added local licensed fonts, seven per-design product appearance values, reusable responsive product compositions and three working app screens. Updated all guides, context bundles, portable formats and Stitch copies. Added new design previews and contrast checks. Midnight/dark remains default.
+- Why: Give all five designs coherent typography, hierarchy, surface treatments, spacing and usable interaction states.
+- Verification: Build/check and JavaScript syntax pass; 24 screen/mode combinations checked at desktop and 320px with no horizontal overflow. Validation, pending/success/reset, empty search recovery, local draft creation, dialog Escape/focus and history pass. Editorial panel link contrast corrected. See audit/polish-browser-checks.json, audit/design-automated-checks.json and reference/VERIFICATION.md for evidence and limits.
+- Licenses: Font copyright holders and OFL terms retained; parenthetical upstream repository URLs omitted to preserve the collection's repository-link restriction. All other source/license attribution preserved.
+- Affected: designs, styles, examples, font assets/licenses, schemas, scripts, generated exports/guides, previews, README/NOTICE, documentation and audit hashes.
+- Publication: Prepared for normal push after final checks.

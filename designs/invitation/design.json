@@ -52,7 +52,14 @@
     "design-body-family": "var(--font-family-secondary)",
     "design-content-width": "1080px",
     "design-section-gap": "32px",
-    "design-shadow-panel": "none"
+    "design-shadow-panel": "none",
+    "design-page-padding": "48px",
+    "design-panel-padding": "32px",
+    "design-row-padding": "24px",
+    "design-radius-input": "10px",
+    "design-title-size": "3.125rem",
+    "design-heading-tracking": "-.025em",
+    "design-transition-duration": "160ms"
   },
-  "guidance": "Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments."
+  "guidance": "Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract."
 }

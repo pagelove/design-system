@@ -4,7 +4,9 @@
   "description": "Warm paper, slate ink and restrained lavender; a quieter reading-focused design.",
   "defaultMode": "light",
   "modes": {
-    "light": {},
+    "light": {
+      "link-text-default": "var(--color-cornflower-blue-700)"
+    },
     "dark": {}
   },
   "foundations": {
@@ -33,7 +35,14 @@
     "design-body-family": "var(--font-family-secondary)",
     "design-content-width": "1040px",
     "design-section-gap": "32px",
-    "design-shadow-panel": "none"
+    "design-shadow-panel": "none",
+    "design-page-padding": "48px",
+    "design-panel-padding": "32px",
+    "design-row-padding": "24px",
+    "design-radius-input": "4px",
+    "design-title-size": "3rem",
+    "design-heading-tracking": "-.03em",
+    "design-transition-duration": "160ms"
   },
-  "guidance": "Use warm paper surfaces, slate ink, square-edged reading panels and understated actions. Prefer long-form content and clear type hierarchy."
+  "guidance": "Use warm paper surfaces, slate ink, square-edged reading panels and understated actions. Prefer long-form content and clear type hierarchy. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract."
 }

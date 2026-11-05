@@ -37,3 +37,7 @@ The preview uses URL parameters (`?design=forest&mode=dark`), not a hidden saved
 5. Build and check. Compare real components in every mode, inspect mobile/keyboard/error/loading states and add a screenshot. Check contrast in actual contexts.
 
 Shared-source changes can affect every design. Exports do not imply verified proprietary native files or live tool imports.
+
+## Product compositions
+
+The complete app preview is examples/workspace.html. It shares the selection contract with the component catalog and adds URL-addressable overview, project and settings screens. Load styles/product.css after styles/app.css for these reusable compositions. New designs must include the product appearance keys listed in schemas/design.schema.json. Read docs/polish.md for the acceptance standard.

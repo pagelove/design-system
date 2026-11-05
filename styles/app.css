@@ -1,3 +1,4 @@
+@import './fonts.css';
 @import './foundations.css';
 @import './semantic.css';
 @import './typography.css';
@@ -12,7 +13,7 @@
 html { color-scheme: var(--design-color-scheme,light); }
 body { margin: 0; color: var(--text-regular); background: var(--background-surface-light); font: 400 1rem/1.5 var(--design-body-family,var(--font-family-secondary)); letter-spacing: normal; }
 h1,h2,h3 { font-family: var(--design-heading-family,var(--font-family-brand)); font-weight: 400; line-height: 1.2; color: var(--text-strong); overflow-wrap: anywhere; }
-h1 { font-size: clamp(2rem,5vw,3.5rem); }
+h1 { font-size: clamp(2rem,5vw,var(--design-title-size,3.5rem)); letter-spacing:var(--design-heading-tracking,normal); }
 h2 { font-size: clamp(1.5rem,3vw,2rem); }
 button,input,select,textarea { font: inherit; }
 button,a,input,select,summary { touch-action: manipulation; }
@@ -25,7 +26,7 @@ input:disabled,label:has(input:disabled) { cursor: not-allowed; }
 .pl-button--icon { min-width: 44px; min-height: 44px; }
 .pl-field { min-width: 0; width: 100%; }
 .pl-field__label,.pl-field__hint { letter-spacing: normal; }
-.pl-field__input { width: 100%; min-width: 0; min-height: 44px; letter-spacing: normal; }
+.pl-field__input { border-radius:var(--design-radius-input,8px); width: 100%; min-width: 0; min-height: 44px; letter-spacing: normal; }
 .pl-checkbox,.pl-radio,.pl-toggle { min-height: 44px; gap: 12px; }
 .pl-checkbox__label,.pl-radio__label,.pl-toggle__label { letter-spacing: normal; }
 .pl-checkbox,.pl-radio { position: relative; }
@@ -37,7 +38,7 @@ pre { overflow-x: auto; max-width: 100%; }
 .ds-section { padding-block: var(--design-section-gap,24px); border-bottom: 1px solid var(--border-light); }
 .ds-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),1fr)); gap: 32px; }
 .ds-stack { display: grid; gap: 16px; align-content: start; }
-.ds-panel { border: 1px solid var(--border-regular); border-radius: var(--design-radius-card,12px); box-shadow:var(--design-shadow-panel,none); padding: 24px; min-width: 0; background: var(--background-surface-regular); }
+.ds-panel { border: 1px solid var(--border-regular); border-radius: var(--design-radius-card,12px); box-shadow:var(--design-shadow-panel,none); padding:var(--design-panel-padding,24px); min-width: 0; background: var(--background-surface-regular); }
 .ds-intro { max-width: 65ch; }
 .ds-status { min-height: 1.5em; }
 .ds-skip { position: absolute; inset: 8px auto auto 8px; transform: translateY(-200%); background: var(--background-surface-light); padding: 8px; }

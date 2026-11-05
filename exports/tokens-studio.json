@@ -1199,6 +1199,41 @@
       "value": "none",
       "type": "other",
       "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-page-padding": {
+      "value": "40px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-panel-padding": {
+      "value": "24px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-row-padding": {
+      "value": "18px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-radius-input": {
+      "value": "6px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-title-size": {
+      "value": "2.75rem",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-heading-tracking": {
+      "value": "-.04em",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-transition-duration": {
+      "value": "160ms",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
     }
   },
   "dark": {

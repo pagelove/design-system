@@ -51,3 +51,10 @@ Node.js 22+ is needed for these scripts. No dependency installation is required.
 The original `tokens/profiles.json` is retained as historical reference. Its guides point to the complete selectable designs; `data-profile` is deprecated for design selection.
 
 Code, tokens and new documentation are MIT licensed. The document-first adaptation retains CC BY 4.0; see [NOTICE](NOTICE.md). Source credits remain in [provenance](reference/PROVENANCE.md).
+
+## Complete app examples
+
+Explore [the workspace](examples/workspace.html) for matching overview, collection/detail and settings screens in every design. Read the [product polish contract](docs/polish.md) for typography, spacing, component states and responsive behavior. Fonts are bundled locally under their included OFL licenses.
+
+
+![Midnight workspace overview](designs/midnight/previews/workspace-dark.png)

@@ -1,0 +1,414 @@
+{
+  "desktop": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Overview · Classic · Studio",
+      "width": 1265
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Project · Classic · Studio",
+      "width": 1265
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Settings · Classic · Studio",
+      "width": 1265
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Overview · Classic · Studio",
+      "width": 1265
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Project · Classic · Studio",
+      "width": 1265
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Settings · Classic · Studio",
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Overview · Editorial · Studio",
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Project · Editorial · Studio",
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Settings · Editorial · Studio",
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Overview · Editorial · Studio",
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Project · Editorial · Studio",
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Settings · Editorial · Studio",
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Overview · Forest · Studio",
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Project · Forest · Studio",
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "title": "Settings · Forest · Studio",
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Overview · Forest · Studio",
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Project · Forest · Studio",
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Settings · Forest · Studio",
+      "width": 1265
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Overview · Midnight · Studio",
+      "width": 1265
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Project · Midnight · Studio",
+      "width": 1265
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Settings · Midnight · Studio",
+      "width": 1265
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Overview · Invitation · Studio",
+      "width": 1265
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Project · Invitation · Studio",
+      "width": 1265
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "title": "Settings · Invitation · Studio",
+      "width": 1265
+    }
+  ],
+  "mobile": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Overview · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Project · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Settings · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Overview · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Project · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Settings · Classic · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Overview · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Project · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Settings · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Overview · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Project · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Settings · Editorial · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Overview · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Project · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "scrollWidth": 305,
+      "title": "Settings · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Overview · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Project · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Settings · Forest · Studio",
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Overview · Midnight · Studio",
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Project · Midnight · Studio",
+      "width": 305
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Settings · Midnight · Studio",
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Overview · Invitation · Studio",
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Project · Invitation · Studio",
+      "width": 305
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "scrollWidth": 305,
+      "title": "Settings · Invitation · Studio",
+      "width": 305
+    }
+  ],
+  "typography": [
+    {
+      "design": "classic",
+      "font": "\"Source Serif 4\", Georgia, serif",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "classic",
+      "font": "\"Source Serif 4\", Georgia, serif",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "font": "\"Source Serif 4\", Georgia, serif",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "editorial",
+      "font": "\"Source Serif 4\", Georgia, serif",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "font": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
+      "mode": "light",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "forest",
+      "font": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "midnight",
+      "font": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    {
+      "design": "invitation",
+      "font": "Fraunces, Georgia, serif",
+      "mode": "dark",
+      "scrollWidth": 1265,
+      "width": 1265
+    }
+  ],
+  "interactions": [
+    "invalid form shows associated errors and focuses first invalid field",
+    "keyboard Enter submits and exposes pending status",
+    "save completion and reset verified",
+    "search empty state and clear recovery",
+    "create-story dialog adds safely rendered local draft",
+    "Escape closes dialog and restores trigger focus",
+    "browser back restores screen"
+  ],
+  "limits": [
+    "Reduced-motion CSS inspected; preference emulation unavailable in this browser tool.",
+    "Font family computed styles and screenshots inspected; glyph-by-glyph rendering not certified.",
+    "No live server persistence or native tool imports."
+  ]
+}

@@ -48,7 +48,14 @@
     "design-body-family": "var(--font-family-secondary)",
     "design-content-width": "1160px",
     "design-section-gap": "28px",
-    "design-shadow-panel": "none"
+    "design-shadow-panel": "none",
+    "design-page-padding": "44px",
+    "design-panel-padding": "28px",
+    "design-row-padding": "22px",
+    "design-radius-input": "10px",
+    "design-title-size": "2.75rem",
+    "design-heading-tracking": "-.035em",
+    "design-transition-duration": "160ms"
   },
-  "guidance": "Use clearly sage-tinted page backgrounds rather than white, evergreen primary actions and rounded utility panels. Keep headings sans-serif and the visual tone grounded."
+  "guidance": "Use clearly sage-tinted page backgrounds rather than white, evergreen primary actions and rounded utility panels. Keep headings sans-serif and the visual tone grounded. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract."
 }

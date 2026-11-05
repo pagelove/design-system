@@ -3636,5 +3636,90 @@
         "css": "none"
       }
     }
+  },
+  "design-page-padding": {
+    "$type": "dimension",
+    "$value": {
+      "value": 48,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "48px"
+      }
+    }
+  },
+  "design-panel-padding": {
+    "$type": "dimension",
+    "$value": {
+      "value": 32,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "32px"
+      }
+    }
+  },
+  "design-row-padding": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "24px"
+      }
+    }
+  },
+  "design-radius-input": {
+    "$type": "dimension",
+    "$value": {
+      "value": 10,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "10px"
+      }
+    }
+  },
+  "design-title-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 3.125,
+      "unit": "rem"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "3.125rem"
+      }
+    }
+  },
+  "design-heading-tracking": {
+    "$type": "string",
+    "$value": "-.025em",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "-.025em"
+      }
+    }
+  },
+  "design-transition-duration": {
+    "$type": "string",
+    "$value": "160ms",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "160ms"
+      }
+    }
   }
 }

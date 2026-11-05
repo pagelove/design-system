@@ -1,6 +1,6 @@
 {
   "name": "@pagelove/design-system",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -10,5 +10,7 @@
     "check": "node scripts/check.mjs",
     "serve": "node scripts/serve.mjs"
   },
-  "engines": { "node": ">=22" }
+  "engines": {
+    "node": ">=22"
+  }
 }

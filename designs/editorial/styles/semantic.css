@@ -94,7 +94,7 @@
   --link-icon-hover: var(--color-cornflower-blue-700);
   --link-icon-inverse: var(--color-cornflower-blue-300);
   --link-icon-pressed: var(--color-cornflower-blue-800);
-  --link-text-default: var(--color-cornflower-blue-600);
+  --link-text-default: var(--color-cornflower-blue-700);
   --link-text-hover: var(--color-cornflower-blue-700);
   --link-text-pressed: var(--color-cornflower-blue-800);
   --link-text-visited: var(--color-cornflower-blue-500);
@@ -206,7 +206,7 @@
   --link-icon-hover: var(--color-cornflower-blue-700);
   --link-icon-inverse: var(--color-cornflower-blue-300);
   --link-icon-pressed: var(--color-cornflower-blue-800);
-  --link-text-default: var(--color-cornflower-blue-600);
+  --link-text-default: var(--color-cornflower-blue-700);
   --link-text-hover: var(--color-cornflower-blue-700);
   --link-text-pressed: var(--color-cornflower-blue-800);
   --link-text-visited: var(--color-cornflower-blue-500);

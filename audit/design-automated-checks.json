@@ -1,6 +1,6 @@
 {
   "result": "pass",
-  "textFiles": 217,
+  "textFiles": 230,
   "designs": 5,
   "defaultDesign": "midnight",
   "defaultMode": "dark",
@@ -52,6 +52,41 @@
     },
     {
       "design": "classic",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 9.9
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 18.41
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 4.83
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 17.85
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 20.17
+    },
+    {
+      "design": "classic",
       "mode": "dark",
       "fg": "text-regular",
       "bg": "background-surface-light",
@@ -79,6 +114,41 @@
       "ratio": 8.22
     },
     {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 18.41
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 17.85
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 8
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 13.97
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 8.09
+    },
+    {
       "design": "editorial",
       "mode": "light",
       "fg": "text-regular",
@@ -104,7 +174,42 @@
       "mode": "light",
       "fg": "link-text-default",
       "bg": "background-surface-light",
-      "ratio": 4.73
+      "ratio": 6.17
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 9.46
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 13.77
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.76
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 14.57
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 16.15
     },
     {
       "design": "editorial",
@@ -133,6 +238,41 @@
       "fg": "link-text-default",
       "bg": "background-surface-light",
       "ratio": 7.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 13.77
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 14.57
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 10.53
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 7.03
     },
     {
       "design": "forest",
@@ -164,6 +304,41 @@
     },
     {
       "design": "forest",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 7.98
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 12.45
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 12.7
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 14.51
+    },
+    {
+      "design": "forest",
       "mode": "dark",
       "fg": "text-regular",
       "bg": "background-surface-light",
@@ -189,6 +364,41 @@
       "fg": "link-text-default",
       "bg": "background-surface-light",
       "ratio": 6.92
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 12.45
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 12.7
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 9.02
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 6.17
     },
     {
       "design": "midnight",
@@ -219,6 +429,41 @@
       "ratio": 7.51
     },
     {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 12.69
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 14.49
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 7.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 8.04
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 5.6
+    },
+    {
       "design": "invitation",
       "mode": "dark",
       "fg": "text-regular",
@@ -245,6 +490,41 @@
       "fg": "link-text-default",
       "bg": "background-surface-light",
       "ratio": 9.37
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 14.28
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 15.05
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 8.81
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 9.08
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 6.52
     }
   ],
   "limits": [

@@ -205,7 +205,7 @@
   },
   "font": {
     "family": {
-      "brand": "'Source Serif Pro', 'Source Serif 4', Georgia, serif",
+      "brand": "'Source Serif 4', Georgia, serif",
       "secondary": "Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif",
       "code": "'Fira Code', ui-monospace, Menlo, Consolas, monospace"
     },

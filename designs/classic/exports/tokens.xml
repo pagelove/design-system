@@ -125,7 +125,7 @@
     <token name="space-025" value="2px"/>
     <token name="space-050" value="4px"/>
     <token name="space-075" value="6px"/>
-    <token name="font-family-brand" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="font-family-brand" value="'Source Serif 4', Georgia, serif"/>
     <token name="font-family-secondary" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
     <token name="font-family-code" value="'Fira Code', ui-monospace, Menlo, Consolas, monospace"/>
     <token name="font-weight-400" value="400"/>
@@ -236,11 +236,18 @@
     <token name="grid-console-xl-margin" value="16px"/>
     <token name="design-radius-card" value="12px"/>
     <token name="design-radius-button" value="100px"/>
-    <token name="design-heading-family" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="design-heading-family" value="'Source Serif 4', Georgia, serif"/>
     <token name="design-body-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
     <token name="design-content-width" value="1120px"/>
     <token name="design-section-gap" value="24px"/>
     <token name="design-shadow-panel" value="none"/>
+    <token name="design-page-padding" value="40px"/>
+    <token name="design-panel-padding" value="24px"/>
+    <token name="design-row-padding" value="20px"/>
+    <token name="design-radius-input" value="8px"/>
+    <token name="design-title-size" value="2.75rem"/>
+    <token name="design-heading-tracking" value="-.025em"/>
+    <token name="design-transition-duration" value="160ms"/>
     <token name="background-brand-light" value="#fafbf8"/>
     <token name="background-brand-regular" value="#e9e7e2"/>
     <token name="background-brand-strong" value="#aeaa98"/>
@@ -477,7 +484,7 @@
     <token name="space-025" value="2px"/>
     <token name="space-050" value="4px"/>
     <token name="space-075" value="6px"/>
-    <token name="font-family-brand" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="font-family-brand" value="'Source Serif 4', Georgia, serif"/>
     <token name="font-family-secondary" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
     <token name="font-family-code" value="'Fira Code', ui-monospace, Menlo, Consolas, monospace"/>
     <token name="font-weight-400" value="400"/>
@@ -588,11 +595,18 @@
     <token name="grid-console-xl-margin" value="16px"/>
     <token name="design-radius-card" value="12px"/>
     <token name="design-radius-button" value="100px"/>
-    <token name="design-heading-family" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="design-heading-family" value="'Source Serif 4', Georgia, serif"/>
     <token name="design-body-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
     <token name="design-content-width" value="1120px"/>
     <token name="design-section-gap" value="24px"/>
     <token name="design-shadow-panel" value="none"/>
+    <token name="design-page-padding" value="40px"/>
+    <token name="design-panel-padding" value="24px"/>
+    <token name="design-row-padding" value="20px"/>
+    <token name="design-radius-input" value="8px"/>
+    <token name="design-title-size" value="2.75rem"/>
+    <token name="design-heading-tracking" value="-.025em"/>
+    <token name="design-transition-duration" value="160ms"/>
     <token name="background-brand-light" value="#0e0c07"/>
     <token name="background-brand-regular" value="#2c2821"/>
     <token name="background-brand-strong" value="#666550"/>

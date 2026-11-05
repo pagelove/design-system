@@ -241,6 +241,13 @@
     <token name="design-content-width" value="1200px"/>
     <token name="design-section-gap" value="20px"/>
     <token name="design-shadow-panel" value="none"/>
+    <token name="design-page-padding" value="40px"/>
+    <token name="design-panel-padding" value="24px"/>
+    <token name="design-row-padding" value="18px"/>
+    <token name="design-radius-input" value="6px"/>
+    <token name="design-title-size" value="2.75rem"/>
+    <token name="design-heading-tracking" value="-.04em"/>
+    <token name="design-transition-duration" value="160ms"/>
     <token name="background-brand-light" value="#0e0c07"/>
     <token name="background-brand-regular" value="#2c2821"/>
     <token name="background-brand-strong" value="#666550"/>

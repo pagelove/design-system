@@ -130,7 +130,7 @@ Generated from canonical sources. CSS units are preserved.
 | `space-025` | `2px` |
 | `space-050` | `4px` |
 | `space-075` | `6px` |
-| `font-family-brand` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `font-family-brand` | `'Source Serif 4', Georgia, serif` |
 | `font-family-secondary` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
 | `font-family-code` | `'Fira Code', ui-monospace, Menlo, Consolas, monospace` |
 | `font-weight-400` | `400` |
@@ -246,6 +246,13 @@ Generated from canonical sources. CSS units are preserved.
 | `design-content-width` | `1160px` |
 | `design-section-gap` | `28px` |
 | `design-shadow-panel` | `none` |
+| `design-page-padding` | `44px` |
+| `design-panel-padding` | `28px` |
+| `design-row-padding` | `22px` |
+| `design-radius-input` | `10px` |
+| `design-title-size` | `2.75rem` |
+| `design-heading-tracking` | `-.035em` |
+| `design-transition-duration` | `160ms` |
 | `background-brand-light` | `#fafbf8` |
 | `background-brand-regular` | `#e9e7e2` |
 | `background-brand-strong` | `#aeaa98` |
@@ -485,7 +492,7 @@ Generated from canonical sources. CSS units are preserved.
 | `space-025` | `2px` |
 | `space-050` | `4px` |
 | `space-075` | `6px` |
-| `font-family-brand` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `font-family-brand` | `'Source Serif 4', Georgia, serif` |
 | `font-family-secondary` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
 | `font-family-code` | `'Fira Code', ui-monospace, Menlo, Consolas, monospace` |
 | `font-weight-400` | `400` |
@@ -601,6 +608,13 @@ Generated from canonical sources. CSS units are preserved.
 | `design-content-width` | `1160px` |
 | `design-section-gap` | `28px` |
 | `design-shadow-panel` | `none` |
+| `design-page-padding` | `44px` |
+| `design-panel-padding` | `28px` |
+| `design-row-padding` | `22px` |
+| `design-radius-input` | `10px` |
+| `design-title-size` | `2.75rem` |
+| `design-heading-tracking` | `-.035em` |
+| `design-transition-duration` | `160ms` |
 | `background-brand-light` | `#0e0c07` |
 | `background-brand-regular` | `#2c2821` |
 | `background-brand-strong` | `#666550` |

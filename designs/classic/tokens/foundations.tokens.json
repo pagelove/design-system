@@ -2252,7 +2252,6 @@
   "font-family-brand": {
     "$type": "fontFamily",
     "$value": [
-      "Source Serif Pro",
       "Source Serif 4",
       "Georgia",
       "serif"
@@ -2260,7 +2259,7 @@
     "$description": "Published foundation value.",
     "$extensions": {
       "com.pagelove.design-system": {
-        "css": "'Source Serif Pro', 'Source Serif 4', Georgia, serif"
+        "css": "'Source Serif 4', Georgia, serif"
       }
     }
   },
@@ -3641,6 +3640,91 @@
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "none"
+      }
+    }
+  },
+  "design-page-padding": {
+    "$type": "dimension",
+    "$value": {
+      "value": 40,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "40px"
+      }
+    }
+  },
+  "design-panel-padding": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "24px"
+      }
+    }
+  },
+  "design-row-padding": {
+    "$type": "dimension",
+    "$value": {
+      "value": 20,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "20px"
+      }
+    }
+  },
+  "design-radius-input": {
+    "$type": "dimension",
+    "$value": {
+      "value": 8,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "8px"
+      }
+    }
+  },
+  "design-title-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 2.75,
+      "unit": "rem"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "2.75rem"
+      }
+    }
+  },
+  "design-heading-tracking": {
+    "$type": "string",
+    "$value": "-.025em",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "-.025em"
+      }
+    }
+  },
+  "design-transition-duration": {
+    "$type": "string",
+    "$value": "160ms",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "160ms"
       }
     }
   }

@@ -124,7 +124,7 @@
   --space-025: 2px;
   --space-050: 4px;
   --space-075: 6px;
-  --font-family-brand: 'Source Serif Pro', 'Source Serif 4', Georgia, serif;
+  --font-family-brand: 'Source Serif 4', Georgia, serif;
   --font-family-secondary: Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   --font-family-code: 'Fira Code', ui-monospace, Menlo, Consolas, monospace;
   --font-weight-400: 400;
@@ -240,6 +240,13 @@
   --design-content-width: 1120px;
   --design-section-gap: 24px;
   --design-shadow-panel: none;
+  --design-page-padding: 40px;
+  --design-panel-padding: 24px;
+  --design-row-padding: 20px;
+  --design-radius-input: 8px;
+  --design-title-size: 2.75rem;
+  --design-heading-tracking: -.025em;
+  --design-transition-duration: 160ms;
 }
 /* Generated from tokens/semantic.json. */
 :root {
@@ -586,6 +593,13 @@
   --design-content-width: 1120px;
   --design-section-gap: 24px;
   --design-shadow-panel: none;
+  --design-page-padding: 40px;
+  --design-panel-padding: 24px;
+  --design-row-padding: 20px;
+  --design-radius-input: 8px;
+  --design-title-size: 2.75rem;
+  --design-heading-tracking: -.025em;
+  --design-transition-duration: 160ms;
   --design-color-scheme: light;
 }
 [data-theme="light"] {

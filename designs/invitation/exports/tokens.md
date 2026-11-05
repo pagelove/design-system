@@ -246,6 +246,13 @@ Generated from canonical sources. CSS units are preserved.
 | `design-content-width` | `1080px` |
 | `design-section-gap` | `32px` |
 | `design-shadow-panel` | `none` |
+| `design-page-padding` | `48px` |
+| `design-panel-padding` | `32px` |
+| `design-row-padding` | `24px` |
+| `design-radius-input` | `10px` |
+| `design-title-size` | `3.125rem` |
+| `design-heading-tracking` | `-.025em` |
+| `design-transition-duration` | `160ms` |
 | `background-brand-light` | `#0e0c07` |
 | `background-brand-regular` | `#2c2821` |
 | `background-brand-strong` | `#666550` |
