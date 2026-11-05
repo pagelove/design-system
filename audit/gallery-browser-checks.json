@@ -1,0 +1,60 @@
+{
+  "sizes": [
+    {
+      "body": 305,
+      "headingHeight": 66.53125,
+      "headingLineHeight": "33.28px",
+      "images": true,
+      "scroll": 305
+    },
+    {
+      "body": 375,
+      "headingHeight": 66.53125,
+      "headingLineHeight": "33.28px",
+      "images": true,
+      "scroll": 375
+    },
+    {
+      "body": 753,
+      "headingHeight": 41.5,
+      "headingLineHeight": "41.5054px",
+      "images": true,
+      "scroll": 753
+    },
+    {
+      "body": 1425,
+      "headingHeight": 78.546875,
+      "headingLineHeight": "78.546px",
+      "images": true,
+      "scroll": 1425
+    }
+  ],
+  "modes": [
+    {
+      "design": "classic",
+      "img": "../designs/classic/previews/workspace-dark.png",
+      "link": "workspace.html?design=classic&mode=dark",
+      "mode": "dark",
+      "status": "Classic dark preview selected."
+    },
+    {
+      "design": "editorial",
+      "img": "../designs/editorial/previews/workspace-dark.png",
+      "link": "workspace.html?design=editorial&mode=dark",
+      "mode": "dark",
+      "status": "Editorial dark preview selected."
+    },
+    {
+      "design": "forest",
+      "img": "../designs/forest/previews/workspace-dark.png",
+      "link": "workspace.html?design=forest&mode=dark",
+      "mode": "dark",
+      "status": "Forest dark preview selected."
+    }
+  ],
+  "keyboard": "Classic Light ArrowRight selects Dark and keeps radio focus",
+  "limits": [
+    "Automated skill inspector timed out; direct browser checks used.",
+    "Reduced-motion fallback inspected in CSS; OS preference not emulated."
+  ]
+}

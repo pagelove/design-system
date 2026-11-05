@@ -187,3 +187,22 @@
 - Change: Published implementation 4c62d00e98c374ec441f75d01df79e21bc6bb402 and verified GitHub main matches the clean local checkout.
 - Affected: audit/CHANGELOG.md and audit/files.sha256.
 - Verification: Final export/browser checks and explicit limitations are recorded in reference/PORTABILITY-REVIEW.md and DS-017. This audit-only follow-up closes the publication record.
+
+## DS-019 — Gallery review plan
+
+- UTC: 2026-11-05T23:18:04.8495531Z
+- Actor: Codex
+- Findings: Generic repeated samples conceal finished app layouts; the default is fourth; no in-place mode comparison or direct format discovery.
+- Plan: Generate a default-first gallery with real app screenshots, supported-mode controls, mode-preserving links and clear guide/export paths. Preserve all five designs and Midnight/dark default.
+- Affected: Gallery generator, gallery CSS/JS, screenshots, review and audit records.
+- Verification: Pending build/check, responsive browser and keyboard/mode checks.
+
+
+## DS-020 — Gallery revisions implemented
+
+- UTC: 2026-11-05T23:20:47.4504997Z
+- Actor: Codex
+- Plan reference: DS-019.
+- Change: Default-first real app gallery, supported-mode comparison, direct guide/token/Stitch links, phone close-up previews and responsive screenshots.
+- Verification: Build and full checks pass; four viewport widths, loaded images, three mode groups and keyboard radio navigation checked. See reference/GALLERY-REVIEW.md for evidence and limits.
+- Affected: scripts/gallery.mjs, scripts/build.mjs, examples/designs.html, examples/gallery.js, styles/gallery.css, screenshots and audit records.

@@ -1,0 +1,41 @@
+.gallery-header,.gallery-intro,.gallery-collection,.gallery-footer{width:min(1440px,calc(100% - 64px));margin-inline:auto}
+.gallery-header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:32px}
+.gallery-header a{color:var(--text-regular);text-decoration:none}
+.gallery-header nav,.gallery-resources{display:flex;flex-wrap:wrap;gap:8px 24px}
+.gallery-header a,.gallery-resources a{display:inline-flex;align-items:center;min-height:44px}
+.gallery-intro{padding-block:56px 64px}
+.gallery-intro h1{font-size:clamp(2.4rem,5.3vw,4.75rem);max-width:100%;line-height:1.04;margin:0 0 24px}
+.gallery-intro p{max-width:650px;margin:0 0 28px;font-size:1.125rem}
+.gallery-action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;background:var(--button-strong-default);color:var(--button-strong-text);border-radius:var(--design-radius-button);text-decoration:none;font-weight:500;transition:transform 160ms ease,background-color 160ms ease}
+.gallery-action:hover{background:var(--button-strong-hover)}
+.gallery-action:active{transform:translateY(1px)}
+.gallery-collection{display:grid;gap:64px}
+.gallery-design{display:grid;grid-template-columns:minmax(240px,1fr) minmax(0,2fr);align-items:center;gap:36px;padding:40px;background:var(--background-surface-light);color:var(--text-regular);border-radius:var(--design-radius-card)}
+.gallery-copy{min-width:0}
+.gallery-copy h2{font-family:var(--design-heading-family);letter-spacing:var(--design-heading-tracking);font-size:2.5rem;line-height:1.1;margin:0 0 20px}
+.gallery-copy p{margin:0 0 20px}
+.gallery-detail{font-weight:500}
+.gallery-copy .gallery-action{margin-bottom:20px}
+.gallery-resources a{color:var(--link-text-default)}
+.gallery-preview{display:block;min-width:0;overflow:hidden;border-radius:var(--design-radius-card)}
+.gallery-preview img{display:block;width:100%;height:auto;transition:opacity 160ms ease}
+.gallery-preview:hover img{opacity:.92}
+.gallery-featured{grid-template-columns:1fr;padding:40px}
+.gallery-featured .gallery-copy{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;align-items:start}
+.gallery-featured h2{grid-column:1;font-size:3rem}
+.gallery-featured .gallery-copy>p:first-of-type{grid-column:1;grid-row:2/5;max-width:540px}
+.gallery-featured .gallery-detail,.gallery-featured .gallery-action,.gallery-featured .gallery-resources,.gallery-featured .gallery-modes{grid-column:2;justify-self:start}
+.gallery-featured .gallery-detail{grid-row:1}
+.gallery-modes{border:0;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:16px}
+.gallery-modes legend{margin-bottom:8px}
+.gallery-modes label{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer}
+.gallery-modes input{width:20px;height:20px;accent-color:var(--button-strong-default)}
+.gallery-status,.gallery-skip:not(:focus){position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.gallery-skip:focus{display:block;padding:16px}
+.gallery-footer{padding-block:80px 48px;max-width:1440px}
+.gallery-footer>p:first-child{font-size:2rem;margin:0 0 20px}
+.gallery-footer p{max-width:720px}
+@media(max-width:850px){.gallery-header,.gallery-intro,.gallery-collection,.gallery-footer{width:calc(100% - 32px)}.gallery-header{flex-wrap:wrap;gap:8px;padding-block:16px}.gallery-intro{padding-block:32px 40px}.gallery-design{grid-template-columns:1fr;padding:24px;gap:24px}.gallery-featured .gallery-copy{display:block}.gallery-copy h2,.gallery-featured h2{font-size:2rem}.gallery-collection{gap:32px}.gallery-preview{margin-inline:-8px}.gallery-footer{padding-top:48px}}
+@media(prefers-reduced-motion:reduce){.gallery-action,.gallery-preview img{transition:none}.gallery-action:active{transform:none}}
+.gallery-design{font-family:var(--design-body-family);color-scheme:var(--design-color-scheme)} .gallery-preview img{aspect-ratio:16/10;object-fit:cover;object-position:top} .gallery-featured .gallery-preview img{max-height:600px} @media(max-width:400px){.gallery-intro h1{font-size:2rem}.gallery-design{padding:20px}}
+@media(max-width:600px){.gallery-preview{height:300px}.gallery-preview img{width:760px;max-width:none;height:auto;max-height:none;aspect-ratio:auto;object-fit:initial;margin-left:-140px}.gallery-featured .gallery-preview img{max-height:none}}
