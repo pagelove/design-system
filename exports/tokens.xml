@@ -234,6 +234,13 @@
     <token name="grid-console-xl-columns" value="12"/>
     <token name="grid-console-xl-gutter" value="16px"/>
     <token name="grid-console-xl-margin" value="16px"/>
+    <token name="design-radius-card" value="12px"/>
+    <token name="design-radius-button" value="100px"/>
+    <token name="design-heading-family" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="design-body-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
+    <token name="design-content-width" value="1120px"/>
+    <token name="design-section-gap" value="24px"/>
+    <token name="design-shadow-panel" value="none"/>
     <token name="background-brand-light" value="#fafbf8"/>
     <token name="background-brand-regular" value="#e9e7e2"/>
     <token name="background-brand-strong" value="#aeaa98"/>
@@ -579,6 +586,13 @@
     <token name="grid-console-xl-columns" value="12"/>
     <token name="grid-console-xl-gutter" value="16px"/>
     <token name="grid-console-xl-margin" value="16px"/>
+    <token name="design-radius-card" value="12px"/>
+    <token name="design-radius-button" value="100px"/>
+    <token name="design-heading-family" value="'Source Serif Pro', 'Source Serif 4', Georgia, serif"/>
+    <token name="design-body-family" value="Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif"/>
+    <token name="design-content-width" value="1120px"/>
+    <token name="design-section-gap" value="24px"/>
+    <token name="design-shadow-panel" value="none"/>
     <token name="background-brand-light" value="#0e0c07"/>
     <token name="background-brand-regular" value="#2c2821"/>
     <token name="background-brand-strong" value="#666550"/>

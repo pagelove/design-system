@@ -1,0 +1,21 @@
+{
+  "id": "classic",
+  "name": "Classic",
+  "description": "The original white-and-slate foundation, with editorial headings and a dark counterpart.",
+  "defaultMode": "light",
+  "modes": {
+    "light": {},
+    "dark": {}
+  },
+  "foundations": {},
+  "appearance": {
+    "design-radius-card": "12px",
+    "design-radius-button": "100px",
+    "design-heading-family": "var(--font-family-brand)",
+    "design-body-family": "var(--font-family-secondary)",
+    "design-content-width": "1120px",
+    "design-section-gap": "24px",
+    "design-shadow-panel": "none"
+  },
+  "guidance": "Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces."
+}

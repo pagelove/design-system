@@ -1,0 +1,39 @@
+# Selecting and authoring designs
+
+## Selection
+
+Read `designs/catalog.json`, then select the requested ID. With no explicit request, use its `defaultDesign` and `defaultMode`. With an explicit design but no mode, use that design's own `defaultMode`. Never invent a light variant for a dark-only design. The preview falls back to the configured default for an unknown ID, and the selected design's initial mode for an unavailable mode.
+
+Shared guidance describes accessible behavior, document-first development and component contracts. Each design describes visual choices. Selecting Forest should not inherit Classic's white page or serif headings because a root guide was loaded first. Use the selected guide and exports together.
+
+## Sources and generation
+
+`designs/catalog.json` registers IDs and the global default. Each `designs/<id>/design.json` contains its name, description, local default mode, available modes, foundation overrides, appearance and guidance. JSON Schemas are in `schemas/catalog.schema.json` and `schemas/design.schema.json`.
+
+Designs inherit `tokens/foundations.json` and `tokens/semantic.json`. Foundation overrides merge recursively. Each available mode inherits the complete shared semantic map, then applies its role overrides. The build resolves aliases and emits independent, complete formats for every design. Derived files are not separately editable authorities.
+
+Appearance settings connect heading/body families, card/button radius, content width, section spacing and panel shadow to shared CSS. Palettes change actual page/surface colors, controls, links and status roles. A descriptive guide alone does not change running components.
+
+## Default and compatibility
+
+Change the catalog default and rebuild. Root guides, Stitch copy, resolved exports, DTCG files and theme styles follow it. Per-design bundles retain their own defaults. Root exports retain dictionaries keyed by mode, with design/default metadata added. A dark-only default has no `light` entry: consumers must inspect mode availability. Unsupported root DTCG mode files are removed on rebuild.
+
+The original profile JSON is reference-only. Choose `data-design`, not `data-profile`, for a complete design. Existing editorial/invitation profile guides redirect to the supported designs.
+
+## Browser integration
+
+Load `styles/app.css` and put `data-design` plus an available `data-theme` on the HTML element. Omitting both uses the configured default. Typography, geometry, backgrounds and browser control color scheme follow the selection. Nested regions can demonstrate tokens, as the gallery does; whole-document selection is recommended for apps.
+
+For one design, load shared component styles and that design's `styles/theme.css` last. This supplies complete foundations, semantics and appearance, defaults to the design's initial mode, and recognizes its supported modes. It is intended for one design per document. Shared CSS still supplies structure and accessibility adjustments.
+
+The preview uses URL parameters (`?design=forest&mode=dark`), not a hidden saved preference. Changing designs resets to that design's initial mode. Back/forward restores earlier selections. A generated catalog script allows local-file previews without JSON fetches.
+
+## Add a design
+
+1. Create `designs/<id>/design.json`, using an existing definition as a structural starting point. Use a stable lowercase ID and include all appearance settings.
+2. Declare supported modes and one local default. Cover page/surface colors, text, actions, focus, disabled/error/selection states and links. Do not use automatic inversion.
+3. Write concrete guidance for fonts, colors, shapes and density. Keep font fallbacks and license requirements explicit. Preserve neutral panel borders and no decorative northeast arrows.
+4. Register the ID in the catalog. Change the global default only if intended.
+5. Build and check. Compare real components in every mode, inspect mobile/keyboard/error/loading states and add a screenshot. Check contrast in actual contexts.
+
+Shared-source changes can affect every design. Exports do not imply verified proprietary native files or live tool imports.

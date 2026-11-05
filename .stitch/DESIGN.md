@@ -1,5 +1,5 @@
 ---
-"name": "Pagelove App Foundations"
+"name": "Classic"
 "colors":
   "primary": "#334155"
   "neutral": "#ffffff"
@@ -7,7 +7,7 @@
   "border": "#cbd5e1"
 "typography":
   "heading":
-    "fontFamily": "Source Serif 4"
+    "fontFamily": "Source Serif Pro"
     "fontSize": "2rem"
     "fontWeight": 400
     "lineHeight": 1.2
@@ -22,24 +22,24 @@
 "spacing":
   "small": "8px"
   "medium": "16px"
-  "large": "32px"
+  "large": "24px"
 ---
 
-# Pagelove App Foundations
+# Classic
 
 ## Overview
 
-Build calm, readable applications with visible structure and one clear next action per task. Pair editorial serif headings with precise sans-serif controls and monospace technical examples. Prefer meaningful content, neutral separators and generous spacing over decorative panels. The values above describe the selected starting style; the complete scales and roles live in the token files.
+Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Default: the supplied public app library. Dark mode is available through semantic theme roles, not automatic color inversion. Optional editorial and invitation profiles retain a distinct brand palette.
+Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Available modes: light, dark. Initial mode: light.
 
 ## Colors
 
-Use purpose-named text, background, button, border and status roles. Keep panels neutral. Use functional color on error/focus/selection states with explicit labels, not decorative card rails. The app library provides independent light and dark role mappings. Check contrast in each actual composition; a palette value is not a blanket accessibility approval.
+Use purpose-named text, background, button, border and status roles. Keep panels neutral. Use functional color on error/focus/selection states with explicit labels, not decorative card rails. Available modes are declared above; do not invent an unsupported mode. Check contrast in each actual composition; a palette value is not a blanket accessibility approval.
 
 ## Typography
 
-Use the declared serif for headings, sans-serif for body and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
+Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
 
 ## Layout
 
@@ -53,7 +53,7 @@ Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only
 
 ## Shapes
 
-Buttons may be pill-shaped; utility icon actions can be rounded or squared. Cards have subtly rounded corners. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
+Apply this design's declared card and button radii. Utility icon actions can remain rounded or squared according to purpose. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
 
 ## Components
 

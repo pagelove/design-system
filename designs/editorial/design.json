@@ -1,0 +1,39 @@
+{
+  "id": "editorial",
+  "name": "Editorial",
+  "description": "Warm paper, slate ink and restrained lavender; a quieter reading-focused design.",
+  "defaultMode": "light",
+  "modes": {
+    "light": {},
+    "dark": {}
+  },
+  "foundations": {
+    "color": {
+      "polo-blue": {
+        "0": "#faf7f1",
+        "50": "#f3efe7",
+        "100": "#eae5dc",
+        "200": "#ddd7cc",
+        "300": "#c9c3b7",
+        "400": "#a59f95",
+        "500": "#716c65",
+        "600": "#45556c",
+        "700": "#303e52",
+        "800": "#243145",
+        "900": "#1a2435",
+        "950": "#121b2a",
+        "1000": "#0c1420"
+      }
+    }
+  },
+  "appearance": {
+    "design-radius-card": "4px",
+    "design-radius-button": "6px",
+    "design-heading-family": "var(--font-family-brand)",
+    "design-body-family": "var(--font-family-secondary)",
+    "design-content-width": "1040px",
+    "design-section-gap": "32px",
+    "design-shadow-panel": "none"
+  },
+  "guidance": "Use warm paper surfaces, slate ink, square-edged reading panels and understated actions. Prefer long-form content and clear type hierarchy."
+}

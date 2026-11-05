@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Selectable design definition",
+  "type": "object",
+  "required": ["id", "name", "description", "defaultMode", "modes", "foundations", "appearance", "guidance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+    "name": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "guidance": {"type": "string", "minLength": 1},
+    "defaultMode": {"enum": ["light", "dark"]},
+    "foundations": {"type": "object", "description": "Deep overrides of shared canonical foundation groups."},
+    "modes": {"type": "object", "minProperties": 1, "additionalProperties": false, "properties": {"light": {"$ref": "#/$defs/roles"}, "dark": {"$ref": "#/$defs/roles"}}},
+    "appearance": {"type": "object", "required": ["design-radius-card", "design-radius-button", "design-heading-family", "design-body-family", "design-content-width", "design-section-gap", "design-shadow-panel"], "additionalProperties": {"type": "string"}},
+    "$comment": {"type": "string"}
+  },
+  "$defs": {"roles": {"type": "object", "propertyNames": {"pattern": "^[a-z][a-z0-9-]*$"}, "additionalProperties": {"type": "string", "pattern": "^var\\(--color-[a-z0-9-]+\\)$"}}}
+}

@@ -1,0 +1,3 @@
+:root { --design-color-scheme: light; }
+[data-theme="light"] { --design-color-scheme: light; }
+[data-theme="dark"] { --design-color-scheme: dark; }

@@ -1,17 +1,44 @@
-# Pagelove Design System
+# Pagelove Design Collection
 
-Design files for building understandable, accessible applications with people and AI agents. Use the formats your tools support: Markdown, plain text, JSON, DTCG tokens, YAML, XML, CSV, CSS, Sass, Less, JavaScript, TypeScript, HTML, SVG, Swift and Kotlin string dictionaries, and Stitch DESIGN.md.
+Multiple complete designs, shared accessible components, and portable files for people, design tools and AI agents.
 
-## Start here
+## Choose a design
 
-1. Read [DESIGN.md](DESIGN.md) for the visual system and [the foundations guide](docs/foundations.md) for the exact scales and modes.
-2. Read [document-first development](docs/document-first.md) before choosing an app's domain model. Token JSON is interchange data, not a requirement to model app content in JSON.
-3. Choose [components](docs/components.md) and [patterns](docs/patterns.md). For games, also read [game experience guidance](docs/games.md).
-4. Open [the component catalog](examples/catalog.html), or serve the repository with `npm run serve` and visit `http://127.0.0.1:4173`.
+| Design | Character | Modes |
+| --- | --- | --- |
+| [Classic](designs/classic/DESIGN.md) | Original white/slate surfaces, serif headings, pill actions | Light and dark |
+| [Editorial](designs/editorial/DESIGN.md) | Warm paper, slate ink, restrained geometry | Light and dark |
+| [Forest](designs/forest/DESIGN.md) | Sage backgrounds, evergreen actions, sans-serif headings, soft corners | Light and dark |
+| [Midnight](designs/midnight/DESIGN.md) | Deep plum workspace, lavender links, compact geometry | Dark |
+| [Invitation](designs/invitation/DESIGN.md) | Blue-black, warm off-white, literary serif typography | Dark |
 
-Node.js 22 or later is used only for generation, verification and the optional preview server. No package installation or third-party runtime is needed. HTML/CSS examples can be opened directly from disk. Fonts use explicit local fallbacks; font files and trademarks are not bundled.
+**Initial default: Classic / light.** The current setting is in [designs/catalog.json](designs/catalog.json). Root `DESIGN.md`, `.stitch/DESIGN.md`, `exports/` and token exports are generated for that default. Each design has the same formats under `designs/<id>/`.
 
-![Light-mode component catalog](assets/previews/catalog-overview.png)
+Open [the design gallery](examples/designs.html) or [the interactive component preview](examples/catalog.html). Both work from local files. The preview selects design and mode independently, shows only supported modes, and keeps choices in its URL. Without JavaScript, the component page uses the configured default; the gallery still links to each design's files.
+
+![Design gallery](assets/previews/design-gallery.png)
+
+## Use it in an app
+
+1. Read the selected `designs/<id>/DESIGN.md` and shared [document-first guidance](docs/document-first.md). If no design is requested, use the catalog default and its initial mode.
+2. Load `styles/app.css` once. Apply the selected design and supported mode to the document:
+
+```html
+<html lang="en" data-design="forest" data-theme="light">
+```
+
+3. Use shared components and semantic roles. The design supplies colors, fonts, shapes and spacing. Do not mix arbitrary values from several designs.
+4. For another tool, use that design's `exports/`, `tokens/*.tokens.json` or `.stitch/DESIGN.md`. Fonts have explicit fallbacks; font files and trademarks are not bundled.
+
+Omitting both attributes uses the configured default. For an isolated CSS bundle, load shared component styles followed by `designs/<id>/styles/theme.css`; that bundle starts in the design's own initial mode. See [selection and authoring](docs/designs.md).
+
+## Formats
+
+Every design produces Markdown and plain text guidance; JSON, YAML, XML and CSV tokens; DTCG files; a Tokens Studio adapter; CSS, Sass and Less; JavaScript ES/CommonJS and TypeScript; Swift/Kotlin CSS-string dictionaries; an SVG palette; and Stitch-compatible `DESIGN.md`. [Format limitations](docs/formats.md) describe conversions and untested tool imports. React, Vue and Svelte examples remain shared.
+
+## Change or add designs
+
+Edit `designs/catalog.json` to set `defaultDesign` and `defaultMode`. Edit `designs/<id>/design.json` for foundation overrides, mode-specific role overrides, typography/shape/spacing and visual guidance. Shared sources remain in `tokens/`. Other design files are generated; do not edit exported copies.
 
 ```sh
 npm run build
@@ -19,35 +46,8 @@ npm run check
 npm run serve
 ```
 
-## Pick a format
+Node.js 22+ is needed for these scripts. No dependency installation is required. The preview opens at `http://127.0.0.1:4173`. Checks cover token completeness, mode availability, default regeneration, selected contrast pairs, escaping, public-content restrictions and deterministic exports. Browser results are recorded separately.
 
-| Need | Files | Status |
-| --- | --- | --- |
-| Human and LLM guidance | `DESIGN.md`, `docs/*.md`, `AGENTS.md`, `llms.txt` | Authored guidance; explicit entry points |
-| Canonical foundation data | `tokens/foundations.json` | Editable source, including text styles and grids |
-| Canonical semantic themes | `tokens/semantic.json` | Editable light/dark roles referencing foundation CSS names |
-| Optional visual profiles | `tokens/profiles.json`, `profiles/*/DESIGN.md` | Editorial and invitation styles |
-| Standard design-token exchange | `tokens/*.tokens.json` | DTCG 2025.10 structure; load foundations plus one semantic mode |
-| Figma plugin exchange | `exports/tokens-studio.json` | Tokens Studio adapter; verify against your plugin version |
-| Browser UI | `styles/*.css`, `components/`, `examples/` | Framework-independent HTML/CSS with optional JS |
-| Structured interchange | `exports/tokens.json`, `.yaml`, `.xml`, `.csv` | Generated; units preserved |
-| Source code consumption | `exports/tokens.mjs`, `.cjs`, `.ts`, `_tokens.scss`, `tokens.less` | Generated; resolved theme values |
-| Native app integration | `exports/Tokens.swift`, `exports/Tokens.kt` | CSS-string dictionaries; explicit native conversion required |
-| Visual reference | `assets/palette.svg`, `assets/previews/` | Palette plus rendered catalog screenshots |
-| Stitch | `.stitch/DESIGN.md`, `.stitch/README.md` | YAML tokens plus Markdown rationale; no project IDs required |
-| Framework examples | `examples/frameworks/` | Small React, Vue and Svelte usage adapters; see integration limits |
-| Plain context | `exports/tokens.txt`, `exports/tokens.md`, `llms-full.txt` | Generated context for text-only consumers |
+The original `tokens/profiles.json` is retained as historical reference. Its guides point to the complete selectable designs; `data-profile` is deprecated for design selection.
 
-This repository provides portable sources and concrete adapters, not guaranteed compatibility with every app or model. Native authoring formats such as `.fig` and `.sketch` are not fabricated. Imported originals may be added when available, with their provenance and license.
-
-## Source authority
-
-The supplied public design library is the default app foundation. The reference design guide supplies principles and optional editorial/invitation profiles. App tokens and brand profiles differ intentionally. Components consume semantic roles; semantic roles reference foundations. Update canonical JSON, then regenerate exports. Generated formats are not separately editable authorities.
-
-The published library's exact typography classes remain available. The recommended app layer increases target sizes, avoids tightly tracked body copy, preserves zoom and strengthens reduced motion. See [adaptations and provenance](reference/PROVENANCE.md).
-
-## Contribute
-
-Describe the intended behavior, change its canonical source, rebuild, and run checks. Inspect light/dark, narrow/wide, keyboard, error, loading and reduced-motion behavior for affected components. Record meaningful changes in [the audit log](audit/CHANGELOG.md). See [format limitations](docs/formats.md) and [accessibility](docs/accessibility.md).
-
-Code, tokens and examples are MIT licensed. The document-first adaptation retains CC BY 4.0; see [NOTICE](NOTICE.md). No trademark or third-party font rights are granted.
+Code, tokens and new documentation are MIT licensed. The document-first adaptation retains CC BY 4.0; see [NOTICE](NOTICE.md). Source credits remain in [provenance](reference/PROVENANCE.md).

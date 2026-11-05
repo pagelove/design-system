@@ -1,6 +1,12 @@
 # Pagelove Design System
 
-> Portable public design files for accessible, document-first apps. Start with the design guide and choose task-relevant documentation. Generated exports share canonical token sources.
+> Multiple selectable designs for accessible, document-first apps. Read the catalog first; use the requested design or its configured default and mode. Each design has complete formats and its own DESIGN.md. Never assume the root default's white surfaces apply to another selected design.
+
+## Selection
+
+- [Catalog](https://github.com/pagelove/design-system/blob/main/designs/catalog.json): Default design/mode and registered IDs.
+- [Design index](https://github.com/pagelove/design-system/blob/main/designs/index.json): Available modes, guide paths, exports and preview links.
+- [Authoring and selection](https://github.com/pagelove/design-system/blob/main/docs/designs.md): Default rules, migration and how to add designs.
 
 ## Guides
 

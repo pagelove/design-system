@@ -1,0 +1,552 @@
+{
+  "background-brand-light": {
+    "$type": "color",
+    "$value": "{color-olive-50}",
+    "$description": "light mode semantic role: background-brand-light."
+  },
+  "background-brand-regular": {
+    "$type": "color",
+    "$value": "{color-olive-200}",
+    "$description": "light mode semantic role: background-brand-regular."
+  },
+  "background-brand-strong": {
+    "$type": "color",
+    "$value": "{color-olive-400}",
+    "$description": "light mode semantic role: background-brand-strong."
+  },
+  "background-danger-light": {
+    "$type": "color",
+    "$value": "{color-torch-red-50}",
+    "$description": "light mode semantic role: background-danger-light."
+  },
+  "background-danger-regular": {
+    "$type": "color",
+    "$value": "{color-torch-red-200}",
+    "$description": "light mode semantic role: background-danger-regular."
+  },
+  "background-danger-strong": {
+    "$type": "color",
+    "$value": "{color-torch-red-400}",
+    "$description": "light mode semantic role: background-danger-strong."
+  },
+  "background-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-500}",
+    "$description": "light mode semantic role: background-disabled."
+  },
+  "background-discovery-light": {
+    "$type": "color",
+    "$value": "{color-purple-50}",
+    "$description": "light mode semantic role: background-discovery-light."
+  },
+  "background-discovery-regular": {
+    "$type": "color",
+    "$value": "{color-purple-200}",
+    "$description": "light mode semantic role: background-discovery-regular."
+  },
+  "background-discovery-strong": {
+    "$type": "color",
+    "$value": "{color-purple-400}",
+    "$description": "light mode semantic role: background-discovery-strong."
+  },
+  "background-elevation-light": {
+    "$type": "color",
+    "$value": "{color-polo-blue-0}",
+    "$description": "light mode semantic role: background-elevation-light."
+  },
+  "background-elevation-regular": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: background-elevation-regular."
+  },
+  "background-elevation-strong": {
+    "$type": "color",
+    "$value": "{color-polo-blue-200}",
+    "$description": "light mode semantic role: background-elevation-strong."
+  },
+  "background-information-light": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-50}",
+    "$description": "light mode semantic role: background-information-light."
+  },
+  "background-information-regular": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-200}",
+    "$description": "light mode semantic role: background-information-regular."
+  },
+  "background-information-strong": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-400}",
+    "$description": "light mode semantic role: background-information-strong."
+  },
+  "background-neutral-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: background-neutral-hovered."
+  },
+  "background-neutral-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: background-neutral-pressed."
+  },
+  "background-neutral-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: background-neutral-selected."
+  },
+  "background-success-light": {
+    "$type": "color",
+    "$value": "{color-malachite-50}",
+    "$description": "light mode semantic role: background-success-light."
+  },
+  "background-success-regular": {
+    "$type": "color",
+    "$value": "{color-malachite-200}",
+    "$description": "light mode semantic role: background-success-regular."
+  },
+  "background-success-strong": {
+    "$type": "color",
+    "$value": "{color-malachite-400}",
+    "$description": "light mode semantic role: background-success-strong."
+  },
+  "background-surface-light": {
+    "$type": "color",
+    "$value": "{color-polo-blue-0}",
+    "$description": "light mode semantic role: background-surface-light."
+  },
+  "background-surface-regular": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: background-surface-regular."
+  },
+  "background-surface-strong": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: background-surface-strong."
+  },
+  "background-warning-light": {
+    "$type": "color",
+    "$value": "{color-neon-carrot-50}",
+    "$description": "light mode semantic role: background-warning-light."
+  },
+  "background-warning-regular": {
+    "$type": "color",
+    "$value": "{color-neon-carrot-200}",
+    "$description": "light mode semantic role: background-warning-regular."
+  },
+  "background-warning-strong": {
+    "$type": "color",
+    "$value": "{color-neon-carrot-400}",
+    "$description": "light mode semantic role: background-warning-strong."
+  },
+  "border-brand": {
+    "$type": "color",
+    "$value": "{color-olive-500}",
+    "$description": "light mode semantic role: border-brand."
+  },
+  "border-danger": {
+    "$type": "color",
+    "$value": "{color-torch-red-200}",
+    "$description": "light mode semantic role: border-danger."
+  },
+  "border-danger-light": {
+    "$type": "color",
+    "$value": "{color-torch-red-200}",
+    "$description": "light mode semantic role: border-danger-light."
+  },
+  "border-danger-strong": {
+    "$type": "color",
+    "$value": "{color-torch-red-600}",
+    "$description": "light mode semantic role: border-danger-strong."
+  },
+  "border-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: border-disabled."
+  },
+  "border-discovery": {
+    "$type": "color",
+    "$value": "{color-purple-200}",
+    "$description": "light mode semantic role: border-discovery."
+  },
+  "border-focused": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-400}",
+    "$description": "light mode semantic role: border-focused."
+  },
+  "border-information": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-200}",
+    "$description": "light mode semantic role: border-information."
+  },
+  "border-inverse": {
+    "$type": "color",
+    "$value": "{color-polo-blue-700}",
+    "$description": "light mode semantic role: border-inverse."
+  },
+  "border-light": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: border-light."
+  },
+  "border-regular": {
+    "$type": "color",
+    "$value": "{color-polo-blue-300}",
+    "$description": "light mode semantic role: border-regular."
+  },
+  "border-selected": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-600}",
+    "$description": "light mode semantic role: border-selected."
+  },
+  "border-strong": {
+    "$type": "color",
+    "$value": "{color-polo-blue-400}",
+    "$description": "light mode semantic role: border-strong."
+  },
+  "border-success": {
+    "$type": "color",
+    "$value": "{color-malachite-200}",
+    "$description": "light mode semantic role: border-success."
+  },
+  "border-warning": {
+    "$type": "color",
+    "$value": "{color-neon-carrot-200}",
+    "$description": "light mode semantic role: border-warning."
+  },
+  "button-borderless-icon-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-600}",
+    "$description": "light mode semantic role: button-borderless-icon-default."
+  },
+  "button-borderless-icon-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-400}",
+    "$description": "light mode semantic role: button-borderless-icon-disabled."
+  },
+  "button-borderless-icon-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-800}",
+    "$description": "light mode semantic role: button-borderless-icon-hovered."
+  },
+  "button-borderless-icon-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-borderless-icon-pressed."
+  },
+  "button-borderless-icon-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-borderless-icon-selected."
+  },
+  "button-borderless-text-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-600}",
+    "$description": "light mode semantic role: button-borderless-text-default."
+  },
+  "button-borderless-text-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-400}",
+    "$description": "light mode semantic role: button-borderless-text-disabled."
+  },
+  "button-borderless-text-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-800}",
+    "$description": "light mode semantic role: button-borderless-text-hovered."
+  },
+  "button-borderless-text-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-borderless-text-pressed."
+  },
+  "button-borderless-text-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-borderless-text-selected."
+  },
+  "button-gradient-bg-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-0}",
+    "$description": "light mode semantic role: button-gradient-bg-default."
+  },
+  "button-gradient-bg-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-0}",
+    "$description": "light mode semantic role: button-gradient-bg-disabled."
+  },
+  "button-gradient-bg-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: button-gradient-bg-hovered."
+  },
+  "button-gradient-bg-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: button-gradient-bg-pressed."
+  },
+  "button-gradient-bg-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: button-gradient-bg-selected."
+  },
+  "button-regular-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: button-regular-default."
+  },
+  "button-regular-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: button-regular-disabled."
+  },
+  "button-regular-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: button-regular-hovered."
+  },
+  "button-regular-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-100}",
+    "$description": "light mode semantic role: button-regular-pressed."
+  },
+  "button-regular-text": {
+    "$type": "color",
+    "$value": "{color-polo-blue-800}",
+    "$description": "light mode semantic role: button-regular-text."
+  },
+  "button-secondary-icon-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-600}",
+    "$description": "light mode semantic role: button-secondary-icon-default."
+  },
+  "button-secondary-icon-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-500}",
+    "$description": "light mode semantic role: button-secondary-icon-disabled."
+  },
+  "button-secondary-icon-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-950}",
+    "$description": "light mode semantic role: button-secondary-icon-hovered."
+  },
+  "button-secondary-icon-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-1000}",
+    "$description": "light mode semantic role: button-secondary-icon-pressed."
+  },
+  "button-secondary-icon-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-secondary-icon-selected."
+  },
+  "button-secondary-text-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-600}",
+    "$description": "light mode semantic role: button-secondary-text-default."
+  },
+  "button-secondary-text-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-500}",
+    "$description": "light mode semantic role: button-secondary-text-disabled."
+  },
+  "button-secondary-text-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-800}",
+    "$description": "light mode semantic role: button-secondary-text-hovered."
+  },
+  "button-secondary-text-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-secondary-text-pressed."
+  },
+  "button-secondary-text-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-secondary-text-selected."
+  },
+  "button-strong-default": {
+    "$type": "color",
+    "$value": "{color-polo-blue-800}",
+    "$description": "light mode semantic role: button-strong-default."
+  },
+  "button-strong-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-300}",
+    "$description": "light mode semantic role: button-strong-disabled."
+  },
+  "button-strong-hovered": {
+    "$type": "color",
+    "$value": "{color-polo-blue-900}",
+    "$description": "light mode semantic role: button-strong-hovered."
+  },
+  "button-strong-pressed": {
+    "$type": "color",
+    "$value": "{color-polo-blue-950}",
+    "$description": "light mode semantic role: button-strong-pressed."
+  },
+  "button-strong-text": {
+    "$type": "color",
+    "$value": "{color-polo-blue-0}",
+    "$description": "light mode semantic role: button-strong-text."
+  },
+  "icon-brand": {
+    "$type": "color",
+    "$value": "{color-olive-700}",
+    "$description": "light mode semantic role: icon-brand."
+  },
+  "icon-danger": {
+    "$type": "color",
+    "$value": "{color-torch-red-700}",
+    "$description": "light mode semantic role: icon-danger."
+  },
+  "icon-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-400}",
+    "$description": "light mode semantic role: icon-disabled."
+  },
+  "icon-discovery": {
+    "$type": "color",
+    "$value": "{color-purple-700}",
+    "$description": "light mode semantic role: icon-discovery."
+  },
+  "icon-information": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-700}",
+    "$description": "light mode semantic role: icon-information."
+  },
+  "icon-inverse": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: icon-inverse."
+  },
+  "icon-light": {
+    "$type": "color",
+    "$value": "{color-polo-blue-500}",
+    "$description": "light mode semantic role: icon-light."
+  },
+  "icon-regular": {
+    "$type": "color",
+    "$value": "{color-polo-blue-700}",
+    "$description": "light mode semantic role: icon-regular."
+  },
+  "icon-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-950}",
+    "$description": "light mode semantic role: icon-selected."
+  },
+  "icon-strong": {
+    "$type": "color",
+    "$value": "{color-polo-blue-950}",
+    "$description": "light mode semantic role: icon-strong."
+  },
+  "icon-success": {
+    "$type": "color",
+    "$value": "{color-malachite-700}",
+    "$description": "light mode semantic role: icon-success."
+  },
+  "icon-warning": {
+    "$type": "color",
+    "$value": "{color-neon-carrot-700}",
+    "$description": "light mode semantic role: icon-warning."
+  },
+  "link-icon-default": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-600}",
+    "$description": "light mode semantic role: link-icon-default."
+  },
+  "link-icon-hover": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-700}",
+    "$description": "light mode semantic role: link-icon-hover."
+  },
+  "link-icon-inverse": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-300}",
+    "$description": "light mode semantic role: link-icon-inverse."
+  },
+  "link-icon-pressed": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-800}",
+    "$description": "light mode semantic role: link-icon-pressed."
+  },
+  "link-text-default": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-600}",
+    "$description": "light mode semantic role: link-text-default."
+  },
+  "link-text-hover": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-700}",
+    "$description": "light mode semantic role: link-text-hover."
+  },
+  "link-text-pressed": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-800}",
+    "$description": "light mode semantic role: link-text-pressed."
+  },
+  "link-text-visited": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-500}",
+    "$description": "light mode semantic role: link-text-visited."
+  },
+  "text-brand": {
+    "$type": "color",
+    "$value": "{color-olive-700}",
+    "$description": "light mode semantic role: text-brand."
+  },
+  "text-danger": {
+    "$type": "color",
+    "$value": "{color-torch-red-700}",
+    "$description": "light mode semantic role: text-danger."
+  },
+  "text-disabled": {
+    "$type": "color",
+    "$value": "{color-polo-blue-400}",
+    "$description": "light mode semantic role: text-disabled."
+  },
+  "text-discovery": {
+    "$type": "color",
+    "$value": "{color-purple-700}",
+    "$description": "light mode semantic role: text-discovery."
+  },
+  "text-information": {
+    "$type": "color",
+    "$value": "{color-cornflower-blue-700}",
+    "$description": "light mode semantic role: text-information."
+  },
+  "text-inverse": {
+    "$type": "color",
+    "$value": "{color-polo-blue-50}",
+    "$description": "light mode semantic role: text-inverse."
+  },
+  "text-light": {
+    "$type": "color",
+    "$value": "{color-polo-blue-500}",
+    "$description": "light mode semantic role: text-light."
+  },
+  "text-regular": {
+    "$type": "color",
+    "$value": "{color-polo-blue-700}",
+    "$description": "light mode semantic role: text-regular."
+  },
+  "text-selected": {
+    "$type": "color",
+    "$value": "{color-polo-blue-950}",
+    "$description": "light mode semantic role: text-selected."
+  },
+  "text-strong": {
+    "$type": "color",
+    "$value": "{color-polo-blue-950}",
+    "$description": "light mode semantic role: text-strong."
+  },
+  "text-success": {
+    "$type": "color",
+    "$value": "{color-malachite-700}",
+    "$description": "light mode semantic role: text-success."
+  },
+  "text-warning": {
+    "$type": "color",
+    "$value": "{color-neon-carrot-700}",
+    "$description": "light mode semantic role: text-warning."
+  }
+}

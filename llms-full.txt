@@ -2,7 +2,7 @@
 ===== DESIGN.md =====
 
 ---
-"name": "Pagelove App Foundations"
+"name": "Classic"
 "colors":
   "primary": "#334155"
   "neutral": "#ffffff"
@@ -10,7 +10,7 @@
   "border": "#cbd5e1"
 "typography":
   "heading":
-    "fontFamily": "Source Serif 4"
+    "fontFamily": "Source Serif Pro"
     "fontSize": "2rem"
     "fontWeight": 400
     "lineHeight": 1.2
@@ -25,24 +25,24 @@
 "spacing":
   "small": "8px"
   "medium": "16px"
-  "large": "32px"
+  "large": "24px"
 ---
 
-# Pagelove App Foundations
+# Classic
 
 ## Overview
 
-Build calm, readable applications with visible structure and one clear next action per task. Pair editorial serif headings with precise sans-serif controls and monospace technical examples. Prefer meaningful content, neutral separators and generous spacing over decorative panels. The values above describe the selected starting style; the complete scales and roles live in the token files.
+Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Default: the supplied public app library. Dark mode is available through semantic theme roles, not automatic color inversion. Optional editorial and invitation profiles retain a distinct brand palette.
+Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Available modes: light, dark. Initial mode: light.
 
 ## Colors
 
-Use purpose-named text, background, button, border and status roles. Keep panels neutral. Use functional color on error/focus/selection states with explicit labels, not decorative card rails. The app library provides independent light and dark role mappings. Check contrast in each actual composition; a palette value is not a blanket accessibility approval.
+Use purpose-named text, background, button, border and status roles. Keep panels neutral. Use functional color on error/focus/selection states with explicit labels, not decorative card rails. Available modes are declared above; do not invent an unsupported mode. Check contrast in each actual composition; a palette value is not a blanket accessibility approval.
 
 ## Typography
 
-Use the declared serif for headings, sans-serif for body and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
+Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
 
 ## Layout
 
@@ -56,7 +56,7 @@ Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only
 
 ## Shapes
 
-Buttons may be pill-shaped; utility icon actions can be rounded or squared. Cards have subtly rounded corners. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
+Apply this design's declared card and button radii. Utility icon actions can remain rounded or squared according to purpose. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
 
 ## Components
 
@@ -75,9 +75,54 @@ Progress must distinguish indeterminate work, actual percent, completion and fai
 - Do not include private account metadata, operating procedures or non-Pagelove repository links.
 
 
+===== docs/designs.md =====
+
+# Selecting and authoring designs
+
+## Selection
+
+Read `designs/catalog.json`, then select the requested ID. With no explicit request, use its `defaultDesign` and `defaultMode`. With an explicit design but no mode, use that design's own `defaultMode`. Never invent a light variant for a dark-only design. The preview falls back to the configured default for an unknown ID, and the selected design's initial mode for an unavailable mode.
+
+Shared guidance describes accessible behavior, document-first development and component contracts. Each design describes visual choices. Selecting Forest should not inherit Classic's white page or serif headings because a root guide was loaded first. Use the selected guide and exports together.
+
+## Sources and generation
+
+`designs/catalog.json` registers IDs and the global default. Each `designs/<id>/design.json` contains its name, description, local default mode, available modes, foundation overrides, appearance and guidance. JSON Schemas are in `schemas/catalog.schema.json` and `schemas/design.schema.json`.
+
+Designs inherit `tokens/foundations.json` and `tokens/semantic.json`. Foundation overrides merge recursively. Each available mode inherits the complete shared semantic map, then applies its role overrides. The build resolves aliases and emits independent, complete formats for every design. Derived files are not separately editable authorities.
+
+Appearance settings connect heading/body families, card/button radius, content width, section spacing and panel shadow to shared CSS. Palettes change actual page/surface colors, controls, links and status roles. A descriptive guide alone does not change running components.
+
+## Default and compatibility
+
+Change the catalog default and rebuild. Root guides, Stitch copy, resolved exports, DTCG files and theme styles follow it. Per-design bundles retain their own defaults. Root exports retain dictionaries keyed by mode, with design/default metadata added. A dark-only default has no `light` entry: consumers must inspect mode availability. Unsupported root DTCG mode files are removed on rebuild.
+
+The original profile JSON is reference-only. Choose `data-design`, not `data-profile`, for a complete design. Existing editorial/invitation profile guides redirect to the supported designs.
+
+## Browser integration
+
+Load `styles/app.css` and put `data-design` plus an available `data-theme` on the HTML element. Omitting both uses the configured default. Typography, geometry, backgrounds and browser control color scheme follow the selection. Nested regions can demonstrate tokens, as the gallery does; whole-document selection is recommended for apps.
+
+For one design, load shared component styles and that design's `styles/theme.css` last. This supplies complete foundations, semantics and appearance, defaults to the design's initial mode, and recognizes its supported modes. It is intended for one design per document. Shared CSS still supplies structure and accessibility adjustments.
+
+The preview uses URL parameters (`?design=forest&mode=dark`), not a hidden saved preference. Changing designs resets to that design's initial mode. Back/forward restores earlier selections. A generated catalog script allows local-file previews without JSON fetches.
+
+## Add a design
+
+1. Create `designs/<id>/design.json`, using an existing definition as a structural starting point. Use a stable lowercase ID and include all appearance settings.
+2. Declare supported modes and one local default. Cover page/surface colors, text, actions, focus, disabled/error/selection states and links. Do not use automatic inversion.
+3. Write concrete guidance for fonts, colors, shapes and density. Keep font fallbacks and license requirements explicit. Preserve neutral panel borders and no decorative northeast arrows.
+4. Register the ID in the catalog. Change the global default only if intended.
+5. Build and check. Compare real components in every mode, inspect mobile/keyboard/error/loading states and add a screenshot. Check contrast in actual contexts.
+
+Shared-source changes can affect every design. Exports do not imply verified proprietary native files or live tool imports.
+
+
 ===== docs/foundations.md =====
 
 # Foundations
+
+This guide describes the shared Classic baseline and the original reference profiles. The collection now supplies complete selectable designs: read [selection and authoring](designs.md) and the chosen `designs/<id>/DESIGN.md` first. Design-specific overrides replace the relevant colors, fonts, shape and spacing settings. The old profile references below are historical values, not the active runtime selection mechanism.
 
 ## Principles
 
@@ -123,7 +168,7 @@ Editorial: white, slate ink `#45556C`, Source Serif 4 headings, Inter body and q
 
 Invitation: blue-black `#0C0E1A`, navy surfaces, warm off-white `#E8E4DF`, Fraunces headings, Inter Tight body, JetBrains Mono code, with dusty lavender/clay/rose accents. Low-opacity borders are decorative separators, not sufficient boundaries for every control. Check muted text and gradients independently.
 
-These profiles supply values as `--profile-*` properties and dedicated DESIGN.md files. Integrations must deliberately map profile values to the app's semantic roles; changing `data-profile` alone does not retheme all components.
+The complete Editorial and Invitation designs now map values to shared semantic roles and can be selected with `data-design`. Original `--profile-*` properties remain only for compatibility/reference. Changing `data-profile` alone does not retheme components. Read each complete design's guide for its current palette and geometry.
 
 
 ===== docs/components.md =====
@@ -364,16 +409,16 @@ Explain the output's destination and actual save/share state. Provide meaningful
 
 # Formats and conversion contracts
 
-The canonical foundation and semantic JSON files are the editable design values. `npm run build` deterministically generates exports. Component source and guidance remain authored files. An adapter must identify its source and limitations; never maintain competing manually edited exports.
+Shared foundation/semantic JSON, designs/catalog.json and each designs/<id>/design.json are the editable design values. `npm run build` generates the full set of formats under every design, with default-compatible copies at the repository root. Component source and guidance remain authored files. An adapter must identify its source and limitations; never maintain competing manually edited exports. Modes follow each design's declaration; do not assume every bundle has a light entry.
 
 ## Supported representations
 
 - Markdown and plain text: human/agent guidance and context bundles. README and AGENTS.md are entry points. `llms.txt` is an optional documentation index, not a guaranteed ingestion mechanism.
 - JSON: canonical design interchange and resolved exports. This is a design-tool requirement, not a new default for application domain data.
 - JSON Schema: `schemas/semantic.schema.json` describes the semantic source's shape and alias syntax using draft 2020-12. Alias resolution is separately checked by the build. Other interchange outputs do not claim this schema applies to them.
-- DTCG 2025.10: typed color, dimension, number, font, duration, cubic-bezier and gradient values. Load `foundations.tokens.json` plus exactly one of `light.tokens.json` or `dark.tokens.json`. Modes are separate files rather than an invented DTCG theme field. Specification: https://www.designtokens.org/TR/2025.10/format/.
+- DTCG 2025.10: typed color, dimension, number, font, duration, cubic-bezier, gradient and string values. Load a design's `foundations.tokens.json` plus exactly one of its available mode files. Appearance dimensions/font aliases and CSS shadow strings are included. Modes are separate files rather than an invented DTCG theme field. Specification: https://www.designtokens.org/TR/2025.10/format/.
 - DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Exported typography properties remain individual tokens; named text-style combinations are in canonical JSON and CSS classes.
-- Tokens Studio JSON: global foundation set plus light and dark semantic sets. Enable global and one theme at a time. Non-color global values use `other` to preserve CSS strings; specialized plugin typography, gradients and native type transforms need target-specific mapping. No plugin import has been claimed tested.
+- Tokens Studio JSON: global foundation set plus the design's available semantic modes. Enable global and one available mode at a time. Non-color global values use `other` to preserve CSS strings; specialized plugin typography, gradients and native type transforms need target-specific mapping. No plugin import has been claimed tested.
 - YAML, XML and CSV: portable structured views. XML is a repository interchange schema, not an Android resource file. YAML scalars are quoted to preserve leading-zero scale IDs and CSS strings.
 - CSS, Sass and Less: CSS supplies runtime theme aliases; Sass contains resolved theme maps and Less contains light-mode string variables. Native CSS custom properties remain the preferred browser runtime.
 - ES module, CommonJS and TypeScript: resolved theme dictionaries; no UI framework dependency. TypeScript adds literal keys/types.

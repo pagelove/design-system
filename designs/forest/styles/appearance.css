@@ -1,0 +1,9 @@
+:root {
+  --design-radius-card: 20px;
+  --design-radius-button: 12px;
+  --design-heading-family: var(--font-family-secondary);
+  --design-body-family: var(--font-family-secondary);
+  --design-content-width: 1160px;
+  --design-section-gap: 28px;
+  --design-shadow-panel: none;
+}

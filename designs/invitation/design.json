@@ -1,0 +1,58 @@
+{
+  "id": "invitation",
+  "name": "Invitation",
+  "description": "Blue-black surfaces, warm off-white text and literary display typography.",
+  "defaultMode": "dark",
+  "modes": {
+    "dark": {}
+  },
+  "foundations": {
+    "color": {
+      "polo-blue": {
+        "0": "#f7f2eb",
+        "50": "#eee8df",
+        "100": "#e8e4df",
+        "200": "#d4cec7",
+        "300": "#b9b1a9",
+        "400": "#9d958f",
+        "500": "#7f7772",
+        "600": "#625c5c",
+        "700": "#42404d",
+        "800": "#272737",
+        "900": "#1a1c30",
+        "950": "#131525",
+        "1000": "#0c0e1a"
+      },
+      "cornflower-blue": {
+        "50": "#f5f2fb",
+        "100": "#e8e2f2",
+        "200": "#d5cde5",
+        "300": "#c8bfdf",
+        "400": "#b8b0d8",
+        "500": "#9489b9",
+        "600": "#726596",
+        "700": "#584b79",
+        "800": "#44385f",
+        "900": "#332a48",
+        "950": "#211b30"
+      }
+    },
+    "font": {
+      "family": {
+        "brand": "Fraunces, Georgia, serif",
+        "secondary": "\"Inter Tight\", system-ui, sans-serif",
+        "code": "\"JetBrains Mono\", monospace"
+      }
+    }
+  },
+  "appearance": {
+    "design-radius-card": "16px",
+    "design-radius-button": "100px",
+    "design-heading-family": "var(--font-family-brand)",
+    "design-body-family": "var(--font-family-secondary)",
+    "design-content-width": "1080px",
+    "design-section-gap": "32px",
+    "design-shadow-panel": "none"
+  },
+  "guidance": "Use blue-black backgrounds, warm off-white text, dusty lavender accents, literary serif headings and generous spacing. Keep the interface calm and avoid bright neon treatments."
+}

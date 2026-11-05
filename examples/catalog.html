@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,10 +9,12 @@
 <body>
 <a href="#main" class="ds-skip">Skip to components</a>
 <div class="ds-shell">
- <header class="ds-header"><strong>Pagelove Design System</strong><label>Appearance <select id="theme"><option value="light">Light</option><option value="dark">Dark</option></select></label></header>
+ <header class="ds-header"><strong>Pagelove Design Collection</strong><div class="ds-row"><label>Design <select id="design"><option>Loading catalog</option></select></label><label>Mode <select id="theme"><option>Default</option></select></label></div></header>
  <main id="main">
   <h1>Components for everyday tasks</h1>
   <p class="ds-intro">Readable foundations and native controls. These examples run locally; form submissions update the preview only. No information is sent to a service.</p>
+  <p id="design-description" class="ds-intro" role="status"></p>
+  <p><a id="design-guide" href="../DESIGN.md">Selected design guide</a> · <a id="design-exports" href="../exports/tokens.json">Selected design tokens</a> · <a href="./designs.html">Browse all designs</a></p>
   <nav class="ds-tabs" aria-label="Catalog sections"><a href="#buttons">Buttons</a><a href="#forms">Forms</a><a href="#choices">Choices</a><a href="#progress">Progress</a><a href="#foundations">Foundations</a></nav>
   <section id="buttons" class="ds-section"><h2>Buttons and links</h2><p>Filled, outlined and borderless actions. Use links to navigate and buttons to change state.</p>
    <div class="ds-row"><button type="button" class="pl-button pl-button--strong pl-button--lg" data-notice="Primary action selected"><span class="pl-button__label">Continue</span></button><button type="button" class="pl-button pl-button--regular pl-button--lg" data-notice="Secondary action selected">Save draft</button><button type="button" class="pl-button pl-button--outlined pl-button--lg" data-notice="Outlined action selected">Review</button><button type="button" class="pl-button pl-button--borderless pl-button--lg" data-notice="Borderless action selected">Cancel</button></div>
@@ -39,8 +41,9 @@
    <div><label class="pl-toggle pl-toggle--right" for="show-hints"><input class="pl-toggle__switch" id="show-hints" type="checkbox" role="switch" checked><span class="pl-toggle__label">Show guidance</span></label><p id="guidance">Guidance is shown. This switch changes this local preview immediately.</p></div>
   </div></section>
   <section id="progress" class="ds-section"><h2>Progress</h2><div class="ds-row"><div class="ds-progress"><span class="pl-progress-radial pl-progress-radial--md" role="progressbar" aria-label="Preparing preview"></span><span>Preparing preview</span></div><div class="ds-progress"><progress id="export-progress" max="100" value="40" aria-label="Example export progress"></progress><span id="progress-label">40%</span></div><button type="button" id="advance-progress" class="pl-button pl-button--outlined pl-button--lg">Advance preview</button></div><p role="status" id="progress-status">Progress changes only when you advance this demonstration.</p></section>
-  <section id="foundations" class="ds-section"><h2>Foundations</h2><p class="ds-intro">The app library contains nine color families, light and dark semantic themes, spacing, grids, typography and motion. Optional editorial and invitation profiles are documented separately.</p><p><a href="../assets/palette.svg">View the complete color palette</a> · <a href="../DESIGN.md">Read the Stitch-compatible design guide</a></p><img src="../assets/palette.svg" alt="The nine foundation color scales with token names and hex values" width="900" style="width:100%;height:auto"></section>
+  <section id="foundations" class="ds-section"><h2>Foundations</h2><p class="ds-intro">Every design supplies complete color roles, its available modes, typography, shapes and spacing. The palette and guide below follow your selected design.</p><p><a id="palette-link" href="../assets/palette.svg">View the complete color palette</a> · <a id="foundation-guide" href="../DESIGN.md">Read the Stitch-compatible design guide</a></p><img src="../assets/palette.svg" alt="The nine foundation color scales with token names and hex values" width="900" style="width:100%;height:auto"></section>
  </main><footer><p>MIT code and tokens · Document-first guidance retains CC BY 4.0 attribution.</p></footer>
 </div>
+<script src="./design-catalog.js" defer></script>
 <script src="./catalog.js" defer></script>
 </body></html>

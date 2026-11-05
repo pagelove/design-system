@@ -1,0 +1,54 @@
+{
+  "id": "forest",
+  "name": "Forest",
+  "description": "Sage surfaces, deep evergreen actions and softly rounded, practical layouts.",
+  "defaultMode": "light",
+  "modes": {
+    "light": {
+      "button-strong-default": "var(--color-polo-blue-700)"
+    },
+    "dark": {}
+  },
+  "foundations": {
+    "color": {
+      "polo-blue": {
+        "0": "#f1f5e9",
+        "50": "#e7eedf",
+        "100": "#dce6d1",
+        "200": "#cbd8bf",
+        "300": "#aebeac",
+        "400": "#8c9e88",
+        "500": "#6b7f69",
+        "600": "#50654f",
+        "700": "#354b39",
+        "800": "#263e2e",
+        "900": "#1b3024",
+        "950": "#13251b",
+        "1000": "#0d1c14"
+      },
+      "cornflower-blue": {
+        "50": "#edf6ed",
+        "100": "#deedde",
+        "200": "#bfd9bf",
+        "300": "#a0c5a1",
+        "400": "#7eae81",
+        "500": "#538c5a",
+        "600": "#35683e",
+        "700": "#285532",
+        "800": "#20472a",
+        "900": "#193b23",
+        "950": "#102b19"
+      }
+    }
+  },
+  "appearance": {
+    "design-radius-card": "20px",
+    "design-radius-button": "12px",
+    "design-heading-family": "var(--font-family-secondary)",
+    "design-body-family": "var(--font-family-secondary)",
+    "design-content-width": "1160px",
+    "design-section-gap": "28px",
+    "design-shadow-panel": "none"
+  },
+  "guidance": "Use clearly sage-tinted page backgrounds rather than white, evergreen primary actions and rounded utility panels. Keep headings sans-serif and the visual tone grounded."
+}

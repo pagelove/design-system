@@ -1,5 +1,7 @@
 # Foundations
 
+This guide describes the shared Classic baseline and the original reference profiles. The collection now supplies complete selectable designs: read [selection and authoring](designs.md) and the chosen `designs/<id>/DESIGN.md` first. Design-specific overrides replace the relevant colors, fonts, shape and spacing settings. The old profile references below are historical values, not the active runtime selection mechanism.
+
 ## Principles
 
 Make the task readable before adding visual emphasis. Pair editorial headings with precise controls and code. Keep structure visible through spacing, neutral dividers and meaningful labels. Give each task one clear primary next step. Use concrete language and show the state the application actually knows.
@@ -44,4 +46,4 @@ Editorial: white, slate ink `#45556C`, Source Serif 4 headings, Inter body and q
 
 Invitation: blue-black `#0C0E1A`, navy surfaces, warm off-white `#E8E4DF`, Fraunces headings, Inter Tight body, JetBrains Mono code, with dusty lavender/clay/rose accents. Low-opacity borders are decorative separators, not sufficient boundaries for every control. Check muted text and gradients independently.
 
-These profiles supply values as `--profile-*` properties and dedicated DESIGN.md files. Integrations must deliberately map profile values to the app's semantic roles; changing `data-profile` alone does not retheme all components.
+The complete Editorial and Invitation designs now map values to shared semantic roles and can be selected with `data-design`. Original `--profile-*` properties remain only for compatibility/reference. Changing `data-profile` alone does not retheme components. Read each complete design's guide for its current palette and geometry.

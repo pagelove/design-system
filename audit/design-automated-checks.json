@@ -1,0 +1,255 @@
+{
+  "result": "pass",
+  "textFiles": 218,
+  "designs": 5,
+  "defaultDesign": "classic",
+  "defaultMode": "light",
+  "semanticRolesPerMode": 110,
+  "libraryEntries": 40,
+  "checks": [
+    "deterministic generation",
+    "per-design exports and mode availability",
+    "alternate default regeneration and stale-mode removal",
+    "invalid catalog rejection",
+    "JSON parsing",
+    "token reference resolution",
+    "DTCG subset validation",
+    "Stitch copy parity",
+    "escaping and state contracts",
+    "internal-content scan",
+    "repository allowlist",
+    "local links",
+    "selected contrast pairs across designs"
+  ],
+  "contrasts": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 10.35
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 19.28
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 14.63
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.06
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 18.94
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 20.17
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 16.83
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 8.22
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 10.14
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 15.06
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 12.27
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 4.73
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 14.73
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 16.15
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 12.9
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.32
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 8.56
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 13.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 8.56
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.93
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 13.64
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 14.51
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 11.83
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 6.92
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 13.44
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 16.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 10.96
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.51
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 15.18
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 16.23
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 12.3
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 9.37
+    }
+  ],
+  "limits": [
+    "DTCG subset checks are not an independent full-spec certification.",
+    "Figma/Stitch/native/framework imports are not executed here.",
+    "Browser task evidence is recorded separately."
+  ]
+}

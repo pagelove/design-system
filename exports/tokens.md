@@ -239,6 +239,13 @@ Generated from canonical sources. CSS units are preserved.
 | `grid-console-xl-columns` | `12` |
 | `grid-console-xl-gutter` | `16px` |
 | `grid-console-xl-margin` | `16px` |
+| `design-radius-card` | `12px` |
+| `design-radius-button` | `100px` |
+| `design-heading-family` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `design-body-family` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
+| `design-content-width` | `1120px` |
+| `design-section-gap` | `24px` |
+| `design-shadow-panel` | `none` |
 | `background-brand-light` | `#fafbf8` |
 | `background-brand-regular` | `#e9e7e2` |
 | `background-brand-strong` | `#aeaa98` |
@@ -587,6 +594,13 @@ Generated from canonical sources. CSS units are preserved.
 | `grid-console-xl-columns` | `12` |
 | `grid-console-xl-gutter` | `16px` |
 | `grid-console-xl-margin` | `16px` |
+| `design-radius-card` | `12px` |
+| `design-radius-button` | `100px` |
+| `design-heading-family` | `'Source Serif Pro', 'Source Serif 4', Georgia, serif` |
+| `design-body-family` | `Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif` |
+| `design-content-width` | `1120px` |
+| `design-section-gap` | `24px` |
+| `design-shadow-panel` | `none` |
 | `background-brand-light` | `#0e0c07` |
 | `background-brand-regular` | `#2c2821` |
 | `background-brand-strong` | `#666550` |

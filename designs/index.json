@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "defaultDesign": "classic",
+  "defaultMode": "light",
+  "designs": [
+    {
+      "id": "classic",
+      "name": "Classic",
+      "description": "The original white-and-slate foundation, with editorial headings and a dark counterpart.",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "defaultMode": "light",
+      "guide": "designs/classic/DESIGN.md",
+      "exports": "designs/classic/exports/",
+      "preview": "examples/catalog.html?design=classic",
+      "previewImage": "designs/classic/previews/light.png"
+    },
+    {
+      "id": "editorial",
+      "name": "Editorial",
+      "description": "Warm paper, slate ink and restrained lavender; a quieter reading-focused design.",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "defaultMode": "light",
+      "guide": "designs/editorial/DESIGN.md",
+      "exports": "designs/editorial/exports/",
+      "preview": "examples/catalog.html?design=editorial",
+      "previewImage": "designs/editorial/previews/light.png"
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "description": "Sage surfaces, deep evergreen actions and softly rounded, practical layouts.",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "defaultMode": "light",
+      "guide": "designs/forest/DESIGN.md",
+      "exports": "designs/forest/exports/",
+      "preview": "examples/catalog.html?design=forest",
+      "previewImage": "designs/forest/previews/light.png"
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight",
+      "description": "A dark-only plum workspace, lavender links and compact geometric controls.",
+      "modes": [
+        "dark"
+      ],
+      "defaultMode": "dark",
+      "guide": "designs/midnight/DESIGN.md",
+      "exports": "designs/midnight/exports/",
+      "preview": "examples/catalog.html?design=midnight",
+      "previewImage": "designs/midnight/previews/dark.png"
+    },
+    {
+      "id": "invitation",
+      "name": "Invitation",
+      "description": "Blue-black surfaces, warm off-white text and literary display typography.",
+      "modes": [
+        "dark"
+      ],
+      "defaultMode": "dark",
+      "guide": "designs/invitation/DESIGN.md",
+      "exports": "designs/invitation/exports/",
+      "preview": "examples/catalog.html?design=invitation",
+      "previewImage": "designs/invitation/previews/dark.png"
+    }
+  ]
+}

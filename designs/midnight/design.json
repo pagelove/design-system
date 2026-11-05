@@ -1,0 +1,56 @@
+{
+  "id": "midnight",
+  "name": "Midnight",
+  "description": "A dark-only plum workspace, lavender links and compact geometric controls.",
+  "defaultMode": "dark",
+  "modes": {
+    "dark": {}
+  },
+  "foundations": {
+    "color": {
+      "polo-blue": {
+        "0": "#f3efff",
+        "50": "#e8e2f7",
+        "100": "#dcd4ec",
+        "200": "#c9bfdc",
+        "300": "#aea2c6",
+        "400": "#9284ac",
+        "500": "#78698e",
+        "600": "#5d5070",
+        "700": "#453954",
+        "800": "#33283f",
+        "900": "#241c30",
+        "950": "#191321",
+        "1000": "#100d17"
+      },
+      "cornflower-blue": {
+        "50": "#f4efff",
+        "100": "#e9deff",
+        "200": "#d7c4ff",
+        "300": "#c5a9f7",
+        "400": "#b491ec",
+        "500": "#9370cf",
+        "600": "#7654ac",
+        "700": "#5f408e",
+        "800": "#4d3374",
+        "900": "#3e2a5c",
+        "950": "#261c37"
+      }
+    },
+    "font": {
+      "family": {
+        "brand": "Inter, system-ui, sans-serif"
+      }
+    }
+  },
+  "appearance": {
+    "design-radius-card": "8px",
+    "design-radius-button": "8px",
+    "design-heading-family": "var(--font-family-secondary)",
+    "design-body-family": "var(--font-family-secondary)",
+    "design-content-width": "1200px",
+    "design-section-gap": "20px",
+    "design-shadow-panel": "none"
+  },
+  "guidance": "Start in dark mode. Use deep plum surfaces, pale lavender interaction accents, sans-serif headings and compact geometry. This design has no light mode; do not generate one by inversion."
+}

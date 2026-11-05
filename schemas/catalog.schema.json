@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Design catalog",
+  "type": "object",
+  "required": ["version", "defaultDesign", "defaultMode", "designs"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {"const": 1},
+    "defaultDesign": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+    "defaultMode": {"enum": ["light", "dark"]},
+    "designs": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id"], "additionalProperties": false, "properties": {"id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}}}}
+  }
+}

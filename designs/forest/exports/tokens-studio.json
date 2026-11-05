@@ -1,0 +1,2095 @@
+{
+  "global": {
+    "color-polo-blue-0": {
+      "value": "#f1f5e9",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-50": {
+      "value": "#e7eedf",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-100": {
+      "value": "#dce6d1",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-200": {
+      "value": "#cbd8bf",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-300": {
+      "value": "#aebeac",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-400": {
+      "value": "#8c9e88",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-500": {
+      "value": "#6b7f69",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-600": {
+      "value": "#50654f",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-700": {
+      "value": "#354b39",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-800": {
+      "value": "#263e2e",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-900": {
+      "value": "#1b3024",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-950": {
+      "value": "#13251b",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-polo-blue-1000": {
+      "value": "#0d1c14",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-50": {
+      "value": "#f1f4fc",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-100": {
+      "value": "#e6eaf9",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-200": {
+      "value": "#ced5f2",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-300": {
+      "value": "#b6bfeb",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-400": {
+      "value": "#999fe0",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-500": {
+      "value": "#7f80d5",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-600": {
+      "value": "#6c66c5",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-700": {
+      "value": "#5c55ad",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-800": {
+      "value": "#4c478c",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-900": {
+      "value": "#413f70",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-purple-950": {
+      "value": "#272541",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-50": {
+      "value": "#fafbf8",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-100": {
+      "value": "#f5f6f3",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-200": {
+      "value": "#e9e7e2",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-300": {
+      "value": "#d9d7ce",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-400": {
+      "value": "#aeaa98",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-500": {
+      "value": "#7f7a65",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-600": {
+      "value": "#666550",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-700": {
+      "value": "#494737",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-800": {
+      "value": "#2c2821",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-900": {
+      "value": "#1f1d14",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-olive-950": {
+      "value": "#0e0c07",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-50": {
+      "value": "#faf6f6",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-100": {
+      "value": "#f5efee",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-200": {
+      "value": "#e8dbda",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-300": {
+      "value": "#dbc7c6",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-400": {
+      "value": "#c7a7a5",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-500": {
+      "value": "#af8584",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-600": {
+      "value": "#976768",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-700": {
+      "value": "#7d5355",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-800": {
+      "value": "#6a474a",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-900": {
+      "value": "#5c3f42",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-old-rose-950": {
+      "value": "#312021",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-50": {
+      "value": "#fef1f9",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-100": {
+      "value": "#fee5f5",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-200": {
+      "value": "#ffcbec",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-300": {
+      "value": "#ffa1da",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-400": {
+      "value": "#ff66bf",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-500": {
+      "value": "#fa3aa4",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-600": {
+      "value": "#ea1882",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-700": {
+      "value": "#cc0a66",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-800": {
+      "value": "#a80c54",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-900": {
+      "value": "#8c0f49",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-hot-pink-950": {
+      "value": "#560128",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-50": {
+      "value": "#fff8ed",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-100": {
+      "value": "#ffefd4",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-200": {
+      "value": "#ffdba8",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-300": {
+      "value": "#ffc071",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-400": {
+      "value": "#ff9d3c",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-500": {
+      "value": "#fe7d11",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-600": {
+      "value": "#ef6107",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-700": {
+      "value": "#c64808",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-800": {
+      "value": "#9d390f",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-900": {
+      "value": "#7e3110",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-neon-carrot-950": {
+      "value": "#441606",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-50": {
+      "value": "#edf6ed",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-100": {
+      "value": "#deedde",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-200": {
+      "value": "#bfd9bf",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-300": {
+      "value": "#a0c5a1",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-400": {
+      "value": "#7eae81",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-500": {
+      "value": "#538c5a",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-600": {
+      "value": "#35683e",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-700": {
+      "value": "#285532",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-800": {
+      "value": "#20472a",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-900": {
+      "value": "#193b23",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-cornflower-blue-950": {
+      "value": "#102b19",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-50": {
+      "value": "#f0fdf0",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-100": {
+      "value": "#ddfbdf",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-200": {
+      "value": "#bdf5c1",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-300": {
+      "value": "#89ec91",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-400": {
+      "value": "#4dd959",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-500": {
+      "value": "#27c035",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-600": {
+      "value": "#1a9f26",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-700": {
+      "value": "#187d22",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-800": {
+      "value": "#186320",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-900": {
+      "value": "#16511d",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-malachite-950": {
+      "value": "#062d0b",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-50": {
+      "value": "#fff1f2",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-100": {
+      "value": "#ffe0e1",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-200": {
+      "value": "#ffc6c9",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-300": {
+      "value": "#ff9fa4",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-400": {
+      "value": "#ff676e",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-500": {
+      "value": "#fb2c36",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-600": {
+      "value": "#e91923",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-700": {
+      "value": "#c4111a",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-800": {
+      "value": "#a21219",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-900": {
+      "value": "#86161b",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "color-torch-red-950": {
+      "value": "#490609",
+      "type": "color",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "gradient-purple-storm": {
+      "value": "linear-gradient(to left, #666550 0%, #6c66c5 100%)",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "gradient-soft-bloom": {
+      "value": "linear-gradient(to left, #dbc7c6 0%, #aebeac 100%)",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "gradient-dawn-bloom": {
+      "value": "linear-gradient(to left, #dbc7c6 0%, #b6bfeb 100%)",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "gradient-sky-whisper": {
+      "value": "linear-gradient(to left, #f1f5e9 0%, #cbd8bf 25%, #cbd8bf 75%, #f1f5e9 100%)",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-0": {
+      "value": "0px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-100": {
+      "value": "8px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-150": {
+      "value": "12px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-200": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-250": {
+      "value": "20px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-300": {
+      "value": "24px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-400": {
+      "value": "32px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-500": {
+      "value": "40px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-600": {
+      "value": "48px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-800": {
+      "value": "64px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-1000": {
+      "value": "80px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-1200": {
+      "value": "96px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-1400": {
+      "value": "112px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-1600": {
+      "value": "128px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-1800": {
+      "value": "144px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-2000": {
+      "value": "160px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-025": {
+      "value": "2px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-050": {
+      "value": "4px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "space-075": {
+      "value": "6px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-family-brand": {
+      "value": "'Source Serif Pro', 'Source Serif 4', Georgia, serif",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-family-secondary": {
+      "value": "Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-family-code": {
+      "value": "'Fira Code', ui-monospace, Menlo, Consolas, monospace",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-weight-400": {
+      "value": "400",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-weight-450": {
+      "value": "450",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-weight-500": {
+      "value": "500",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-50": {
+      "value": "10px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-100": {
+      "value": "12px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-150": {
+      "value": "14px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-200": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-250": {
+      "value": "18px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-300": {
+      "value": "20px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-350": {
+      "value": "24px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-400": {
+      "value": "28px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-450": {
+      "value": "32px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-500": {
+      "value": "36px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-550": {
+      "value": "40px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-600": {
+      "value": "44px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-650": {
+      "value": "48px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-700": {
+      "value": "56px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-750": {
+      "value": "64px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-800": {
+      "value": "72px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-850": {
+      "value": "80px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-900": {
+      "value": "88px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "font-size-950": {
+      "value": "96px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-25": {
+      "value": "6px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-50": {
+      "value": "8px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-75": {
+      "value": "10px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-100": {
+      "value": "12px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-125": {
+      "value": "14px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-150": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-175": {
+      "value": "18px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-200": {
+      "value": "20px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-225": {
+      "value": "22px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-250": {
+      "value": "24px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-275": {
+      "value": "26px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-300": {
+      "value": "28px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-325": {
+      "value": "30px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-350": {
+      "value": "32px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-375": {
+      "value": "34px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-400": {
+      "value": "36px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-425": {
+      "value": "40px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-450": {
+      "value": "42px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-475": {
+      "value": "44px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-500": {
+      "value": "48px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-525": {
+      "value": "50px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-550": {
+      "value": "52px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-575": {
+      "value": "56px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-600": {
+      "value": "58px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-625": {
+      "value": "60px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-650": {
+      "value": "64px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-675": {
+      "value": "66px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-700": {
+      "value": "68px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-725": {
+      "value": "72px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-750": {
+      "value": "74px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-775": {
+      "value": "76px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-800": {
+      "value": "80px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-825": {
+      "value": "82px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-850": {
+      "value": "84px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-875": {
+      "value": "88px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-900": {
+      "value": "90px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-925": {
+      "value": "92px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-950": {
+      "value": "96px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-975": {
+      "value": "98px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-1000": {
+      "value": "104px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "line-height-1025": {
+      "value": "106px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "letter-spacing-100": {
+      "value": "-0.02em",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "letter-spacing-200": {
+      "value": "-0.04em",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "letter-spacing-300": {
+      "value": "-0.06em",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-duration-hover": {
+      "value": "300ms",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-duration-skeleton": {
+      "value": "1s",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-duration-exit": {
+      "value": "500ms",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-duration-spin": {
+      "value": "0.8s",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-easing-standard": {
+      "value": "ease-in-out",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-easing-spin": {
+      "value": "cubic-bezier(0.6, 0.4, 0.4, 0.6)",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "motion-blur-exit": {
+      "value": "4px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-xxs-columns": {
+      "value": "4",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-xxs-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-xxs-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-xs-columns": {
+      "value": "8",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-xs-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-xs-margin": {
+      "value": "32px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-s-columns": {
+      "value": "8",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-s-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-s-margin": {
+      "value": "32px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-m-columns": {
+      "value": "12",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-m-gutter": {
+      "value": "24px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-m-margin": {
+      "value": "64px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-l-columns": {
+      "value": "12",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-l-gutter": {
+      "value": "24px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-website-l-margin": {
+      "value": "64px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xxs-columns": {
+      "value": "4",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xxs-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xxs-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xs-columns": {
+      "value": "8",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xs-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xs-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-s-columns": {
+      "value": "8",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-s-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-s-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-m-columns": {
+      "value": "12",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-m-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-m-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-l-columns": {
+      "value": "12",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-l-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-l-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xl-columns": {
+      "value": "12",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xl-gutter": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "grid-console-xl-margin": {
+      "value": "16px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-radius-card": {
+      "value": "20px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-radius-button": {
+      "value": "12px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-heading-family": {
+      "value": "Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-body-family": {
+      "value": "Inter, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-content-width": {
+      "value": "1160px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-section-gap": {
+      "value": "28px",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    },
+    "design-shadow-panel": {
+      "value": "none",
+      "type": "other",
+      "description": "Portable CSS string; check target tool conversion."
+    }
+  },
+  "light": {
+    "background-brand-light": {
+      "value": "{color-olive-50}",
+      "type": "color"
+    },
+    "background-brand-regular": {
+      "value": "{color-olive-200}",
+      "type": "color"
+    },
+    "background-brand-strong": {
+      "value": "{color-olive-400}",
+      "type": "color"
+    },
+    "background-danger-light": {
+      "value": "{color-torch-red-50}",
+      "type": "color"
+    },
+    "background-danger-regular": {
+      "value": "{color-torch-red-200}",
+      "type": "color"
+    },
+    "background-danger-strong": {
+      "value": "{color-torch-red-400}",
+      "type": "color"
+    },
+    "background-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "background-discovery-light": {
+      "value": "{color-purple-50}",
+      "type": "color"
+    },
+    "background-discovery-regular": {
+      "value": "{color-purple-200}",
+      "type": "color"
+    },
+    "background-discovery-strong": {
+      "value": "{color-purple-400}",
+      "type": "color"
+    },
+    "background-elevation-light": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "background-elevation-regular": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "background-elevation-strong": {
+      "value": "{color-polo-blue-200}",
+      "type": "color"
+    },
+    "background-information-light": {
+      "value": "{color-cornflower-blue-50}",
+      "type": "color"
+    },
+    "background-information-regular": {
+      "value": "{color-cornflower-blue-200}",
+      "type": "color"
+    },
+    "background-information-strong": {
+      "value": "{color-cornflower-blue-400}",
+      "type": "color"
+    },
+    "background-neutral-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "background-neutral-pressed": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "background-neutral-selected": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "background-success-light": {
+      "value": "{color-malachite-50}",
+      "type": "color"
+    },
+    "background-success-regular": {
+      "value": "{color-malachite-200}",
+      "type": "color"
+    },
+    "background-success-strong": {
+      "value": "{color-malachite-400}",
+      "type": "color"
+    },
+    "background-surface-light": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "background-surface-regular": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "background-surface-strong": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "background-warning-light": {
+      "value": "{color-neon-carrot-50}",
+      "type": "color"
+    },
+    "background-warning-regular": {
+      "value": "{color-neon-carrot-200}",
+      "type": "color"
+    },
+    "background-warning-strong": {
+      "value": "{color-neon-carrot-400}",
+      "type": "color"
+    },
+    "border-brand": {
+      "value": "{color-olive-500}",
+      "type": "color"
+    },
+    "border-danger": {
+      "value": "{color-torch-red-200}",
+      "type": "color"
+    },
+    "border-danger-light": {
+      "value": "{color-torch-red-200}",
+      "type": "color"
+    },
+    "border-danger-strong": {
+      "value": "{color-torch-red-600}",
+      "type": "color"
+    },
+    "border-disabled": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "border-discovery": {
+      "value": "{color-purple-200}",
+      "type": "color"
+    },
+    "border-focused": {
+      "value": "{color-cornflower-blue-400}",
+      "type": "color"
+    },
+    "border-information": {
+      "value": "{color-cornflower-blue-200}",
+      "type": "color"
+    },
+    "border-inverse": {
+      "value": "{color-polo-blue-700}",
+      "type": "color"
+    },
+    "border-light": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "border-regular": {
+      "value": "{color-polo-blue-300}",
+      "type": "color"
+    },
+    "border-selected": {
+      "value": "{color-cornflower-blue-600}",
+      "type": "color"
+    },
+    "border-strong": {
+      "value": "{color-polo-blue-400}",
+      "type": "color"
+    },
+    "border-success": {
+      "value": "{color-malachite-200}",
+      "type": "color"
+    },
+    "border-warning": {
+      "value": "{color-neon-carrot-200}",
+      "type": "color"
+    },
+    "button-borderless-icon-default": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "button-borderless-icon-disabled": {
+      "value": "{color-polo-blue-400}",
+      "type": "color"
+    },
+    "button-borderless-icon-hovered": {
+      "value": "{color-polo-blue-800}",
+      "type": "color"
+    },
+    "button-borderless-icon-pressed": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-borderless-icon-selected": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-borderless-text-default": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "button-borderless-text-disabled": {
+      "value": "{color-polo-blue-400}",
+      "type": "color"
+    },
+    "button-borderless-text-hovered": {
+      "value": "{color-polo-blue-800}",
+      "type": "color"
+    },
+    "button-borderless-text-pressed": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-borderless-text-selected": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-gradient-bg-default": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "button-gradient-bg-disabled": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "button-gradient-bg-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-gradient-bg-pressed": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-gradient-bg-selected": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-regular-default": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-regular-disabled": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-regular-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-regular-pressed": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-regular-text": {
+      "value": "{color-polo-blue-800}",
+      "type": "color"
+    },
+    "button-secondary-icon-default": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "button-secondary-icon-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "button-secondary-icon-hovered": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "button-secondary-icon-pressed": {
+      "value": "{color-polo-blue-1000}",
+      "type": "color"
+    },
+    "button-secondary-icon-selected": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-secondary-text-default": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "button-secondary-text-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "button-secondary-text-hovered": {
+      "value": "{color-polo-blue-800}",
+      "type": "color"
+    },
+    "button-secondary-text-pressed": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-secondary-text-selected": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-strong-default": {
+      "value": "{color-polo-blue-700}",
+      "type": "color"
+    },
+    "button-strong-disabled": {
+      "value": "{color-polo-blue-300}",
+      "type": "color"
+    },
+    "button-strong-hovered": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-strong-pressed": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "button-strong-text": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "icon-brand": {
+      "value": "{color-olive-700}",
+      "type": "color"
+    },
+    "icon-danger": {
+      "value": "{color-torch-red-700}",
+      "type": "color"
+    },
+    "icon-disabled": {
+      "value": "{color-polo-blue-400}",
+      "type": "color"
+    },
+    "icon-discovery": {
+      "value": "{color-purple-700}",
+      "type": "color"
+    },
+    "icon-information": {
+      "value": "{color-cornflower-blue-700}",
+      "type": "color"
+    },
+    "icon-inverse": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "icon-light": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "icon-regular": {
+      "value": "{color-polo-blue-700}",
+      "type": "color"
+    },
+    "icon-selected": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "icon-strong": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "icon-success": {
+      "value": "{color-malachite-700}",
+      "type": "color"
+    },
+    "icon-warning": {
+      "value": "{color-neon-carrot-700}",
+      "type": "color"
+    },
+    "link-icon-default": {
+      "value": "{color-cornflower-blue-600}",
+      "type": "color"
+    },
+    "link-icon-hover": {
+      "value": "{color-cornflower-blue-700}",
+      "type": "color"
+    },
+    "link-icon-inverse": {
+      "value": "{color-cornflower-blue-300}",
+      "type": "color"
+    },
+    "link-icon-pressed": {
+      "value": "{color-cornflower-blue-800}",
+      "type": "color"
+    },
+    "link-text-default": {
+      "value": "{color-cornflower-blue-600}",
+      "type": "color"
+    },
+    "link-text-hover": {
+      "value": "{color-cornflower-blue-700}",
+      "type": "color"
+    },
+    "link-text-pressed": {
+      "value": "{color-cornflower-blue-800}",
+      "type": "color"
+    },
+    "link-text-visited": {
+      "value": "{color-cornflower-blue-500}",
+      "type": "color"
+    },
+    "text-brand": {
+      "value": "{color-olive-700}",
+      "type": "color"
+    },
+    "text-danger": {
+      "value": "{color-torch-red-700}",
+      "type": "color"
+    },
+    "text-disabled": {
+      "value": "{color-polo-blue-400}",
+      "type": "color"
+    },
+    "text-discovery": {
+      "value": "{color-purple-700}",
+      "type": "color"
+    },
+    "text-information": {
+      "value": "{color-cornflower-blue-700}",
+      "type": "color"
+    },
+    "text-inverse": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "text-light": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "text-regular": {
+      "value": "{color-polo-blue-700}",
+      "type": "color"
+    },
+    "text-selected": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "text-strong": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "text-success": {
+      "value": "{color-malachite-700}",
+      "type": "color"
+    },
+    "text-warning": {
+      "value": "{color-neon-carrot-700}",
+      "type": "color"
+    }
+  },
+  "dark": {
+    "background-brand-light": {
+      "value": "{color-olive-950}",
+      "type": "color"
+    },
+    "background-brand-regular": {
+      "value": "{color-olive-800}",
+      "type": "color"
+    },
+    "background-brand-strong": {
+      "value": "{color-olive-600}",
+      "type": "color"
+    },
+    "background-danger-light": {
+      "value": "{color-torch-red-950}",
+      "type": "color"
+    },
+    "background-danger-regular": {
+      "value": "{color-torch-red-800}",
+      "type": "color"
+    },
+    "background-danger-strong": {
+      "value": "{color-torch-red-600}",
+      "type": "color"
+    },
+    "background-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "background-discovery-light": {
+      "value": "{color-purple-950}",
+      "type": "color"
+    },
+    "background-discovery-regular": {
+      "value": "{color-purple-800}",
+      "type": "color"
+    },
+    "background-discovery-strong": {
+      "value": "{color-purple-600}",
+      "type": "color"
+    },
+    "background-elevation-light": {
+      "value": "{color-polo-blue-1000}",
+      "type": "color"
+    },
+    "background-elevation-regular": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "background-elevation-strong": {
+      "value": "{color-polo-blue-800}",
+      "type": "color"
+    },
+    "background-information-light": {
+      "value": "{color-cornflower-blue-950}",
+      "type": "color"
+    },
+    "background-information-regular": {
+      "value": "{color-cornflower-blue-800}",
+      "type": "color"
+    },
+    "background-information-strong": {
+      "value": "{color-cornflower-blue-600}",
+      "type": "color"
+    },
+    "background-neutral-hovered": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "background-neutral-pressed": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "background-neutral-selected": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "background-success-light": {
+      "value": "{color-malachite-950}",
+      "type": "color"
+    },
+    "background-success-regular": {
+      "value": "{color-malachite-800}",
+      "type": "color"
+    },
+    "background-success-strong": {
+      "value": "{color-malachite-600}",
+      "type": "color"
+    },
+    "background-surface-light": {
+      "value": "{color-polo-blue-1000}",
+      "type": "color"
+    },
+    "background-surface-regular": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "background-surface-strong": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "background-warning-light": {
+      "value": "{color-neon-carrot-950}",
+      "type": "color"
+    },
+    "background-warning-regular": {
+      "value": "{color-neon-carrot-800}",
+      "type": "color"
+    },
+    "background-warning-strong": {
+      "value": "{color-neon-carrot-600}",
+      "type": "color"
+    },
+    "border-brand": {
+      "value": "{color-olive-500}",
+      "type": "color"
+    },
+    "border-danger": {
+      "value": "{color-torch-red-800}",
+      "type": "color"
+    },
+    "border-danger-light": {
+      "value": "{color-torch-red-800}",
+      "type": "color"
+    },
+    "border-danger-strong": {
+      "value": "{color-torch-red-400}",
+      "type": "color"
+    },
+    "border-disabled": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "border-discovery": {
+      "value": "{color-purple-800}",
+      "type": "color"
+    },
+    "border-focused": {
+      "value": "{color-cornflower-blue-400}",
+      "type": "color"
+    },
+    "border-information": {
+      "value": "{color-cornflower-blue-800}",
+      "type": "color"
+    },
+    "border-inverse": {
+      "value": "{color-polo-blue-300}",
+      "type": "color"
+    },
+    "border-light": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "border-regular": {
+      "value": "{color-polo-blue-800}",
+      "type": "color"
+    },
+    "border-selected": {
+      "value": "{color-cornflower-blue-300}",
+      "type": "color"
+    },
+    "border-strong": {
+      "value": "{color-polo-blue-700}",
+      "type": "color"
+    },
+    "border-success": {
+      "value": "{color-malachite-800}",
+      "type": "color"
+    },
+    "border-warning": {
+      "value": "{color-neon-carrot-800}",
+      "type": "color"
+    },
+    "button-borderless-icon-default": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-borderless-icon-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "button-borderless-icon-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-borderless-icon-pressed": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "button-borderless-icon-selected": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-borderless-text-default": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-borderless-text-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "button-borderless-text-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-borderless-text-pressed": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "button-borderless-text-selected": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-gradient-bg-default": {
+      "value": "{color-polo-blue-1000}",
+      "type": "color"
+    },
+    "button-gradient-bg-disabled": {
+      "value": "{color-polo-blue-1000}",
+      "type": "color"
+    },
+    "button-gradient-bg-hovered": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "button-gradient-bg-pressed": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-gradient-bg-selected": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-regular-default": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-regular-disabled": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "button-regular-hovered": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "button-regular-pressed": {
+      "value": "{color-polo-blue-900}",
+      "type": "color"
+    },
+    "button-regular-text": {
+      "value": "{color-polo-blue-200}",
+      "type": "color"
+    },
+    "button-secondary-icon-default": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-secondary-icon-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "button-secondary-icon-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-secondary-icon-pressed": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "button-secondary-icon-selected": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-secondary-text-default": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-secondary-text-disabled": {
+      "value": "{color-polo-blue-500}",
+      "type": "color"
+    },
+    "button-secondary-text-hovered": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "button-secondary-text-pressed": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "button-secondary-text-selected": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "button-strong-default": {
+      "value": "{color-polo-blue-200}",
+      "type": "color"
+    },
+    "button-strong-disabled": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "button-strong-hovered": {
+      "value": "{color-polo-blue-300}",
+      "type": "color"
+    },
+    "button-strong-pressed": {
+      "value": "{color-polo-blue-400}",
+      "type": "color"
+    },
+    "button-strong-text": {
+      "value": "{color-polo-blue-1000}",
+      "type": "color"
+    },
+    "icon-brand": {
+      "value": "{color-olive-300}",
+      "type": "color"
+    },
+    "icon-danger": {
+      "value": "{color-torch-red-300}",
+      "type": "color"
+    },
+    "icon-disabled": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "icon-discovery": {
+      "value": "{color-purple-300}",
+      "type": "color"
+    },
+    "icon-information": {
+      "value": "{color-cornflower-blue-300}",
+      "type": "color"
+    },
+    "icon-inverse": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "icon-light": {
+      "value": "{color-polo-blue-300}",
+      "type": "color"
+    },
+    "icon-regular": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "icon-selected": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "icon-strong": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "icon-success": {
+      "value": "{color-malachite-300}",
+      "type": "color"
+    },
+    "icon-warning": {
+      "value": "{color-neon-carrot-300}",
+      "type": "color"
+    },
+    "link-icon-default": {
+      "value": "{color-cornflower-blue-400}",
+      "type": "color"
+    },
+    "link-icon-hover": {
+      "value": "{color-cornflower-blue-300}",
+      "type": "color"
+    },
+    "link-icon-inverse": {
+      "value": "{color-cornflower-blue-600}",
+      "type": "color"
+    },
+    "link-icon-pressed": {
+      "value": "{color-cornflower-blue-200}",
+      "type": "color"
+    },
+    "link-text-default": {
+      "value": "{color-cornflower-blue-400}",
+      "type": "color"
+    },
+    "link-text-hover": {
+      "value": "{color-cornflower-blue-300}",
+      "type": "color"
+    },
+    "link-text-pressed": {
+      "value": "{color-cornflower-blue-200}",
+      "type": "color"
+    },
+    "link-text-visited": {
+      "value": "{color-cornflower-blue-500}",
+      "type": "color"
+    },
+    "text-brand": {
+      "value": "{color-olive-300}",
+      "type": "color"
+    },
+    "text-danger": {
+      "value": "{color-torch-red-300}",
+      "type": "color"
+    },
+    "text-disabled": {
+      "value": "{color-polo-blue-600}",
+      "type": "color"
+    },
+    "text-discovery": {
+      "value": "{color-purple-300}",
+      "type": "color"
+    },
+    "text-information": {
+      "value": "{color-cornflower-blue-300}",
+      "type": "color"
+    },
+    "text-inverse": {
+      "value": "{color-polo-blue-950}",
+      "type": "color"
+    },
+    "text-light": {
+      "value": "{color-polo-blue-300}",
+      "type": "color"
+    },
+    "text-regular": {
+      "value": "{color-polo-blue-100}",
+      "type": "color"
+    },
+    "text-selected": {
+      "value": "{color-polo-blue-50}",
+      "type": "color"
+    },
+    "text-strong": {
+      "value": "{color-polo-blue-0}",
+      "type": "color"
+    },
+    "text-success": {
+      "value": "{color-malachite-300}",
+      "type": "color"
+    },
+    "text-warning": {
+      "value": "{color-neon-carrot-300}",
+      "type": "color"
+    }
+  },
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark"
+    ]
+  }
+}

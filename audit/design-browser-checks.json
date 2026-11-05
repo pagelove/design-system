@@ -1,0 +1,98 @@
+[
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(255, 255, 255)",
+    "buttonRadius": "100px",
+    "cardRadius": "12px",
+    "design": "classic",
+    "guide": "../designs/classic/DESIGN.md",
+    "heading": "\"Source Serif Pro\", \"Source Serif 4\", Georgia, serif",
+    "mode": "light",
+    "overflow": false,
+    "scheme": "light"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(0, 2, 8)",
+    "buttonRadius": "100px",
+    "cardRadius": "12px",
+    "design": "classic",
+    "guide": "../designs/classic/DESIGN.md",
+    "heading": "\"Source Serif Pro\", \"Source Serif 4\", Georgia, serif",
+    "mode": "dark",
+    "overflow": false,
+    "scheme": "dark"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(250, 247, 241)",
+    "buttonRadius": "6px",
+    "cardRadius": "4px",
+    "design": "editorial",
+    "guide": "../designs/editorial/DESIGN.md",
+    "heading": "\"Source Serif Pro\", \"Source Serif 4\", Georgia, serif",
+    "mode": "light",
+    "overflow": false,
+    "scheme": "light"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(12, 20, 32)",
+    "buttonRadius": "6px",
+    "cardRadius": "4px",
+    "design": "editorial",
+    "guide": "../designs/editorial/DESIGN.md",
+    "heading": "\"Source Serif Pro\", \"Source Serif 4\", Georgia, serif",
+    "mode": "dark",
+    "overflow": false,
+    "scheme": "dark"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(241, 245, 233)",
+    "buttonRadius": "12px",
+    "cardRadius": "20px",
+    "design": "forest",
+    "guide": "../designs/forest/DESIGN.md",
+    "heading": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
+    "mode": "light",
+    "overflow": false,
+    "scheme": "light"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(13, 28, 20)",
+    "buttonRadius": "12px",
+    "cardRadius": "20px",
+    "design": "forest",
+    "guide": "../designs/forest/DESIGN.md",
+    "heading": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
+    "mode": "dark",
+    "overflow": false,
+    "scheme": "dark"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(16, 13, 23)",
+    "buttonRadius": "8px",
+    "cardRadius": "8px",
+    "design": "midnight",
+    "guide": "../designs/midnight/DESIGN.md",
+    "heading": "Inter, system-ui, -apple-system, \"Segoe UI\", Arial, sans-serif",
+    "mode": "dark",
+    "overflow": false,
+    "scheme": "dark"
+  },
+  {
+    "action": "Primary action selected.",
+    "background": "rgb(12, 14, 26)",
+    "buttonRadius": "100px",
+    "cardRadius": "16px",
+    "design": "invitation",
+    "guide": "../designs/invitation/DESIGN.md",
+    "heading": "Fraunces, Georgia, serif",
+    "mode": "dark",
+    "overflow": false,
+    "scheme": "dark"
+  }
+]

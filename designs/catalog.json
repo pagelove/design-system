@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "defaultDesign": "classic",
+  "defaultMode": "light",
+  "designs": [
+    {
+      "id": "classic"
+    },
+    {
+      "id": "editorial"
+    },
+    {
+      "id": "forest"
+    },
+    {
+      "id": "midnight"
+    },
+    {
+      "id": "invitation"
+    }
+  ]
+}

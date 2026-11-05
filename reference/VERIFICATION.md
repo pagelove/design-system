@@ -1,5 +1,19 @@
 # Verification of the initial public edition
 
+## Collection update — November 5, 2026
+
+The multi-design edition is recorded in `audit/design-automated-checks.json`, `audit/design-browser-checks.json` and `audit/design-mobile-checks.json`.
+
+- Built five complete designs with eight available design/mode combinations and all portable formats. Checked reference resolution, complete shared roles, per-design Stitch copies and deterministic output.
+- Built isolated alternate-default releases for Forest/dark and Midnight/dark. Verified root guide/default metadata, dark-only resolved outputs and removal of the previously generated unsupported light token file. Invalid defaults and duplicate catalog IDs are rejected.
+- Checked four selected text/action/link contrast pairs in every combination. Parsed generated XML/SVG and checked JavaScript syntax. These remain bounded checks, not full DTCG or accessibility certification.
+- Browser selection changed actual background colors, heading families, card/button radii, native color scheme and guide links in all eight combinations. Primary action feedback worked in each. Verified URL reload, back/forward restoration, unsupported light-to-dark fallback for Midnight and its disabled mode selector.
+- Keyboard Enter advanced progress, and the native form accepted the local demonstration. At a 320×568 viewport override, every combination had document scroll width equal to document client width (305px after the browser scrollbar).
+- A narrow-screen review found decorative button pseudo-elements expanding the scroll area. Their extra inset was contained in the recommended app layer, and strict client-width checks were rerun. An earlier inner-width comparison was insufficient because it included scrollbar space.
+- Generated-guide review also caught a heading-family mismatch for Forest; guide typography now comes from the resolved appearance values used by the browser.
+
+Screenshots in each design's previews directory show the actual selected controls. The gallery preview is in assets/previews/design-gallery.png. Fonts use locally available fallbacks; exact font-file rendering, physical phones, assistive technology, live Stitch/Figma import and native/framework compilation remain unverified. Initial-edition evidence below is historical and is not silently promoted into new coverage.
+
 The initial edition was checked on November 4, 2026. Machine-readable static results are stored in `audit/automated-checks.json`.
 
 ## Executed checks

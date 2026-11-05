@@ -1,0 +1,72 @@
+---
+"name": "Forest"
+"colors":
+  "primary": "#354b39"
+  "neutral": "#f1f5e9"
+  "accent": "#35683e"
+  "border": "#aebeac"
+"typography":
+  "heading":
+    "fontFamily": "Inter"
+    "fontSize": "2rem"
+    "fontWeight": 400
+    "lineHeight": 1.2
+  "body":
+    "fontFamily": "Inter"
+    "fontSize": "1rem"
+    "fontWeight": 400
+    "lineHeight": 1.5
+"rounded":
+  "card": "20px"
+  "button": "12px"
+"spacing":
+  "small": "8px"
+  "medium": "16px"
+  "large": "28px"
+---
+
+# Forest
+
+## Overview
+
+Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
+
+Use clearly sage-tinted page backgrounds rather than white, evergreen primary actions and rounded utility panels. Keep headings sans-serif and the visual tone grounded. Available modes: light, dark. Initial mode: light.
+
+## Colors
+
+Use purpose-named text, background, button, border and status roles. Keep panels neutral. Use functional color on error/focus/selection states with explicit labels, not decorative card rails. Available modes are declared above; do not invent an unsupported mode. Check contrast in each actual composition; a palette value is not a blanket accessibility approval.
+
+## Typography
+
+Use the declared heading family for headings, body family for reading text and controls, and monospace for code. Start body text at 16px with a 1.5 line-height and normal tracking. Allow headings and labels to wrap. Bundle licensed fonts for exact rendering or keep the documented system fallbacks. Avoid squeezing long content into small captions.
+
+## Layout
+
+Use the published website grid: 4 columns at 320–479px, 8 at 480–1023px, and 12 from 1024px. Gutters are 16px on smaller screens and 24px on desktop. Outer margins are 16px, 32px and 64px by range. Console layouts retain 16px gutters/margins. Stack dense regions on narrow screens; use natural scrolling and preserve browser zoom.
+
+Use meaningful semantic HTML for document-based application content, stable resource IDs and DOM-backed editing. Keep efficient specialized runtimes where justified. Token JSON is design interchange, not the default application domain model. Read docs/document-first.md when implementing persistence and editors.
+
+## Elevation & Depth
+
+Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only when they communicate layering. Avoid glossy device frames, continuous ambient motion and gradients that dominate a reading surface. Honor reduced motion while preserving visible loading and status text.
+
+## Shapes
+
+Apply this design's declared card and button radii. Utility icon actions can remain rounded or squared according to purpose. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
+
+## Components
+
+Use native buttons for actions and links for navigation. Support default, hover, pressed, focus, disabled and loading states. Keep labels available during pending work. Forms need visible labels, associated hints/errors and current-value serialization. Passwords use native masking; verification codes should support paste and autofill. Group related checkboxes/radios with a legend; use named switches for settings.
+
+Progress must distinguish indeterminate work, actual percent, completion and failure. A local preview or accepted request is not proof of shared persistence or delivery. Preserve dirty work and provide a recovery action after conflicts or failures.
+
+## Do's and Don'ts
+
+- Do use the canonical tokens, public component contracts and meaningful status labels.
+- Do make the primary task usable with keyboard, narrow layouts and enlarged text.
+- Do show loading, empty, error and recovery states with useful next steps.
+- Do retain original design files and add portable exports with explicit conversion limits.
+- Do not add decorative northeast arrow icons or colored panel side rails.
+- Do not invent backend capabilities, supported imports or verification results.
+- Do not include private account metadata, operating procedures or non-Pagelove repository links.

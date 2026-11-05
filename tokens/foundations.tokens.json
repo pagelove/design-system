@@ -3561,5 +3561,87 @@
         "css": "var(--space-200)"
       }
     }
+  },
+  "design-radius-card": {
+    "$type": "dimension",
+    "$value": {
+      "value": 12,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "12px"
+      }
+    }
+  },
+  "design-radius-button": {
+    "$type": "dimension",
+    "$value": {
+      "value": 100,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "100px"
+      }
+    }
+  },
+  "design-heading-family": {
+    "$type": "fontFamily",
+    "$value": "{font-family-brand}",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "var(--font-family-brand)"
+      }
+    }
+  },
+  "design-body-family": {
+    "$type": "fontFamily",
+    "$value": "{font-family-secondary}",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "var(--font-family-secondary)"
+      }
+    }
+  },
+  "design-content-width": {
+    "$type": "dimension",
+    "$value": {
+      "value": 1120,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "1120px"
+      }
+    }
+  },
+  "design-section-gap": {
+    "$type": "dimension",
+    "$value": {
+      "value": 24,
+      "unit": "px"
+    },
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "24px"
+      }
+    }
+  },
+  "design-shadow-panel": {
+    "$type": "string",
+    "$value": "none",
+    "$description": "Published foundation value.",
+    "$extensions": {
+      "com.pagelove.design-system": {
+        "css": "none"
+      }
+    }
   }
 }
