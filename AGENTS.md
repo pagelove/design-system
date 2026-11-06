@@ -7,5 +7,5 @@
 - Keep visible labels, native control semantics, keyboard operation, focus and useful status text. Use neutral panel borders. Do not add decorative northeast arrow icons or colored card rails.
 - Retain provenance and license notices. Keep operational records, credentials, personal paths and organization-private material out of the public repository. Repository links must be within the pagelove organization.
 - Record a scoped plan and meaningful change batches in audit/CHANGELOG.md, with UTC time, actor, rationale, affected files and verification. Preserve previous records.
-- Run `npm run build` and `npm run check`. For UI changes, separately inspect browser tasks and responsive/reduced-motion states. State tool or environment limits; static checks do not prove browser behavior.
+- Run `npm ci` for the pinned development validators, then `npm run build`, `npm run check` and `npm run check:external`. UI changes also require `npm run test:browser` in the documented browser environment; review visual diffs before updating baselines. For UI changes, separately inspect browser tasks and responsive/reduced-motion states. State tool or environment limits; static checks do not prove browser behavior.
 - Framework adapters are examples, not packaged component libraries. Do not claim a Figma/Stitch/native import passed without actually testing it in that tool.

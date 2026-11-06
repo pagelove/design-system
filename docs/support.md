@@ -15,7 +15,7 @@ Version 0.4.0 retains Midnight/dark as the collection default. This is a source 
 
 ## Browser and accessibility acceptance
 
-CI targets pinned Playwright Chromium, Firefox and WebKit on Linux. These are test engines, not a promise that every historical browser release works. Real Safari/iOS, Android, NVDA and VoiceOver results must be recorded separately. Latest test artifacts and reference/RESEARCH-REMEDIATION.md give actual results; configured tests are not evidence that a run passed.
+CI targets pinned Playwright Chromium, Firefox and WebKit in a digest-pinned Ubuntu Noble container matching the Playwright package version. Update both pins together. This follows the [official CI container guidance](https://playwright.dev/docs/ci#via-containers) and avoids downloading system dependencies on each run. These are test engines, not a promise that every historical browser release works. Real Safari/iOS, Android, NVDA and VoiceOver results must be recorded separately. Latest test artifacts and reference/RESEARCH-REMEDIATION.md give actual results; configured tests are not evidence that a run passed.
 
 Every new component must cover visible labels, keyboard path, focus, disabled/pending/error/empty states where relevant, and safe insertion of text. For dialogs: initial focus, containment, Escape, and return focus. For tabs: arrow/Home/End keys, selected state and linked panels. For forms: error summary focus, associated inline errors, retained values and recovery. For tables: captions, column semantics, sort state, pagination boundaries and named scrolling regions.
 

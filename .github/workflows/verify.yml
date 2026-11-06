@@ -8,7 +8,10 @@ permissions:
 jobs:
   verify:
     timeout-minutes: 20
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    container:
+      image: mcr.microsoft.com/playwright:v1.65.0-noble@sha256:6e3fb709361521eb27161606e6da6d2674e5e89fa16516cb37d6fdd91372273d
+      options: --ipc=host
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -18,7 +21,6 @@ jobs:
       - run: npm ci --ignore-scripts
       - run: npm run check
       - run: npm run check:external
-      - run: npx playwright install --with-deps chromium firefox webkit
       - run: npm run test:browser
       - uses: actions/upload-artifact@v4
         if: always()

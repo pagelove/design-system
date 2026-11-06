@@ -28,6 +28,7 @@ for(const design of catalog.designs)for(const mode of design.modes){
   await expect(page.getByText('Description saved locally')).toBeVisible();
   await page.getByRole('button',{name:'Next',exact:true}).click();
   await expect(page.getByRole('button',{name:'Next',exact:true})).toBeDisabled();
+  await expect(page.getByRole('button',{name:'Next',exact:true})).toHaveCSS('opacity','0.55');
   await expect(page.locator('#page')).toHaveText('Page 2 of 2');
   const axe=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();
   expect(axe.violations).toEqual([]);
