@@ -1,0 +1,68 @@
+{
+  "recordedAt": "2026-11-06T03:43:02.200Z",
+  "result": "pass",
+  "release": "0.5.2",
+  "implementationCommit": "487acc667a324ff096d48109d8788a85c218633d",
+  "workflow": "https://github.com/pagelove/design-system/actions/runs/42157651422",
+  "testsPassed": 138,
+  "testsFailed": 0,
+  "testsSkipped": 0,
+  "flaky": 0,
+  "additionalEngineTestCases": 78,
+  "visualComparisonsPassed": 24,
+  "visualBaselinesChanged": false,
+  "visualMaxDiffPixelRatio": 0.002,
+  "designModeCombinations": 8,
+  "exportBundles": 6,
+  "browserEngines": [
+    "Chromium",
+    "Firefox",
+    "WebKit"
+  ],
+  "playwrightVersion": "1.65.0",
+  "environment": "Digest-pinned Ubuntu Noble container",
+  "contrastChecks": {
+    "existingText": 72,
+    "controlAndFocus": 48,
+    "interactionText": 232
+  },
+  "consumerChecks": [
+    "Executed ESM/CommonJS and parsed CSV",
+    "YAML/XML complete parity",
+    "Compiled Sass/Less complete parity",
+    "TypeScript type check and executed output parity",
+    "Text/Markdown/SVG complete parity",
+    "DTCG/resolver/typography contracts",
+    "Official Stitch lint and mode parity",
+    "Tailwind compilation",
+    "React/Vue/Svelte compilation and default/disabled/busy server rendering"
+  ],
+  "directReview": {
+    "draftIsolation": "Cancelled title no longer appears in another collection",
+    "fieldRecovery": "Corrected field clears its error",
+    "enlargedControlText": {
+      "beforePx": 16,
+      "afterPx": 32
+    },
+    "reset": {
+      "before": "Controls restored but rendered size/motion remained stale",
+      "after": "Both controls and rendered preferences restore"
+    },
+    "combinedWorkspaceReflow": {
+      "beforeScroll": 327,
+      "afterScroll": 305,
+      "clientWidth": 305
+    },
+    "reducedMotion": "0s button transition",
+    "visualInspection": "Desktop Midnight workspace, Forest light patterns, all three engines forced-color button matrices and representative Firefox/WebKit combined workspace captures",
+    "screenshot": "assets/previews/wider-review-workspace.png"
+  },
+  "limits": [
+    "Live Stitch/Tokens Studio imports unverified",
+    "Native Swift/Kotlin compilation and rendering unverified",
+    "Hydrated framework app integration unverified",
+    "Screen-reader, physical-device, actual zoom and cold-network checks unverified",
+    "RTL checks establish reflow, not a translated application",
+    "Independent LLM outputs unverified"
+  ]
+}

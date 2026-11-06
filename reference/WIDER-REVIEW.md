@@ -13,7 +13,7 @@ Review scope: the original public reuse, multiple complete designs, Midnight def
 | Workspace creation did not use the shared modal focus containment | Reuse the tested modal helper | Initial focus, Tab/Shift+Tab wrapping and return focus |
 | Correcting a settings field left its error indication visible until resubmission | Clear that field's error when its edited value becomes valid | Invalid submission, correction, frozen pending payload and reset-during-save tasks |
 | Reset restored preference controls but retained enlarged text/reduced motion on the page | Read restored values after the native reset default action, in the next task | Direct screenshot/DOM reproduction; assertions for controls and rendered attributes after reset |
-| Combined narrow RTL, enlarged text and spacing overflowed the settings heading/status pill | Bound heading children and allow status pills to wrap | Direct reproduction measured scroll/client widths 327/305; all-mode combined-environment checks |
+| Combined narrow RTL, enlarged text and spacing overflowed the settings heading/status pill | Bound heading children and allow status pills to wrap | Direct reproduction measured scroll/client widths 327/305 before and 305/305 after; all-mode combined-environment checks |
 | WebKit could inspect fonts before imported styles supplied family values | Wait for the document load before inspecting computed font families | Quality page checks all nine family/weight combinations in each mode |
 | Original buttons and fields stayed at 16px under the 200% text preference | Use relative control text sizes and proportional line height in the application layer | Direct browser comparison: 16px before, 32px after; all appearance/size fixtures and narrow reflow |
 | Visual inspection of the expanded forced-color matrix exposed disabled labels sharing their background color | Apply a coherent ButtonFace/ButtonText/GrayText palette to button text and painted surfaces | Assert enabled contrast and distinguish disabled label/background colors; inspect screenshots |
@@ -26,7 +26,7 @@ Review scope: the original public reuse, multiple complete designs, Midnight def
 | Area | Coverage in this review | Boundary |
 | --- | --- | --- |
 | Five designs, eight modes and Midnight/dark default | Canonical schemas, alias resolution, default changes, stale-mode removal, deterministic output, URLs and guide handoffs | Adding a new design still requires its own review |
-| CSS and original HTML helpers | Every button appearance/size/state; fields; choices; progress; design typography/geometry; enlarged text and forced colors | Fixtures exercise shipped compositions, not arbitrary host CSS |
+| CSS and original HTML helpers | All 28 enabled button appearance/size combinations, plus disabled/pending/skeleton at large size; fields; choices; progress; design typography/geometry; enlarged text and forced colors | Fixtures exercise shipped compositions, not arbitrary host CSS |
 | Reusable patterns | Existing tasks for tabs, modal, validation, table sorting/pagination and host isolation retained | Consumer persistence, authorization and services are outside these examples |
 | Workspace | All modes: overview, collection search/empty/create, settings errors/recovery, pending edits/reset, narrow RTL/spacing/200% text | Local preview only; no backend or durable storage implied |
 | Gallery, catalog, quality and standalone pages | Automated accessibility and 320/768/1440 reflow; nine font checks per quality page; gallery/workspace no-script reading | Static previews and no-script reading do not prove all interactions work without JavaScript |
@@ -41,7 +41,7 @@ Review scope: the original public reuse, multiple complete designs, Midnight def
 
 ## Results
 
-Final verification receipts are recorded with the release audit. A configured check is not a passing result. Native compiler runs, live design-tool imports, screen readers, physical devices, actual browser zoom and cold-network tests remain explicit acceptance work; see docs/support.md.
+[Hosted verification](https://github.com/pagelove/design-system/actions/runs/42157651422) passed all 138 browser checks on 487acc667a324ff096d48109d8788a85c218633d, with 24 unchanged visual comparisons, zero skipped tests and zero flaky results. The root and five design bundles pass independent consumer checks. All 352 selected text/control/interaction contrast checks pass. See [browser receipt](../audit/wider-browser-checks.json), [external consumers](../audit/wider-external-checks.json) and [core results](../audit/design-automated-checks.json). Direct tasks and representative screenshots were separately inspected; the final forced-color button matrices were reviewed across all three engines. Native compiler runs, live design-tool imports, screen readers, physical devices, actual browser zoom and cold-network tests remain explicit acceptance work; see docs/support.md.
 
 ## Why this review finds more
 

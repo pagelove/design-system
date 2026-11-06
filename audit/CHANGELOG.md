@@ -281,7 +281,7 @@
 
 ## DS-028 — Wider review revisions implemented
 
-- UTC: 2026-11-06T03:16:00Z
+- UTC: 2026-11-06T03:43:02.200Z
 - Actor: Codex
 - Plan reference: DS-027.
 - Change: Added independent consumers for every value in YAML/XML/Sass/Less/TypeScript/text/Markdown/SVG exports and pinned compiler/server-render checks for all three framework examples. Corrected Less font-string escaping, workspace draft ownership, modal focus, field recovery and reset timing. Made original control text scalable, strengthened Forest secondary text and visited-link contrast, corrected font notices and pinned current Node 24 workflow actions.
@@ -290,4 +290,6 @@
 - Affected: Generators, development validators/dependencies, shared application CSS, semantic sources, workspace scripts, tests/fixtures, generated bundles, release/support/format documentation, licensing notice and review evidence.
 - Compatibility: Patch release 0.5.2. Five designs, supported modes, token names and Midnight/dark default remain unchanged. A generated classic-script modal bridge preserves local-file workspace loading.
 - Limits: Live tool imports, native compilers/rendering, hydrated framework apps, screen readers, physical devices, actual zoom, cold-network timing and independent LLM task outputs remain unverified. See reference/WIDER-REVIEW.md.
-- Publication: Final browser receipts and reviewed artifacts will be recorded before normal fast-forward publication.
+- Follow-up: The first complete 138-test run passed 109 and exposed combined narrow/RTL/enlarged/spacing settings overflow plus early font inspection in WebKit. Bound heading children, allowed status pills to wrap and deferred font inspection until styles load. Capture inspection also exposed forced-color disabled labels sharing their painted surface; unified the button system palette and added rendered foreground/background checks.
+- Final verification: Hosted run 42157651422 on 487acc667a324ff096d48109d8788a85c218633d passed 138 browser checks, 24 unchanged visual comparisons, zero skipped and zero flaky tests. All static/consumer checks pass. Forced-color contrast measurements now composite transparent decoration over its actual ancestor surfaces; the 4.5:1 threshold is unchanged.
+- Publication: Prepared for normal fast-forward publication with retained receipts, coverage map and integrity manifest.
