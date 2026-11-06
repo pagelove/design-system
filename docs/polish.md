@@ -26,6 +26,8 @@ styles/product.css provides reusable app shell, navigation, metrics, project pan
 
 ## Interaction quality
 
+Apply [Responsive Component Behavior and Visual Acceptance](responsive.md) to each composition. Preserving page width alone does not establish polish: protect short labels and figures, reflow groups, align adjacent actions and inspect real populated/menu/dialog/detail states. The opt-in [responsive reference](../examples/responsive.html) demonstrates these behaviors without changing a design's visual tokens.
+
 Actions need default, hover, pressed, focus, disabled and pending states. Use 160ms color/border feedback; no ambient motion. Reduced motion removes transitions and pressed movement. Navigation is URL-addressable, preserves design selection and supports browser history. Search has a useful empty state and clear-search recovery. The create-story dialog supports Escape, native focus containment and return focus. New text uses textContent, never HTML interpolation.
 
 Settings demonstrate required-field and email validation, field-associated errors, first-error focus, saving, completion and reset. The settings demo does not simulate a server: edits and created stories last only until reload. A real application must add persistence, permission failures, conflict recovery and network failure/retry behavior appropriate to its service. Do not imply the preview provides those capabilities.

@@ -8,7 +8,7 @@ Target WCAG 2.2 AA for the consuming application and evaluate complete tasks. Th
 - Associate errors with fields and describe a correction. Announce meaningful asynchronous status without making every progress tick a disruptive alert. Do not use color alone for status or selection.
 - Use 44px targets as this design system's default for frequent controls. WCAG 2.2 AA's target-size criterion uses 24px with exceptions; the 44px criterion is AAA with its own exceptions. Design defaults and conformance rules are distinct.
 - Reflow at 320 CSS pixels, preserve zoom and inspect 200% text enlargement. Tables or inherently two-dimensional content can have a deliberate scroll region with context; ordinary form controls and essential actions must remain reachable.
-- Allow wrapping and long translated/RTL text. Use logical properties when practical. Do not rely on a font family declaration to guarantee that a particular font loaded.
+- Allow prose and long translated/RTL text to wrap naturally, while preserving short actions and meaningful figures through deliberate group reflow. Follow the [responsive component contract](responsive.md), not a blanket wrapping or nowrap rule. Use logical properties when practical. Do not rely on a font family declaration to guarantee that a particular font loaded.
 - Honor reduced motion; keep visible feedback when animations stop. Avoid flashing and unnecessary autoplay. Audio needs a useful independent control and a non-audio path to essential meaning.
 - Check browser contrast modes, pointer/keyboard switching, virtual keyboard occlusion and safe-area clearance. Desktop emulation is useful but does not prove physical-device behavior.
 
@@ -17,5 +17,7 @@ Run automated checks where available, then inspect the actual task separately. R
 The app layer imports styles/forced-colors.css, generated from the shared semantic role names. In forced colors, it maps text, surfaces, links, controls and focus to system colors instead of retaining a dark theme's pale text on a forced light canvas. Native choice controls retain their state; explicit contrast assertions complement screenshot review. Preserve this relative stylesheet import when copying base.css.
 
 ## Executable acceptance fixtures
+
+[Responsive compositions](../examples/responsive.html) adds toolbar, grouped field, paired navigation, bulk, metric and dialog examples. The [visual acceptance gate](responsive.md#visual-acceptance-gate) requires component-level checks and actual screenshot inspection across six representative widths and layout transitions. Record enlarged-text fixtures separately from actual browser zoom.
 
 Serve examples/patterns.html and select design/mode through URL parameters. dir=rtl, spacing=expanded and size=200 combine layout stress cases; they are fixtures, not proof of browser zoom support. The expanded spacing fixture uses 1.5 line height, 2em paragraph spacing, .12em tracking and .16em word spacing. Tests exercise keyboard tabs, confirmation cancellation/focus return, error-summary recovery, pagination boundaries and axe checks. See docs/support.md for mandatory manual checks and untested environments.

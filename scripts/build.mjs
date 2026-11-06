@@ -78,7 +78,7 @@ function modeGuide(mode){
  return content.replace('\n---\n\n#','\n'+yaml({components})+'---\n\n#');
 }
 enrich({design,base,resolved,defaultMode,dtcg,json,put,guide:modeGuide,version:releaseVersion});
-const contextFiles=['DESIGN.md','docs/designs.md','docs/polish.md','docs/identity-and-sharing.md','docs/foundations.md','docs/components.md','docs/document-first.md','docs/games.md','docs/accessibility.md','docs/patterns.md','docs/formats.md','docs/support.md','docs/content.md','NOTICE.md'];
+const contextFiles=['DESIGN.md','docs/designs.md','docs/polish.md','docs/responsive.md','docs/identity-and-sharing.md','docs/foundations.md','docs/components.md','docs/document-first.md','docs/games.md','docs/accessibility.md','docs/patterns.md','docs/formats.md','docs/support.md','docs/content.md','NOTICE.md'];
 put('llms-full.txt',contextFiles.map(p=>`\n===== ${p} =====\n\n${fs.readFileSync(path.join(p==='DESIGN.md'?root:sourceRoot,p),'utf8')}`).join('\n'));
 for(const mode of ['light','dark'])if(!semantic[mode]){const file=path.join(root,'tokens',mode+'.tokens.json');if(fs.existsSync(file))fs.unlinkSync(file);const staleGuide=path.join(root,'.stitch',mode+'.DESIGN.md');if(fs.existsSync(staleGuide))fs.unlinkSync(staleGuide);}
 return {base,semantic,resolved,block};

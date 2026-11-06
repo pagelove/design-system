@@ -6,6 +6,7 @@ These records explain what was reviewed, revised and verified at a particular po
 
 | Report | Scope |
 | --- | --- |
+| [Responsive component behavior](RESPONSIVE-REVIEW.md) | Whole-group layouts, content wrapping, component diagnostics and actual screenshot acceptance |
 | [Crash-fix review](CRASH-FIX-REVIEW.md) | Browser-version safeguards, crash-trigger coverage, recovery steps and verification limits |
 | [Repository organization and README](REPOSITORY-REVIEW.md) | Onboarding, source ownership, navigation and contribution routes |
 | [Identity customization](IDENTITY-CONSUMER-REVIEW.md) | Replacement SVGs, maskable padding, custom-image fallback and failed-build preservation |

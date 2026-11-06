@@ -34,6 +34,12 @@ Apply this design's declared card and button radii. Utility icon actions can rem
 
 Use the exported design-page-padding, design-panel-padding, design-row-padding, design-radius-input, design-title-size, design-heading-tracking and design-transition-duration values. The heading size in the metadata is the desktop maximum; use design-title-size-mobile on narrow screens. Use design-text-small for action labels and design-text-caption for supplementary metadata. Follow docs/polish.md and examples/workspace.html for overview, collection/detail and settings compositions. Preserve readable metadata, 44px controls and all error, empty, pending and recovery states.
 
+## Responsive Component Behavior and Visual Acceptance
+
+Follow docs/responsive.md and examples/responsive.html. Keep short action labels and meaningful amounts/dates intact by moving whole controls and related groups before their contents become compressed. Allow prose and longer metric labels to wrap at words; do not use blanket nowrap or arbitrary word breaking. Stack genuinely long actions when necessary and keep adjacent action heights consistent. Use styles/responsive.css as an opt-in composition layer after the selected theme.
+
+Review 320, 375, 768, 1024, 1280 and 1768 CSS px plus component transitions ±1px, including populated, edit/error, secondary, menu/dialog and bulk states. Record actual container widths, text/zoom settings and screenshots opened for inspection in reference/responsive-acceptance-template.md. Page-overflow checks and captured screenshots alone are not visual acceptance. Document intentional editorial/game exceptions without excusing clipping or lost keyboard access.
+
 ## App identity and social sharing
 
 Read docs/identity-and-sharing.md. Keep the app's logo and name stable when selecting this design. Replace the sample branding/site.json and branding/mark.svg, then regenerate the icon family, social images and metadata. Social templates use this design's actual tokens and supported mode; never infer a light mode for a dark-only design. Root assets/social/default.png follows the catalog default. Page-specific content or custom imagery can override it. Publish PNG social images and complete server-rendered head metadata; SVG sources are editable artwork, not universal social-platform image formats. Check small icons, long text, cropping and the deployed URLs.

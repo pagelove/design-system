@@ -18,6 +18,7 @@
 - [Design](https://github.com/pagelove/design-system/blob/main/DESIGN.md): Stitch-compatible visual guide.
 - [Foundations](https://github.com/pagelove/design-system/blob/main/docs/foundations.md): Themes, scales and optional profiles.
 - [Components](https://github.com/pagelove/design-system/blob/main/docs/components.md): Native controls, states and integration limits.
+- [Responsive component behavior](https://github.com/pagelove/design-system/blob/main/docs/responsive.md): Content-specific wrapping, grouped controls, six reference layouts and required width/state/screenshot acceptance reports.
 - [Document-first](https://github.com/pagelove/design-system/blob/main/docs/document-first.md): Domain models, editing, persistence and recovery.
 - [Games](https://github.com/pagelove/design-system/blob/main/docs/games.md): Player experience, input, state, audio and performance.
 - [Accessibility](https://github.com/pagelove/design-system/blob/main/docs/accessibility.md): Contrast, focus, targets and responsive checks.

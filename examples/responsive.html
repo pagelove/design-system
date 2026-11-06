@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Responsive compositions — Pagelove</title>
+  <link rel="stylesheet" href="../styles/app.css">
+  <link rel="stylesheet" href="../styles/patterns.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="design-catalog.js"></script>
+  <script src="selection.js"></script>
+  <script type="module" src="responsive.js"></script>
+</head>
+<body>
+<a class="ds-skip" href="#main">Skip to examples</a>
+<main id="main" class="ds-shell responsive-preview">
+  <nav class="ds-row" aria-label="Reference pages"><a href="designs.html">Design collection</a><a href="../docs/responsive.md">Responsive guidance</a></nav>
+  <h1>Room for the whole task</h1>
+  <p class="ds-intro">Search, choose, compare and act. Resize these compositions to see complete groups move into place. Sample changes last until reload.</p>
+  <fieldset class="preview-selection ds-row" hidden><legend>Preview a design</legend><label>Design <select id="design" class="ds-select"></select></label><label>Mode <select id="mode" class="ds-select"></select></label></fieldset>
+  <noscript><p>Use JavaScript for the sample actions and design selection. The layout styles and guidance remain readable.</p></noscript>
+
+  <section class="ds-section" aria-labelledby="toolbar-title">
+    <h2 id="toolbar-title">Search, filters and actions</h2>
+    <div id="toolbar-slice" class="ds-responsive-surface responsive-slice" data-layout-container>
+      <div class="ds-toolbar">
+        <div class="ds-search"><label for="search">Search contacts</label><input id="search" class="sample-input" type="search" placeholder="Name or organization"></div>
+        <div class="ds-control-group"><label for="visibility" data-layout-words>Visibility</label><select id="visibility" class="ds-select" aria-describedby="search-status" data-layout-value="search-status"><option>All contacts</option><option>Active contacts</option></select></div>
+        <div id="toolbar-actions" class="ds-actions" data-layout-equal role="group" aria-label="Contact actions">
+          <details id="more-menu"><summary>More actions</summary><div class="menu-items" id="menu-actions"></div></details>
+        </div>
+      </div>
+      <ul class="record-list"><li data-active="true"><strong>Alex Morgan</strong><span>Community garden coordinator</span></li><li data-active="true"><strong>Sam Rivera</strong><span>Independent publishing studio</span></li><li data-active="false"><strong>Jordan Chen</strong><span>Neighborhood arts collective</span></li></ul>
+      <p id="search-status" role="status">3 contacts · All contacts</p>
+    </div>
+  </section>
+
+  <section class="ds-section" aria-labelledby="destination-title">
+    <h2 id="destination-title">A label stays with its field</h2>
+    <div id="field-slice" class="ds-responsive-surface responsive-slice" data-layout-container>
+      <div class="ds-control-group"><label for="album" data-layout-short data-layout-words>Move to album</label><select id="album" class="ds-select" aria-describedby="destination" data-layout-value="destination"><option>Summer field notes</option><option>Family photographs — autumn collection</option></select></div>
+      <p id="destination">Destination: Summer field notes</p>
+    </div>
+  </section>
+
+  <section class="ds-section" aria-labelledby="navigation-title">
+    <h2 id="navigation-title">Previous and next belong together</h2>
+    <div id="pair-slice" class="ds-responsive-surface responsive-slice" data-layout-container>
+      <div class="ds-toolbar"><p class="period">Training week: <span id="week" class="ds-atomic" data-layout-atomic>2–8 Nov 2026</span></p><div id="week-actions" class="ds-action-pair" data-layout-equal role="group" aria-label="Training week"></div></div>
+    </div>
+  </section>
+
+  <section class="ds-section" aria-labelledby="bulk-title">
+    <h2 id="bulk-title">Selection and its actions</h2>
+    <div id="bulk-slice" class="ds-responsive-surface responsive-slice" data-layout-container>
+      <label class="selection-label"><input id="select-all" type="checkbox" checked> Select all 8 photographs</label>
+      <div class="ds-bulk-actions"><p id="selection-status" role="status">8 photographs selected</p><div id="bulk-actions" class="ds-actions" data-layout-equal role="group" aria-label="Selected photographs"></div></div>
+    </div>
+  </section>
+
+  <section class="ds-section" aria-labelledby="metrics-title">
+    <h2 id="metrics-title">Figures stay intact; labels have room</h2>
+    <div id="metrics-slice" class="ds-responsive-surface responsive-slice" data-layout-container>
+      <dl class="ds-metric-grid">
+        <div class="ds-metric"><dt data-layout-words>Outstanding invoice balance</dt><dd data-layout-check><span class="ds-atomic" data-layout-atomic>$98,640.50</span></dd></div>
+        <div class="ds-metric"><dt data-layout-words>Members awaiting verification</dt><dd data-layout-check><span class="ds-atomic" data-layout-atomic>1,248</span></dd></div>
+        <div class="ds-metric"><dt data-layout-words>Change from the previous period</dt><dd data-layout-check><span class="ds-atomic" data-layout-atomic>−12.8%</span></dd></div>
+        <div class="ds-metric"><dt data-layout-words>Next community review</dt><dd data-layout-check><time class="ds-atomic" data-layout-atomic datetime="2026-11-06">6 Nov 2026</time></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="ds-section" aria-labelledby="detail-title">
+    <h2 id="detail-title">Detail views and dialog actions</h2>
+    <div id="detail-slice" class="ds-responsive-surface responsive-slice" data-layout-container>
+      <div id="detail-actions" class="ds-actions" data-layout-equal role="group" aria-label="Invoice actions"></div>
+      <article id="invoice-detail" hidden aria-labelledby="invoice-title"><h3 id="invoice-title">Community workshop materials</h3><p>Invoice INV-2048 · Due <time class="ds-atomic" data-layout-atomic datetime="2026-11-20">20 Nov 2026</time></p><p>Amount due: <strong class="ds-atomic" data-layout-atomic>$12,450.00</strong></p></article>
+      <p id="action-status" role="status">Sample invoice ready to review.</p>
+    </div>
+  </section>
+  <p class="ds-intro">These are local layout examples. Use the <a href="../reference/responsive-acceptance-template.md">acceptance record</a> to document the widths and states you actually review.</p>
+</main>
+<dialog id="edit-dialog" class="ds-dialog responsive-dialog ds-responsive-surface" data-layout-container aria-labelledby="edit-title">
+  <form id="edit-form" novalidate>
+    <h2 id="edit-title">Edit invoice details</h2>
+    <label for="invoice-name">Description</label><input id="invoice-name" class="sample-input" value="Community workshop materials" required aria-describedby="name-error" autofocus>
+    <p id="name-error" role="alert" hidden>Enter a description before saving.</p>
+    <p>Check the description and keep the original amount: <strong class="ds-atomic" data-layout-atomic>$12,450.00</strong>.</p>
+    <div id="dialog-actions" class="ds-dialog-actions" data-layout-equal></div>
+  </form>
+</dialog>
+</body>
+</html>

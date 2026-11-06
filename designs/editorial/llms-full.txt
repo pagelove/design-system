@@ -197,6 +197,12 @@ Apply this design's declared card and button radii. Utility icon actions can rem
 
 Use the exported design-page-padding, design-panel-padding, design-row-padding, design-radius-input, design-title-size, design-heading-tracking and design-transition-duration values. The heading size in the metadata is the desktop maximum; use design-title-size-mobile on narrow screens. Use design-text-small for action labels and design-text-caption for supplementary metadata. Follow docs/polish.md and examples/workspace.html for overview, collection/detail and settings compositions. Preserve readable metadata, 44px controls and all error, empty, pending and recovery states.
 
+## Responsive Component Behavior and Visual Acceptance
+
+Follow docs/responsive.md and examples/responsive.html. Keep short action labels and meaningful amounts/dates intact by moving whole controls and related groups before their contents become compressed. Allow prose and longer metric labels to wrap at words; do not use blanket nowrap or arbitrary word breaking. Stack genuinely long actions when necessary and keep adjacent action heights consistent. Use styles/responsive.css as an opt-in composition layer after the selected theme.
+
+Review 320, 375, 768, 1024, 1280 and 1768 CSS px plus component transitions ±1px, including populated, edit/error, secondary, menu/dialog and bulk states. Record actual container widths, text/zoom settings and screenshots opened for inspection in reference/responsive-acceptance-template.md. Page-overflow checks and captured screenshots alone are not visual acceptance. Document intentional editorial/game exceptions without excusing clipping or lost keyboard access.
+
 ## App identity and social sharing
 
 Read docs/identity-and-sharing.md. Keep the app's logo and name stable when selecting this design. Replace the sample branding/site.json and branding/mark.svg, then regenerate the icon family, social images and metadata. Social templates use this design's actual tokens and supported mode; never infer a light mode for a dark-only design. Root assets/social/default.png follows the catalog default. Page-specific content or custom imagery can override it. Publish PNG social images and complete server-rendered head metadata; SVG sources are editable artwork, not universal social-platform image formats. Check small icons, long text, cropping and the deployed URLs.
@@ -307,6 +313,8 @@ styles/product.css provides reusable app shell, navigation, metrics, project pan
 
 ## Interaction quality
 
+Apply [Responsive Component Behavior and Visual Acceptance](responsive.md) to each composition. Preserving page width alone does not establish polish: protect short labels and figures, reflow groups, align adjacent actions and inspect real populated/menu/dialog/detail states. The opt-in [responsive reference](../examples/responsive.html) demonstrates these behaviors without changing a design's visual tokens.
+
 Actions need default, hover, pressed, focus, disabled and pending states. Use 160ms color/border feedback; no ambient motion. Reduced motion removes transitions and pressed movement. Navigation is URL-addressable, preserves design selection and supports browser history. Search has a useful empty state and clear-search recovery. The create-story dialog supports Escape, native focus containment and return focus. New text uses textContent, never HTML interpolation.
 
 Settings demonstrate required-field and email validation, field-associated errors, first-error focus, saving, completion and reset. The settings demo does not simulate a server: edits and created stories last only until reload. A real application must add persistence, permission failures, conflict recovery and network failure/retry behavior appropriate to its service. Do not imply the preview provides those capabilities.
@@ -324,6 +332,118 @@ Control boundaries use border-strong and focus uses border-focused. Automated ch
 Collection links carry a collection ID in the URL. Each collection's HTML article owns its items; counts, progress and overview summaries are derived from those articles. Creating an item updates the current collection only. Changing designs or screens preserves local edits until reload. Settings capture submitted values, keep later edits marked unsaved and disable Save only when pending or unchanged. Reset cancels pending work and restores the original preview.
 
 The settings screen offers 100%, 125% and 200% reading sizes and a reduced-motion preference. These apply immediately for preview and reset on reload. Device reduced-motion preferences always take precedence. See [quality checks](../examples/quality.html) for actual font loading at all three supplied weights and effective transition durations. Native browser zoom, screen readers and physical devices require separate testing.
+
+
+===== docs/responsive.md =====
+
+# Responsive Component Behavior and Visual Acceptance
+
+Responsive means readable, usable and deliberately composed, not merely fitting inside the viewport. Review the contents of controls and the relationships between them after reflow. A page-overflow check alone cannot establish this contract.
+
+## Wrapping by content type
+
+| Content | Required behavior |
+| --- | --- |
+| Short actions such as Move to album, Previous week, Export contacts and Print / PDF | Keep the label intact at normal reading sizes. Give the control its intrinsic width and move the complete control to a new row before compressing its text. |
+| Currency, percentages, compact dates and identifiers whose splitting changes readability | Keep the meaningful unit intact. Use a scoped atomic span, tabular numerals where useful, and enough space for realistic large/negative/localized values. |
+| Field label and input/select | Treat as one group. Reflow the whole group, or deliberately place the label above the input. Keep the visible label associated with its control. |
+| Metric labels, descriptions, article titles and other prose | Allow natural word wrapping. Give columns a useful minimum width; reduce the column count before breaking ordinary words into fragments. |
+| Very long localized actions or text at enlarged sizes | Stack actions and allow intentional whole-word wrapping when the complete label cannot fit a full available row. Keep adjacent actions aligned in height when they share a row. Never shrink text, clip it or remove its visible label to force one line. |
+| Unbroken user content such as URLs | Use a scoped emergency break where necessary. Do not apply `overflow-wrap: anywhere` or `word-break: break-all` indiscriminately to action labels, amounts or metric labels. |
+
+Do not apply blanket `white-space: nowrap`. It can move the defect from wrapped text to clipping or horizontal scrolling. Atomic values must still fit their container: widen/stack their column or use a documented, unambiguous compact format with the complete value visibly available. Do not silently round financial values, hide essential figures behind a tooltip, or mark overflowing content as an exception.
+
+## Groups and available space
+
+Size a toolbar against its actual container, including a sidebar, panel padding and scrollbars. A viewport breakpoint is not proof that a nested toolbar has enough space. Prefer content-driven wrapping; use container breakpoints for deliberate composition changes. [`min-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/min-width) affects intrinsic flex/grid sizing: give flexible search/input tracks `min-inline-size: 0`, while protecting action contents from unnecessary shrinking.
+
+Keep related Previous/Next or bulk actions in one wrapper that can move as a unit. Inside that wrapper, stack complete actions when necessary. Use stretch alignment for actions on the same row, consistent target sizes and explicit gaps. Preserve DOM reading/focus order; do not use visual ordering to conceal a disconnected action. Menus and dialog footers must obey the same rules as the main screen.
+
+## Reusable reference layouts
+
+Load `styles/app.css`, optional `styles/patterns.css`, then [styles/responsive.css](../styles/responsive.css). The new classes are opt-in: the preserved library stylesheet and existing app layouts are not rewritten. The [interactive reference](../examples/responsive.html) contains all six compositions in every supported design/mode:
+
+| Composition | Reusable classes and behavior |
+| --- | --- |
+| Search, filters and actions toolbar | `ds-toolbar`, `ds-search`, `ds-actions`: flexible search; whole field/action groups move to new rows; stack below a 28rem container. |
+| Label-and-select | `ds-control-group`: wrapping group with a noncompressed label and flexible select; label moves above the select when needed. |
+| Previous/Next | `ds-action-pair` with `ds-action` buttons: complete labels, shared-row height alignment, full-row actions when stacked. |
+| Bulk selection | `ds-bulk-actions`: selection summary and associated action group stay together; keep feedback visible after reflow. |
+| Metrics | `ds-metric-grid`, `ds-metric`, `ds-atomic`: columns have a 14rem minimum capped at available space; labels wrap at words and figures remain intact. |
+| Dialog actions | `ds-dialog-actions` with `ds-action`: actions wrap or stack in DOM order; dialog body scrolls when necessary and focus remains reachable. |
+
+Wrap the composition in `ds-responsive-surface` to establish its inline-size container. `ds-action` extends the existing `pl-button` markup; it controls layout and wrapping, not the selected palette. For example:
+
+```html
+<div class="ds-responsive-surface">
+  <div class="ds-toolbar">
+    <div class="ds-control-group">
+      <label for="album">Move to album</label>
+      <select id="album" class="ds-select">
+        <option>Summer field notes</option>
+      </select>
+    </div>
+    <div class="ds-actions" role="group" aria-label="Album actions">
+      <button type="button" class="pl-button pl-button--regular pl-button--md ds-action">
+        <span class="pl-button__label">Move selected</span>
+      </button>
+    </div>
+  </div>
+</div>
+```
+
+<details>
+<summary>See the toolbar at wide, intermediate and narrow sizes</summary>
+
+Midnight/dark, 100% text. The groups change rows while action labels stay intact.
+
+1280px viewport / 1200px container:
+
+![Wide toolbar with search, filter and actions on one row](../reference/previews/responsive-toolbar-wide.png)
+
+768px viewport / 721px container:
+
+![Intermediate toolbar with actions on their own row](../reference/previews/responsive-toolbar-intermediate.png)
+
+375px viewport / 328px container:
+
+![Narrow toolbar with stacked search and filter groups](../reference/previews/responsive-toolbar-narrow.png)
+
+</details>
+
+Use the full example's native semantics and handlers when copying an interaction. These are layout references with local sample state, not persistence or backend services. The 28rem/14rem choices are reference composition values, not universal product breakpoints. Record the actual transitions used in the consuming app.
+
+Native selects cannot wrap their closed value. For a long choice, visibly repeat the complete selection beside/below the field and associate it as a description, as the album example does. The diagnostic recognizes `data-layout-value` only when it names a visible element containing the actual selected option. Native editable values may scroll inside their input; their labels and surrounding controls still need layout checks.
+
+## Visual acceptance gate
+
+Review **320, 375, 768, 1024, 1280 and 1768 CSS-pixel viewport widths**, plus just below, at and just above every component layout transition (normally ±1 CSS pixel). Record container widths as well. Automatic grid/flex transitions also need inspection; do not test only declared media queries. The reference has a 28rem toolbar transition and metric column transitions at 29rem, 44rem and 59rem, with its 1rem gaps.
+
+At those widths, exercise populated screens, long realistic content, selection/bulk actions, empty/recovery states, detail/secondary views, edit forms, validation errors, open menus, and dialogs. Check each affected design/mode and actual localized content used by the app. Include negative/large amounts, longer dates and long labels without inventing impossible sample content merely to fit the layout.
+
+Acceptance requires:
+
+- No clipped text, overlapping controls or unintended horizontal overflow, including inside panels, menus and dialogs.
+- Intact short action labels and meaningful figures; no accidental word fragments in metric labels. Long prose and editorial headings may wrap naturally.
+- Consistent heights for adjacent actions on a shared row, adequate targets, and clear relationships and spacing after reflow.
+- Keyboard access, visible/unobscured focus, sensible focus order, dialog Escape/focus return and working recovery actions.
+- Readable enlarged layouts: check 200% text and text-spacing overrides, and actual browser zoom/reflow separately. A 320px or root-font-size fixture is not a browser-zoom trial. The [W3C reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) and [resize-text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text.html) guidance describe the accessibility requirements; this repository's six-width visual gate adds composition checks.
+
+## Automation supports screenshot review
+
+[tests/helpers/responsive-audit.mjs](../tests/helpers/responsive-audit.mjs) provides a browser-side diagnostic for declared short labels, atomic values, word-preserving text, control clipping/compression and action-row heights. Mark the elements you intend to check; unmarked content is not automatically certified. The [regression tests](../tests/responsive.spec.mjs) include deliberately broken controls to prove that a no-overflow page can still fail. Resolve flags or document a specific intentional exception, then rerun the affected states.
+
+Apply `data-layout-short` to a short label, `data-layout-atomic` to a complete figure/date, `data-layout-words` to text that must not split ordinary words, and `data-layout-check` to other content boxes. Mark related action wrappers with `data-layout-equal` and their actual available-width wrapper with `data-layout-container`. The shared action/input/select classes are checked automatically too. Run the helper in a rendered browser, for example `page.evaluate(auditResponsiveLayout)`, and require an empty `issues` array. Retain its container measurements and exceptions with the screenshot record.
+
+For enlarged text or a genuinely long translation, `allowLongLabels: true` permits whole-word label wrapping only when the intrinsic label cannot fit a complete available row. An explicit `data-layout-exception="reason"` can identify an intentional editorial/game text treatment; it does not suppress atomic-value or clipping checks and still needs visual review. Native input/select exceptions are reported separately, not silently discarded.
+
+Capture screenshots after fonts/content settle. **An agent or person must open and inspect the rendered screenshots.** Capturing them, producing a contact sheet, passing axe, or receiving a passing geometry result is not visual approval. Review both the overall composition and legible component detail; small thumbnails alone cannot establish text quality.
+
+Exceptions must name the component, content, width/state, reason and evidence. Multiline editorial headings and deliberately composed game controls are valid candidates; neither exempts clipping, inaccessible focus or unreadable figures. Whole-word wrapping caused by a genuine translation/zoom constraint is different from a short label compressed beside an empty flexible track.
+
+## Required consuming-agent report
+
+Copy [reference/responsive-acceptance-template.md](../reference/responsive-acceptance-template.md) into the consuming app's evidence. Report the build, browser/OS, design/mode, viewport **and container** widths, breakpoints, content/state, input/zoom settings, screenshot path, whether it was actually inspected, findings, fixes and remaining limits. Distinguish automated passes, captured images and visual inspection. Do not claim all widths, states, models, devices or demos were reviewed from a representative subset.
 
 
 ===== docs/identity-and-sharing.md =====
@@ -539,6 +659,10 @@ Use a native button for an action, with an explicit type. Use an anchor with a m
 
 Represent default, hover, pressed, focus, disabled, loading and skeleton states. Focus must remain visible. Disable a pending action when duplicate activation is invalid and keep an accessible label while its appearance changes. Skeletons are placeholders, not actionable unlabeled controls. Every icon-only action needs an accessible name describing its purpose. The recommended app layer expands small library sizes to at least 44px targets. It does not change the foundation scale.
 
+## Responsive Component Behavior and Visual Acceptance
+
+Read the [responsive contract](responsive.md) before placing controls in toolbars, metric grids or dialog footers. Short actions and meaningful figures need space to remain intact; related controls reflow as complete groups. Prose wraps naturally. Emergency wrapping in the base styles is a last-resort readability safeguard, not a composition strategy. Use the opt-in [responsive layouts](../styles/responsive.css) and [interactive examples](../examples/responsive.html), then report the actual width/state matrix and inspected screenshots.
+
 ## Links
 
 Use `pl-link--default` for standalone links and `pl-link--inline` for links in prose. Native underline, visited state, focus and useful link text matter more than decorative icons. Do not make a disabled-looking anchor navigate unexpectedly; if there is no destination, describe availability as text.
@@ -741,7 +865,7 @@ Target WCAG 2.2 AA for the consuming application and evaluate complete tasks. Th
 - Associate errors with fields and describe a correction. Announce meaningful asynchronous status without making every progress tick a disruptive alert. Do not use color alone for status or selection.
 - Use 44px targets as this design system's default for frequent controls. WCAG 2.2 AA's target-size criterion uses 24px with exceptions; the 44px criterion is AAA with its own exceptions. Design defaults and conformance rules are distinct.
 - Reflow at 320 CSS pixels, preserve zoom and inspect 200% text enlargement. Tables or inherently two-dimensional content can have a deliberate scroll region with context; ordinary form controls and essential actions must remain reachable.
-- Allow wrapping and long translated/RTL text. Use logical properties when practical. Do not rely on a font family declaration to guarantee that a particular font loaded.
+- Allow prose and long translated/RTL text to wrap naturally, while preserving short actions and meaningful figures through deliberate group reflow. Follow the [responsive component contract](responsive.md), not a blanket wrapping or nowrap rule. Use logical properties when practical. Do not rely on a font family declaration to guarantee that a particular font loaded.
 - Honor reduced motion; keep visible feedback when animations stop. Avoid flashing and unnecessary autoplay. Audio needs a useful independent control and a non-audio path to essential meaning.
 - Check browser contrast modes, pointer/keyboard switching, virtual keyboard occlusion and safe-area clearance. Desktop emulation is useful but does not prove physical-device behavior.
 
@@ -750,6 +874,8 @@ Run automated checks where available, then inspect the actual task separately. R
 The app layer imports styles/forced-colors.css, generated from the shared semantic role names. In forced colors, it maps text, surfaces, links, controls and focus to system colors instead of retaining a dark theme's pale text on a forced light canvas. Native choice controls retain their state; explicit contrast assertions complement screenshot review. Preserve this relative stylesheet import when copying base.css.
 
 ## Executable acceptance fixtures
+
+[Responsive compositions](../examples/responsive.html) adds toolbar, grouped field, paired navigation, bulk, metric and dialog examples. The [visual acceptance gate](responsive.md#visual-acceptance-gate) requires component-level checks and actual screenshot inspection across six representative widths and layout transitions. Record enlarged-text fixtures separately from actual browser zoom.
 
 Serve examples/patterns.html and select design/mode through URL parameters. dir=rtl, spacing=expanded and size=200 combine layout stress cases; they are fixtures, not proof of browser zoom support. The expanded spacing fixture uses 1.5 line height, 2em paragraph spacing, .12em tracking and .16em word spacing. Tests exercise keyboard tabs, confirmation cancellation/focus return, error-summary recovery, pagination boundaries and axe checks. See docs/support.md for mandatory manual checks and untested environments.
 
@@ -860,7 +986,7 @@ The crash regression uses axe's default rules with no tag filter, requires `aria
 
 Every new component must cover visible labels, keyboard path, focus, disabled/pending/error/empty states where relevant, and safe insertion of text. For dialogs: initial focus, containment, Escape, and return focus. For tabs: arrow/Home/End keys, selected state and linked panels. For forms: error summary focus, associated inline errors, retained values and recovery. For tables: captions, column semantics, sort state, pagination boundaries and named scrolling regions.
 
-Required environment checks: 320/768/1440 CSS px; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
+Required environment checks: 320/375/768/1024/1280/1768 CSS px, component transitions ±1px and the existing 1440px visual baseline; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Apply the [responsive component visual gate](responsive.md#visual-acceptance-gate) to populated, edit/error, secondary, menu/dialog and bulk states, and report actual viewport/container widths and screenshots opened. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
 
 The original helper fixture at tests/fixtures/core-controls.html exercises checkbox checked/mixed states, native radio/switch keyboard paths, disabled choices, icon-only pending names, all six determinate progress sizes, RTL/enlarged-text reflow and native forced-color fallbacks. Tests also verify selected-mode guide links across catalog, workspace, gallery and standalone previews. These extend automated coverage without replacing manual acceptance.
 

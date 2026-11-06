@@ -397,3 +397,24 @@
 - Affected: Validator and negative cases, external-check integration, browser regression fixture, contributor/support documentation, generated context bundles, review report/index and audit evidence.
 - Limits: Digest syntax validation does not verify registry identity. Linux visual comparisons and changed hosted CI remain unrun because no local Linux/container environment is available. Original independent-app contrast flags, native-device/AT/live-tool limits and the upstream Firefox bug remain explicit. No design, runtime component, default or visual-baseline change; no commit or push.
 - Evidence: reference/CRASH-FIX-REVIEW.md and audit/firefox-crash-review.json. Raw local evidence remains ignored; previous records are preserved.
+
+## DS-039 — Responsive component behavior and visual acceptance plan
+
+- UTC: 2026-11-06T18:20:55Z
+- Actor: Codex
+- Request: Address reported wrapped action labels, split amounts, uneven paired actions and fragmented metric labels in consuming demos.
+- Findings: Existing guidance covers viewport reflow, text enlargement and manual review, but does not define content-specific wrapping/grouping or a component-level visual acceptance report. Existing emergency wrapping protects page width but is insufficient for deliberate composition. The supplied report describes six affected applications; their source code and correction evidence were not supplied here.
+- Plan: Add dedicated guidance and discovery/agent requirements; provide opt-in shared layout CSS and an interactive six-pattern reference; add element-level diagnostics with broken-layout controls and a width/state matrix. Review captured screenshots, preserve valid prose/game exceptions, regenerate all design/Stitch/context guidance, and run required checks. Record actual inspected widths and states separately from automated coverage.
+- Scope: Public collection guidance, opt-in layout styles, examples, acceptance tooling/tests and evidence. Keep five designs/eight modes and Midnight/dark. Do not claim to have repaired or reverified the external 16 demos.
+- Verification: Pending; actual zoom, assistive technology and consuming-app acceptance remain distinct from local fixtures.
+
+## DS-040 — Responsive references and visual acceptance implemented
+
+- UTC: 2026-11-06T19:03:13.495Z
+- Actor: Codex
+- Plan reference: DS-039.
+- Change: Added content-specific wrapping/grouping guidance, six opt-in responsive reference compositions, a required consuming-agent review template, component diagnostics and broken-layout fixtures. Updated discovery, contribution requirements and generated design/Stitch/context guidance. Visual review additionally corrected long native-select disclosure, dialog semantic action colors, metric figure alignment and expanded-menu composition.
+- Verification: Clean pinned installation, final build, core validation and external consumers pass. The full Windows browser suite passed 204 cases; after the final menu-row refinement all 27 affected cases passed again across Chromium, Firefox and WebKit. The final run records 912 component-state audits with zero issues, covering eight design/mode combinations, six requested widths and 12 component-edge neighbors. Forty-eight tagged accessibility scans report zero violations and retain color-contrast review flags. Thirty-eight screenshots were actually inspected; a wide-menu failure is retained and superseded by six inspected final menu captures. Captured-but-uninspected images are not accepted by inference.
+- Affected: Dedicated responsive guide, opt-in styles, interactive reference, test helper/regressions, agent/report contracts, generated contexts, public previews and review/audit evidence. Five designs/eight modes, Midnight/dark, canonical design values, existing runtime styles and Linux baseline images remain unchanged.
+- Limits: External consuming demos were not independently checked. Actual browser zoom, physical devices, native assistive technology, full localization and current hosted/Linux execution remain unverified. Representative screenshot review and semantic color assertions do not certify every axe contrast flag or complete WCAG conformance. Examples provide local sample interactions only.
+- Evidence: reference/RESPONSIVE-REVIEW.md and audit/responsive-checks.json; raw captures/results and the expanded local verification inventory remain ignored. Changes are unreleased and uncommitted; no push or external comment was submitted.

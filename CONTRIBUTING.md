@@ -33,6 +33,8 @@ For the Firefox label-reference crash, first run `npx playwright test tests/aria
 
 CI runs the full suite and attaches browser artifacts. Review rendered screenshots for UI changes; automated output is not a visual approval. Resolve failures before merging. Documentation-only changes still need generation and core/external checks; validate new commands, file links and section anchors. A browser task run is also useful when adding runnable integration instructions.
 
+For app layouts and controls, apply the [Responsive Component Behavior and Visual Acceptance gate](docs/responsive.md#visual-acceptance-gate). Inspect 320/375/768/1024/1280/1768 CSS px and component transitions ±1px, with populated, edit/error, secondary, menu/dialog and bulk states. Report viewport and container widths, text/actual zoom settings, screenshots actually opened and any exceptions with the [acceptance template](reference/responsive-acceptance-template.md). A passing overflow check or an uninspected screenshot is not approval. Run `npx playwright test tests/responsive.spec.mjs` for the shared reference; consuming applications must test their own content and layouts too.
+
 For dependency updates, preserve the pinned lockfile and run `npm audit`. Optional funding metadata is omitted from the distributed lockfile to keep repository references within the publication policy; package integrity and dependency data remain unchanged.
 
 ## Contribution requirements
