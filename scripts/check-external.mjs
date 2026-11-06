@@ -7,6 +7,7 @@ import os from 'node:os';
 import Ajv from 'ajv/dist/2020.js';
 import YAML from 'yaml';
 import {validateDtcg} from './validate-dtcg.mjs';
+import {resolveTokens} from './resolve-tokens.mjs';
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=read('designs/catalog.json'), ajv=new Ajv({allErrors:true});
 for(const [schema,paths]of [['catalog',['designs/catalog.json']],['design',catalog.designs.map(d=>'designs/'+d.id+'/design.json')],['semantic',['tokens/semantic.json']]]){
@@ -19,10 +20,17 @@ const css=cssFiles.map(p=>fs.readFileSync(p,'utf8')).join('\n');
 const declared=new Set([...css.matchAll(/(--[\w-]+)\s*:/g)].map(m=>m[1]));
 for(const p of cssFiles.filter(p=>!p.endsWith('library-components.css')))for(const m of fs.readFileSync(p,'utf8').matchAll(/var\((--[\w-]+)\s*\)/g))assert.ok(declared.has(m[1]),p+': undefined '+m[1]);
 assert.throws(()=>breadcrumbs([{label:'unsafe',href:'javascript:alert(1)'},{label:'current'}]));
+for(const href of ['data:text/html,test','//example.invalid','/\\example.invalid','java\nscript:alert(1)'])assert.throws(()=>breadcrumbs([{label:'unsafe',href},{label:'current'}]));
+assert.ok(breadcrumbs([{label:'Settings',href:'settings/profile?tab=account'},{label:'Current'}]).includes('href="settings/profile?tab=account"'));
+assert.ok(select({id:'quantity',label:'Quantity',value:'2',options:[{value:2,label:'Two'}]}).includes('value="2" selected'));
 assert.throws(()=>tabs({id:'t',label:'Test',items:[]}));
 assert.throws(()=>select({id:'missing-label'}));
 for(const markup of [textarea({id:'description',label:'Description',value:'</textarea><script>alert(1)</script>'}),confirmation({id:'confirm',title:'<script>',message:'test'}),errorSummary([{id:'x',message:'<img src=x onerror=alert(1)>'}])])assert.ok(!markup.includes('<script>')&&!markup.includes('<img '),'Escaped user content');
 const results=[];
+const fixture={version:'2025.10',sets:{first:{sources:[{x:{$type:'number',$value:1}}]},last:{sources:[{x:{$type:'number',$value:2}}]}},resolutionOrder:[{$ref:'#/sets/first'},{$ref:'#/sets/last'}]};
+assert.equal(resolveTokens(fixture,{},()=>{}).x.$value,2,'Later sources override earlier ones');
+assert.throws(()=>resolveTokens({...fixture,modifiers:{mode:{default:'dark',contexts:{dark:[]}}}},{},()=>{}),'Reject one-context modifier');
+assert.throws(()=>resolveTokens({...fixture,sets:{first:{sources:[{$ref:'#/sets/first'}]}}},{},()=>{}),'Reject circular set reference');
 const output=path.join(os.tmpdir(),'pagelove-tailwind-'+process.pid+'.css');
 try {
  const run=spawnSync(process.execPath,['node_modules/@tailwindcss/cli/dist/index.mjs','-i','tests/tailwind.css','-o',output],{encoding:'utf8'});
@@ -32,13 +40,17 @@ try {
 } finally {if(fs.existsSync(output))fs.unlinkSync(output);}
 for(const prefix of ['',...catalog.designs.map(d=>'designs/'+d.id+'/')]){
  const bundle=read(prefix+'exports/tokens.json'), resolver=read(prefix+'tokens/tokens.resolver.json');
- assert.equal(resolver.version,'2025.10');assert.equal(resolver.modifiers.mode.default,bundle.defaultMode);
- assert.deepEqual(Object.keys(resolver.modifiers.mode.contexts),Object.keys(bundle.resolved));
- assert.deepEqual(resolver.resolutionOrder,[{$ref:'#/sets/base'},{$ref:'#/modifiers/mode'}]);
+ const multiMode=Object.keys(bundle.resolved).length>1;
+ if(multiMode){assert.equal(resolver.modifiers.mode.default,bundle.defaultMode);assert.deepEqual(Object.keys(resolver.modifiers.mode.contexts),Object.keys(bundle.resolved));}
+ else assert.equal(resolver.modifiers,undefined,'A one-mode bundle must use unconditional sets');
+ const consume=input=>resolveTokens(resolver,input,ref=>read(path.join(prefix,'tokens',ref)));
+ const initial=consume({});validateDtcg(initial);
+ assert.deepEqual(initial,consume(multiMode?{mode:bundle.defaultMode}:{}),'Resolver default parity');
+ assert.throws(()=>consume({mode:'unavailable'}),'Reject unknown modifiers and unavailable modes');
  const studio=read(prefix+'exports/tokens-studio.json');
  for(const mode of Object.keys(bundle.resolved)){
-   const sources=[...resolver.sets.base.sources,...resolver.modifiers.mode.contexts[mode]];
-   const tokens=Object.assign({},...sources.map(s=>read(path.join(prefix,'tokens',s.$ref))));validateDtcg(tokens);
+   const tokens=consume(multiMode?{mode}:{});validateDtcg(tokens);
+   assert.deepEqual(Object.keys(tokens).sort(),[...Object.keys(bundle.resolved[mode]),...Object.keys(read(prefix+'tokens/typography.tokens.json'))].sort(),'Complete resolver output');
    for(const k of Object.keys(bundle.semantic[mode]))assert.equal(tokens[k].$value,studio[mode][k].value);
    const file=prefix+'.stitch/'+mode+'.DESIGN.md';
    const doc=YAML.parseDocument(fs.readFileSync(file,'utf8').split('---')[1]);assert.equal(doc.errors.length,0);const guide=doc.toJS();

@@ -26,6 +26,8 @@ File readability does not guarantee automatic discovery or accurate visual inter
 
 ## Consumer checks
 
+Dark-only resolver bundles use unconditional sets rather than a one-context modifier, following the [DTCG contexts recommendation](https://www.designtokens.org/TR/2025.10/resolver/#contexts). Supply no modifier input to those bundles. Classic, Editorial and Forest expose a mode modifier with light/dark contexts. The repository consumer follows the declared references and resolution order, rejects unsupported inputs and cycles, and checks output parity; it supports the emitted subset, not arbitrary resolver documents.
+
 The checks execute the ES module and CommonJS exports, parse CSV, and compare all values with the resolved canonical dictionaries for the root and each design. DTCG checks reject unknown emitted types, invalid units, mismatched aliases and malformed supported values. These are stricter repository contract checks, not independent full-spec certification or live proprietary-tool import tests.
 
 Generated additions: per-design DTCG resolver, mode-specific Stitch guides, release manifest and Tailwind v4 @theme inline CSS. Live Figma/Stitch imports remain pending; official Stitch lint is a separate automated check. XML schema-version is 1; release-version tracks package.json.

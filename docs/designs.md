@@ -48,4 +48,4 @@ All collection previews use examples/selection.js for the same selection rules. 
 
 ## Portable selection
 
-Each bundle now includes tokens/tokens.resolver.json. It combines foundations and composite typography with exactly one supported mode; defaults follow the same rules as the bundle. Mode-specific Stitch files are .stitch/light.DESIGN.md and/or .stitch/dark.DESIGN.md. exports/manifest.json identifies release/schema versions and these paths.
+Each bundle includes tokens/tokens.resolver.json. It combines foundations and composite typography with exactly one supported mode. Multiple-mode bundles expose a mode modifier with the bundle's default; single-mode bundles use unconditional sets and take no mode input. Mode-specific Stitch files are .stitch/light.DESIGN.md and/or .stitch/dark.DESIGN.md. exports/manifest.json identifies release/schema versions and these paths.

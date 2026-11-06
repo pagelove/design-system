@@ -9,7 +9,15 @@ export function enrich({design,base,resolved,defaultMode,dtcg,json,put,guide,ver
     typography['text-style-'+name]={$type:'typography',$value:{fontFamily:'{font-family-'+s.family+'}',fontWeight:'{font-weight-'+s.weight+'}',fontSize:'{font-size-'+s.size+'}',letterSpacing:{value:parseFloat(first['letter-spacing-'+s.letterSpacing])*px(size),unit:'px'},lineHeight:px(first['line-height-'+s.lineHeight])/px(size)}};
   }
   json('tokens/typography.tokens.json',typography);
-  json('tokens/tokens.resolver.json',{version:'2025.10',name:design.name,sets:{base:{sources:[{$ref:'./foundations.tokens.json'},{$ref:'./typography.tokens.json'}]}},modifiers:{mode:{default:defaultMode,contexts:Object.fromEntries(modes.map(m=>[m,[{$ref:'./'+m+'.tokens.json'}]]))}},resolutionOrder:[{$ref:'#/sets/base'},{$ref:'#/modifiers/mode'}]});
+  const resolver={version:'2025.10',name:design.name,sets:{base:{sources:[{$ref:'./foundations.tokens.json'},{$ref:'./typography.tokens.json'}]}},resolutionOrder:[{$ref:'#/sets/base'}]};
+  if(modes.length===1){
+    resolver.sets.appearance={sources:[{$ref:'./'+defaultMode+'.tokens.json'}]};
+    resolver.resolutionOrder.push({$ref:'#/sets/appearance'});
+  }else{
+    resolver.modifiers={mode:{default:defaultMode,contexts:Object.fromEntries(modes.map(m=>[m,[{$ref:'./'+m+'.tokens.json'}]]))}};
+    resolver.resolutionOrder.push({$ref:'#/modifiers/mode'});
+  }
+  json('tokens/tokens.resolver.json',resolver);
   const global={};
   for(const [key,css] of Object.entries(first).filter(([k])=>k in base)) {
     let type='other',value=css;

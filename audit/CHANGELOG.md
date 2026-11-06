@@ -226,3 +226,12 @@
 - Affected: Canonical generators, typed adapters, guides/context bundles, pattern components/styles/examples, font assets, validators/tests/CI, public contracts, evidence and hash manifest.
 - Limits: Live tool imports, screen-reader/device/actual-zoom and cold-network checks, and independent agent outputs remain unverified. Stitch browser access reached Google sign-in. See reference/RESEARCH-REMEDIATION.md and docs/support.md.
 - Publication: Prepared for normal fast-forward publication after final public-content and integrity checks.
+
+## DS-023 — Collection consistency review plan
+
+- UTC: 2026-11-06T01:03:36.726Z
+- Actor: Codex
+- Scope: Review the multiple-design/default, portable-format, premium component and honest-verification goals.
+- Findings: Pattern buttons use input geometry; pattern CSS and delegated tabs can affect unrelated host UI; the form can retain stale success feedback; the pattern preview lacks selection/history controls. Dark-only DTCG resolvers emit one-context modifiers. Browser overflow checks compare against innerWidth instead of usable clientWidth, and visual failures stop later task checks.
+- Plan: Correct resolver composition and validate it independently of fixed file order; scope reusable patterns, align design geometry and add selection with state preservation; cover interaction isolation, stale feedback, geometry, sorting, modal focus and strict reflow. Regenerate exports, inspect rendered screens, review visual differences and publish passing evidence.
+- Constraints: Preserve five designs and Midnight/dark. No untested live-tool, assistive-technology or independent-agent results will be claimed.

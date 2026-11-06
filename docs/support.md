@@ -1,11 +1,11 @@
 # Support and verification contract
 
-Version 0.4.0 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
+Version 0.5.0 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
 
 | Surface | Maturity | Evidence and boundary |
 | --- | --- | --- |
 | Five designs / eight modes, CSS and resolved JSON | Supported source contract | Deterministic generation, alias/value checks, selected contrast pairs |
-| DTCG tokens and per-design resolver | Preview adapter | Typed values, typography composites, ordered file composition and mode checks; not full-spec certification |
+| DTCG tokens and per-design resolver | Preview adapter | Typed values, typography composites, reference-driven composition and mode checks; dark-only bundles use sets; not full-spec certification |
 | Tokens Studio | Preview adapter | Typed values and composite typography generated; live Figma application remains pending |
 | Stitch guides | Preview adapter | Pinned official linter; exact role parity per mode; live Stitch import remains pending |
 | Tailwind v4 | Preview adapter | Generated theme mapping; compile smoke check; load design theme before adapter |

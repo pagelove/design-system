@@ -1,0 +1,10 @@
+/* Preview controls and stress fixtures do not ship in the reusable pattern stylesheet. */
+.patterns-preview { overflow-wrap:anywhere; }
+.pattern-links, .pattern-selection { display:flex; flex-wrap:wrap; gap:16px 24px; }
+.pattern-links a { display:inline-flex; align-items:center; min-height:44px; }
+.pattern-selection { margin-block:24px; }
+.pattern-selection[hidden] { display:none; }
+.pattern-selection label { min-width:0; flex:1 1 200px; }
+.pattern-selection .ds-select { margin-block-end:0; }
+[data-spacing=expanded] * { line-height:1.5!important; letter-spacing:.12em!important; word-spacing:.16em!important; }
+[data-spacing=expanded] p { margin-block-end:2em!important; }

@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Pattern integration fixture</title><link rel="stylesheet" href="../../styles/app.css"><script type="module" src="pattern-host.mjs"></script></head>
+<body><main class="ds-shell"><h1>Independent host components</h1>
+<table id="host-table"><caption>Host records</caption><tbody><tr><td>Host cell</td></tr></tbody></table>
+<dialog open id="host-dialog" aria-label="Host dialog" style="position:static;margin:16px 0"><form><button type="button">Host dialog action</button></form></dialog>
+<div id="host-tabs" role="tablist" aria-label="Host tabs"><button role="tab" type="button" aria-selected="true">Host A</button><button role="tab" type="button" aria-selected="false" tabindex="-1">Host B</button></div>
+<button id="load" type="button">Load patterns</button><button id="cleanup" type="button" disabled>Remove pattern handlers</button><p id="load-status" role="status"></p>
+<div id="owned"></div></main></body></html>

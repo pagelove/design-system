@@ -1,1 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>App patterns — Pagelove</title><link rel="stylesheet" href="../styles/app.css"><link rel="stylesheet" href="../styles/patterns.css"><script src="design-catalog.js"></script><script src="selection.js"></script><script type="module" src="patterns.js"></script></head><body><main class="ds-shell"><a href="designs.html">Design collection</a><h1>Reusable app patterns</h1><p>Native controls, recovery paths and keyboard interactions. This is a local demonstration; no data is sent.</p><div id="patterns" class="pattern-grid"></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>App patterns — Pagelove</title>
+  <link rel="stylesheet" href="../styles/app.css">
+  <link rel="stylesheet" href="../styles/patterns.css">
+  <link rel="stylesheet" href="patterns.css">
+  <script src="design-catalog.js"></script>
+  <script src="selection.js"></script>
+  <script type="module" src="patterns.js"></script>
+</head>
+<body>
+<main class="ds-shell patterns-preview">
+  <nav class="pattern-links" aria-label="Design resources">
+    <a href="designs.html">Design collection</a>
+    <a id="pattern-guide" href="../DESIGN.md">Design guide</a>
+    <a id="pattern-workspace" href="workspace.html">Workspace example</a>
+  </nav>
+  <h1>Reusable app patterns</h1>
+  <p>Native controls, recovery paths and keyboard interactions. This is a local demonstration; no data is sent.</p>
+  <fieldset class="pattern-selection" hidden>
+    <legend>Preview a design</legend>
+    <label>Design <select id="pattern-design" class="ds-select"></select></label>
+    <label>Mode <select id="pattern-mode" class="ds-select"></select></label>
+  </fieldset>
+  <noscript><p>Interactive patterns require JavaScript. Browse the design collection and guides above for the design files.</p></noscript>
+  <div id="patterns" class="pattern-grid"></div>
+</main>
+</body>
+</html>

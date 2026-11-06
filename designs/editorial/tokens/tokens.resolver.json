@@ -13,6 +13,14 @@
       ]
     }
   },
+  "resolutionOrder": [
+    {
+      "$ref": "#/sets/base"
+    },
+    {
+      "$ref": "#/modifiers/mode"
+    }
+  ],
   "modifiers": {
     "mode": {
       "default": "light",
@@ -29,13 +37,5 @@
         ]
       }
     }
-  },
-  "resolutionOrder": [
-    {
-      "$ref": "#/sets/base"
-    },
-    {
-      "$ref": "#/modifiers/mode"
-    }
-  ]
+  }
 }

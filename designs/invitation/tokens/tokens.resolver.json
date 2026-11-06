@@ -11,18 +11,13 @@
           "$ref": "./typography.tokens.json"
         }
       ]
-    }
-  },
-  "modifiers": {
-    "mode": {
-      "default": "dark",
-      "contexts": {
-        "dark": [
-          {
-            "$ref": "./dark.tokens.json"
-          }
-        ]
-      }
+    },
+    "appearance": {
+      "sources": [
+        {
+          "$ref": "./dark.tokens.json"
+        }
+      ]
     }
   },
   "resolutionOrder": [
@@ -30,7 +25,7 @@
       "$ref": "#/sets/base"
     },
     {
-      "$ref": "#/modifiers/mode"
+      "$ref": "#/sets/appearance"
     }
   ]
 }
