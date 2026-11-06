@@ -9,9 +9,11 @@ import YAML from 'yaml';
 import {validateDtcg} from './validate-dtcg.mjs';
 import {resolveTokens} from './resolve-tokens.mjs';
 import {checkTypography} from './check-typography.mjs';
+import {forcedColor} from './forced-colors.mjs';
 const typographyConversions=checkTypography();
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=read('designs/catalog.json'), ajv=new Ajv({allErrors:true});
+for(const roles of Object.values(read('tokens/semantic.json')))for(const role of Object.keys(roles))assert.ok(forcedColor(role));
 for(const [schema,paths]of [['catalog',['designs/catalog.json']],['design',catalog.designs.map(d=>'designs/'+d.id+'/design.json')],['semantic',['tokens/semantic.json']]]){
  const validate=ajv.compile(read('schemas/'+schema+'.schema.json'));
  for(const p of paths)assert.ok(validate(read(p)),p+': '+JSON.stringify(validate.errors));

@@ -1,3 +1,4 @@
+@import './forced-colors.css';
 /* Recommended application layer; intentional accessibility/reading adaptations. */
 * { box-sizing: border-box; }
 html { scrollbar-gutter:stable; color-scheme: var(--design-color-scheme,light); }
@@ -48,6 +49,7 @@ summary { min-height:44px; padding-block:10px; cursor:pointer; }
 }
 @media (forced-colors:active) {
  .pl-button { border:1px solid ButtonText; }
+ .pl-button:disabled { --_fg:GrayText; --_icon:GrayText; }
  .pl-checkbox__box,.pl-radio__dot { border:1px solid CanvasText; }
  .pl-checkbox__input,.pl-radio__input { position:static; opacity:1; width:24px; height:24px; }
  .pl-checkbox__box,.pl-radio__dot { display:none; }

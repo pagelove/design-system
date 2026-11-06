@@ -15,15 +15,15 @@ Version 0.5.1 retains Midnight/dark as the collection default. This is a source 
 
 ## Browser and accessibility acceptance
 
-CI targets pinned Playwright Chromium, Firefox and WebKit in a digest-pinned Ubuntu Noble container matching the Playwright package version. Update both pins together. This follows the [official CI container guidance](https://playwright.dev/docs/ci#via-containers) and avoids downloading system dependencies on each run. These are test engines, not a promise that every historical browser release works. Real Safari/iOS, Android, NVDA and VoiceOver results must be recorded separately. Latest test artifacts and reference/RESEARCH-REMEDIATION.md give actual results; configured tests are not evidence that a run passed.
+CI targets pinned Playwright Chromium, Firefox and WebKit in a digest-pinned Ubuntu Noble container matching the Playwright package version. Update both pins together. This follows the [official CI container guidance](https://playwright.dev/docs/ci#via-containers) and avoids downloading system dependencies on each run. These are test engines, not a promise that every historical browser release works. Real Safari/iOS, Android, NVDA and VoiceOver results must be recorded separately. Latest test artifacts and reference/CORE-CONTROLS-REVIEW.md give actual results; configured tests are not evidence that a run passed.
 
 Every new component must cover visible labels, keyboard path, focus, disabled/pending/error/empty states where relevant, and safe insertion of text. For dialogs: initial focus, containment, Escape, and return focus. For tabs: arrow/Home/End keys, selected state and linked panels. For forms: error summary focus, associated inline errors, retained values and recovery. For tables: captions, column semantics, sort state, pagination boundaries and named scrolling regions.
 
 Required environment checks: 320/768/1440 CSS px; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
 
-## Live import acceptance procedure
-
 The original helper fixture at tests/fixtures/core-controls.html exercises checkbox checked/mixed states, native radio/switch keyboard paths, disabled choices, icon-only pending names, all six determinate progress sizes, RTL/enlarged-text reflow and native forced-color fallbacks. Tests also verify selected-mode guide links across catalog, workspace, gallery and standalone previews. These extend automated coverage without replacing manual acceptance.
+
+## Live import acceptance procedure
 
 1. Record the target tool/version and the design/mode. Use an empty disposable document.
 2. For Tokens Studio, import exports/tokens-studio.json, enable global plus one mode, and apply dimensions, radius, fonts and colors to a panel, button and text. Check resolved values, not just token presence. The font family adapter uses the first family; CSS preserves fallbacks. CSS-only properties remain explicitly typed other.

@@ -1,4 +1,5 @@
 import {enrich} from './adapters.mjs';
+import {renderForcedColors} from './forced-colors.mjs';
 import {renderGallery} from './gallery.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -86,6 +87,7 @@ buildDesign(selected,outputRoot,catalog.defaultMode);
 
 const index={...catalog,designs:designs.map(d=>({id:d.id,name:d.name,description:d.description,modes:Object.keys(d.modes),defaultMode:d.defaultMode,guide:'designs/'+d.id+'/DESIGN.md',exports:'designs/'+d.id+'/exports/',preview:'examples/workspace.html?design='+d.id,previewImage:'designs/'+d.id+'/previews/workspace-'+d.defaultMode+'.png',standalonePreview:'designs/'+d.id+'/preview.html'}))};
 const putRoot=(p,v)=>{const file=path.join(outputRoot,p);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,v);};
+putRoot('styles/forced-colors.css',renderForcedColors(readJSON('tokens/semantic.json').light));
 const standaloneTemplate=fs.readFileSync(path.join(sourceRoot,'templates/standalone.html.tmpl'),'utf8');
 for(const d of designs){const escapeHTML=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');putRoot('designs/'+d.id+'/preview.html',standaloneTemplate.replaceAll('{{NAME}}',escapeHTML(d.name)).replaceAll('{{ID}}',d.id).replaceAll('{{MODE}}',d.defaultMode).replace('{{OPTIONS}}',Object.keys(d.modes).map(mode=>'<option value="'+mode+'"'+(mode===d.defaultMode?' selected':'')+'>'+mode+'</option>').join('')));}
 putRoot('designs/index.json',JSON.stringify(index,null,2)+'\n');

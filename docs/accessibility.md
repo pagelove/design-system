@@ -14,6 +14,8 @@ Target WCAG 2.2 AA for the consuming application and evaluate complete tasks. Th
 
 Run automated checks where available, then inspect the actual task separately. Record build, environment, input path, result and limits. Missing screen-reader or device evidence stays pending rather than becoming a pass.
 
+The app layer imports styles/forced-colors.css, generated from the shared semantic role names. In forced colors, it maps text, surfaces, links, controls and focus to system colors instead of retaining a dark theme's pale text on a forced light canvas. Native choice controls retain their state; explicit contrast assertions complement screenshot review. Preserve this relative stylesheet import when copying base.css.
+
 ## Executable acceptance fixtures
 
 Serve examples/patterns.html and select design/mode through URL parameters. dir=rtl, spacing=expanded and size=200 combine layout stress cases; they are fixtures, not proof of browser zoom support. The expanded spacing fixture uses 1.5 line height, 2em paragraph spacing, .12em tracking and .16em word spacing. Tests exercise keyboard tabs, confirmation cancellation/focus return, error-summary recovery, pagination boundaries and axe checks. See docs/support.md for mandatory manual checks and untested environments.

@@ -33,6 +33,12 @@ for(const design of catalog.designs)for(const mode of design.modes) {
   await expect(page.getByRole('switch')).toHaveCSS('appearance','auto');
   await expect(page.getByRole('checkbox',{name:'Include documentation and translated guidance for everyone on your team'})).toHaveCSS('opacity','1');
   await expect(page.locator('.pl-progress-radial')).toHaveCSS('animation-name','none');
+  const contrast=await page.evaluate(()=>{
+   const luminance=css=>{const channels=css.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return channels[0]*.2126+channels[1]*.7152+channels[2]*.0722;};
+   const background=luminance(getComputedStyle(document.body).backgroundColor);
+   return [...document.querySelectorAll('h1,h2,legend,.pl-checkbox__label,.pl-radio__label,.pl-toggle__label')].filter(el=>!el.closest('label')?.querySelector(':disabled')).map(el=>{const foreground=luminance(getComputedStyle(el).color);return (Math.max(foreground,background)+.05)/(Math.min(foreground,background)+.05);});
+  });
+  expect(contrast.every(ratio=>ratio>=4.5)).toBe(true);
   await page.getByRole('switch').press('Space');await expect(page.getByRole('switch')).not.toBeChecked();
   await page.screenshot({path:info.outputPath('core-controls-rtl-forced.png'),fullPage:true});
   await page.emulateMedia({forcedColors:'none',reducedMotion:'no-preference'});

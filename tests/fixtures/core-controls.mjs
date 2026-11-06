@@ -5,6 +5,7 @@ document.documentElement.dataset.design=design.id;document.documentElement.datas
 document.documentElement.dir=query.get('dir')==='rtl'?'rtl':'ltr';
 document.documentElement.style.fontSize=query.get('size')==='200'?'200%':'';
 document.documentElement.dataset.spacing=query.get('spacing')==='expanded'?'expanded':'normal';
+document.documentElement.dataset.motion=query.get('motion')==='reduce'?'reduce':'auto';
 document.querySelector('#controls').innerHTML=`
 <fieldset><legend>Export choices</legend>
 ${choice({id:'include',label:'Include documentation and translated guidance for everyone on your team',checked:true})}
