@@ -43,3 +43,5 @@ Package releaseVersion identifies the shipped collection. Catalog/schemaVersion 
 Avoid silent removals: introduce replacement aliases, mark deprecation in documentation, retain them for at least one subsequent minor release and document removal. Changing the default is an intentional consumer-visible change, never an incidental build consequence. Promote an adapter from Preview only after its consumer checks and live import evidence exist.
 
 See docs/releases.md for changes and CONTRIBUTING.md for contribution requirements.
+
+Visual regression compares the eight desktop pattern states in each of three pinned Linux browser engines against tests/visual. It allows at most 0.2% differing pixels for rendering noise. Baselines are not refreshed automatically; inspect changes before replacing them. Local non-Linux runs annotate that pixel comparison is not run, while retaining task checks. Mobile/RTL/forced-color captures remain review artifacts rather than pixel baselines.

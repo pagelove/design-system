@@ -8,9 +8,9 @@ Local evidence: core deterministic/export checks and external schema/adapter/Sti
 
 Browser evidence: direct inspection of native tabs, Cancel focus, Escape focus return, form-error summary, and a combined Forest/dark RTL + 200% text + text-spacing fixture. An initial long-word overflow was corrected with wrapping. The corrected 320px fixture has body width/scroll width 305/305. Screenshot: assets/previews/app-patterns.png.
 
-CI status: awaiting the first hosted run of the new three-engine suite. It runs all eight design/mode combinations plus gallery checks, interaction tasks, axe checks, responsive states and reduced-motion/forced-color emulation. Screenshots are review artifacts, not yet an approved pixel-diff baseline.
+CI status: initial hosted run 42135975792 passed all 27 tests across Chromium, Firefox and WebKit. It runs all eight design/mode combinations plus gallery checks, interaction tasks, axe checks, responsive states and reduced-motion/forced-color emulation. The 24 desktop pattern captures form the initial pinned-Linux visual baselines; a subsequent run verifies pixel comparison, the repeated-dialog regression and stale mode-guide removal.
 
-Remaining evidence: live Stitch and Tokens Studio imports, screen-reader/physical-device/actual-zoom checks, measured cold-network performance and independent-agent outputs. These cannot be replaced by lint, desktop emulation or self-scoring. Procedures and statuses are in docs/support.md and reference/agent-evaluation.json. No configured live design-tool connector was available during this work.
+Remaining evidence: live Stitch and Tokens Studio imports, screen-reader/physical-device/actual-zoom checks, measured cold-network performance and independent-agent outputs. These cannot be replaced by lint, desktop emulation or self-scoring. Procedures and statuses are in docs/support.md and reference/agent-evaluation.json. No configured live design-tool connector was available during this work. A browser attempt to open a Stitch workspace reached Google sign-in; live import requires a signed-in session.
 
 Optional native UI packages, chart palettes and additional app archetypes remain outside the source collection’s supported contract; their acceptance requirements are documented rather than represented by untested adapters.
 

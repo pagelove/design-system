@@ -9,3 +9,5 @@ Run npm ci, npm run build, npm run check, npm run check:external and npm run tes
 Every component needs: purpose, when not to use it, state/API contract, keyboard and assistive-technology behavior, example, tests, and supported environments. Every design needs: complete roles, licensed fonts, supported-mode previews, token checks and actual readable application screens. Every adapter needs: source/version, generation path, consumer checks and known loss mappings.
 
 Publish only public-safe evidence. Preserve licenses and source attribution. Separate untested environments from passing results. Follow docs/support.md for maturity, accessibility acceptance, deprecation and migration rules.
+
+To update a Linux visual baseline deliberately, run npx playwright test --update-snapshots in the pinned CI-compatible environment, inspect the changed images, and commit them with the reason. Never update snapshots merely to silence a regression.

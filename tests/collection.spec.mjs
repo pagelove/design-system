@@ -14,6 +14,11 @@ for(const design of catalog.designs)for(const mode of design.modes){
   await expect(page.getByRole('button',{name:'Cancel',exact:true})).toBeFocused();
   await page.keyboard.press('Escape');
   await expect(page.getByRole('button',{name:'Archive project',exact:true})).toBeFocused();
+  await page.getByRole('button',{name:'Archive project',exact:true}).click();
+  await page.getByRole('button',{name:'Archive',exact:true}).click();
+  await page.getByRole('button',{name:'Archive project',exact:true}).click();
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#archive-status')).toHaveText('Archive cancelled.');
   await page.getByRole('button',{name:'Save description'}).click();
   await expect(page.locator('[data-error-summary]')).toBeFocused();
   await page.getByRole('link',{name:'Enter a project description.'}).click();
@@ -31,6 +36,8 @@ for(const design of catalog.designs)for(const mode of design.modes){
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
   }
   await page.screenshot({path:info.outputPath('patterns.png'),fullPage:true});
+  if(process.platform==='linux')await expect(page).toHaveScreenshot(`${design.id}-${mode}.png`,{fullPage:true,maxDiffPixelRatio:0.002});
+  else info.annotations.push({type:'visual-baseline',description:'Pixel comparisons target the pinned Linux CI browsers; local task checks still run.'});
   await page.goto(`/examples/patterns.html?design=${design.id}&mode=${mode}&dir=rtl&spacing=expanded&size=200`);
   await page.setViewportSize({width:320,height:900});
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
