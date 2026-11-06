@@ -10,8 +10,9 @@
 .record-list strong { flex:1 1 12rem; }
 .record-list span { flex:2 1 18rem; }
 .period { flex:1 1 16rem; margin:0; }
-.selection-label { display:flex; align-items:center; gap:.75rem; margin-block-end:1rem; min-block-size:44px; }
+.selection-label { display:flex; flex-wrap:wrap; align-items:center; gap:.75rem; margin-block-end:1rem; min-block-size:44px; }
 .selection-label input { flex:none; inline-size:1.25rem; block-size:1.25rem; }
+.selection-label span { flex:1 1 12rem; min-inline-size:0; overflow-wrap:normal; word-break:normal; }
 .menu-items { display:grid; gap:.5rem; padding-block:.5rem; }
 .responsive-dialog { inline-size:min(36rem,calc(100vw - 32px)); max-block-size:calc(100dvh - 32px); overflow:auto; padding:min(1.25rem,5vw); }
 .responsive-dialog form { display:block; }

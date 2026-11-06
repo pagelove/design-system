@@ -58,6 +58,9 @@ for(const design of catalog.designs)for(const mode of design.modes)test(`${desig
   expect(axe.violations).toEqual([]);await info.attach('accessibility',{body:Buffer.from(JSON.stringify(axe)),contentType:'application/json'});
   await page.goto(url+'&size=200&dir=rtl&spacing=expanded');await ready(page);await page.locator('#view').click();
   await audit(page,records,'200%-text/RTL/spacing',{allowLongLabels:true});
+  const selection=page.locator('.selection-label');
+  expect(await selection.evaluate(el=>el.scrollWidth-el.clientWidth)).toBeLessThanOrEqual(1);
+  if(browserName==='chromium')await selection.screenshot({path:info.outputPath('320-text-selection.png')});
   await page.emulateMedia({reducedMotion:'reduce',forcedColors:'active'});await audit(page,records,'forced-colors/reduced-motion',{allowLongLabels:true});
   if(browserName==='chromium')await page.screenshot({path:info.outputPath('320-text-rtl-forced.png'),fullPage:true});
   await page.emulateMedia({forcedColors:'none'});await page.locator('#edit').click();await audit(page,records,'200%-text/dialog',{allowLongLabels:true});

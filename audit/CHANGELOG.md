@@ -418,3 +418,21 @@
 - Affected: Dedicated responsive guide, opt-in styles, interactive reference, test helper/regressions, agent/report contracts, generated contexts, public previews and review/audit evidence. Five designs/eight modes, Midnight/dark, canonical design values, existing runtime styles and Linux baseline images remain unchanged.
 - Limits: External consuming demos were not independently checked. Actual browser zoom, physical devices, native assistive technology, full localization and current hosted/Linux execution remain unverified. Representative screenshot review and semantic color assertions do not certify every axe contrast flag or complete WCAG conformance. Examples provide local sample interactions only.
 - Evidence: reference/RESPONSIVE-REVIEW.md and audit/responsive-checks.json; raw captures/results and the expanded local verification inventory remain ignored. Changes are unreleased and uncommitted; no push or external comment was submitted.
+
+## DS-041 — Hosted enlarged-label overflow correction plan
+
+- UTC: 2026-11-06T19:23:00Z
+- Actor: Codex
+- Request: Commit, push and merge the responsive revisions after verification.
+- Finding: PR #2's first Linux run passed 197 cases and failed seven Chromium enlarged-text/RTL cases. The selection checkbox plus its anonymous label text exceeded the 273px container. A local probe reproduced 305px content inside that group and 321px document scroll width; a 320px root client width plus the diagnostic's 1px tolerance concealed the overflow on Windows despite a 305px root layout box with a reserved scrollbar gutter.
+- Plan: Give the selection text a marked, wrapping flex item; let the whole label group reflow. Compare document overflow against the available root layout width as well as client width, without relaxing checks or hiding content. Rerun affected local tests, inspect enlarged label screenshots and repeat hosted verification before merging. Preserve the first failed run.
+- Scope: Responsive example and diagnostic only, with supporting tests/evidence; no design-value or visual-baseline changes.
+
+## DS-042 — Enlarged selection group corrected and locally verified
+
+- UTC: 2026-11-06T19:25:52.147Z
+- Actor: Codex
+- Plan reference: DS-041.
+- Change: Marked checkbox label text as a flexible word-preserving item and allowed the complete group to wrap. Tightened the document diagnostic to account for reserved scrollbar space and added an explicit label-container assertion and enlarged-label captures.
+- Verification: All 27 affected Windows cases pass across three engines. Nine additional screenshots were opened and inspected: enlarged selection labels in all eight modes plus normal-size Midnight bulk actions. Original failed Linux evidence is retained; hosted revalidation is required before merge. No disabled checks, relaxed overflow tolerance, hidden content, palette changes or baseline updates.
+- Evidence: Hosted follow-up in audit/responsive-checks.json and reference/RESPONSIVE-REVIEW.md. Final sequential generation, core validation and external consumer checks pass; their hashes are recorded with the correction receipt.

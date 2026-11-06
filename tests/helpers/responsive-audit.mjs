@@ -9,7 +9,8 @@ export function auditResponsiveLayout({allowLongLabels=false}={}) {
   const lineCount=rows=>new Set(rows.map(r=>Math.round(r.top/2))).size;
   const textRects=el=>{const range=document.createRange();range.selectNodeContents(el);return rects(range);};
   const width=el=>{const css=getComputedStyle(el);return el.clientWidth-parseFloat(css.paddingLeft)-parseFloat(css.paddingRight);};
-  if(document.documentElement.scrollWidth>document.documentElement.clientWidth+1)issue('page-overflow',document.documentElement,'Document exceeds the viewport');
+  const root=document.documentElement,availableWidth=Math.min(root.clientWidth,root.getBoundingClientRect().width);
+  if(root.scrollWidth>availableWidth+1)issue('page-overflow',root,`Document width ${root.scrollWidth}px exceeds available layout width ${availableWidth}px`);
   for(const el of document.querySelectorAll('[data-layout-short],[data-layout-atomic],[data-layout-words],[data-layout-check],.ds-action,.sample-input,.ds-select')) {
     if(!visible(el))continue;
     const css=getComputedStyle(el),box=el.getBoundingClientRect(),rows=textRects(el),exception=el.dataset.layoutException;

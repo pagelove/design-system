@@ -1,6 +1,6 @@
 # Responsive component behavior review
 
-Reviewed 2026-11-06 on Windows, against local additions to base commit `470ae12ccfcb782ab29c518fb06fa9b9b2d3bce1`. The changes are unreleased and uncommitted. Midnight/dark remains the default across five designs and eight supported modes.
+Initial review: 2026-11-06 on Windows, against local additions to base commit `470ae12ccfcb782ab29c518fb06fa9b9b2d3bce1`. The results below describe that pre-publication snapshot; the hosted follow-up records a subsequent correction. See [PR #2](https://github.com/pagelove/design-system/pull/2) for publication and current check status. Midnight/dark remains the default across five designs and eight supported modes.
 
 The collection now defines how control contents and groups should reflow, supplies six reusable compositions, and requires evidence of actual visual inspection. The reported defects in consuming apps were credible examples of a gap: existing overflow and functionality checks did not establish that individual controls were well composed. This review covers the repository references; the external 16 demos were not independently rechecked.
 
@@ -41,6 +41,12 @@ Codex opened and inspected **38 recorded screenshots**: 37 from a 198-image capt
 | Enlarged dialog | 320px, 200% root text, RTL and text-spacing overrides. Save remains fully visible after keyboard focus scrolls the dialog. Whole-word action wrapping and vertical body scrolling are intentional. |
 
 Published component previews: [wide](previews/responsive-toolbar-wide.png), [intermediate](previews/responsive-toolbar-intermediate.png), [narrow](previews/responsive-toolbar-narrow.png). The remaining raw captures and failed/interrupted runs stay in local ignored evidence; their reviewed subset is identified by name and hash in the public receipt.
+
+## Hosted follow-up: enlarged checkbox labels
+
+The first [PR Linux run](https://github.com/pagelove/design-system/actions/runs/42277378677) passed 197 cases and failed seven Chromium cases at 320px with 200% text, RTL and expanded text spacing. The checkbox plus its anonymous text could exceed their group. Windows' root client-width measurement included reserved scrollbar space, masking the small page overflow within the diagnostic tolerance; a local probe nevertheless found 305px of content in the 273px label group.
+
+The checkbox text now occupies a marked flex item and the group can wrap deliberately. The document diagnostic also uses the available root layout width, and an explicit label-container assertion prevents this defect from depending on page-level measurements. All 27 affected local cases pass again with the correction. Nine additional screenshots were opened: the enlarged label in all eight design/mode combinations and Midnight's normal-size bulk group. No clipping or word fragments remain in those inspected fixtures. The original failed run is retained; hosted revalidation is required before merge. The machine receipt's `hostedFollowup` records this revision separately from the earlier passing snapshot.
 
 ## Acceptance boundaries
 

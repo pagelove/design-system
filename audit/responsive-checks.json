@@ -3003,5 +3003,158 @@
     "Diagnostic coverage requires declared content and supported classes; it is finite and is not a universal layout validator.",
     "Captured images without recorded inspection do not count as visual acceptance; consuming apps must perform and report their own gate.",
     "Examples use local sample state, not durable persistence, backend export or third-party integration."
-  ]
+  ],
+  "hostedFollowup": {
+    "time": "2026-11-06T19:25:52.147Z",
+    "pullRequest": "https://github.com/pagelove/design-system/pull/2",
+    "firstHostedRun": "https://github.com/pagelove/design-system/actions/runs/42277378677",
+    "firstHostedStats": {
+      "startTime": "2026-11-06T19:12:08.380Z",
+      "duration": 307191.718,
+      "expected": 197,
+      "skipped": 0,
+      "unexpected": 7,
+      "flaky": 0
+    },
+    "failure": "Seven Chromium enlarged-text/RTL cases overflowed because a selection checkbox and anonymous label text could not reflow as a group; the Windows root client width included reserved gutter space and masked a small document overflow.",
+    "revision": "Wrap the checkbox group with a marked flexible label; compare page overflow against actual root layout width; assert label scroll width does not exceed its client width.",
+    "localAffectedRerun": {
+      "startTime": "2026-11-06T19:22:27.452Z",
+      "duration": 146508.083,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "inspectedScreenshots": [
+      {
+        "file": "responsive-classic-dark-re-cfb9c-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "f1ce52387960b64c4a48e87d15f38869b9ad27bd1b1369c6015caa0fc43c8c7f"
+      },
+      {
+        "file": "responsive-classic-light-r-c879e-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "a8fc0b74db753103e7c0f08866bc24e95c90f5cc9e59436db5d60a6885a2171e"
+      },
+      {
+        "file": "responsive-editorial-dark--3b544-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "f3561ff30b619dcd4414cbfae16c4c505a1e5a704ad4e57a56097abaf35c6223"
+      },
+      {
+        "file": "responsive-editorial-light-16b9e-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "9565a764d2af09c5bfb59f13c64c2935a5f28d58c5ab1925b18bb8e808bdb0e6"
+      },
+      {
+        "file": "responsive-forest-dark-res-77804-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "e7af72749b4736768832feb67e7fa2757f82bd281fbdb5b28cf354fe1e9a241e"
+      },
+      {
+        "file": "responsive-forest-light-re-a4ac0-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "69b366265ed0f601b4e6586c17049df4f80b133581d5cf9d704cebb284fb0c9a"
+      },
+      {
+        "file": "responsive-invitation-dark-341f6-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "6bb32cf9c9b0373c1bac11439b8bb26c2519400f96dae2d2d6314d27d13a05f9"
+      },
+      {
+        "file": "responsive-midnight-dark-r-2923c-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "7818d3efe1fb71142a2e4055645c51cb278be0d6d0e63dcdcb8c7ed89e517a69"
+      },
+      {
+        "file": "responsive-midnight-dark-r-2923c-ups-figures-and-task-states-chromium/320-bulk.png",
+        "viewport": 320,
+        "textSize": "100%",
+        "direction": "ltr",
+        "spacing": "normal",
+        "component": "bulk group",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "e4fa8b3a3e1c86f7274442c1719acdde93217b8494766358dfd8454b755d452c"
+      }
+    ],
+    "sourceHashes": {
+      "examples/responsive.css": "16d3f7f40c71b2bd92c71a0467e8afaa61bcc826f83a5da6642091148ef3c9dd",
+      "examples/responsive.html": "ab7ffa1fdb33896da29b32f714521a68aa85aea71c087fe16d405d931929869c",
+      "tests/helpers/responsive-audit.mjs": "8e4a9c7bb60695a7db6b8cf54ec4fab5f527cb69705db9be02a72030e0f2de12",
+      "tests/responsive.spec.mjs": "1cfe805457a597342991d002b9bef2f0e98ae35ed304979894e8f5ae752bbbb1"
+    },
+    "hostedRevalidation": "pending before merge; see PR checks",
+    "staticValidation": {
+      "result": "pass",
+      "commands": [
+        "npm run build",
+        "npm run check",
+        "npm run check:external"
+      ],
+      "logs": [
+        {
+          "file": "correction-build.log",
+          "sha256": "927e96d323d70c3440eb5a307938d425c9fa2bde52600c7c300ab9f2f8b3f537"
+        },
+        {
+          "file": "correction-core.log",
+          "sha256": "2feb15119fefbc16b489c8706a39bd404b21ef98ba8d10d3646503b65fe4469b"
+        },
+        {
+          "file": "correction-external.log",
+          "sha256": "4d8d6babf14cc6371a7114df2ecbadb0b82af6f54a9b1a3b0a57c32f13ab94a4"
+        }
+      ]
+    }
+  }
 }
