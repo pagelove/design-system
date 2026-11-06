@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-11-06T01:27:03Z",
+  "result": "pass",
+  "release": "0.5.0",
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
+  "implementationCommit": "5717e484fe9113ff9b6b6c17d5cf41a1862dc7d9",
+  "workflow": "https://github.com/pagelove/design-system/actions/runs/42143576343",
+  "testsPassed": 33,
+  "testsFailed": 0,
+  "visualComparisonsPassed": 24,
+  "visualMaxDiffPixelRatio": 0.002,
+  "browserEngines": ["Chromium", "Firefox", "WebKit"],
+  "designModeCombinations": 8,
+  "checks": [
+    "Computed button/input radii, panel padding and section gaps match selected design tokens",
+    "Pattern stylesheet leaves unrelated host tables and dialogs unchanged",
+    "Owned tabs, unrelated host tabs, independent groups and handler cleanup",
+    "Design/mode selection, supported modes, draft preservation, guide links, history and reload",
+    "Dialog initial focus, forward/reverse wrapping, Escape, return focus and repeated opening",
+    "Dialog focus and reflow at 320px with enlarged text and forced colors",
+    "Valid-to-edited-to-invalid-to-recovered form feedback",
+    "Ascending/descending sorting, aria-sort and pagination boundaries",
+    "Automated axe WCAG A/AA tags",
+    "320/768/1440 CSS-pixel reflow using clientWidth",
+    "RTL plus 200% text and expanded text spacing",
+    "Reduced-motion and forced-color emulation",
+    "Workspace and gallery selection and reflow",
+    "Desktop visual comparisons with reviewed references"
+  ],
+  "directReview": [
+    "Classic button radius is 100px",
+    "Forest mode changes preserve a local draft and selected-mode guide link",
+    "Host table/dialog computed styles remain equal after loading pattern CSS",
+    "Host and owned tabs operate independently",
+    "Forest/dark with RTL, enlarged text and expanded spacing fits 320px viewport: scrollWidth 305, clientWidth 305",
+    "Reverse Tab previously focused BODY; revised confirmation focuses its final action inside the dialog"
+  ],
+  "visualInspection": "All eight Chromium design/mode captures plus representative Firefox and WebKit captures",
+  "limits": [
+    "Live Stitch and Tokens Studio imports remain unverified",
+    "Screen-reader, physical-device and actual browser zoom tasks remain unverified",
+    "Cold-network performance remains unmeasured",
+    "Independent agent evaluation cases are supplied but not run"
+  ]
+}

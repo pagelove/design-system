@@ -69,4 +69,6 @@ Each design includes a standalone integration example: [Classic](designs/classic
 
 Use [app patterns](examples/patterns.html) over the local HTTP server for tabs, disclosure, confirmation, error recovery, records and RTL examples. Read the [support matrix](docs/support.md), [release notes](docs/releases.md), [content guidance](docs/content.md) and [contribution requirements](CONTRIBUTING.md).
 
+The patterns preview switches designs and supported modes while preserving your current draft. The [collection consistency review](reference/CONSISTENCY-REVIEW.md) records the latest component, resolver and keyboard fixes, passing browser checks and remaining manual verification.
+
 After npm ci, run npm run check:external for schema validation, the official Stitch linter, resolver composition, public CSS references, Tailwind compilation and size budgets. npm run test:browser runs task and accessibility checks in three browser engines; install them with npx playwright install first.

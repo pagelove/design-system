@@ -18,6 +18,8 @@ The DTCG change follows its [contexts recommendation](https://www.designtokens.o
 
 Direct browser review confirmed Classic's 100px button radius, preserved drafts while switching Forest modes, unchanged host styles, and independent host/pattern tab navigation. The combined Forest/dark RTL, 200% text and expanded-spacing fixture fits a 320px viewport with scroll/client widths 305/305. Existing design palettes, typography and default selection are preserved.
 
-Automated result: pending the review run and deliberate visual-reference update. Reference images must be inspected before replacement; comparison thresholds stay unchanged.
+Automated result: [run 42143576343](https://github.com/pagelove/design-system/actions/runs/42143576343) passes 33 tests and 24 desktop visual comparisons across Chromium, Firefox and WebKit on implementation 5717e484fe9113ff9b6b6c17d5cf41a1862dc7d9. Core generation/parity and external schema, adapter, Stitch lint, Tailwind and size checks also pass. All eight Chromium design/mode captures and representative Firefox/WebKit captures were visually inspected. Updated references reflect the design selector and corrected geometry; the comparison threshold remains 0.002.
+
+The stricter keyboard tests first exposed the reverse-Tab defect in all three engines. It was reproduced directly and fixed before accepting references. The final run also checks dialog wrapping and reflow with 320px width, enlarged text and forced-color emulation. See audit/consistency-browser-checks.json and audit/consistency-external-checks.json for recorded scope.
 
 Remaining verification is unchanged: live Stitch/Tokens Studio imports, screen readers, physical devices, actual browser zoom, measured cold-network performance and independent LLM outputs. They are not inferred from browser emulation or lint. See docs/support.md and reference/agent-evaluation.json.

@@ -235,3 +235,16 @@
 - Findings: Pattern buttons use input geometry; pattern CSS and delegated tabs can affect unrelated host UI; the form can retain stale success feedback; the pattern preview lacks selection/history controls. Dark-only DTCG resolvers emit one-context modifiers. Browser overflow checks compare against innerWidth instead of usable clientWidth, and visual failures stop later task checks.
 - Plan: Correct resolver composition and validate it independently of fixed file order; scope reusable patterns, align design geometry and add selection with state preservation; cover interaction isolation, stale feedback, geometry, sorting, modal focus and strict reflow. Regenerate exports, inspect rendered screens, review visual differences and publish passing evidence.
 - Constraints: Preserve five designs and Midnight/dark. No untested live-tool, assistive-technology or independent-agent results will be claimed.
+
+## DS-024 — Collection consistency revisions implemented
+
+- UTC: 2026-11-06T01:27:03Z
+- Actor: Codex
+- Plan reference: DS-023.
+- Change: Corrected single-mode DTCG resolver composition and added reference-driven consumption checks. Scoped reusable pattern styles/tab handlers, applied each design's button/input geometry and spacing, accepted safe extensionless breadcrumb routes, cleared stale form feedback and added in-place design/mode selection with history and draft preservation. Fixed reverse-Tab escape from confirmation and retained native Escape/return focus.
+- Why: Make reusable components and portable files follow the collection's advertised design and integration contracts.
+- Verification: Build/core and external validator checks pass. Hosted run 42143576343 passes 33 tests and 24 visual comparisons on 5717e484fe9113ff9b6b6c17d5cf41a1862dc7d9. Coverage includes all eight supported design/modes, computed geometry, unrelated host UI, tab cleanup, selection/history, form recovery, sorting, usable-width reflow, RTL/enlarged text, forced colors and modal focus. Direct browser reproduction confirmed the modal defect and fix. Inspected every Chromium design/mode capture and representative Firefox/WebKit captures; updated deliberate visual changes without relaxing thresholds.
+- Affected: Resolver generator/consumer/checks, pattern helpers/styles/preview, browser fixtures/tests/references, generated portable files/context bundles, release/support/integration docs, review evidence and hash manifest.
+- Compatibility: Version 0.5.0 documents empty modifier input for single-mode resolvers and explicit table styling hooks. Five designs and Midnight/dark default are preserved.
+- Limits: Live tool imports, screen-reader/device/actual-zoom, cold-network performance and independent agent outputs remain unverified; see reference/CONSISTENCY-REVIEW.md and docs/support.md.
+- Publication: Prepared for normal fast-forward publication after final public-content and integrity checks.
