@@ -1,1701 +1,1961 @@
 {
   "global": {
     "color-polo-blue-0": {
-      "value": "#f7f2eb",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#f7f2eb",
+      "description": "Generated from color-polo-blue-0. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-50": {
-      "value": "#eee8df",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#eee8df",
+      "description": "Generated from color-polo-blue-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-100": {
-      "value": "#e8e4df",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#e8e4df",
+      "description": "Generated from color-polo-blue-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-200": {
-      "value": "#d4cec7",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#d4cec7",
+      "description": "Generated from color-polo-blue-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-300": {
-      "value": "#b9b1a9",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#b9b1a9",
+      "description": "Generated from color-polo-blue-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-400": {
-      "value": "#9d958f",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#9d958f",
+      "description": "Generated from color-polo-blue-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-500": {
-      "value": "#7f7772",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#7f7772",
+      "description": "Generated from color-polo-blue-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-600": {
-      "value": "#625c5c",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#625c5c",
+      "description": "Generated from color-polo-blue-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-700": {
-      "value": "#42404d",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#42404d",
+      "description": "Generated from color-polo-blue-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-800": {
-      "value": "#272737",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#272737",
+      "description": "Generated from color-polo-blue-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-900": {
-      "value": "#1a1c30",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#1a1c30",
+      "description": "Generated from color-polo-blue-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-950": {
-      "value": "#131525",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#131525",
+      "description": "Generated from color-polo-blue-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-polo-blue-1000": {
-      "value": "#0c0e1a",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#0c0e1a",
+      "description": "Generated from color-polo-blue-1000. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-50": {
-      "value": "#f1f4fc",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#f1f4fc",
+      "description": "Generated from color-purple-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-100": {
-      "value": "#e6eaf9",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#e6eaf9",
+      "description": "Generated from color-purple-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-200": {
-      "value": "#ced5f2",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ced5f2",
+      "description": "Generated from color-purple-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-300": {
-      "value": "#b6bfeb",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#b6bfeb",
+      "description": "Generated from color-purple-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-400": {
-      "value": "#999fe0",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#999fe0",
+      "description": "Generated from color-purple-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-500": {
-      "value": "#7f80d5",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#7f80d5",
+      "description": "Generated from color-purple-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-600": {
-      "value": "#6c66c5",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#6c66c5",
+      "description": "Generated from color-purple-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-700": {
-      "value": "#5c55ad",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#5c55ad",
+      "description": "Generated from color-purple-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-800": {
-      "value": "#4c478c",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#4c478c",
+      "description": "Generated from color-purple-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-900": {
-      "value": "#413f70",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#413f70",
+      "description": "Generated from color-purple-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-purple-950": {
-      "value": "#272541",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#272541",
+      "description": "Generated from color-purple-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-50": {
-      "value": "#fafbf8",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fafbf8",
+      "description": "Generated from color-olive-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-100": {
-      "value": "#f5f6f3",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#f5f6f3",
+      "description": "Generated from color-olive-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-200": {
-      "value": "#e9e7e2",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#e9e7e2",
+      "description": "Generated from color-olive-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-300": {
-      "value": "#d9d7ce",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#d9d7ce",
+      "description": "Generated from color-olive-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-400": {
-      "value": "#aeaa98",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#aeaa98",
+      "description": "Generated from color-olive-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-500": {
-      "value": "#7f7a65",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#7f7a65",
+      "description": "Generated from color-olive-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-600": {
-      "value": "#666550",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#666550",
+      "description": "Generated from color-olive-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-700": {
-      "value": "#494737",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#494737",
+      "description": "Generated from color-olive-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-800": {
-      "value": "#2c2821",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#2c2821",
+      "description": "Generated from color-olive-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-900": {
-      "value": "#1f1d14",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#1f1d14",
+      "description": "Generated from color-olive-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-olive-950": {
-      "value": "#0e0c07",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#0e0c07",
+      "description": "Generated from color-olive-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-50": {
-      "value": "#faf6f6",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#faf6f6",
+      "description": "Generated from color-old-rose-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-100": {
-      "value": "#f5efee",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#f5efee",
+      "description": "Generated from color-old-rose-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-200": {
-      "value": "#e8dbda",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#e8dbda",
+      "description": "Generated from color-old-rose-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-300": {
-      "value": "#dbc7c6",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#dbc7c6",
+      "description": "Generated from color-old-rose-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-400": {
-      "value": "#c7a7a5",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#c7a7a5",
+      "description": "Generated from color-old-rose-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-500": {
-      "value": "#af8584",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#af8584",
+      "description": "Generated from color-old-rose-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-600": {
-      "value": "#976768",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#976768",
+      "description": "Generated from color-old-rose-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-700": {
-      "value": "#7d5355",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#7d5355",
+      "description": "Generated from color-old-rose-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-800": {
-      "value": "#6a474a",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#6a474a",
+      "description": "Generated from color-old-rose-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-900": {
-      "value": "#5c3f42",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#5c3f42",
+      "description": "Generated from color-old-rose-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-old-rose-950": {
-      "value": "#312021",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#312021",
+      "description": "Generated from color-old-rose-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-50": {
-      "value": "#fef1f9",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fef1f9",
+      "description": "Generated from color-hot-pink-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-100": {
-      "value": "#fee5f5",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fee5f5",
+      "description": "Generated from color-hot-pink-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-200": {
-      "value": "#ffcbec",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffcbec",
+      "description": "Generated from color-hot-pink-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-300": {
-      "value": "#ffa1da",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffa1da",
+      "description": "Generated from color-hot-pink-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-400": {
-      "value": "#ff66bf",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ff66bf",
+      "description": "Generated from color-hot-pink-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-500": {
-      "value": "#fa3aa4",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fa3aa4",
+      "description": "Generated from color-hot-pink-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-600": {
-      "value": "#ea1882",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ea1882",
+      "description": "Generated from color-hot-pink-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-700": {
-      "value": "#cc0a66",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#cc0a66",
+      "description": "Generated from color-hot-pink-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-800": {
-      "value": "#a80c54",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#a80c54",
+      "description": "Generated from color-hot-pink-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-900": {
-      "value": "#8c0f49",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#8c0f49",
+      "description": "Generated from color-hot-pink-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-hot-pink-950": {
-      "value": "#560128",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#560128",
+      "description": "Generated from color-hot-pink-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-50": {
-      "value": "#fff8ed",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fff8ed",
+      "description": "Generated from color-neon-carrot-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-100": {
-      "value": "#ffefd4",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffefd4",
+      "description": "Generated from color-neon-carrot-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-200": {
-      "value": "#ffdba8",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffdba8",
+      "description": "Generated from color-neon-carrot-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-300": {
-      "value": "#ffc071",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffc071",
+      "description": "Generated from color-neon-carrot-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-400": {
-      "value": "#ff9d3c",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ff9d3c",
+      "description": "Generated from color-neon-carrot-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-500": {
-      "value": "#fe7d11",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fe7d11",
+      "description": "Generated from color-neon-carrot-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-600": {
-      "value": "#ef6107",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ef6107",
+      "description": "Generated from color-neon-carrot-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-700": {
-      "value": "#c64808",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#c64808",
+      "description": "Generated from color-neon-carrot-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-800": {
-      "value": "#9d390f",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#9d390f",
+      "description": "Generated from color-neon-carrot-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-900": {
-      "value": "#7e3110",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#7e3110",
+      "description": "Generated from color-neon-carrot-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-neon-carrot-950": {
-      "value": "#441606",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#441606",
+      "description": "Generated from color-neon-carrot-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-50": {
-      "value": "#f5f2fb",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#f5f2fb",
+      "description": "Generated from color-cornflower-blue-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-100": {
-      "value": "#e8e2f2",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#e8e2f2",
+      "description": "Generated from color-cornflower-blue-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-200": {
-      "value": "#d5cde5",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#d5cde5",
+      "description": "Generated from color-cornflower-blue-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-300": {
-      "value": "#c8bfdf",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#c8bfdf",
+      "description": "Generated from color-cornflower-blue-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-400": {
-      "value": "#b8b0d8",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#b8b0d8",
+      "description": "Generated from color-cornflower-blue-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-500": {
-      "value": "#9489b9",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#9489b9",
+      "description": "Generated from color-cornflower-blue-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-600": {
-      "value": "#726596",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#726596",
+      "description": "Generated from color-cornflower-blue-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-700": {
-      "value": "#584b79",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#584b79",
+      "description": "Generated from color-cornflower-blue-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-800": {
-      "value": "#44385f",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#44385f",
+      "description": "Generated from color-cornflower-blue-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-900": {
-      "value": "#332a48",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#332a48",
+      "description": "Generated from color-cornflower-blue-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-cornflower-blue-950": {
-      "value": "#211b30",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#211b30",
+      "description": "Generated from color-cornflower-blue-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-50": {
-      "value": "#f0fdf0",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#f0fdf0",
+      "description": "Generated from color-malachite-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-100": {
-      "value": "#ddfbdf",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ddfbdf",
+      "description": "Generated from color-malachite-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-200": {
-      "value": "#bdf5c1",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#bdf5c1",
+      "description": "Generated from color-malachite-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-300": {
-      "value": "#89ec91",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#89ec91",
+      "description": "Generated from color-malachite-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-400": {
-      "value": "#4dd959",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#4dd959",
+      "description": "Generated from color-malachite-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-500": {
-      "value": "#27c035",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#27c035",
+      "description": "Generated from color-malachite-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-600": {
-      "value": "#1a9f26",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#1a9f26",
+      "description": "Generated from color-malachite-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-700": {
-      "value": "#187d22",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#187d22",
+      "description": "Generated from color-malachite-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-800": {
-      "value": "#186320",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#186320",
+      "description": "Generated from color-malachite-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-900": {
-      "value": "#16511d",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#16511d",
+      "description": "Generated from color-malachite-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-malachite-950": {
-      "value": "#062d0b",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#062d0b",
+      "description": "Generated from color-malachite-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-50": {
-      "value": "#fff1f2",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fff1f2",
+      "description": "Generated from color-torch-red-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-100": {
-      "value": "#ffe0e1",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffe0e1",
+      "description": "Generated from color-torch-red-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-200": {
-      "value": "#ffc6c9",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ffc6c9",
+      "description": "Generated from color-torch-red-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-300": {
-      "value": "#ff9fa4",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ff9fa4",
+      "description": "Generated from color-torch-red-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-400": {
-      "value": "#ff676e",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#ff676e",
+      "description": "Generated from color-torch-red-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-500": {
-      "value": "#fb2c36",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#fb2c36",
+      "description": "Generated from color-torch-red-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-600": {
-      "value": "#e91923",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#e91923",
+      "description": "Generated from color-torch-red-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-700": {
-      "value": "#c4111a",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#c4111a",
+      "description": "Generated from color-torch-red-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-800": {
-      "value": "#a21219",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#a21219",
+      "description": "Generated from color-torch-red-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-900": {
-      "value": "#86161b",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#86161b",
+      "description": "Generated from color-torch-red-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "color-torch-red-950": {
-      "value": "#490609",
       "type": "color",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "#490609",
+      "description": "Generated from color-torch-red-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "gradient-purple-storm": {
+      "type": "color",
       "value": "linear-gradient(to left, #666550 0%, #6c66c5 100%)",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from gradient-purple-storm. Font family exports use the first family; CSS retains fallbacks."
     },
     "gradient-soft-bloom": {
+      "type": "color",
       "value": "linear-gradient(to left, #dbc7c6 0%, #b9b1a9 100%)",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from gradient-soft-bloom. Font family exports use the first family; CSS retains fallbacks."
     },
     "gradient-dawn-bloom": {
+      "type": "color",
       "value": "linear-gradient(to left, #dbc7c6 0%, #b6bfeb 100%)",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from gradient-dawn-bloom. Font family exports use the first family; CSS retains fallbacks."
     },
     "gradient-sky-whisper": {
+      "type": "color",
       "value": "linear-gradient(to left, #f7f2eb 0%, #d4cec7 25%, #d4cec7 75%, #f7f2eb 100%)",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from gradient-sky-whisper. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-0": {
+      "type": "dimension",
       "value": "0px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-0. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-100": {
+      "type": "dimension",
       "value": "8px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-150": {
+      "type": "dimension",
       "value": "12px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-150. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-200": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-250": {
+      "type": "dimension",
       "value": "20px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-250. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-300": {
+      "type": "dimension",
       "value": "24px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-400": {
+      "type": "dimension",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-500": {
+      "type": "dimension",
       "value": "40px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-600": {
+      "type": "dimension",
       "value": "48px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-800": {
+      "type": "dimension",
       "value": "64px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-1000": {
+      "type": "dimension",
       "value": "80px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-1000. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-1200": {
+      "type": "dimension",
       "value": "96px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-1200. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-1400": {
+      "type": "dimension",
       "value": "112px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-1400. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-1600": {
+      "type": "dimension",
       "value": "128px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-1600. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-1800": {
+      "type": "dimension",
       "value": "144px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-1800. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-2000": {
+      "type": "dimension",
       "value": "160px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-2000. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-025": {
+      "type": "dimension",
       "value": "2px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-025. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-050": {
+      "type": "dimension",
       "value": "4px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-050. Font family exports use the first family; CSS retains fallbacks."
     },
     "space-075": {
+      "type": "dimension",
       "value": "6px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from space-075. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-family-brand": {
-      "value": "Fraunces, Georgia, serif",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontFamilies",
+      "value": "Fraunces",
+      "description": "Generated from font-family-brand. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-family-secondary": {
-      "value": "\"Inter Tight\", system-ui, sans-serif",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontFamilies",
+      "value": "Inter Tight",
+      "description": "Generated from font-family-secondary. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-family-code": {
-      "value": "\"JetBrains Mono\", monospace",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontFamilies",
+      "value": "JetBrains Mono",
+      "description": "Generated from font-family-code. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-weight-400": {
-      "value": "400",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontWeights",
+      "value": 400,
+      "description": "Generated from font-weight-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-weight-450": {
-      "value": "450",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontWeights",
+      "value": 450,
+      "description": "Generated from font-weight-450. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-weight-500": {
-      "value": "500",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontWeights",
+      "value": 500,
+      "description": "Generated from font-weight-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-50": {
+      "type": "fontSizes",
       "value": "10px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-100": {
+      "type": "fontSizes",
       "value": "12px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-150": {
+      "type": "fontSizes",
       "value": "14px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-150. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-200": {
+      "type": "fontSizes",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-250": {
+      "type": "fontSizes",
       "value": "18px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-250. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-300": {
+      "type": "fontSizes",
       "value": "20px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-350": {
+      "type": "fontSizes",
       "value": "24px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-350. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-400": {
+      "type": "fontSizes",
       "value": "28px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-450": {
+      "type": "fontSizes",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-450. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-500": {
+      "type": "fontSizes",
       "value": "36px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-550": {
+      "type": "fontSizes",
       "value": "40px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-550. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-600": {
+      "type": "fontSizes",
       "value": "44px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-650": {
+      "type": "fontSizes",
       "value": "48px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-650. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-700": {
+      "type": "fontSizes",
       "value": "56px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-750": {
+      "type": "fontSizes",
       "value": "64px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-750. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-800": {
+      "type": "fontSizes",
       "value": "72px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-850": {
+      "type": "fontSizes",
       "value": "80px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-850. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-900": {
+      "type": "fontSizes",
       "value": "88px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "font-size-950": {
+      "type": "fontSizes",
       "value": "96px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from font-size-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-25": {
+      "type": "lineHeights",
       "value": "6px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-25. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-50": {
+      "type": "lineHeights",
       "value": "8px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-50. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-75": {
+      "type": "lineHeights",
       "value": "10px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-75. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-100": {
+      "type": "lineHeights",
       "value": "12px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-125": {
+      "type": "lineHeights",
       "value": "14px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-125. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-150": {
+      "type": "lineHeights",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-150. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-175": {
+      "type": "lineHeights",
       "value": "18px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-175. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-200": {
+      "type": "lineHeights",
       "value": "20px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-225": {
+      "type": "lineHeights",
       "value": "22px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-225. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-250": {
+      "type": "lineHeights",
       "value": "24px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-250. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-275": {
+      "type": "lineHeights",
       "value": "26px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-275. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-300": {
+      "type": "lineHeights",
       "value": "28px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-325": {
+      "type": "lineHeights",
       "value": "30px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-325. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-350": {
+      "type": "lineHeights",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-350. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-375": {
+      "type": "lineHeights",
       "value": "34px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-375. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-400": {
+      "type": "lineHeights",
       "value": "36px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-400. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-425": {
+      "type": "lineHeights",
       "value": "40px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-425. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-450": {
+      "type": "lineHeights",
       "value": "42px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-450. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-475": {
+      "type": "lineHeights",
       "value": "44px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-475. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-500": {
+      "type": "lineHeights",
       "value": "48px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-500. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-525": {
+      "type": "lineHeights",
       "value": "50px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-525. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-550": {
+      "type": "lineHeights",
       "value": "52px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-550. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-575": {
+      "type": "lineHeights",
       "value": "56px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-575. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-600": {
+      "type": "lineHeights",
       "value": "58px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-600. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-625": {
+      "type": "lineHeights",
       "value": "60px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-625. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-650": {
+      "type": "lineHeights",
       "value": "64px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-650. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-675": {
+      "type": "lineHeights",
       "value": "66px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-675. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-700": {
+      "type": "lineHeights",
       "value": "68px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-700. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-725": {
+      "type": "lineHeights",
       "value": "72px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-725. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-750": {
+      "type": "lineHeights",
       "value": "74px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-750. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-775": {
+      "type": "lineHeights",
       "value": "76px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-775. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-800": {
+      "type": "lineHeights",
       "value": "80px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-800. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-825": {
+      "type": "lineHeights",
       "value": "82px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-825. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-850": {
+      "type": "lineHeights",
       "value": "84px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-850. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-875": {
+      "type": "lineHeights",
       "value": "88px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-875. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-900": {
+      "type": "lineHeights",
       "value": "90px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-900. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-925": {
+      "type": "lineHeights",
       "value": "92px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-925. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-950": {
+      "type": "lineHeights",
       "value": "96px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-950. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-975": {
+      "type": "lineHeights",
       "value": "98px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-975. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-1000": {
+      "type": "lineHeights",
       "value": "104px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-1000. Font family exports use the first family; CSS retains fallbacks."
     },
     "line-height-1025": {
+      "type": "lineHeights",
       "value": "106px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from line-height-1025. Font family exports use the first family; CSS retains fallbacks."
     },
     "letter-spacing-100": {
-      "value": "-0.02em",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "letterSpacing",
+      "value": "-2%",
+      "description": "Generated from letter-spacing-100. Font family exports use the first family; CSS retains fallbacks."
     },
     "letter-spacing-200": {
-      "value": "-0.04em",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "letterSpacing",
+      "value": "-4%",
+      "description": "Generated from letter-spacing-200. Font family exports use the first family; CSS retains fallbacks."
     },
     "letter-spacing-300": {
-      "value": "-0.06em",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "letterSpacing",
+      "value": "-6%",
+      "description": "Generated from letter-spacing-300. Font family exports use the first family; CSS retains fallbacks."
     },
     "motion-duration-hover": {
-      "value": "300ms",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "300ms",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "motion-duration-skeleton": {
-      "value": "1s",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "1s",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "motion-duration-exit": {
-      "value": "500ms",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "500ms",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "motion-duration-spin": {
-      "value": "0.8s",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "0.8s",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "motion-easing-standard": {
-      "value": "ease-in-out",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "ease-in-out",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "motion-easing-spin": {
-      "value": "cubic-bezier(0.6, 0.4, 0.4, 0.6)",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "cubic-bezier(0.6, 0.4, 0.4, 0.6)",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "motion-blur-exit": {
+      "type": "dimension",
       "value": "4px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from motion-blur-exit. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-xxs-columns": {
-      "value": "4",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 4,
+      "description": "Generated from grid-website-xxs-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-xxs-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-xxs-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-xxs-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-xxs-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-xs-columns": {
-      "value": "8",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 8,
+      "description": "Generated from grid-website-xs-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-xs-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-xs-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-xs-margin": {
+      "type": "dimension",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-xs-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-s-columns": {
-      "value": "8",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 8,
+      "description": "Generated from grid-website-s-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-s-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-s-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-s-margin": {
+      "type": "dimension",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-s-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-m-columns": {
-      "value": "12",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 12,
+      "description": "Generated from grid-website-m-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-m-gutter": {
+      "type": "dimension",
       "value": "24px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-m-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-m-margin": {
+      "type": "dimension",
       "value": "64px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-m-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-l-columns": {
-      "value": "12",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 12,
+      "description": "Generated from grid-website-l-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-l-gutter": {
+      "type": "dimension",
       "value": "24px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-l-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-website-l-margin": {
+      "type": "dimension",
       "value": "64px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-website-l-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xxs-columns": {
-      "value": "4",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 4,
+      "description": "Generated from grid-console-xxs-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xxs-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-xxs-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xxs-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-xxs-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xs-columns": {
-      "value": "8",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 8,
+      "description": "Generated from grid-console-xs-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xs-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-xs-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xs-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-xs-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-s-columns": {
-      "value": "8",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 8,
+      "description": "Generated from grid-console-s-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-s-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-s-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-s-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-s-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-m-columns": {
-      "value": "12",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 12,
+      "description": "Generated from grid-console-m-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-m-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-m-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-m-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-m-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-l-columns": {
-      "value": "12",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 12,
+      "description": "Generated from grid-console-l-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-l-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-l-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-l-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-l-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xl-columns": {
-      "value": "12",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "number",
+      "value": 12,
+      "description": "Generated from grid-console-xl-columns. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xl-gutter": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-xl-gutter. Font family exports use the first family; CSS retains fallbacks."
     },
     "grid-console-xl-margin": {
+      "type": "dimension",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from grid-console-xl-margin. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-radius-card": {
+      "type": "borderRadius",
       "value": "16px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-radius-card. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-radius-button": {
+      "type": "borderRadius",
       "value": "100px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-radius-button. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-heading-family": {
-      "value": "Fraunces, Georgia, serif",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontFamilies",
+      "value": "Fraunces",
+      "description": "Generated from design-heading-family. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-body-family": {
-      "value": "\"Inter Tight\", system-ui, sans-serif",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "fontFamilies",
+      "value": "Inter Tight",
+      "description": "Generated from design-body-family. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-content-width": {
+      "type": "dimension",
       "value": "1080px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-content-width. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-section-gap": {
+      "type": "dimension",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-section-gap. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-shadow-panel": {
-      "value": "none",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "none",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "design-page-padding": {
+      "type": "dimension",
       "value": "48px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-page-padding. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-panel-padding": {
+      "type": "dimension",
       "value": "32px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-panel-padding. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-row-padding": {
+      "type": "dimension",
       "value": "24px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-row-padding. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-radius-input": {
+      "type": "borderRadius",
       "value": "10px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-radius-input. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-title-size": {
+      "type": "fontSizes",
       "value": "3.125rem",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-title-size. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-heading-tracking": {
-      "value": "-.025em",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "type": "letterSpacing",
+      "value": "-2.5%",
+      "description": "Generated from design-heading-tracking. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-transition-duration": {
-      "value": "160ms",
       "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "value": "160ms",
+      "description": "CSS-only property; intentionally not applied in Figma."
     },
     "design-text-small": {
+      "type": "fontSizes",
       "value": "0.875rem",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-text-small. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-text-caption": {
+      "type": "fontSizes",
       "value": "0.75rem",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-text-caption. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-title-size-mobile": {
+      "type": "fontSizes",
       "value": "2.25rem",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-title-size-mobile. Font family exports use the first family; CSS retains fallbacks."
     },
     "design-press-offset": {
+      "type": "dimension",
       "value": "1px",
-      "type": "other",
-      "description": "Portable CSS string; check target tool conversion."
+      "description": "Generated from design-press-offset. Font family exports use the first family; CSS retains fallbacks."
+    },
+    "text-style-label-xxl": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "32px",
+        "lineHeight": "28px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-label-xl": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "24px",
+        "lineHeight": "20px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-label-l": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "26px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-label-m": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-label-s": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-label-xs": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "12px",
+        "lineHeight": "20px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h1-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "96px",
+        "lineHeight": "92px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h1-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "80px",
+        "lineHeight": "76px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h1-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "64px",
+        "lineHeight": "60px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h2-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "48px",
+        "lineHeight": "44px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h2-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "44px",
+        "lineHeight": "40px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h2-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "40px",
+        "lineHeight": "36px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h3-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "32px",
+        "lineHeight": "28px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h3-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "28px",
+        "lineHeight": "24px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h3-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": "400",
+        "fontSize": "24px",
+        "lineHeight": "20px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h4-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "18px",
+        "lineHeight": "26px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h4-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-h4-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-body-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "400",
+        "fontSize": "18px",
+        "lineHeight": "28px",
+        "letterSpacing": "-2%"
+      }
+    },
+    "text-style-body-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "400",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "-2%"
+      }
+    },
+    "text-style-body-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "400",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "letterSpacing": "-2%"
+      }
+    },
+    "text-style-code-large": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "JetBrains Mono",
+        "fontWeight": "450",
+        "fontSize": "18px",
+        "lineHeight": "26px",
+        "letterSpacing": "-6%"
+      }
+    },
+    "text-style-code-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "JetBrains Mono",
+        "fontWeight": "450",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "-6%"
+      }
+    },
+    "text-style-code-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "JetBrains Mono",
+        "fontWeight": "450",
+        "fontSize": "14px",
+        "lineHeight": "22px",
+        "letterSpacing": "-6%"
+      }
+    },
+    "text-style-caption-medium": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "12px",
+        "lineHeight": "20px",
+        "letterSpacing": "-4%"
+      }
+    },
+    "text-style-caption-small": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Inter Tight",
+        "fontWeight": "500",
+        "fontSize": "10px",
+        "lineHeight": "18px",
+        "letterSpacing": "-4%"
+      }
     }
   },
   "dark": {
     "background-brand-light": {
-      "value": "{color-olive-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-olive-950}"
     },
     "background-brand-regular": {
-      "value": "{color-olive-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-olive-800}"
     },
     "background-brand-strong": {
-      "value": "{color-olive-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-olive-600}"
     },
     "background-danger-light": {
-      "value": "{color-torch-red-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-950}"
     },
     "background-danger-regular": {
-      "value": "{color-torch-red-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-800}"
     },
     "background-danger-strong": {
-      "value": "{color-torch-red-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-600}"
     },
     "background-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-500}"
     },
     "background-discovery-light": {
-      "value": "{color-purple-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-purple-950}"
     },
     "background-discovery-regular": {
-      "value": "{color-purple-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-purple-800}"
     },
     "background-discovery-strong": {
-      "value": "{color-purple-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-purple-600}"
     },
     "background-elevation-light": {
-      "value": "{color-polo-blue-1000}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-1000}"
     },
     "background-elevation-regular": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "background-elevation-strong": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-800}"
     },
     "background-information-light": {
-      "value": "{color-cornflower-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-950}"
     },
     "background-information-regular": {
-      "value": "{color-cornflower-blue-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-800}"
     },
     "background-information-strong": {
-      "value": "{color-cornflower-blue-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-600}"
     },
     "background-neutral-hovered": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "background-neutral-pressed": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "background-neutral-selected": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "background-success-light": {
-      "value": "{color-malachite-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-malachite-950}"
     },
     "background-success-regular": {
-      "value": "{color-malachite-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-malachite-800}"
     },
     "background-success-strong": {
-      "value": "{color-malachite-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-malachite-600}"
     },
     "background-surface-light": {
-      "value": "{color-polo-blue-1000}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-1000}"
     },
     "background-surface-regular": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "background-surface-strong": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "background-warning-light": {
-      "value": "{color-neon-carrot-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-neon-carrot-950}"
     },
     "background-warning-regular": {
-      "value": "{color-neon-carrot-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-neon-carrot-800}"
     },
     "background-warning-strong": {
-      "value": "{color-neon-carrot-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-neon-carrot-600}"
     },
     "border-brand": {
-      "value": "{color-olive-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-olive-500}"
     },
     "border-danger": {
-      "value": "{color-torch-red-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-800}"
     },
     "border-danger-light": {
-      "value": "{color-torch-red-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-800}"
     },
     "border-danger-strong": {
-      "value": "{color-torch-red-400}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-400}"
     },
     "border-disabled": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "border-discovery": {
-      "value": "{color-purple-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-purple-800}"
     },
     "border-focused": {
-      "value": "{color-cornflower-blue-400}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-400}"
     },
     "border-information": {
-      "value": "{color-cornflower-blue-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-800}"
     },
     "border-inverse": {
-      "value": "{color-polo-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-300}"
     },
     "border-light": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "border-regular": {
-      "value": "{color-polo-blue-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-800}"
     },
     "border-selected": {
-      "value": "{color-cornflower-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-300}"
     },
     "border-strong": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-500}"
     },
     "border-success": {
-      "value": "{color-malachite-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-malachite-800}"
     },
     "border-warning": {
-      "value": "{color-neon-carrot-800}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-neon-carrot-800}"
     },
     "button-borderless-icon-default": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-borderless-icon-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-500}"
     },
     "button-borderless-icon-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-50}"
     },
     "button-borderless-icon-pressed": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-0}"
     },
     "button-borderless-icon-selected": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-borderless-text-default": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-borderless-text-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-500}"
     },
     "button-borderless-text-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-50}"
     },
     "button-borderless-text-pressed": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-0}"
     },
     "button-borderless-text-selected": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-gradient-bg-default": {
-      "value": "{color-polo-blue-1000}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-1000}"
     },
     "button-gradient-bg-disabled": {
-      "value": "{color-polo-blue-1000}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-1000}"
     },
     "button-gradient-bg-hovered": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "button-gradient-bg-pressed": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "button-gradient-bg-selected": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "button-regular-default": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "button-regular-disabled": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "button-regular-hovered": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "button-regular-pressed": {
-      "value": "{color-polo-blue-900}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-900}"
     },
     "button-regular-text": {
-      "value": "{color-polo-blue-200}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-200}"
     },
     "button-secondary-icon-default": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-secondary-icon-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-500}"
     },
     "button-secondary-icon-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-50}"
     },
     "button-secondary-icon-pressed": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-0}"
     },
     "button-secondary-icon-selected": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-secondary-text-default": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-secondary-text-disabled": {
-      "value": "{color-polo-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-500}"
     },
     "button-secondary-text-hovered": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-50}"
     },
     "button-secondary-text-pressed": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-0}"
     },
     "button-secondary-text-selected": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "button-strong-default": {
-      "value": "{color-polo-blue-200}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-200}"
     },
     "button-strong-disabled": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-600}"
     },
     "button-strong-hovered": {
-      "value": "{color-polo-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-300}"
     },
     "button-strong-pressed": {
-      "value": "{color-polo-blue-400}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-400}"
     },
     "button-strong-text": {
-      "value": "{color-polo-blue-1000}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-1000}"
     },
     "icon-brand": {
-      "value": "{color-olive-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-olive-300}"
     },
     "icon-danger": {
-      "value": "{color-torch-red-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-300}"
     },
     "icon-disabled": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-600}"
     },
     "icon-discovery": {
-      "value": "{color-purple-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-purple-300}"
     },
     "icon-information": {
-      "value": "{color-cornflower-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-300}"
     },
     "icon-inverse": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "icon-light": {
-      "value": "{color-polo-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-300}"
     },
     "icon-regular": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "icon-selected": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-50}"
     },
     "icon-strong": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-0}"
     },
     "icon-success": {
-      "value": "{color-malachite-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-malachite-300}"
     },
     "icon-warning": {
-      "value": "{color-neon-carrot-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-neon-carrot-300}"
     },
     "link-icon-default": {
-      "value": "{color-cornflower-blue-400}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-400}"
     },
     "link-icon-hover": {
-      "value": "{color-cornflower-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-300}"
     },
     "link-icon-inverse": {
-      "value": "{color-cornflower-blue-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-600}"
     },
     "link-icon-pressed": {
-      "value": "{color-cornflower-blue-200}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-200}"
     },
     "link-text-default": {
-      "value": "{color-cornflower-blue-400}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-400}"
     },
     "link-text-hover": {
-      "value": "{color-cornflower-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-300}"
     },
     "link-text-pressed": {
-      "value": "{color-cornflower-blue-200}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-200}"
     },
     "link-text-visited": {
-      "value": "{color-cornflower-blue-500}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-500}"
     },
     "text-brand": {
-      "value": "{color-olive-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-olive-300}"
     },
     "text-danger": {
-      "value": "{color-torch-red-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-torch-red-300}"
     },
     "text-disabled": {
-      "value": "{color-polo-blue-600}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-600}"
     },
     "text-discovery": {
-      "value": "{color-purple-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-purple-300}"
     },
     "text-information": {
-      "value": "{color-cornflower-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-cornflower-blue-300}"
     },
     "text-inverse": {
-      "value": "{color-polo-blue-950}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-950}"
     },
     "text-light": {
-      "value": "{color-polo-blue-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-300}"
     },
     "text-regular": {
-      "value": "{color-polo-blue-100}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-100}"
     },
     "text-selected": {
-      "value": "{color-polo-blue-50}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-50}"
     },
     "text-strong": {
-      "value": "{color-polo-blue-0}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-polo-blue-0}"
     },
     "text-success": {
-      "value": "{color-malachite-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-malachite-300}"
     },
     "text-warning": {
-      "value": "{color-neon-carrot-300}",
-      "type": "color"
+      "type": "color",
+      "value": "{color-neon-carrot-300}"
     }
   },
   "$metadata": {

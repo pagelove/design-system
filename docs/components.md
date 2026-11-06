@@ -41,3 +41,11 @@ The helper provides a radial determinate indicator; the catalog also demonstrate
 React, Vue and Svelte files are small usage examples, not compiled framework packages. Native Swift/Kotlin outputs are dictionaries of CSS strings, not platform colors, dp/sp or SwiftUI views. The library's CSS is preserved separately; the recommended app layer makes documented readability, target-size, native-input and reduced-motion adaptations. Consult [the source inventory](../reference/library-inventory.json) for every observed public story and variant.
 
 Pending button helpers and framework examples preserve the supplied action label and append an in-progress indication. Skeleton helper buttons remain disabled and retain an explicit accessible name even when their visual text is hidden. Framework examples still require compilation and integration tests in the consuming application.
+
+## Reusable interaction patterns
+
+components/patterns.mjs exports select, textarea, notice, disclosure, breadcrumbs, tabs, confirmation, errorSummary, enhancePatterns and openConfirmation. Import it as a JavaScript module over HTTP; load styles/patterns.css after the selected theme. All content arguments are plain text and escaped. IDs must be unique within the consuming document. Breadcrumb URLs accept HTTP or relative destinations and reject executable schemes.
+
+Tabs require a nonempty items array of label/text objects and use immediate activation; do not use them for slow network-loaded panels without changing the activation contract. Call enhancePatterns once on a mounted root and retain its cleanup function. Confirmation uses native dialog: openConfirmation(dialog, trigger) restores focus on close; the safe Cancel action has initial focus. Use disclosure for supplementary content, never to hide required instructions. Notice supports polite status and urgent alerts; avoid nested live regions in consuming apps.
+
+The patterns fixture demonstrates a captioned sortable table and bounded pagination using DOM-backed records, plus a complete form-error summary and recovery flow. These compositions can be copied and adapted; they are not a server-backed grid API. Every helper and composition remains Preview until the documented browser/AT acceptance matrix is complete.

@@ -1,9 +1,11 @@
+import {enrich} from './adapters.mjs';
 import {renderGallery} from './gallery.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {sourceRoot,loadDesigns,readJSON} from './designs.mjs';
 import {toDtcg} from './dtcg.mjs';
+const releaseVersion=readJSON('package.json').version;
 const requested=readJSON('designs/catalog.json');
 if(process.env.DESIGN_DEFAULT)requested.defaultDesign=process.env.DESIGN_DEFAULT;
 if(process.env.DESIGN_MODE)requested.defaultMode=process.env.DESIGN_MODE;
@@ -39,7 +41,7 @@ put('styles/theme.css',':root { color-scheme: var(--design-color-scheme); }\n'+f
 const yaml=o=>Object.entries(o).map(([k,v])=>`${JSON.stringify(k)}:${v&&typeof v==='object'&&!Array.isArray(v)?'\n'+yaml(v).split('\n').filter(Boolean).map(x=>'  '+x).join('\n'): ' '+JSON.stringify(v)}\n`).join('');
 put('exports/tokens.yaml',yaml({design:design.id,defaultMode,foundations:base,semantic,profiles}));
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
-put('exports/tokens.xml','<?xml version="1.0" encoding="UTF-8"?>\n<design-system version="0.1.0">\n'+Object.entries(resolved).map(([mode,values])=>`  <theme name="${mode}">\n${Object.entries(values).map(([k,v])=>`    <token name="${k}" value="${esc(v)}"/>`).join('\n')}\n  </theme>`).join('\n')+'\n</design-system>');
+put('exports/tokens.xml','<?xml version="1.0" encoding="UTF-8"?>\n<design-system schema-version="1" release-version="'+releaseVersion+'">\n'+Object.entries(resolved).map(([mode,values])=>`  <theme name="${mode}">\n${Object.entries(values).map(([k,v])=>`    <token name="${k}" value="${esc(v)}"/>`).join('\n')}\n  </theme>`).join('\n')+'\n</design-system>');
 const csv=s=>'"'+String(s).replaceAll('"','""')+'"';
 put('exports/tokens.csv','theme,name,value\n'+Object.entries(resolved).flatMap(([m,v])=>Object.entries(v).map(([k,x])=>[m,k,x].map(csv).join(','))).join('\n'));
 put('exports/tokens.mjs','// Generated. Values preserve CSS units; no runtime dependencies.\nexport const tokens = '+JSON.stringify(resolved,null,2)+';\nexport default tokens;');
@@ -63,7 +65,16 @@ function guide(title,colors,fonts,profile){const y={name:title,colors,typography
 const selected=resolved[defaultMode];
 const mainGuide=guide(design.name,{primary:selected['text-regular'],neutral:selected['background-surface-light'],accent:selected['link-text-default'],border:selected['border-regular']},[selected['design-heading-family'].split(',')[0].replaceAll('"','').replaceAll("'",''),selected['design-body-family'].split(',')[0].replaceAll('"','').replaceAll("'",'')],design.guidance+' Available modes: '+modes.join(', ')+'. Initial mode: '+defaultMode+'.');
 put('DESIGN.md',mainGuide);put('.stitch/DESIGN.md',mainGuide);
-const contextFiles=['DESIGN.md','docs/designs.md','docs/polish.md','docs/foundations.md','docs/components.md','docs/document-first.md','docs/games.md','docs/accessibility.md','docs/patterns.md','docs/formats.md','NOTICE.md'];
+function modeGuide(mode){
+ const v=resolved[mode];const content=guide(design.name,{primary:v['text-regular'],...Object.fromEntries(Object.keys(semantic[mode]).map(k=>[k,v[k]]))},[v['design-heading-family'].split(',')[0].replaceAll('"','').replaceAll("'",''),v['design-body-family'].split(',')[0].replaceAll('"','').replaceAll("'",'')],design.guidance+' Available modes: '+modes.join(', ')+'. Initial mode: '+mode+'. This file contains exact values for '+mode+' only.');
+ const components={};
+ for(const state of ['default','hovered','pressed'])components['button-'+state]={backgroundColor:'{colors.button-strong-'+state+'}',textColor:'{colors.button-strong-text}',rounded:'{rounded.button}',padding:'12px',height:'44px'};
+ components.page={backgroundColor:'{colors.background-surface-light}',textColor:'{colors.text-regular}'};
+ components.panel={backgroundColor:'{colors.background-surface-regular}',textColor:'{colors.text-regular}',rounded:'{rounded.card}',padding:design.appearance['design-panel-padding']};
+ return content.replace('\n---\n\n#','\n'+yaml({components})+'---\n\n#');
+}
+enrich({design,base,resolved,defaultMode,dtcg,json,put,guide:modeGuide,version:releaseVersion});
+const contextFiles=['DESIGN.md','docs/designs.md','docs/polish.md','docs/foundations.md','docs/components.md','docs/document-first.md','docs/games.md','docs/accessibility.md','docs/patterns.md','docs/formats.md','docs/support.md','docs/content.md','NOTICE.md'];
 put('llms-full.txt',contextFiles.map(p=>`\n===== ${p} =====\n\n${fs.readFileSync(path.join(p==='DESIGN.md'?root:sourceRoot,p),'utf8')}`).join('\n'));
 for(const mode of ['light','dark'])if(!semantic[mode]){const file=path.join(root,'tokens',mode+'.tokens.json');if(fs.existsSync(file))fs.unlinkSync(file);}
 return {base,semantic,resolved,block};

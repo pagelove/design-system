@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "status": "not-run",
+  "instructions": "Run each brief independently with each evaluated agent, recording model/version, supplied files, generated result and checks. Do not score the reference implementation as independent agent evidence.",
+  "cases": [
+    {"id":"default","brief":"Create a project settings form with name, description, save, pending and validation states. No design specified.","expectedDesign":"midnight","expectedMode":"dark"},
+    {"id":"explicit","brief":"Create an accessible project collection in Forest dark. Include search, empty state and keyboard navigation.","expectedDesign":"forest","expectedMode":"dark"},
+    {"id":"unsupported","brief":"Use Invitation. Add a light mode only if the selected design declares one.","expectedDesign":"invitation","expectedMode":"dark"}
+  ],
+  "checks": ["Loads selected guide and tokens", "Uses semantic roles rather than mixed palettes", "Does not invent unsupported modes", "Preserves labels and keyboard paths", "States persistence accurately", "Uses locally licensed fonts", "Matches reference typography and geometry", "Passes responsive and accessibility tasks"],
+  "results": []
+}

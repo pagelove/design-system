@@ -5,9 +5,116 @@
 "name": "Classic"
 "colors":
   "primary": "#334155"
-  "neutral": "#ffffff"
-  "accent": "#1f64f1"
-  "border": "#cbd5e1"
+  "background-brand-light": "#fafbf8"
+  "background-brand-regular": "#e9e7e2"
+  "background-brand-strong": "#aeaa98"
+  "background-danger-light": "#fff1f2"
+  "background-danger-regular": "#ffc6c9"
+  "background-danger-strong": "#ff676e"
+  "background-disabled": "#64748b"
+  "background-discovery-light": "#f1f4fc"
+  "background-discovery-regular": "#ced5f2"
+  "background-discovery-strong": "#999fe0"
+  "background-elevation-light": "#ffffff"
+  "background-elevation-regular": "#f1f5f9"
+  "background-elevation-strong": "#e2e8f0"
+  "background-information-light": "#eef6ff"
+  "background-information-regular": "#bddbff"
+  "background-information-strong": "#59a6ff"
+  "background-neutral-hovered": "#f8fafc"
+  "background-neutral-pressed": "#f1f5f9"
+  "background-neutral-selected": "#f8fafc"
+  "background-success-light": "#f0fdf0"
+  "background-success-regular": "#bdf5c1"
+  "background-success-strong": "#4dd959"
+  "background-surface-light": "#ffffff"
+  "background-surface-regular": "#f8fafc"
+  "background-surface-strong": "#f1f5f9"
+  "background-warning-light": "#fff8ed"
+  "background-warning-regular": "#ffdba8"
+  "background-warning-strong": "#ff9d3c"
+  "border-brand": "#7f7a65"
+  "border-danger": "#ffc6c9"
+  "border-danger-light": "#ffc6c9"
+  "border-danger-strong": "#e91923"
+  "border-disabled": "#f1f5f9"
+  "border-discovery": "#ced5f2"
+  "border-focused": "#1f64f1"
+  "border-information": "#bddbff"
+  "border-inverse": "#334155"
+  "border-light": "#f1f5f9"
+  "border-regular": "#cbd5e1"
+  "border-selected": "#1f64f1"
+  "border-strong": "#64748b"
+  "border-success": "#bdf5c1"
+  "border-warning": "#ffdba8"
+  "button-borderless-icon-default": "#475569"
+  "button-borderless-icon-disabled": "#94a3b8"
+  "button-borderless-icon-hovered": "#1e293b"
+  "button-borderless-icon-pressed": "#0f172a"
+  "button-borderless-icon-selected": "#0f172a"
+  "button-borderless-text-default": "#475569"
+  "button-borderless-text-disabled": "#94a3b8"
+  "button-borderless-text-hovered": "#1e293b"
+  "button-borderless-text-pressed": "#0f172a"
+  "button-borderless-text-selected": "#0f172a"
+  "button-gradient-bg-default": "#ffffff"
+  "button-gradient-bg-disabled": "#ffffff"
+  "button-gradient-bg-hovered": "#f8fafc"
+  "button-gradient-bg-pressed": "#f1f5f9"
+  "button-gradient-bg-selected": "#f1f5f9"
+  "button-regular-default": "#f1f5f9"
+  "button-regular-disabled": "#f8fafc"
+  "button-regular-hovered": "#f8fafc"
+  "button-regular-pressed": "#f1f5f9"
+  "button-regular-text": "#1e293b"
+  "button-secondary-icon-default": "#475569"
+  "button-secondary-icon-disabled": "#64748b"
+  "button-secondary-icon-hovered": "#020617"
+  "button-secondary-icon-pressed": "#000208"
+  "button-secondary-icon-selected": "#0f172a"
+  "button-secondary-text-default": "#475569"
+  "button-secondary-text-disabled": "#64748b"
+  "button-secondary-text-hovered": "#1e293b"
+  "button-secondary-text-pressed": "#0f172a"
+  "button-secondary-text-selected": "#0f172a"
+  "button-strong-default": "#1e293b"
+  "button-strong-disabled": "#cbd5e1"
+  "button-strong-hovered": "#0f172a"
+  "button-strong-pressed": "#020617"
+  "button-strong-text": "#ffffff"
+  "icon-brand": "#494737"
+  "icon-danger": "#c4111a"
+  "icon-disabled": "#94a3b8"
+  "icon-discovery": "#5c55ad"
+  "icon-information": "#174ede"
+  "icon-inverse": "#f8fafc"
+  "icon-light": "#64748b"
+  "icon-regular": "#334155"
+  "icon-selected": "#020617"
+  "icon-strong": "#020617"
+  "icon-success": "#187d22"
+  "icon-warning": "#c64808"
+  "link-icon-default": "#1f64f1"
+  "link-icon-hover": "#174ede"
+  "link-icon-inverse": "#90c6ff"
+  "link-icon-pressed": "#1940b4"
+  "link-text-default": "#1f64f1"
+  "link-text-hover": "#174ede"
+  "link-text-pressed": "#1940b4"
+  "link-text-visited": "#3584fc"
+  "text-brand": "#494737"
+  "text-danger": "#c4111a"
+  "text-disabled": "#94a3b8"
+  "text-discovery": "#5c55ad"
+  "text-information": "#174ede"
+  "text-inverse": "#f8fafc"
+  "text-light": "#64748b"
+  "text-regular": "#334155"
+  "text-selected": "#020617"
+  "text-strong": "#020617"
+  "text-success": "#187d22"
+  "text-warning": "#c64808"
 "typography":
   "heading":
     "fontFamily": "Source Serif 4"
@@ -27,6 +134,33 @@
   "small": "8px"
   "medium": "16px"
   "large": "24px"
+"components":
+  "button-default":
+    "backgroundColor": "{colors.button-strong-default}"
+    "textColor": "{colors.button-strong-text}"
+    "rounded": "{rounded.button}"
+    "padding": "12px"
+    "height": "44px"
+  "button-hovered":
+    "backgroundColor": "{colors.button-strong-hovered}"
+    "textColor": "{colors.button-strong-text}"
+    "rounded": "{rounded.button}"
+    "padding": "12px"
+    "height": "44px"
+  "button-pressed":
+    "backgroundColor": "{colors.button-strong-pressed}"
+    "textColor": "{colors.button-strong-text}"
+    "rounded": "{rounded.button}"
+    "padding": "12px"
+    "height": "44px"
+  "page":
+    "backgroundColor": "{colors.background-surface-light}"
+    "textColor": "{colors.text-regular}"
+  "panel":
+    "backgroundColor": "{colors.background-surface-regular}"
+    "textColor": "{colors.text-regular}"
+    "rounded": "{rounded.card}"
+    "padding": "24px"
 ---
 
 # Classic
@@ -35,7 +169,7 @@
 
 Build readable applications with visible structure and one clear next action per task. Apply this design's declared heading and body families, surfaces and geometry consistently. Prefer meaningful content and neutral separators over decorative panels. The values above describe the selected starting style; the complete scales and roles live in this design's exports.
 
-Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: light, dark. Initial mode: light.
+Preserve the original clean white/slate application foundation. Use serif headings, pill actions and generous neutral surfaces. Use the bundled local fonts and product compositions. Separate page, panel and inset surfaces; keep metadata quiet but readable. Use the exported page/panel/row spacing and title scale consistently, with 44px action targets and brief 160ms interaction feedback. See docs/polish.md for the complete product contract. Available modes: light, dark. Initial mode: light. This file contains exact values for light only.
 
 ## Colors
 
@@ -59,7 +193,7 @@ Favor flat surfaces, whitespace and thin neutral borders. Use small shadows only
 
 Apply this design's declared card and button radii. Utility icon actions can remain rounded or squared according to purpose. Keep control hit regions at least 44px as a design default, independently of icon size. Do not infer physical size or native dp/sp from CSS pixels.
 
-## Product polish
+### Product polish
 
 Use the exported design-page-padding, design-panel-padding, design-row-padding, design-radius-input, design-title-size, design-heading-tracking and design-transition-duration values. The heading size in the metadata is the desktop maximum; use design-title-size-mobile on narrow screens. Use design-text-small for action labels and design-text-caption for supplementary metadata. Follow docs/polish.md and examples/workspace.html for overview, collection/detail and settings compositions. Preserve readable metadata, 44px controls and all error, empty, pending and recovery states.
 
@@ -129,6 +263,10 @@ The complete app preview is examples/workspace.html. It shares the selection con
 Collection links use `collection=fieldnotes`, `collection=ways` or `collection=beginnings` alongside the design/mode/screen parameters. Unknown collections fall back to Fieldnotes. Reading size and motion are local preview preferences and do not redefine the selected design or its export defaults.
 
 All collection previews use examples/selection.js for the same selection rules. Quality and standalone mode selections are URL-backed and restore through browser history. Per-design standalone previews use local defaults, independently of the collection default.
+
+## Portable selection
+
+Each bundle now includes tokens/tokens.resolver.json. It combines foundations and composite typography with exactly one supported mode; defaults follow the same rules as the bundle. Mode-specific Stitch files are .stitch/light.DESIGN.md and/or .stitch/dark.DESIGN.md. exports/manifest.json identifies release/schema versions and these paths.
 
 
 ===== docs/polish.md =====
@@ -278,6 +416,14 @@ The helper provides a radial determinate indicator; the catalog also demonstrate
 React, Vue and Svelte files are small usage examples, not compiled framework packages. Native Swift/Kotlin outputs are dictionaries of CSS strings, not platform colors, dp/sp or SwiftUI views. The library's CSS is preserved separately; the recommended app layer makes documented readability, target-size, native-input and reduced-motion adaptations. Consult [the source inventory](../reference/library-inventory.json) for every observed public story and variant.
 
 Pending button helpers and framework examples preserve the supplied action label and append an in-progress indication. Skeleton helper buttons remain disabled and retain an explicit accessible name even when their visual text is hidden. Framework examples still require compilation and integration tests in the consuming application.
+
+## Reusable interaction patterns
+
+components/patterns.mjs exports select, textarea, notice, disclosure, breadcrumbs, tabs, confirmation, errorSummary, enhancePatterns and openConfirmation. Import it as a JavaScript module over HTTP; load styles/patterns.css after the selected theme. All content arguments are plain text and escaped. IDs must be unique within the consuming document. Breadcrumb URLs accept HTTP or relative destinations and reject executable schemes.
+
+Tabs require a nonempty items array of label/text objects and use immediate activation; do not use them for slow network-loaded panels without changing the activation contract. Call enhancePatterns once on a mounted root and retain its cleanup function. Confirmation uses native dialog: openConfirmation(dialog, trigger) restores focus on close; the safe Cancel action has initial focus. Use disclosure for supplementary content, never to hide required instructions. Notice supports polite status and urgent alerts; avoid nested live regions in consuming apps.
+
+The patterns fixture demonstrates a captioned sortable table and bounded pagination using DOM-backed records, plus a complete form-error summary and recovery flow. These compositions can be copied and adapted; they are not a server-backed grid API. Every helper and composition remains Preview until the documented browser/AT acceptance matrix is complete.
 
 
 ===== docs/document-first.md =====
@@ -435,6 +581,10 @@ Target WCAG 2.2 AA for the consuming application and evaluate complete tasks. Th
 
 Run automated checks where available, then inspect the actual task separately. Record build, environment, input path, result and limits. Missing screen-reader or device evidence stays pending rather than becoming a pass.
 
+## Executable acceptance fixtures
+
+Serve examples/patterns.html and select design/mode through URL parameters. dir=rtl, spacing=expanded and size=200 combine layout stress cases; they are fixtures, not proof of browser zoom support. The expanded spacing fixture uses 1.5 line height, 2em paragraph spacing, .12em tracking and .16em word spacing. Tests exercise keyboard tabs, confirmation cancellation/focus return, error-summary recovery, pagination boundaries and axe checks. See docs/support.md for mandatory manual checks and untested environments.
+
 
 ===== docs/patterns.md =====
 
@@ -481,8 +631,8 @@ Shared foundation/semantic JSON, designs/catalog.json and each designs/<id>/desi
 - JSON: canonical design interchange and resolved exports. This is a design-tool requirement, not a new default for application domain data.
 - JSON Schema: `schemas/semantic.schema.json` describes the semantic source's shape and alias syntax using draft 2020-12. Alias resolution is separately checked by the build. Other interchange outputs do not claim this schema applies to them.
 - DTCG 2025.10: typed color, dimension, number, font, duration, cubic-bezier, gradient and shadow values. Load a design's `foundations.tokens.json` plus exactly one of its available mode files. Appearance aliases inherit the target type. Transition durations use duration objects; relative tracking uses numbers with CSS extensions. No-shadow is represented as a transparent zero-size shadow, with the original CSS none preserved in extensions. Unsupported CSS conversions stop the build instead of inventing a DTCG type. Modes are separate files rather than an invented DTCG theme field. Specification: https://www.designtokens.org/TR/2025.10/format/.
-- DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Exported typography properties remain individual tokens; named text-style combinations are in canonical JSON and CSS classes.
-- Tokens Studio JSON: global foundation set plus the design's available semantic modes. Enable global and one available mode at a time. Non-color global values use `other` to preserve CSS strings; specialized plugin typography, gradients and native type transforms need target-specific mapping. No plugin import has been claimed tested.
+- DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Individual properties remain available; tokens/typography.tokens.json adds named composite text styles. Relative tracking is converted to px at that style’s font size; line height becomes a ratio.
+- Tokens Studio JSON: global foundation set plus the design's available semantic modes. Enable global and one available mode at a time. Dimensions, font properties, radii and composite typography have supported Tokens Studio types; gradients use color values. CSS-only motion and shadow-none properties remain other. Font stacks reduce to the first family. No plugin import has been claimed tested.
 - YAML, XML and CSV: portable structured views. XML is a repository interchange schema, not an Android resource file. YAML scalars are quoted to preserve leading-zero scale IDs and CSS strings.
 - CSS, Sass and Less: CSS supplies runtime theme aliases; Sass contains resolved theme maps and Less contains configured-default aliases and explicit mode-prefixed string variables. Native CSS custom properties remain the preferred browser runtime.
 - ES module, CommonJS and TypeScript: resolved theme dictionaries; no UI framework dependency. TypeScript adds literal keys/types.
@@ -500,6 +650,83 @@ File readability does not guarantee automatic discovery or accurate visual inter
 ## Consumer checks
 
 The checks execute the ES module and CommonJS exports, parse CSV, and compare all values with the resolved canonical dictionaries for the root and each design. DTCG checks reject unknown emitted types, invalid units, mismatched aliases and malformed supported values. These are stricter repository contract checks, not independent full-spec certification or live proprietary-tool import tests.
+
+Generated additions: per-design DTCG resolver, mode-specific Stitch guides, release manifest and Tailwind v4 @theme inline CSS. Live Figma/Stitch imports remain pending; official Stitch lint is a separate automated check. XML schema-version is 1; release-version tracks package.json.
+
+
+===== docs/support.md =====
+
+# Support and verification contract
+
+Version 0.4.0 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
+
+| Surface | Maturity | Evidence and boundary |
+| --- | --- | --- |
+| Five designs / eight modes, CSS and resolved JSON | Supported source contract | Deterministic generation, alias/value checks, selected contrast pairs |
+| DTCG tokens and per-design resolver | Preview adapter | Typed values, typography composites, ordered file composition and mode checks; not full-spec certification |
+| Tokens Studio | Preview adapter | Typed values and composite typography generated; live Figma application remains pending |
+| Stitch guides | Preview adapter | Pinned official linter; exact role parity per mode; live Stitch import remains pending |
+| Tailwind v4 | Preview adapter | Generated theme mapping; compile smoke check; load design theme before adapter |
+| HTML helpers and patterns | Preview components | Escaping, semantics and task fixtures; no persistence or service integration |
+| React/Vue/Svelte snippets | Illustrative only | Not compiled packages |
+| Swift/Kotlin dictionaries | Interchange only | CSS strings, not native UI values |
+
+## Browser and accessibility acceptance
+
+CI targets pinned Playwright Chromium, Firefox and WebKit on Linux. These are test engines, not a promise that every historical browser release works. Real Safari/iOS, Android, NVDA and VoiceOver results must be recorded separately. Latest test artifacts and reference/RESEARCH-REMEDIATION.md give actual results; configured tests are not evidence that a run passed.
+
+Every new component must cover visible labels, keyboard path, focus, disabled/pending/error/empty states where relevant, and safe insertion of text. For dialogs: initial focus, containment, Escape, and return focus. For tabs: arrow/Home/End keys, selected state and linked panels. For forms: error summary focus, associated inline errors, retained values and recovery. For tables: captions, column semantics, sort state, pagination boundaries and named scrolling regions.
+
+Required environment checks: 320/768/1440 CSS px; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
+
+## Live import acceptance procedure
+
+1. Record the target tool/version and the design/mode. Use an empty disposable document.
+2. For Tokens Studio, import exports/tokens-studio.json, enable global plus one mode, and apply dimensions, radius, fonts and colors to a panel, button and text. Check resolved values, not just token presence. The font family adapter uses the first family; CSS preserves fallbacks. CSS-only properties remain explicitly typed other.
+3. For Stitch, import .stitch/MODE.DESIGN.md, request the same panel/button/form, and compare surfaces, text, typography, shape and component states. Repeat all eight combinations. Do not infer support from lint success.
+4. Save a public-safe screenshot, observed differences and a result. Failed or missing evidence keeps the adapter in Preview status.
+
+No account connections for these live imports are configured in this checkout's automated workflow. Contributors can supply results using this procedure.
+
+## Performance budgets
+
+The WOFF2 archive must stay under 2 MB, the collection theme CSS under 250 KB and gallery HTML under 30 KB. These are build-size guards, not network timing guarantees. The current 18 WOFF2 fonts total approximately 1.24 MB; only used faces are normally fetched. Preserve TTF originals and all OFL notices. Do not preload every face.
+
+Before hosting, measure cold-cache gallery and workspace loads on a representative mobile connection: font bytes fetched, LCP, CLS, image transfer and responsiveness. Investigate regressions against the previous release. Real network/physical-device measurements remain a separate acceptance task.
+
+## Release and migration
+
+Package releaseVersion identifies the shipped collection. Catalog/schemaVersion identifies an interchange contract; XML explicitly separates schema-version and release-version. Until 1.0, breaking public token, selector or helper changes require a minor release, migration notes and before/after examples. Compatible fixes use a patch release.
+
+Avoid silent removals: introduce replacement aliases, mark deprecation in documentation, retain them for at least one subsequent minor release and document removal. Changing the default is an intentional consumer-visible change, never an incidental build consequence. Promote an adapter from Preview only after its consumer checks and live import evidence exist.
+
+See docs/releases.md for changes and CONTRIBUTING.md for contribution requirements.
+
+
+===== docs/content.md =====
+
+# Content and recovery
+
+Use the same voice across designs: direct, respectful and specific. Visual character changes; the meaning of an action does not. Use sentence case. Name actions with a verb and object. Keep essential instructions visible; a tooltip is supplementary.
+
+| Situation | Pattern | Example |
+| --- | --- | --- |
+| Empty collection | Explain what belongs here and offer the first action | No projects yet. Create a project. |
+| No search results | Repeat the scope and offer recovery | No projects match this search. Clear search. |
+| Invalid input | Identify the field and correction; preserve the input | Enter an email address in the format name@example.com. |
+| Network failure | State what failed, what was retained and a safe next step | Your changes could not be saved. Your draft is still here. Try again. |
+| Pending action | Keep the action recognizable; avoid invented duration | Saving description… |
+| Destructive action | Name the affected item and consequence; prefer the safe initial focus | Delete this draft? This cannot be undone. |
+| Permission failure | Distinguish lack of access from absent data | You do not have access to this project. Contact its owner. |
+| Local demonstration | State the persistence boundary | Saved in this preview. Reloading resets it. |
+
+Do not announce routine changes repeatedly. Use a polite status region for asynchronous outcomes; reserve alerts for urgent errors. Include units and time zones where ambiguity affects a decision. Use locale formatting and plural rules rather than concatenated English strings. Avoid truncating the only available name for a resource.
+
+## Charts and new compositions
+
+UI success/error colors are not a categorical chart palette. For a chart-specific extension, define categorical and sequential roles per supported mode, labels/patterns as alternatives to color, a text/table equivalent and explicit unknown/missing-data states. Validate the chart in its actual context before adding those roles to the canonical source.
+
+The shared Studio fixture intentionally isolates theme differences. Add an editorial reader, dense table or mobile workflow only with a concrete task and acceptance evidence. Do not invent native adapters or additional color schemes merely to increase format counts.
 
 
 ===== NOTICE.md =====

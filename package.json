@@ -1,6 +1,6 @@
 {
   "name": "@pagelove/design-system",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -8,9 +8,24 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "check:external": "node scripts/check-external.mjs",
+    "test:browser": "playwright test"
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@google/design.md": "0.4.0",
+    "@playwright/test": "1.65.0",
+    "@tailwindcss/cli": "4.3.4",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "tailwindcss": "4.3.4",
+    "yaml": "2.9.1"
+  },
+  "overrides": {
+    "zod": "4.6.6"
   }
 }

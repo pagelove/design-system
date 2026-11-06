@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 
 // A strict validator for the flat token types emitted here, not full-spec certification.
 export function validateDtcg(tokens) {
-  const supported = new Set(['color','dimension','fontFamily','fontWeight','duration','cubicBezier','number','gradient','shadow']);
+  const supported = new Set(['color','dimension','fontFamily','fontWeight','duration','cubicBezier','number','gradient','shadow','typography']);
   const number = value => assert.ok(typeof value === 'number' && Number.isFinite(value), 'Finite number required');
   function valueOf(type, value, trail) {
     if (typeof value === 'string' && /^\{[^{}]+\}$/.test(value)) {
@@ -12,7 +12,8 @@ export function validateDtcg(tokens) {
       assert.ok(!trail.includes(target),'Circular alias: '+target);
       return valueOf(type,tokens[target].$value,[...trail,target]);
     }
-    if (type === 'number') number(value);
+    if(type==='typography'){for(const [key,t] of Object.entries({fontFamily:'fontFamily',fontWeight:'fontWeight',fontSize:'dimension',letterSpacing:'dimension',lineHeight:'number'}))valueOf(t,value[key],trail);}
+    else if (type === 'number') number(value);
     else if (type === 'fontWeight') { number(value); assert.ok(value >= 1 && value <= 1000); }
     else if (type === 'fontFamily') {
       const names = Array.isArray(value) ? value : [value];

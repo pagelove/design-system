@@ -9,7 +9,7 @@ import {loadDesigns} from './designs.mjs';
 import {checkPortability} from './check-portability.mjs';
 import {button,field,choice,progress} from '../components/index.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
-function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).filter(e=>!['.git','node_modules'].includes(e.name)).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).filter(e=>!['.git','node_modules','.taste-skill','test-results','playwright-report'].includes(e.name)).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name)):[path.join(dir,e.name)]);}
 const hash=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const initial=files(root);const before=Object.fromEntries(initial.map(p=>[p,hash(p)]));
 const rebuild=spawnSync(process.execPath,['scripts/build.mjs'],{cwd:root,encoding:'utf8'});assert.equal(rebuild.status,0,rebuild.stderr);

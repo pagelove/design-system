@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "releaseVersion": "0.4.0",
+  "design": "classic",
+  "defaultMode": "light",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "resolver": "../tokens/tokens.resolver.json",
+  "stitch": {
+    "light": "../.stitch/light.DESIGN.md",
+    "dark": "../.stitch/dark.DESIGN.md"
+  },
+  "limitations": [
+    "Tokens Studio font families use the first family; CSS retains fallback stacks.",
+    "Native dictionaries remain CSS strings.",
+    "Live tool imports require separate verification."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "2025.10",
+  "name": "Invitation",
+  "sets": {
+    "base": {
+      "sources": [
+        {
+          "$ref": "./foundations.tokens.json"
+        },
+        {
+          "$ref": "./typography.tokens.json"
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "mode": {
+      "default": "dark",
+      "contexts": {
+        "dark": [
+          {
+            "$ref": "./dark.tokens.json"
+          }
+        ]
+      }
+    }
+  },
+  "resolutionOrder": [
+    {
+      "$ref": "#/sets/base"
+    },
+    {
+      "$ref": "#/modifiers/mode"
+    }
+  ]
+}

@@ -206,3 +206,11 @@
 - Change: Default-first real app gallery, supported-mode comparison, direct guide/token/Stitch links, phone close-up previews and responsive screenshots.
 - Verification: Build and full checks pass; four viewport widths, loaded images, three mode groups and keyboard radio navigation checked. See reference/GALLERY-REVIEW.md for evidence and limits.
 - Affected: scripts/gallery.mjs, scripts/build.mjs, examples/designs.html, examples/gallery.js, styles/gallery.css, screenshots and audit records.
+
+## DS-021 — Research gap remediation plan
+
+- UTC: 2026-11-06T00:07:25.0062434Z
+- Actor: Codex
+- Scope: Fix public CSS/docs/version defects; typed Tokens Studio and complete mode-specific Stitch exports; DTCG resolvers and typography; automated schemas/CSS/adapter checks and CI; reusable interaction fixtures; RTL, accessibility acceptance, performance budgets and release guidance.
+- Constraints: Preserve Midnight/dark and five designs. Native imports, assistive technology, physical-device and independent agent evaluation require evidence; do not mark pending checks passed.
+- Verification: Build/check, pinned external validators, browser tasks and CI where available.

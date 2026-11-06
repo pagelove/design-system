@@ -1,6 +1,6 @@
 # Pagelove Design System
 
-> Multiple selectable designs for accessible, document-first apps. Read the catalog first; use the requested design or its configured default and mode. Each design has complete formats and its own DESIGN.md. Never assume the root default's white surfaces apply to another selected design.
+> Multiple selectable designs for accessible, document-first apps. Read the catalog first; use the requested design or its configured default and mode. Each design has complete formats and its own DESIGN.md. Never assume the root default's colors apply to another selected design.
 
 ## Selection
 
@@ -28,3 +28,10 @@
 
 - [Product polish](docs/polish.md): Shared application composition, typography, spacing, state and responsive contract.
 - [Working app screens](examples/workspace.html): Overview, collection/detail and settings in every design.
+
+## Acceptance and reuse
+
+- [Support contract](docs/support.md): Adapter maturity, acceptance tests, performance and release policy.
+- [Reusable patterns](docs/components.md): Helpers, native interactions and integration limits.
+- [Content](docs/content.md): Empty, error, pending and recovery wording.
+- [Agent evaluation](reference/agent-evaluation.json): Reproducible prompts and criteria; independent model results remain unrun.

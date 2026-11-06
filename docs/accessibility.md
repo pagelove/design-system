@@ -13,3 +13,7 @@ Target WCAG 2.2 AA for the consuming application and evaluate complete tasks. Th
 - Check browser contrast modes, pointer/keyboard switching, virtual keyboard occlusion and safe-area clearance. Desktop emulation is useful but does not prove physical-device behavior.
 
 Run automated checks where available, then inspect the actual task separately. Record build, environment, input path, result and limits. Missing screen-reader or device evidence stays pending rather than becoming a pass.
+
+## Executable acceptance fixtures
+
+Serve examples/patterns.html and select design/mode through URL parameters. dir=rtl, spacing=expanded and size=200 combine layout stress cases; they are fixtures, not proof of browser zoom support. The expanded spacing fixture uses 1.5 line height, 2em paragraph spacing, .12em tracking and .16em word spacing. Tests exercise keyboard tabs, confirmation cancellation/focus return, error-summary recovery, pagination boundaries and axe checks. See docs/support.md for mandatory manual checks and untested environments.

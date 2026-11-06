@@ -45,3 +45,7 @@ The complete app preview is examples/workspace.html. It shares the selection con
 Collection links use `collection=fieldnotes`, `collection=ways` or `collection=beginnings` alongside the design/mode/screen parameters. Unknown collections fall back to Fieldnotes. Reading size and motion are local preview preferences and do not redefine the selected design or its export defaults.
 
 All collection previews use examples/selection.js for the same selection rules. Quality and standalone mode selections are URL-backed and restore through browser history. Per-design standalone previews use local defaults, independently of the collection default.
+
+## Portable selection
+
+Each bundle now includes tokens/tokens.resolver.json. It combines foundations and composite typography with exactly one supported mode; defaults follow the same rules as the bundle. Mode-specific Stitch files are .stitch/light.DESIGN.md and/or .stitch/dark.DESIGN.md. exports/manifest.json identifies release/schema versions and these paths.

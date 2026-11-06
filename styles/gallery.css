@@ -7,7 +7,7 @@
 .gallery-intro h1{font-size:clamp(2.4rem,5.3vw,4.75rem);max-width:100%;line-height:1.04;margin:0 0 24px}
 .gallery-intro p{max-width:650px;margin:0 0 28px;font-size:1.125rem}
 .gallery-action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;background:var(--button-strong-default);color:var(--button-strong-text);border-radius:var(--design-radius-button);text-decoration:none;font-weight:500;transition:transform 160ms ease,background-color 160ms ease}
-.gallery-action:hover{background:var(--button-strong-hover)}
+.gallery-action:hover{background:var(--button-strong-hovered)}
 .gallery-action:active{transform:translateY(1px)}
 .gallery-collection{display:grid;gap:64px}
 .gallery-design{display:grid;grid-template-columns:minmax(240px,1fr) minmax(0,2fr);align-items:center;gap:36px;padding:40px;background:var(--background-surface-light);color:var(--text-regular);border-radius:var(--design-radius-card)}

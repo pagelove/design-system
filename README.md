@@ -28,9 +28,9 @@ Open [the design gallery](examples/designs.html) or [the interactive component p
 ```
 
 3. Use shared components and semantic roles. The design supplies colors, fonts, shapes and spacing. Do not mix arbitrary values from several designs.
-4. For another tool, use that design's `exports/`, `tokens/*.tokens.json` or `.stitch/DESIGN.md`. Fonts have explicit fallbacks; font files and trademarks are not bundled.
+4. For another tool, use that design's `exports/`, `tokens/*.tokens.json` or `.stitch/DESIGN.md`. Fonts have explicit fallbacks; local font files and their OFL licenses are bundled. Trademarks are not included.
 
-Omitting both attributes uses the configured default. For an isolated CSS bundle, load shared component styles followed by `designs/<id>/styles/theme.css`; that bundle starts in the design's own initial mode. See [selection and authoring](docs/designs.md).
+Omitting both attributes uses the configured default. For an isolated CSS bundle, load styles/fonts.css, styles/library-components.css and styles/base.css followed by `designs/<id>/styles/theme.css`; that bundle starts in the design's own initial mode. See [selection and authoring](docs/designs.md).
 
 ## Formats
 
@@ -46,7 +46,7 @@ npm run check
 npm run serve
 ```
 
-Node.js 22+ is needed for these scripts. No dependency installation is required. The preview opens at `http://127.0.0.1:4173`. Checks cover token completeness, mode availability, default regeneration, selected contrast pairs, escaping, public-content restrictions and deterministic exports. Browser results are recorded separately.
+Node.js 22+ is needed for these scripts. Generation has no runtime dependencies. Run npm ci for the pinned validation tools. The preview opens at `http://127.0.0.1:4173`. Checks cover token completeness, mode availability, default regeneration, selected contrast pairs, escaping, public-content restrictions and deterministic exports. Browser results are recorded separately.
 
 The original `tokens/profiles.json` is retained as historical reference. Its guides point to the complete selectable designs; `data-profile` is deprecated for design selection.
 
@@ -64,3 +64,9 @@ The app examples also expose per-collection URLs, local draft creation, derived 
 ## Use one design independently
 
 Each design includes a standalone integration example: [Classic](designs/classic/preview.html), [Editorial](designs/editorial/preview.html), [Forest](designs/forest/preview.html), [Midnight](designs/midnight/preview.html), [Invitation](designs/invitation/preview.html). These load only that design’s theme plus shared fonts/components/base styling. See [integration instructions](docs/designs.md) and the [portability review](reference/PORTABILITY-REVIEW.md).
+
+## Verification and reusable patterns
+
+Use [app patterns](examples/patterns.html) over the local HTTP server for tabs, disclosure, confirmation, error recovery, records and RTL examples. Read the [support matrix](docs/support.md), [release notes](docs/releases.md), [content guidance](docs/content.md) and [contribution requirements](CONTRIBUTING.md).
+
+After npm ci, run npm run check:external for schema validation, the official Stitch linter, resolver composition, public CSS references, Tailwind compilation and size budgets. npm run test:browser runs task and accessibility checks in three browser engines; install them with npx playwright install first.
