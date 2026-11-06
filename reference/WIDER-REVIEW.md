@@ -15,6 +15,7 @@ Review scope: the original public reuse, multiple complete designs, Midnight def
 | Original buttons and fields stayed at 16px under the 200% text preference | Use relative control text sizes and proportional line height in the application layer | Direct browser comparison: 16px before, 32px after; all appearance/size fixtures and narrow reflow |
 | Forest light secondary text and several visited-link roles missed 4.5:1 | Strengthen the specific semantic roles and check secondary/action/link states on both supported surfaces | Expanded numeric contrast matrix and browser accessibility checks |
 | Font licensing notice still said fonts were not included | Correct the notice to distinguish bundled OFL fonts from family declarations | Public documentation and provenance review |
+| CI actions depended on a deprecated runtime and mutable major tags | Verify current official action releases and pin their commits on Node 24 | Clean install and hosted workflow |
 
 ## Coverage map
 

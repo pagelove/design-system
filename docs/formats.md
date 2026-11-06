@@ -32,4 +32,6 @@ Dark-only resolver bundles use unconditional sets rather than a one-context modi
 
 The checks execute the ES module and CommonJS exports, parse CSV, and compare all values with the resolved canonical dictionaries for the root and each design. DTCG checks reject unknown emitted types, invalid units, mismatched aliases and malformed supported values. These are stricter repository contract checks, not independent full-spec certification or live proprietary-tool import tests.
 
+Independent development validators also parse YAML/XML, compile every Sass map and Less variable, type-check and execute TypeScript, and compare text/Markdown tables and SVG swatches with every published value. Less uses its replace function to preserve quoted CSS font names and literal backslashes; control characters are rejected in this single-line representation. React, Vue and Svelte examples compile and server-render default, disabled and busy states with pinned versions. Client hydration and consuming-app builds remain separate checks. Swift/Kotlin dictionaries remain uncompiled interchange examples.
+
 Generated additions: per-design DTCG resolver, mode-specific Stitch guides, release manifest and Tailwind v4 @theme inline CSS. Live Figma/Stitch imports remain pending; official Stitch lint is a separate automated check. XML schema-version is 1; release-version tracks package.json.

@@ -1,5 +1,6 @@
 import {enrich} from './adapters.mjs';
 import {lessValue} from './less-value.mjs';
+import {openConfirmation} from '../components/patterns.mjs';
 import {renderForcedColors} from './forced-colors.mjs';
 import {renderGallery} from './gallery.mjs';
 import fs from 'node:fs';
@@ -99,6 +100,8 @@ putRoot('styles/designs.css',css);
 putRoot('styles/defaults.css',':root { --design-color-scheme: '+catalog.defaultMode+'; }\n[data-theme="light"] { --design-color-scheme: light; }\n[data-theme="dark"] { --design-color-scheme: dark; }\n');
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 putRoot('examples/designs.html',renderGallery(catalog,designs));
+// Classic-script bridge keeps the workspace usable from local files too.
+putRoot('examples/workspace-dialog.js','// Generated from components/patterns.mjs; do not edit.\nwindow.WorkspaceDialog = {open: '+openConfirmation.toString()+'};\n');
 for(const id of ['editorial','invitation'])putRoot('profiles/'+id+'/DESIGN.md','# Legacy profile: '+id+'\n\nUse the complete [selectable design](../../designs/'+id+'/DESIGN.md) and its exports. The original profile values remain in tokens/profiles.json as reference material; they are not a runtime selection mechanism.\n');
 for(const mode of ['light','dark'])if(!selected.modes[mode]){const p=path.join(outputRoot,'tokens',mode+'.tokens.json');if(fs.existsSync(p))fs.unlinkSync(p);}
 console.log('Built '+designs.length+' designs; default '+catalog.defaultDesign+'/'+catalog.defaultMode+'.');

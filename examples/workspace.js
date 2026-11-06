@@ -1,4 +1,3 @@
-import {openConfirmation} from '../components/patterns.mjs';
 const catalog = window.designCatalog;
 const $ = selector => document.querySelector(selector);
 const designSelect = $('#design'), modeSelect = $('#mode');
@@ -90,7 +89,7 @@ for (const collection of collections) {
     $('#dialog-collection').textContent = collection.querySelector('h1').textContent + ' / New ' + collection.dataset.noun;
     $('#item-title-label').textContent = collection.dataset.noun[0].toUpperCase() + collection.dataset.noun.slice(1) + ' title';
     $('#story-title').setCustomValidity('');
-    openConfirmation(dialog, collection.querySelector('[data-add-item]')); $('#story-title').focus();
+    window.WorkspaceDialog.open(dialog, collection.querySelector('[data-add-item]')); $('#story-title').focus();
   });
   filterItems(collection, false);
 }
