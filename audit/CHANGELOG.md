@@ -214,3 +214,15 @@
 - Scope: Fix public CSS/docs/version defects; typed Tokens Studio and complete mode-specific Stitch exports; DTCG resolvers and typography; automated schemas/CSS/adapter checks and CI; reusable interaction fixtures; RTL, accessibility acceptance, performance budgets and release guidance.
 - Constraints: Preserve Midnight/dark and five designs. Native imports, assistive technology, physical-device and independent agent evaluation require evidence; do not mark pending checks passed.
 - Verification: Build/check, pinned external validators, browser tasks and CI where available.
+
+## DS-022 — Research gap remediation implemented
+
+- UTC: 2026-11-06T00:50:49.797Z
+- Actor: Codex
+- Plan reference: DS-021.
+- Change: Corrected public CSS/docs/version defects; generated typed Tokens Studio, composite DTCG typography/resolvers, per-mode Stitch guides and Tailwind mappings. Added reusable app patterns, complete control states, RTL/text-spacing fixtures, WOFF2 fonts, size budgets, release/support/content/contribution contracts, pinned validators and three-engine CI with visual baselines.
+- Revisions: Fixed combined RTL/large-text long-word overflow and stale confirmation results; made disabled controls visually distinct. Pinned the browser container and regular user after slow host dependency downloads and a Firefox launch restriction. Reviewed and aligned WebKit/Chromium baselines to that environment without relaxing thresholds.
+- Verification: Build/core checks, external schema/adapter/Stitch/Tailwind checks and dependency audit pass. Hosted run 42139404704 passes 27 tests and 24 visual comparisons on a06494123ec8f14e3586079bf84da0a8a333fdc6. Stitch lint has zero errors and only documented unused-role warnings. WOFF2 fonts total 1,236,628 bytes versus 3,550,044 bytes for the retained TTF originals.
+- Affected: Canonical generators, typed adapters, guides/context bundles, pattern components/styles/examples, font assets, validators/tests/CI, public contracts, evidence and hash manifest.
+- Limits: Live tool imports, screen-reader/device/actual-zoom and cold-network checks, and independent agent outputs remain unverified. Stitch browser access reached Google sign-in. See reference/RESEARCH-REMEDIATION.md and docs/support.md.
+- Publication: Prepared for normal fast-forward publication after final public-content and integrity checks.

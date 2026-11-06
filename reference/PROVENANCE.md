@@ -9,7 +9,7 @@
 
 ## Decisions
 
-The published design library is authoritative for the default application foundation. Its palette and breakpoints differ from the older editorial reference; both are preserved with explicit scopes. Editorial and invitation values are optional profiles, not silently mixed into the app tokens.
+The published design library supplies Classic's original foundation and the shared scales. Complete design definitions now provide their own palettes, typography, shapes and spacing; designs/catalog.json selects Midnight/dark as the collection default. The older profile values remain historical reference material. Do not mix values from separate designs into the selected design's tokens.
 
 Canonical foundation values were extracted as data literals from published assets using a non-executing parser. Semantic roles and component CSS came from the same published stylesheet. Compiled Storybook/React code, source maps, development dependencies and build-specific asset names are not redistributed. Component helpers and the catalog are public adaptations, not recovered original authoring files.
 

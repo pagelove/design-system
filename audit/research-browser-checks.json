@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-11-06T00:50:49.797Z",
+  "result": "pass",
+  "release": "0.4.0",
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
+  "implementationCommit": "a06494123ec8f14e3586079bf84da0a8a333fdc6",
+  "workflow": "https://github.com/pagelove/design-system/actions/runs/42139404704",
+  "testsPassed": 27,
+  "testsFailed": 0,
+  "visualComparisonsPassed": 24,
+  "browserEngines": [
+    "Chromium",
+    "Firefox",
+    "WebKit"
+  ],
+  "designModeCombinations": 8,
+  "checks": [
+    "Native tabs and RTL arrow keys",
+    "Dialog initial focus, Escape, return focus and repeated use",
+    "Form error summary and recovery",
+    "Pagination boundaries and visible disabled state",
+    "Automated axe WCAG A/AA tags",
+    "320/768/1440 CSS-pixel reflow",
+    "RTL plus 200% text and expanded text spacing",
+    "Reduced-motion and forced-color emulation",
+    "Workspace and gallery mode selection",
+    "Reviewed desktop visual baselines"
+  ],
+  "limits": [
+    "Live Stitch and Tokens Studio imports remain unverified",
+    "Screen-reader, physical-device and actual browser zoom tasks remain unverified",
+    "Cold-network performance remains unmeasured",
+    "Independent agent evaluation cases are supplied but not run"
+  ]
+}

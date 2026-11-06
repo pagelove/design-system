@@ -1,0 +1,72 @@
+{
+  "recordedAt": "2026-11-06T00:51:36.661Z",
+  "result": "pass",
+  "schemas": 3,
+  "cssReferences": "pass",
+  "fontBytes": 1236628,
+  "stitch": [
+    {
+      "file": ".stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/classic/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/classic/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/editorial/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/editorial/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/forest/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/forest/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/midnight/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/invitation/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    }
+  ]
+}
