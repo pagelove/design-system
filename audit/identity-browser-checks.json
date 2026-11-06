@@ -1,0 +1,32 @@
+{
+  "recordedAt": "2026-11-06T04:40:11.918Z",
+  "result": "pass",
+  "release": "0.6.0",
+  "testsPassed": 168,
+  "testsFailed": 0,
+  "testsSkipped": 0,
+  "flaky": 0,
+  "newAssetTests": 30,
+  "designModeCombinations": 8,
+  "browserEngines": [
+    "Chromium",
+    "Firefox",
+    "WebKit"
+  ],
+  "playwrightVersion": "1.65.0",
+  "environment": "Windows; pinned browsers; local HTTP server",
+  "visualBaselinesChanged": false,
+  "pixelComparisonsRun": false,
+  "reviewed": [
+    "All eight design/mode social images",
+    "Long-title captures",
+    "16/32/48px icons on light and dark surfaces",
+    "Maskable foreground inside safe circle",
+    "Responsive asset preview",
+    "Representative Firefox and WebKit captures"
+  ],
+  "limits": [
+    "Linux pixel baseline comparisons do not run on Windows.",
+    "Live social crawlers, device installation and full Next/Nuxt consuming apps were not tested."
+  ]
+}

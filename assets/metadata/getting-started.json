@@ -1,0 +1,21 @@
+{
+  "title": "Make room for your next idea",
+  "description": "A clear starting point for your app.",
+  "siteName": "Your app",
+  "locale": "en_US",
+  "url": "https://example.com/getting-started/",
+  "themeColor": "#100d17",
+  "image": {
+    "url": "https://example.com/assets/social/pages/getting-started.png",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png",
+    "alt": "Your app — Make room for your next idea"
+  },
+  "icons": {
+    "svg": "https://example.com/assets/identity/favicon.svg",
+    "ico": "https://example.com/assets/identity/favicon.ico",
+    "apple": "https://example.com/assets/identity/apple-touch-icon.png"
+  },
+  "manifest": "https://example.com/assets/identity/site.webmanifest"
+}

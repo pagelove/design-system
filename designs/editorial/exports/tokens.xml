@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<design-system schema-version="1" release-version="0.5.2">
+<design-system schema-version="1" release-version="0.6.0">
   <theme name="light">
     <token name="color-polo-blue-0" value="#faf7f1"/>
     <token name="color-polo-blue-50" value="#f3efe7"/>

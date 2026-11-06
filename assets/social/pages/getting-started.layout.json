@@ -1,0 +1,17 @@
+{
+  "design": "midnight",
+  "mode": "dark",
+  "titleLines": [
+    "Make room for",
+    "your next idea"
+  ],
+  "titleSize": 84,
+  "descriptionLines": [
+    "A clear starting point for your app."
+  ],
+  "fonts": [
+    "Inter",
+    "Inter"
+  ],
+  "safeInset": 64
+}

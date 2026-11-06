@@ -19,6 +19,8 @@ Internal operating procedures, account/destination configuration, private servic
 
 ## Maintenance
 
+The identity and social-sharing kit is newly authored for this collection. Its replaceable sample mark is not an official organization logo. The five compositions derive their colors and font families from the existing design definitions. The implementation uses pinned development render/font libraries and the bundled licensed typefaces; generated outlined SVG and PNG artwork does not require those libraries at runtime. See docs/identity-and-sharing.md for the public standards and framework guidance used in the integration contract.
+
 The November 5, 2026 collection update preserves Classic as the original baseline and adds public design definitions for Editorial, Forest, Midnight and Invitation. These are authored adaptations of the existing foundation and supplied visual direction, not newly retrieved third-party design files. The complete designs override palettes, fonts, shapes and spacing through shared semantic roles. Their editable definitions are in designs/<id>/design.json; generated copies remain derived outputs. The old profile values remain historical reference material.
 
 Sources are a dated snapshot, not live synchronization. When updating the library snapshot, review its token/variant diff, rebuild adapters and repeat privacy/link/behavior checks. Do not copy a previous verification outcome into a new release as if it had run again. Keep sensitive review evidence outside the public repository.

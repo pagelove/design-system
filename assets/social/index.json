@@ -1,0 +1,183 @@
+{
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
+  "defaultImage": {
+    "url": "https://example.com/assets/social/default.png",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png",
+    "alt": "Your app — A place for your next idea"
+  },
+  "designs": [
+    {
+      "design": "classic",
+      "name": "Classic",
+      "mode": "light",
+      "prefix": "designs/classic/assets/social/light",
+      "image": {
+        "url": "https://example.com/designs/classic/assets/social/light.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "classic",
+      "name": "Classic",
+      "mode": "dark",
+      "prefix": "designs/classic/assets/social/dark",
+      "image": {
+        "url": "https://example.com/designs/classic/assets/social/dark.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "editorial",
+      "name": "Editorial",
+      "mode": "light",
+      "prefix": "designs/editorial/assets/social/light",
+      "image": {
+        "url": "https://example.com/designs/editorial/assets/social/light.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "editorial",
+      "name": "Editorial",
+      "mode": "dark",
+      "prefix": "designs/editorial/assets/social/dark",
+      "image": {
+        "url": "https://example.com/designs/editorial/assets/social/dark.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "forest",
+      "name": "Forest",
+      "mode": "light",
+      "prefix": "designs/forest/assets/social/light",
+      "image": {
+        "url": "https://example.com/designs/forest/assets/social/light.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "forest",
+      "name": "Forest",
+      "mode": "dark",
+      "prefix": "designs/forest/assets/social/dark",
+      "image": {
+        "url": "https://example.com/designs/forest/assets/social/dark.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "midnight",
+      "name": "Midnight",
+      "mode": "dark",
+      "prefix": "designs/midnight/assets/social/dark",
+      "image": {
+        "url": "https://example.com/designs/midnight/assets/social/dark.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    },
+    {
+      "design": "invitation",
+      "name": "Invitation",
+      "mode": "dark",
+      "prefix": "designs/invitation/assets/social/dark",
+      "image": {
+        "url": "https://example.com/designs/invitation/assets/social/dark.png",
+        "width": 1200,
+        "height": 630,
+        "type": "image/png",
+        "alt": "Your app — A place for your next idea"
+      }
+    }
+  ],
+  "pages": [
+    "assets/metadata/default.json",
+    "assets/metadata/getting-started.json"
+  ],
+  "generatedFiles": [
+    "assets/identity/apple-touch-icon.png",
+    "assets/identity/favicon-16.png",
+    "assets/identity/favicon-32.png",
+    "assets/identity/favicon-48.png",
+    "assets/identity/favicon.ico",
+    "assets/identity/favicon.svg",
+    "assets/identity/icon-192.png",
+    "assets/identity/icon-512.png",
+    "assets/identity/maskable-512.png",
+    "assets/identity/site.webmanifest",
+    "assets/metadata/default.head.html",
+    "assets/metadata/default.json",
+    "assets/metadata/getting-started.head.html",
+    "assets/metadata/getting-started.json",
+    "assets/social/dark.layout.json",
+    "assets/social/dark.png",
+    "assets/social/dark.source.svg",
+    "assets/social/dark.svg",
+    "assets/social/default.layout.json",
+    "assets/social/default.png",
+    "assets/social/default.source.svg",
+    "assets/social/default.svg",
+    "assets/social/index.json",
+    "assets/social/pages/getting-started.layout.json",
+    "assets/social/pages/getting-started.png",
+    "assets/social/pages/getting-started.source.svg",
+    "assets/social/pages/getting-started.svg",
+    "designs/classic/assets/social/dark.layout.json",
+    "designs/classic/assets/social/dark.png",
+    "designs/classic/assets/social/dark.source.svg",
+    "designs/classic/assets/social/dark.svg",
+    "designs/classic/assets/social/light.layout.json",
+    "designs/classic/assets/social/light.png",
+    "designs/classic/assets/social/light.source.svg",
+    "designs/classic/assets/social/light.svg",
+    "designs/editorial/assets/social/dark.layout.json",
+    "designs/editorial/assets/social/dark.png",
+    "designs/editorial/assets/social/dark.source.svg",
+    "designs/editorial/assets/social/dark.svg",
+    "designs/editorial/assets/social/light.layout.json",
+    "designs/editorial/assets/social/light.png",
+    "designs/editorial/assets/social/light.source.svg",
+    "designs/editorial/assets/social/light.svg",
+    "designs/forest/assets/social/dark.layout.json",
+    "designs/forest/assets/social/dark.png",
+    "designs/forest/assets/social/dark.source.svg",
+    "designs/forest/assets/social/dark.svg",
+    "designs/forest/assets/social/light.layout.json",
+    "designs/forest/assets/social/light.png",
+    "designs/forest/assets/social/light.source.svg",
+    "designs/forest/assets/social/light.svg",
+    "designs/invitation/assets/social/dark.layout.json",
+    "designs/invitation/assets/social/dark.png",
+    "designs/invitation/assets/social/dark.source.svg",
+    "designs/invitation/assets/social/dark.svg",
+    "designs/midnight/assets/social/dark.layout.json",
+    "designs/midnight/assets/social/dark.png",
+    "designs/midnight/assets/social/dark.source.svg",
+    "designs/midnight/assets/social/dark.svg",
+    "examples/branding.html"
+  ]
+}

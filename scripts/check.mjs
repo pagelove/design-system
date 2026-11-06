@@ -7,6 +7,7 @@ import {spawnSync} from 'node:child_process';
 import os from 'node:os';
 import {loadDesigns} from './designs.mjs';
 import {checkPortability} from './check-portability.mjs';
+import {checkBranding} from './check-branding.mjs';
 import {button,field,choice,progress} from '../components/index.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
 function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).filter(e=>!['.git','node_modules','.taste-skill','test-results','playwright-report'].includes(e.name)).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name)):[path.join(dir,e.name)]);}
@@ -64,7 +65,7 @@ const inventory=read('reference/library-inventory.json');assert.ok(inventory.ent
 let checked=0;
 const forbidden=[/C:[\\/]+Users[\\/]/i,/\.exe\.xyz\b/i,/remoteserver\./i,/wesley@/i,/daily-brief\//i,/dokploy-campaign\//i,/gh[pousr]_[a-zA-Z0-9]{20,}/,/github_pat_[a-zA-Z0-9_]+/,/-----BEGIN (?:RSA |OPENSSH )?PRIVATE KEY-----/];
 for(const p of files(root)){
- if(/\.(?:png|jpe?g|woff2?|ttf)$/i.test(p))continue;
+ if(/\.(?:png|ico|jpe?g|woff2?|ttf)$/i.test(p))continue;
  const text=fs.readFileSync(p,'utf8');if(p.endsWith('.json'))JSON.parse(text);
  // Check scanner patterns in all distributed content; exclude its own literal denylist.
  if(!p.endsWith(path.join('scripts','check.mjs')))for(const pattern of forbidden)assert.ok(!pattern.test(text),'Publication scan: '+path.relative(root,p));
@@ -89,4 +90,5 @@ for(const state of ['default','hovered','pressed']){
 for(const d of designs)for(const [mode,v]of Object.entries(read('designs/'+d.id+'/exports/tokens.json').resolved))for(const [fg,bg]of interactionPairs){const ratio=contrast(v[fg],v[bg]);assert.ok(ratio>=4.5,`${d.id}/${mode}: ${fg} on ${bg} contrast ${ratio}`);interactionContrasts.push({design:d.id,mode,fg,bg,ratio:Number(ratio.toFixed(2))});}
 for(const d of designs)for(const [mode,v]of Object.entries(read('designs/'+d.id+'/exports/tokens.json').resolved))for(const role of ['border-strong','border-focused','border-danger-strong'])for(const surface of ['background-surface-light','background-surface-regular']){const ratio=contrast(v[role],v[surface]);assert.ok(ratio>=3, d.id+' '+mode+' '+role+' on '+surface+' contrast '+ratio);controlContrasts.push({design:d.id,mode,role,surface,ratio:Number(ratio.toFixed(2))});}
 const portability=await checkPortability(root,catalog,designs);
+console.log(JSON.stringify({branding:checkBranding(root)}));
 console.log(JSON.stringify({result:'pass',portability,textFiles:checked,designs:designs.length,defaultDesign:catalog.defaultDesign,defaultMode:catalog.defaultMode,semanticRolesPerMode:110,libraryEntries:inventory.entries.length,checks:['deterministic generation','per-design exports and mode availability','alternate default regeneration and stale-mode removal','invalid catalog rejection','JSON parsing','token reference resolution','DTCG subset validation','Stitch copy parity','escaping and state contracts','internal-content scan','repository allowlist','local links','selected contrast pairs across designs','control and focus contrast','guide title and tracking parity'],contrasts,controlContrasts,interactionContrasts,limits:['DTCG subset checks are not an independent full-spec certification.','Figma/Stitch/native/framework imports are not executed here.','Browser task evidence is recorded separately.']},null,2));

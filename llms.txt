@@ -10,6 +10,8 @@
 
 ## Guides
 
+- [App identity and social sharing](https://github.com/pagelove/design-system/blob/main/docs/identity-and-sharing.md): Favicon/icon families, all-design OG templates, default/page overrides and metadata integration. Replace sample identity and example URLs before publishing.
+
 - [Overview](https://github.com/pagelove/design-system/blob/main/README.md): Formats, authority and quick start.
 - [Design](https://github.com/pagelove/design-system/blob/main/DESIGN.md): Stitch-compatible visual guide.
 - [Foundations](https://github.com/pagelove/design-system/blob/main/docs/foundations.md): Themes, scales and optional profiles.

@@ -37,6 +37,8 @@ No account connections for these live imports are configured in this checkout's 
 
 ## Performance budgets
 
+The identity/social kit has deterministic asset, format, fitting and metadata checks plus browser image-decoding/reflow tests. Each social PNG must stay below 1 MB. Next/Nuxt metadata adapters are structurally checked examples, not full consuming-app builds. Social-crawler previews, actual-device icon installation, adaptive favicon generation and complex-script image layouts remain unverified or outside the generator's supported scope; see docs/identity-and-sharing.md.
+
 The WOFF2 archive must stay under 2 MB, the collection theme CSS under 250 KB and gallery HTML under 30 KB. These are build-size guards, not network timing guarantees. The current 18 WOFF2 fonts total approximately 1.24 MB; only used faces are normally fetched. Preserve TTF originals and all OFL notices. Do not preload every face.
 
 Before hosting, measure cold-cache gallery and workspace loads on a representative mobile connection: font bytes fetched, LCP, CLS, image transfer and responsiveness. Investigate regressions against the previous release. Real network/physical-device measurements remain a separate acceptance task.

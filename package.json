@@ -1,6 +1,6 @@
 {
   "name": "@pagelove/design-system",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -8,6 +8,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node scripts/check.mjs",
+    "check:branding": "node scripts/check-branding.mjs",
     "serve": "node scripts/serve.mjs",
     "check:external": "node scripts/check-external.mjs",
     "test:browser": "playwright test"
@@ -19,12 +20,14 @@
     "@axe-core/playwright": "4.14.0",
     "@google/design.md": "0.4.0",
     "@playwright/test": "1.65.0",
+    "@resvg/resvg-js": "2.6.2",
     "@tailwindcss/cli": "4.3.4",
     "@types/react": "19.3.0",
     "@vue/compiler-sfc": "3.5.45",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",
     "fast-xml-parser": "5.12.0",
+    "fontkit": "2.0.4",
     "less": "4.9.1",
     "react": "19.3.1",
     "react-dom": "19.3.1",

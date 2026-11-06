@@ -1,0 +1,16 @@
+{
+  "design": "forest",
+  "mode": "dark",
+  "titleLines": [
+    "A place for your next idea"
+  ],
+  "titleSize": 76,
+  "descriptionLines": [
+    "Readable content, useful actions and room to focus."
+  ],
+  "fonts": [
+    "Inter",
+    "Inter"
+  ],
+  "safeInset": 64
+}

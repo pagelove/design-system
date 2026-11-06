@@ -1,0 +1,16 @@
+{
+  "design": "classic",
+  "mode": "light",
+  "titleLines": [
+    "A place for your next idea"
+  ],
+  "titleSize": 82,
+  "descriptionLines": [
+    "Readable content, useful actions and room to focus."
+  ],
+  "fonts": [
+    "Source Serif 4",
+    "Inter"
+  ],
+  "safeInset": 64
+}

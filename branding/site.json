@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/branding.schema.json",
+  "name": "Your app",
+  "shortName": "Your app",
+  "description": "Readable content, useful actions and room to focus.",
+  "url": "https://example.com/",
+  "lang": "en",
+  "locale": "en_US",
+  "icon": { "background": "#100d17", "foreground": "#f3efff" },
+  "social": { "title": "A place for your next idea", "label": "Made for what comes next" },
+  "pages": [
+    {
+      "slug": "getting-started",
+      "path": "getting-started/",
+      "title": "Make room for your next idea",
+      "description": "A clear starting point for your app.",
+      "generateImage": true
+    }
+  ]
+}

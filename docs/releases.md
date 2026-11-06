@@ -1,5 +1,15 @@
 # Releases
 
+## 0.6.0
+
+Adds app identity and social-sharing assets while retaining all five designs and Midnight/dark as default.
+
+- Separate replaceable app identity from visual design selection. Canonical sources are branding/site.json, branding/mark.svg and branding/templates.json.
+- Generate SVG/ICO/PNG icons, touch/maskable icons, a web manifest, all eight design/mode social images, editable/outlined SVGs, and default/page-specific metadata. PNGs and outlined SVGs need no installed fonts.
+- Add plain HTML and structured metadata with optional Next/Nuxt adapters, override/default rules, public-base-path handling and an asset preview.
+- Add emitted-asset, fitting, glyph, metadata and browser checks. Real social-platform previews, physical-device installation and consuming Next/Nuxt apps remain separate verification tasks.
+- Build now requires npm ci for pinned development image/font libraries. Consuming the exported files adds no runtime dependency. Existing token/component names and visual baselines are unchanged.
+
 ## 0.5.2
 
 The wider review retains all five designs and Midnight/dark as default.

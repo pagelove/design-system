@@ -20,6 +20,8 @@ Shared foundation/semantic JSON, designs/catalog.json and each designs/<id>/desi
 
 ## Adding more formats
 
+The [identity and sharing kit](identity-and-sharing.md) adds editable SVG text sources, font-independent outlined SVGs, raster PNGs and PNG-backed ICO icons. It also emits a web app manifest, structured metadata JSON and HTML head fragments. Build dependencies are development-only. Editable SVG requires the bundled fonts; image exports cannot provide editable text, interactive behavior or a live social-platform preview. No SVG-to-proprietary-design-file conversion is claimed.
+
 Preserve originals when supplied, document licensing/provenance and provide portable exports where useful. Do not rename JSON to `.fig`, `.sketch` or another proprietary extension and claim native compatibility. Add a generation path, a bounded validation check and an explicit loss/limitation note for every new adapter.
 
 File readability does not guarantee automatic discovery or accurate visual interpretation. Supply a short entry point, relevant examples and explicit values. Keep guidance concise enough to load by task rather than requiring an entire repository in one context window.

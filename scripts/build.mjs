@@ -8,6 +8,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {sourceRoot,loadDesigns,readJSON} from './designs.mjs';
 import {toDtcg} from './dtcg.mjs';
+import {buildBranding} from './branding.mjs';
 const releaseVersion=readJSON('package.json').version;
 const requested=readJSON('designs/catalog.json');
 if(process.env.DESIGN_DEFAULT)requested.defaultDesign=process.env.DESIGN_DEFAULT;
@@ -77,7 +78,7 @@ function modeGuide(mode){
  return content.replace('\n---\n\n#','\n'+yaml({components})+'---\n\n#');
 }
 enrich({design,base,resolved,defaultMode,dtcg,json,put,guide:modeGuide,version:releaseVersion});
-const contextFiles=['DESIGN.md','docs/designs.md','docs/polish.md','docs/foundations.md','docs/components.md','docs/document-first.md','docs/games.md','docs/accessibility.md','docs/patterns.md','docs/formats.md','docs/support.md','docs/content.md','NOTICE.md'];
+const contextFiles=['DESIGN.md','docs/designs.md','docs/polish.md','docs/identity-and-sharing.md','docs/foundations.md','docs/components.md','docs/document-first.md','docs/games.md','docs/accessibility.md','docs/patterns.md','docs/formats.md','docs/support.md','docs/content.md','NOTICE.md'];
 put('llms-full.txt',contextFiles.map(p=>`\n===== ${p} =====\n\n${fs.readFileSync(path.join(p==='DESIGN.md'?root:sourceRoot,p),'utf8')}`).join('\n'));
 for(const mode of ['light','dark'])if(!semantic[mode]){const file=path.join(root,'tokens',mode+'.tokens.json');if(fs.existsSync(file))fs.unlinkSync(file);const staleGuide=path.join(root,'.stitch',mode+'.DESIGN.md');if(fs.existsSync(staleGuide))fs.unlinkSync(staleGuide);}
 return {base,semantic,resolved,block};
@@ -105,3 +106,5 @@ putRoot('examples/workspace-dialog.js','// Generated from components/patterns.mj
 for(const id of ['editorial','invitation'])putRoot('profiles/'+id+'/DESIGN.md','# Legacy profile: '+id+'\n\nUse the complete [selectable design](../../designs/'+id+'/DESIGN.md) and its exports. The original profile values remain in tokens/profiles.json as reference material; they are not a runtime selection mechanism.\n');
 for(const mode of ['light','dark'])if(!selected.modes[mode]){const p=path.join(outputRoot,'tokens',mode+'.tokens.json');if(fs.existsSync(p))fs.unlinkSync(p);}
 console.log('Built '+designs.length+' designs; default '+catalog.defaultDesign+'/'+catalog.defaultMode+'.');
+const branding=buildBranding({catalog,designs,built,outputRoot});
+console.log('Built identity assets, '+branding.designModes+' social-image variants and '+branding.pages+' metadata examples.');

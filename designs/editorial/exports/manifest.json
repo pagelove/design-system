@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "releaseVersion": "0.5.2",
+  "releaseVersion": "0.6.0",
   "design": "editorial",
   "defaultMode": "light",
   "modes": [
@@ -12,9 +12,14 @@
     "light": "../.stitch/light.DESIGN.md",
     "dark": "../.stitch/dark.DESIGN.md"
   },
+  "socialImages": {
+    "light": "../assets/social/light.png",
+    "dark": "../assets/social/dark.png"
+  },
   "limitations": [
     "Tokens Studio font families use the first family; CSS retains fallback stacks.",
     "Native dictionaries remain CSS strings.",
-    "Live tool imports require separate verification."
+    "Live tool imports require separate verification.",
+    "Social images use replaceable sample identity. Configure branding/site.json and branding/mark.svg before publishing."
   ]
 }

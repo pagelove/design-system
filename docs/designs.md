@@ -38,6 +38,8 @@ The preview uses URL parameters (`?design=forest&mode=dark`), not a hidden saved
 
 Shared-source changes can affect every design. Exports do not imply verified proprietary native files or live tool imports.
 
+Register a matching composition in branding/templates.json when adding a design. The build exports social images for each supported mode from that design's resolved tokens. App identity stays in branding/site.json and branding/mark.svg. See [identity and sharing](identity-and-sharing.md); the root social image follows the catalog default, independently of the stable favicon mark.
+
 ## Product compositions
 
 The complete app preview is examples/workspace.html. It shares the selection contract with the component catalog and adds URL-addressable overview, project and settings screens. Load styles/product.css after styles/app.css for these reusable compositions. New designs must include the product appearance keys listed in schemas/design.schema.json. Read docs/polish.md for the acceptance standard.

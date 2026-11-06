@@ -1,5 +1,6 @@
 # Public design-system preparation
 
+
 - ID: DS-001
 - UTC: 2026-11-04T23:00:00Z (planning timestamp approximate; subsequent entries use execution time)
 - Actor: Codex
@@ -293,3 +294,23 @@
 - Follow-up: The first complete 138-test run passed 109 and exposed combined narrow/RTL/enlarged/spacing settings overflow plus early font inspection in WebKit. Bound heading children, allowed status pills to wrap and deferred font inspection until styles load. Capture inspection also exposed forced-color disabled labels sharing their painted surface; unified the button system palette and added rendered foreground/background checks.
 - Final verification: Hosted run 42157651422 on 487acc667a324ff096d48109d8788a85c218633d passed 138 browser checks, 24 unchanged visual comparisons, zero skipped and zero flaky tests. All static/consumer checks pass. Forced-color contrast measurements now composite transparent decoration over its actual ancestor surfaces; the 4.5:1 threshold is unchanged.
 - Publication: Prepared for normal fast-forward publication with retained receipts, coverage map and integrity manifest.
+
+## DS-029 — Identity and social sharing plan
+
+- UTC: 2026-11-06T04:11:38Z
+- Actor: Codex
+- Scope: Add reusable favicon and social-preview guidance, source artwork, portable exports, all-design social templates and page metadata with Midnight/dark as the default.
+- Plan: Separate replaceable app identity from design selection; generate icon families and token-based social images; support default and page overrides; include plain HTML and framework integration guidance; verify dimensions, content fitting, fonts, metadata URLs, rebuild parity and browser presentation.
+- Constraints: Preserve existing app behavior and visual baselines. Use illustrative branding and reserved example URLs. Do not claim live social-crawler, device installation or framework deployment verification.
+
+## DS-030 — Identity and social sharing implemented
+
+- UTC: 2026-11-06T04:40:11.918Z
+- Actor: Codex
+- Plan reference: DS-029.
+- Change: Added stable app identity, favicon/touch/maskable exports, all eight token-based social compositions, editable and outlined SVG sources, PNG outputs, metadata JSON/HTML and optional framework adapters. Added configuration validation, exact font measurement, bounded wrapping, unsupported-glyph errors, page overrides, default regeneration and safe cleanup of obsolete generated files.
+- Integration: Updated source guides, Stitch/context bundles, export manifests, discovery links, release notes, provenance and preview. Midnight/dark remains the configured default. Consumers replace the sample identity and reserved example URLs.
+- Verification: Clean pinned install and dependency audit, deterministic generation, core/asset checks and independent validators pass. All 168 Windows browser checks pass in Chromium, Firefox and WebKit, including 30 new asset cases; zero failures, skipped tests or flaky cases. Rendered captures reviewed separately.
+- Affected: Canonical branding configuration/artwork/templates, renderer and metadata helpers, generated assets, documentation, development dependencies, tests, preview server MIME types/optional port, audit evidence and integrity manifest.
+- Compatibility: Version 0.6.0; consuming exported files adds no runtime dependencies. Generation now uses pinned development image/font libraries. Existing components, palettes and design defaults are preserved.
+- Limits: Linux pixel comparisons, live social-crawler previews, actual-device installation and full Next/Nuxt app builds are separate acceptance tasks. See reference/IDENTITY-SHARING-REVIEW.md.

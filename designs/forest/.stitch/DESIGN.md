@@ -194,6 +194,10 @@ Apply this design's declared card and button radii. Utility icon actions can rem
 
 Use the exported design-page-padding, design-panel-padding, design-row-padding, design-radius-input, design-title-size, design-heading-tracking and design-transition-duration values. The heading size in the metadata is the desktop maximum; use design-title-size-mobile on narrow screens. Use design-text-small for action labels and design-text-caption for supplementary metadata. Follow docs/polish.md and examples/workspace.html for overview, collection/detail and settings compositions. Preserve readable metadata, 44px controls and all error, empty, pending and recovery states.
 
+## App identity and social sharing
+
+Read docs/identity-and-sharing.md. Keep the app's logo and name stable when selecting this design. Replace the sample branding/site.json and branding/mark.svg, then regenerate the icon family, social images and metadata. Social templates use this design's actual tokens and supported mode; never infer a light mode for a dark-only design. Root assets/social/default.png follows the catalog default. Page-specific content or custom imagery can override it. Publish PNG social images and complete server-rendered head metadata; SVG sources are editable artwork, not universal social-platform image formats. Check small icons, long text, cropping and the deployed URLs.
+
 ## Components
 
 Use native buttons for actions and links for navigation. Support default, hover, pressed, focus, disabled and loading states. Keep labels available during pending work. Forms need visible labels, associated hints/errors and current-value serialization. Passwords use native masking; verification codes should support paste and autofill. Group related checkboxes/radios with a legend; use named switches for settings.

@@ -1,0 +1,21 @@
+{
+  "title": "A place for your next idea",
+  "description": "Readable content, useful actions and room to focus.",
+  "siteName": "Your app",
+  "locale": "en_US",
+  "url": "https://example.com/",
+  "themeColor": "#100d17",
+  "image": {
+    "url": "https://example.com/assets/social/default.png",
+    "width": 1200,
+    "height": 630,
+    "type": "image/png",
+    "alt": "Your app — A place for your next idea"
+  },
+  "icons": {
+    "svg": "https://example.com/assets/identity/favicon.svg",
+    "ico": "https://example.com/assets/identity/favicon.ico",
+    "apple": "https://example.com/assets/identity/apple-touch-icon.png"
+  },
+  "manifest": "https://example.com/assets/identity/site.webmanifest"
+}

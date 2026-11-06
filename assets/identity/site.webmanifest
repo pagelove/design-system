@@ -1,0 +1,32 @@
+{
+  "id": "https://example.com/",
+  "name": "Your app",
+  "short_name": "Your app",
+  "description": "Readable content, useful actions and room to focus.",
+  "lang": "en",
+  "start_url": "https://example.com/",
+  "scope": "https://example.com/",
+  "display": "standalone",
+  "background_color": "#100d17",
+  "theme_color": "#100d17",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
