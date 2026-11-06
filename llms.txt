@@ -4,6 +4,8 @@
 
 ## Selection
 
+- [Documentation index](https://github.com/pagelove/design-system/blob/main/docs/README.md): Task-based guide navigation and reading paths.
+- [Repository map](https://github.com/pagelove/design-system/blob/main/docs/repository-map.md): Editable sources, generated files and directory ownership.
 - [Catalog](https://github.com/pagelove/design-system/blob/main/designs/catalog.json): Default design/mode and registered IDs.
 - [Design index](https://github.com/pagelove/design-system/blob/main/designs/index.json): Available modes, guide paths, exports and preview links.
 - [Authoring and selection](https://github.com/pagelove/design-system/blob/main/docs/designs.md): Default rules, migration and how to add designs.
@@ -33,6 +35,9 @@
 
 ## Acceptance and reuse
 
+- [Help](https://github.com/pagelove/design-system/blob/main/SUPPORT.md): Questions, reproducible bugs and change requests.
+- [Contributing](https://github.com/pagelove/design-system/blob/main/CONTRIBUTING.md): Setup, required checks and pull-request expectations.
+- [Review index](https://github.com/pagelove/design-system/blob/main/reference/README.md): Scoped reports, provenance and verification limits.
 - [Support contract](docs/support.md): Adapter maturity, acceptance tests, performance and release policy.
 - [Reusable patterns](docs/components.md): Helpers, native interactions and integration limits.
 - [Content](docs/content.md): Empty, error, pending and recovery wording.

@@ -1,82 +1,110 @@
 # Pagelove Design Collection
 
-Multiple complete designs, shared accessible components, and portable files for people, design tools and AI agents.
+Five complete visual designs for building apps, with shared accessible component patterns and portable files for developers, designers and AI agents.
+
+**Default: Midnight / dark.** Use the files directly or adapt them to your app. This is a source collection, not a published npm component package.
+
+[Get started](#get-started) · [Choose a design](#choose-a-design) · [Documentation](docs/README.md) · [Repository map](docs/repository-map.md) · [Get help](SUPPORT.md)
+
+<details>
+<summary>See the Midnight workspace</summary>
+
+![Midnight workspace example with overview, navigation and collection cards](designs/midnight/previews/workspace-dark.png)
+
+</details>
+
+## Get started
+
+### Preview the collection
+
+Install [Node.js 22 or later](https://nodejs.org/en/download), including npm, then run:
+
+```sh
+git clone https://github.com/pagelove/design-system.git
+cd design-system
+npm ci --ignore-scripts
+npm run serve
+```
+
+Open [http://127.0.0.1:4173/examples/designs.html](http://127.0.0.1:4173/examples/designs.html) to compare designs. The server runs locally; press Ctrl+C to stop it. Generated files are committed, so a build is only needed after editing sources.
+
+GitHub shows HTML source rather than running the demos. After cloning or downloading the repository, you can also open `examples/designs.html` or `examples/catalog.html` directly. Use the local server for the complete examples and browser checks. See the [example index](examples/README.md).
+
+### Use a design in your app
+
+Read the selected design's guide below and the shared [document-first guidance](docs/document-first.md). Copy `styles/` and `assets/fonts/` into your app, keeping their relative paths and font licenses. This example assumes both folders sit beside your HTML file:
+
+```html
+<!doctype html>
+<html lang="en" data-design="midnight" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/app.css">
+    <title>My app</title>
+  </head>
+  <body>
+    <main><h1>A place for your next idea</h1></main>
+  </body>
+</html>
+```
+
+Use semantic HTML and the [component contracts](docs/components.md). For another design, change both attributes to a supported pair. For a smaller, single-design setup, follow [browser integration](docs/designs.md#browser-integration). Exported CSS and token files need no runtime dependencies; the build tools are development dependencies.
+
+### Use with an AI agent or design tool
+
+Give the agent [AGENTS.md](AGENTS.md), [the design catalog](designs/catalog.json), the selected `designs/<id>/DESIGN.md` and only the guides needed for the task. [llms.txt](llms.txt) indexes the documentation; `llms-full.txt` combines shared guidance with the configured default design. Each design also has its own context bundle.
+
+For Stitch, use the selected design's `.stitch/<mode>.DESIGN.md`. For other tools, start with its `exports/manifest.json` and the [format guide](docs/formats.md). Official Stitch lint passes; live Stitch/Figma imports remain unverified.
 
 ## Choose a design
 
-| Design | Character | Modes |
+| Design | Character | Supported modes |
 | --- | --- | --- |
-| [Classic](designs/classic/DESIGN.md) | Original white/slate surfaces, serif headings, pill actions | Light and dark |
+| [Midnight — default](designs/midnight/DESIGN.md) | Deep plum, lavender links, compact geometry | Dark |
+| [Classic](designs/classic/DESIGN.md) | White/slate surfaces, serif headings, pill actions | Light and dark |
 | [Editorial](designs/editorial/DESIGN.md) | Warm paper, slate ink, restrained geometry | Light and dark |
-| [Forest](designs/forest/DESIGN.md) | Sage backgrounds, evergreen actions, sans-serif headings, soft corners | Light and dark |
-| [Midnight](designs/midnight/DESIGN.md) | Deep plum workspace, lavender links, compact geometry | Dark |
-| [Invitation](designs/invitation/DESIGN.md) | Blue-black, warm off-white, literary serif typography | Dark |
+| [Forest](designs/forest/DESIGN.md) | Sage surfaces, evergreen actions, soft corners | Light and dark |
+| [Invitation](designs/invitation/DESIGN.md) | Blue-black, warm off-white, literary typography | Dark |
 
-**Default: Midnight / dark.** The current setting is in [designs/catalog.json](designs/catalog.json). Root `DESIGN.md`, `.stitch/DESIGN.md`, `exports/` and token exports are generated for that default. Each design has the same formats under `designs/<id>/`.
+With no requested design, use the defaults in [designs/catalog.json](designs/catalog.json). An explicitly selected design uses its own default mode unless a supported mode is specified. Omitting both HTML attributes uses the collection default. See [selection rules](docs/designs.md#selection).
 
-Open [the design gallery](examples/designs.html) or [the interactive component preview](examples/catalog.html). Both work from local files. The preview selects design and mode independently, shows only supported modes, and keeps choices in its URL. Without JavaScript, the component page uses the configured default; the gallery still links to each design's files.
+## What is included
 
-![Design gallery](assets/previews/design-gallery.png)
+| Need | Start here |
+| --- | --- |
+| Colors, typography, spacing and component guidance | [Documentation index](docs/README.md) |
+| Working overview, collection/detail and settings screens | [Workspace example](examples/workspace.html) |
+| Controls, forms, dialogs, tabs and recovery patterns | [Example index](examples/README.md) |
+| Tokens for code or design tools | Selected design's `exports/` and `tokens/`; [format contracts](docs/formats.md) |
+| Favicons, app icons, OG images and metadata | [Identity and sharing guide](docs/identity-and-sharing.md) |
+| Supported environments and verification limits | [Support contract](docs/support.md) |
 
-## Use it in an app
+Formats include Markdown/text; JSON, YAML, XML and CSV; DTCG and Tokens Studio; CSS, Sass and Less; JavaScript and TypeScript; SVG/PNG/ICO assets; and Stitch guides. React/Vue/Svelte files are integration examples. Swift/Kotlin dictionaries preserve CSS strings and require native conversion.
 
-1. Read the selected `designs/<id>/DESIGN.md` and shared [document-first guidance](docs/document-first.md). If no design is requested, use the catalog default and its initial mode.
-2. Load `styles/app.css` once. Apply the selected design and supported mode to the document:
+## Customize or contribute
 
-```html
-<html lang="en" data-design="forest" data-theme="light">
-```
+Edit the canonical sources, then regenerate the outputs:
 
-3. Use shared components and semantic roles. The design supplies colors, fonts, shapes and spacing. Do not mix arbitrary values from several designs.
-4. For another tool, use that design's `exports/`, `tokens/*.tokens.json` or `.stitch/DESIGN.md`. Fonts have explicit fallbacks; local font files and their OFL licenses are bundled. Trademarks are not included.
-
-Omitting both attributes uses the configured default. For an isolated CSS bundle, load styles/fonts.css, styles/library-components.css and styles/base.css followed by `designs/<id>/styles/theme.css`; that bundle starts in the design's own initial mode. See [selection and authoring](docs/designs.md).
-
-## Formats
-
-Every design produces Markdown and plain text guidance; JSON, YAML, XML and CSV tokens; DTCG files; a Tokens Studio adapter; CSS, Sass and Less; JavaScript ES/CommonJS and TypeScript; Swift/Kotlin CSS-string dictionaries; an SVG palette; and Stitch-compatible `DESIGN.md`. [Format limitations](docs/formats.md) describe conversions and untested tool imports. React, Vue and Svelte examples remain shared.
-
-## Change or add designs
-
-Edit `designs/catalog.json` to set `defaultDesign` and `defaultMode`. Edit `designs/<id>/design.json` for foundation overrides, mode-specific role overrides, typography/shape/spacing and visual guidance. Shared sources remain in `tokens/`. Other design files are generated; do not edit exported copies.
+| Change | Editable source |
+| --- | --- |
+| Collection default and registered designs | [designs/catalog.json](designs/catalog.json) |
+| One design's colors, typography, shape and spacing | `designs/<id>/design.json` |
+| Shared foundations and semantic roles | [tokens/foundations.json](tokens/foundations.json), [tokens/semantic.json](tokens/semantic.json) |
+| App identity and social compositions | [branding/](branding/) |
 
 ```sh
 npm run build
 npm run check
-npm run serve
+npm run check:external
 ```
 
-Node.js 22+ is needed for these scripts. Run npm ci for the pinned generators and validation tools. Exported assets have no runtime dependencies. The preview opens at `http://127.0.0.1:4173`. Checks cover token completeness, mode availability, default regeneration, selected contrast pairs, escaping, public-content restrictions and deterministic exports. Browser results are recorded separately.
+Root `DESIGN.md`, `.stitch/`, `exports/` and generated tokens describe the configured default. Each design has its own complete outputs. Edit their sources rather than generated copies. The [repository map](docs/repository-map.md) explains ownership; [design authoring](docs/designs.md#add-a-design) covers adding a design.
 
-## App identity and sharing images
+Before publishing an app, replace the sample identity and example.com URLs, rebuild, and check its hosted assets. To submit changes, follow [CONTRIBUTING.md](CONTRIBUTING.md), including browser checks for UI changes. [GitHub Actions](https://github.com/pagelove/design-system/actions/workflows/verify.yml) runs the full validation suite. [Review reports](reference/README.md) distinguish measured results from unverified environments.
 
-Read [favicon and social-image guidance](docs/identity-and-sharing.md) and open [the asset preview](examples/branding.html). Replace the sample [app identity](branding/site.json) and [vector mark](branding/mark.svg), then run npm run build. App identity stays stable across design changes; social templates use each design's typography and colors. Midnight/dark remains the default.
+## Help and license
 
-The kit includes SVG/ICO/PNG favicons, touch and maskable icons, a web manifest, editable and outlined SVG social sources, 1200×630 PNGs for all eight design/modes, and default/page-specific HTML and JSON metadata. Use social.image for a custom site-wide image; individual pages can override it. Optional Next.js and Nuxt adapters share the same metadata. The [asset index](assets/social/index.json) records the generated paths. Placeholder addresses must be replaced before publication; live crawler/device verification is separate from repository checks.
+Maintained by the [Pagelove organization](https://github.com/pagelove) and repository contributors. Use [SUPPORT.md](SUPPORT.md) for questions and bug reports, and [release notes](docs/releases.md) for changes and migrations.
 
-See the [implementation review](reference/IDENTITY-SHARING-REVIEW.md) and [customization review](reference/IDENTITY-CONSUMER-REVIEW.md) for coverage, rendered evidence and verification limits.
-
-The original `tokens/profiles.json` is retained as historical reference. Its guides point to the complete selectable designs; `data-profile` is deprecated for design selection.
-
-Code, tokens and new documentation are MIT licensed. The document-first adaptation retains CC BY 4.0; see [NOTICE](NOTICE.md). Source credits remain in [provenance](reference/PROVENANCE.md).
-
-## Complete app examples
-
-Explore [the workspace](examples/workspace.html) for matching overview, collection/detail and settings screens in every design. Read the [product polish contract](docs/polish.md) for typography, spacing, component states and responsive behavior. Fonts are bundled locally under their included OFL licenses.
-
-
-![Midnight workspace overview](designs/midnight/previews/workspace-dark.png)
-
-The app examples also expose per-collection URLs, local draft creation, derived counts and 100–200% reading preferences. [Quality checks](examples/quality.html) report real font loading and effective motion settings. See the [polish review](reference/POLISH-REVIEW.md) for gaps found and revisions.
-
-## Use one design independently
-
-Each design includes a standalone integration example: [Classic](designs/classic/preview.html), [Editorial](designs/editorial/preview.html), [Forest](designs/forest/preview.html), [Midnight](designs/midnight/preview.html), [Invitation](designs/invitation/preview.html). These load only that design’s theme plus shared fonts/components/base styling. See [integration instructions](docs/designs.md) and the [portability review](reference/PORTABILITY-REVIEW.md).
-
-## Verification and reusable patterns
-
-Use [app patterns](examples/patterns.html) over the local HTTP server for tabs, disclosure, confirmation, error recovery, records and RTL examples. Read the [support matrix](docs/support.md), [release notes](docs/releases.md), [content guidance](docs/content.md) and [contribution requirements](CONTRIBUTING.md).
-
-The patterns preview switches designs and supported modes while preserving your current draft. The [wider review](reference/WIDER-REVIEW.md) records the coverage map, independent format consumers, complete workspace tasks and remaining limits. The [core controls review](reference/CORE-CONTROLS-REVIEW.md) records follow-up fixes for original controls, typography conversions and selected-mode guide links. The [collection consistency review](reference/CONSISTENCY-REVIEW.md) records component, resolver and keyboard fixes, passing browser checks and remaining manual verification.
-
-After npm ci, run npm run check:external for schema validation, the official Stitch linter, resolver composition, public CSS references, Tailwind compilation, independent export consumers, framework compile/server-render checks and size budgets. npm run test:browser runs task and accessibility checks in three browser engines; install them with npx playwright install first.
+Code, tokens, examples and new documentation use the [MIT license](LICENSE). The document-first adaptation retains CC BY 4.0; bundled fonts use SIL OFL 1.1. Preserve the attribution and exceptions in [NOTICE.md](NOTICE.md) and [source provenance](reference/PROVENANCE.md). No trademark license is included.

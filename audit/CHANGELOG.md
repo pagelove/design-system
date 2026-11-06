@@ -335,3 +335,23 @@
 - Compatibility: Patch release 0.6.1; five designs and Midnight/dark are preserved. Previously ambiguous or unsupported input now fails explicitly. Consumers can configure a custom site-wide image without repeating it on each page.
 - Limits: Validation/render failures preserve prior assets; final filesystem writes are not a transaction. Live social crawlers, physical devices and full Next/Nuxt app builds remain unverified. Local Windows browser results do not include Linux pixel comparisons. See reference/IDENTITY-CONSUMER-REVIEW.md.
 - Publication: Prepared for normal fast-forward publication after final public-content and integrity checks; hosted verification is recorded separately when available.
+
+## DS-033 — Repository organization and README review plan
+
+- UTC: 2026-11-06T12:50:25Z
+- Actor: Codex
+- Scope: Review repository navigation, README completeness and readability, onboarding commands, source/generated ownership, help/contribution routes and current verification claims.
+- Findings: The README scatters setup and runtime integration, has no directory map or focused AI entry path, and mixes historical reviews with onboarding. Folder navigation is missing, the support guide names an older release, and repository-local issue/PR templates and a discoverable help entry are absent. Issues are enabled and Discussions are disabled.
+- Plan: Rewrite the README around common user tasks, add documentation/example/evidence indexes and a source map, improve contribution/help templates, correct stale support wording and update agent discovery. Preserve public file paths, design defaults, runtime behavior and licensing. Validate commands, local links/anchors, generated parity and public-content checks; publish a scoped report.
+
+## DS-034 — Repository documentation revisions implemented
+
+- UTC: 2026-11-06T13:01:39Z
+- Actor: Codex
+- Plan reference: DS-033.
+- Change: Reorganized the README into five task-focused sections with a complete setup sequence, minimal app integration, AI/Stitch entry path, supported designs, source ownership and help/license links. Made the large screenshot expandable. Added documentation/example/review/audit indexes, a full directory map, SUPPORT.md, two issue templates and a PR checklist. Expanded contributor setup/check instructions and removed stale support-version wording; regenerated all six context bundles.
+- Review method: Compared onboarding against GitHub's README/community-file guidance and confirmed Issues/Discussions settings. Checked each new local link and section anchor, all guide/report index entries and every distributed directory. Independently used the exact README HTML with only its documented CSS/font folders. Inspected GitHub-rendered Markdown content at desktop and mobile widths, correcting the oversized opening image during review.
+- Verification: Clean pinned installation, generation, core and external consumers pass. All 167 local links and eight section anchors resolve; 14 guides, 12 reports and 18 distributed directories are indexed. Both issue-template metadata blocks parse. Chromium confirms Midnight/dark, the loaded local font and zero missing requests in the minimal app. The README renders without document overflow at 1120px and 390px.
+- Affected: README, help/contribution files, GitHub templates, documentation/support/navigation, agent discovery, generated context bundles, review report, scoped receipt and integrity manifest.
+- Compatibility: Documentation-only revision to collection 0.6.1. Runtime sources, design values, public asset paths and existing visual baselines remain unchanged. No new distribution package, hosted demo or live-tool verification is implied.
+- Limits: Markdown was inspected using GitHub rendering in a local review wrapper, not a pixel-identical GitHub page. Templates were not submitted as issues or PRs. Current license terms and organization governance remain unchanged. See reference/REPOSITORY-REVIEW.md.

@@ -1,0 +1,93 @@
+{
+  "recordedAt": "2026-11-06T13:03:03.802Z",
+  "result": "pass",
+  "scope": "Repository organization and README; collection 0.6.1",
+  "navigation": {
+    "changedDocuments": 15,
+    "localLinks": 167,
+    "sectionAnchors": 8,
+    "indexedGuides": 14,
+    "indexedReports": 12,
+    "mappedDistributedDirectories": 18,
+    "issueTemplates": 2
+  },
+  "checks": [
+    "changed-document links and section anchors",
+    "complete guide and review indexes",
+    "distributed directory ownership map",
+    "issue-template YAML metadata",
+    "setup command and package-model consistency"
+  ],
+  "commands": [
+    {
+      "command": "npm ci --ignore-scripts",
+      "result": "pass"
+    },
+    {
+      "command": "node scripts/build.mjs",
+      "result": "pass"
+    },
+    {
+      "command": "node scripts/check.mjs",
+      "result": "pass"
+    },
+    {
+      "command": "node scripts/check-external.mjs",
+      "result": "pass"
+    }
+  ],
+  "core": {
+    "result": "pass",
+    "defaultDesign": "midnight",
+    "defaultMode": "dark",
+    "designs": 5,
+    "branding": "pass"
+  },
+  "external": {
+    "result": "pass"
+  },
+  "minimalApp": {
+    "copied": [
+      "styles/",
+      "assets/fonts/"
+    ],
+    "design": "midnight",
+    "mode": "dark",
+    "background": "rgb(16, 13, 23)",
+    "colorScheme": "dark",
+    "fontLoaded": true,
+    "failedHTTPRequests": 0
+  },
+  "readme": {
+    "renderer": "GitHub Markdown API, local review wrapper",
+    "viewports": [
+      1120,
+      390
+    ],
+    "singleTitle": true,
+    "topLevelSections": 5,
+    "tables": 3,
+    "noDocumentOverflow": true,
+    "wordsBefore": 909,
+    "wordsAfter": 824,
+    "openingScreenshot": "expandable; closed initially",
+    "inspected": true
+  },
+  "environment": {
+    "node": "v24.19.0",
+    "browser": "Chromium via pinned Playwright 1.65.0",
+    "platform": "Windows"
+  },
+  "compatibility": {
+    "publicPathsPreserved": true,
+    "designValuesChanged": false,
+    "runtimeSourcesChanged": false,
+    "visualBaselinesChanged": false
+  },
+  "limits": [
+    "Markdown content rendered by GitHub and inspected in a local wrapper, not a pixel-identical GitHub page.",
+    "No issues or pull requests submitted to exercise templates.",
+    "Full hosted browser suite is reported by GitHub Actions separately.",
+    "Existing live-tool, physical-device and assistive-technology acceptance limits remain unchanged."
+  ]
+}
