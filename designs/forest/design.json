@@ -7,7 +7,8 @@
     "light": {
       "button-strong-default": "var(--color-polo-blue-700)",
       "border-strong": "var(--color-polo-blue-500)",
-      "border-focused": "var(--color-cornflower-blue-600)"
+      "border-focused": "var(--color-cornflower-blue-600)",
+      "text-light": "var(--color-polo-blue-600)"
     },
     "dark": {
       "border-strong": "var(--color-polo-blue-500)",

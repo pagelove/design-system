@@ -349,7 +349,7 @@
     <token name="link-text-default" value="#1f64f1"/>
     <token name="link-text-hover" value="#174ede"/>
     <token name="link-text-pressed" value="#1940b4"/>
-    <token name="link-text-visited" value="#3584fc"/>
+    <token name="link-text-visited" value="#174ede"/>
     <token name="text-brand" value="#494737"/>
     <token name="text-danger" value="#c4111a"/>
     <token name="text-disabled" value="#94a3b8"/>
@@ -712,7 +712,7 @@
     <token name="link-text-default" value="#59a6ff"/>
     <token name="link-text-hover" value="#90c6ff"/>
     <token name="link-text-pressed" value="#bddbff"/>
-    <token name="link-text-visited" value="#3584fc"/>
+    <token name="link-text-visited" value="#59a6ff"/>
     <token name="text-brand" value="#d9d7ce"/>
     <token name="text-danger" value="#ff9fa4"/>
     <token name="text-disabled" value="#475569"/>

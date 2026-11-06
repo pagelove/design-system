@@ -102,14 +102,14 @@
   "link-text-default": "#35683e"
   "link-text-hover": "#285532"
   "link-text-pressed": "#20472a"
-  "link-text-visited": "#538c5a"
+  "link-text-visited": "#285532"
   "text-brand": "#494737"
   "text-danger": "#c4111a"
   "text-disabled": "#8c9e88"
   "text-discovery": "#5c55ad"
   "text-information": "#285532"
   "text-inverse": "#e7eedf"
-  "text-light": "#6b7f69"
+  "text-light": "#50654f"
   "text-regular": "#354b39"
   "text-selected": "#13251b"
   "text-strong": "#13251b"
@@ -763,7 +763,7 @@ New design-system code, tokens, examples and documentation are offered under MIT
 
 `docs/games.md` adapts Pagelove contributors, *Web Game Development Handbook*, edition 2.14.0 (2026), under MIT. The MIT copyright and grant are retained in LICENSE.
 
-The observed public design library and supplied design reference are credited in reference/PROVENANCE.md. External standards, names and tools retain their own rights. Font files and logos are not included; font-family declarations do not grant font redistribution rights. No trademark license is granted.
+The observed public design library and supplied design reference are credited in reference/PROVENANCE.md. External standards, names and tools retain their own rights. Logos are not included. Font-family declarations alone do not grant redistribution rights; the bundled font files carry the separate licenses listed below. No trademark license is granted.
 
 ## Bundled fonts
 

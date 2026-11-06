@@ -347,7 +347,7 @@ theme,name,value
 "dark","link-text-default","#b8b0d8"
 "dark","link-text-hover","#c8bfdf"
 "dark","link-text-pressed","#d5cde5"
-"dark","link-text-visited","#9489b9"
+"dark","link-text-visited","#b8b0d8"
 "dark","text-brand","#d9d7ce"
 "dark","text-danger","#ff9fa4"
 "dark","text-disabled","#625c5c"

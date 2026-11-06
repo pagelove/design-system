@@ -349,7 +349,7 @@
     <token name="link-text-default" value="#b491ec"/>
     <token name="link-text-hover" value="#c5a9f7"/>
     <token name="link-text-pressed" value="#d7c4ff"/>
-    <token name="link-text-visited" value="#9370cf"/>
+    <token name="link-text-visited" value="#b491ec"/>
     <token name="text-brand" value="#d9d7ce"/>
     <token name="text-danger" value="#ff9fa4"/>
     <token name="text-disabled" value="#5d5070"/>

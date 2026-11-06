@@ -486,7 +486,7 @@
   },
   "link-text-visited": {
     "$type": "color",
-    "$value": "{color-cornflower-blue-500}",
+    "$value": "{color-cornflower-blue-700}",
     "$description": "light mode semantic role: link-text-visited."
   },
   "text-brand": {
@@ -521,7 +521,7 @@
   },
   "text-light": {
     "$type": "color",
-    "$value": "{color-polo-blue-500}",
+    "$value": "{color-polo-blue-600}",
     "$description": "light mode semantic role: text-light."
   },
   "text-regular": {

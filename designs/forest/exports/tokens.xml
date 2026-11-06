@@ -349,14 +349,14 @@
     <token name="link-text-default" value="#35683e"/>
     <token name="link-text-hover" value="#285532"/>
     <token name="link-text-pressed" value="#20472a"/>
-    <token name="link-text-visited" value="#538c5a"/>
+    <token name="link-text-visited" value="#285532"/>
     <token name="text-brand" value="#494737"/>
     <token name="text-danger" value="#c4111a"/>
     <token name="text-disabled" value="#8c9e88"/>
     <token name="text-discovery" value="#5c55ad"/>
     <token name="text-information" value="#285532"/>
     <token name="text-inverse" value="#e7eedf"/>
-    <token name="text-light" value="#6b7f69"/>
+    <token name="text-light" value="#50654f"/>
     <token name="text-regular" value="#354b39"/>
     <token name="text-selected" value="#13251b"/>
     <token name="text-strong" value="#13251b"/>
@@ -712,7 +712,7 @@
     <token name="link-text-default" value="#7eae81"/>
     <token name="link-text-hover" value="#a0c5a1"/>
     <token name="link-text-pressed" value="#bfd9bf"/>
-    <token name="link-text-visited" value="#538c5a"/>
+    <token name="link-text-visited" value="#7eae81"/>
     <token name="text-brand" value="#d9d7ce"/>
     <token name="text-danger" value="#ff9fa4"/>
     <token name="text-disabled" value="#50654f"/>

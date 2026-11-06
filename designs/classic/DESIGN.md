@@ -99,7 +99,7 @@
   "link-text-default": "#1f64f1"
   "link-text-hover": "#174ede"
   "link-text-pressed": "#1940b4"
-  "link-text-visited": "#3584fc"
+  "link-text-visited": "#174ede"
   "text-brand": "#494737"
   "text-danger": "#c4111a"
   "text-disabled": "#94a3b8"

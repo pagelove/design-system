@@ -1907,7 +1907,7 @@
     },
     "link-text-visited": {
       "type": "color",
-      "value": "{color-cornflower-blue-500}"
+      "value": "{color-cornflower-blue-700}"
     },
     "text-brand": {
       "type": "color",
@@ -2349,7 +2349,7 @@
     },
     "link-text-visited": {
       "type": "color",
-      "value": "{color-cornflower-blue-500}"
+      "value": "{color-cornflower-blue-400}"
     },
     "text-brand": {
       "type": "color",

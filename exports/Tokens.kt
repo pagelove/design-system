@@ -349,7 +349,7 @@ object DesignTokens {
     "link-text-default" to "#b491ec",
     "link-text-hover" to "#c5a9f7",
     "link-text-pressed" to "#d7c4ff",
-    "link-text-visited" to "#9370cf",
+    "link-text-visited" to "#b491ec",
     "text-brand" to "#d9d7ce",
     "text-danger" to "#ff9fa4",
     "text-disabled" to "#5d5070",
