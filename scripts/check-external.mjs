@@ -12,6 +12,10 @@ import {checkTypography} from './check-typography.mjs';
 import {forcedColor} from './forced-colors.mjs';
 import {checkConsumers} from './check-consumers.mjs';
 import {checkFrameworks} from './check-frameworks.mjs';
+import {readBrowserEnvironment,validateBrowserEnvironment} from './check-browser-environment.mjs';
+const browserEnvironment=validateBrowserEnvironment(readBrowserEnvironment());
+const browserGuardTests=spawnSync(process.execPath,['--test','scripts/check-browser-environment.test.mjs'],{encoding:'utf8'});
+assert.equal(browserGuardTests.status,0,browserGuardTests.stdout+browserGuardTests.stderr);
 const typographyConversions=checkTypography();
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=read('designs/catalog.json'), ajv=new Ajv({allErrors:true});
@@ -77,4 +81,4 @@ assert.ok(fs.statSync('styles/designs.css').size<250000,'Collection CSS budget: 
 assert.ok(fs.statSync('examples/designs.html').size<30000,'Gallery HTML budget: 30 KB');
 const consumerFormats=await checkConsumers(process.cwd(),catalog.designs);
 const frameworks=await checkFrameworks();
-console.log(JSON.stringify({result:'pass',consumerFormats,frameworks,typographyConversions,schemas:3,cssReferences:'pass',resolverBundles:catalog.designs.length+1,resolverChecks:['reference-driven composition','default and explicit mode parity','complete token coverage','invalid inputs','single-context rejection','cycles','source override order'],helperInputs:'pass',fontBytes,stitch:results},null,2));
+console.log(JSON.stringify({result:'pass',browserEnvironment,browserGuardTests:'pass',consumerFormats,frameworks,typographyConversions,schemas:3,cssReferences:'pass',resolverBundles:catalog.designs.length+1,resolverChecks:['reference-driven composition','default and explicit mode parity','complete token coverage','invalid inputs','single-context rejection','cycles','source override order'],helperInputs:'pass',fontBytes,stitch:results},null,2));

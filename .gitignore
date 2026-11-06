@@ -6,3 +6,6 @@ node_modules/
 
 test-results/
 playwright-report/
+
+# Local verification inventory; intentionally excluded from commits.
+/LOCAL-VERIFICATION-INVENTORY.md

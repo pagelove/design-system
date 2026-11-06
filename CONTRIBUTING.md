@@ -18,7 +18,7 @@ npm run check
 npm run check:external
 ```
 
-For UI, interaction or browser-facing asset changes, also install the pinned browsers and run:
+For UI, interaction, browser-facing asset or browser-tooling changes, also install the pinned browsers and run:
 
 ```sh
 npx playwright install
@@ -26,6 +26,10 @@ npm run test:browser
 ```
 
 On Linux, browser installation may require `npx playwright install --with-deps`; CI uses the pinned container described in the [support contract](docs/support.md). Local Windows/macOS runs exercise browser tasks but do not execute the Linux-only pixel comparisons.
+
+After changing Playwright versions or pulling a change to its lockfile, repeat `npm ci --ignore-scripts` and `npx playwright install`. Previously downloaded browser builds do not satisfy a different runner version. Run the commands above sequentially: core and external checks can regenerate shared files.
+
+For the Firefox label-reference crash, first run `npx playwright test tests/aria-audit-regression.spec.mjs --project=firefox`, then the full browser suite. The scan results are attached to the browser artifacts. Do not disable accessibility rules or replace named interactions to conceal a crash. See the [temporary pin and upgrade requirements](docs/support.md#browser-and-accessibility-acceptance).
 
 CI runs the full suite and attaches browser artifacts. Review rendered screenshots for UI changes; automated output is not a visual approval. Resolve failures before merging. Documentation-only changes still need generation and core/external checks; validate new commands, file links and section anchors. A browser task run is also useful when adding runnable integration instructions.
 

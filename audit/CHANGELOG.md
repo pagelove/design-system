@@ -355,3 +355,45 @@
 - Affected: README, help/contribution files, GitHub templates, documentation/support/navigation, agent discovery, generated context bundles, review report, scoped receipt and integrity manifest.
 - Compatibility: Documentation-only revision to collection 0.6.1. Runtime sources, design values, public asset paths and existing visual baselines remain unchanged. No new distribution package, hosted demo or live-tool verification is implied.
 - Limits: Markdown was inspected using GitHub rendering in a local review wrapper, not a pixel-identical GitHub page. Templates were not submitted as issues or PRs. Current license terms and organization governance remain unchanged. See reference/REPOSITORY-REVIEW.md.
+
+## DS-035 — Firefox accessibility crash investigation and fix plan
+
+- UTC: 2026-11-06T15:36:00Z
+- Actor: Codex
+- Request: Investigate and fix crashes in independent browser acceptance trials.
+- Diagnosis: Reduced the failure to an ARIA label-reference read in the page followed by a named test-runner lookup. A tiny page with no collection code reproduces the failure on Playwright 1.65.0; both full failing task sequences pass with 1.64.1 and its matched Firefox browser. The issue is a cross-context Firefox ARIA-reference bug exposed by the newer runner.
+- Plan: Pin the runner and matching digest-pinned CI container to 1.64.1; add regressions for both read orders and post-audit interactions; preserve all accessibility rules and original trial outputs. Regenerate dependent documents and integrity data, run a clean install, core/external checks and the full browser suite, then record results and limits.
+- Affected: package.json, package-lock.json, CI container pin, support guidance, browser regression tests and generated verification/context files. Runtime design definitions and app behavior are unchanged.
+- Verification: Targeted isolated trials passed. Full repository verification pending; this entry is a plan, not a completion claim. No commit or push requested for this fix.
+
+## DS-036 — Firefox test crashes resolved with a stable runner pin
+
+- UTC: 2026-11-06T15:47:00Z
+- Actor: Codex
+- Plan reference: DS-035.
+- Change: Pinned @playwright/test to 1.64.1 and matched the CI container tag/digest. Tied the playwright-core override to that direct dependency so accessibility-tool peer resolution cannot retain a second, newer driver. Added regressions for page/test-runner label-reference reads in both orders, full accessibility scans, empty-state recovery and newly inserted labeled content. Documented the temporary pin and upgrade gate.
+- Verification: Both new Firefox regressions failed with Page crashed on 1.65.0 before the fix. The full Windows suite passes all 177 cases with zero failures, skips or flakes on 1.64.1. After final driver deduplication and a clean install, all six regression cases pass across Chromium, Firefox and WebKit; the executed stable driver bundle is byte-identical to the full-suite run. All 45 independent-app check groups and 27 scans complete without crashes or reported violations. No rule was disabled and the original independent outputs were not edited. Core/external validation and the dependency audit pass; the audit reports zero vulnerabilities.
+- Affected: Test dependencies/lockfile, CI container, browser regressions, support guide, generated context bundles, audit index/receipt and integrity manifest. Design values and runtime component sources remain unchanged.
+- Limits: This avoids the observed test interaction; it does not fix Firefox itself. Script-assigned element-reference labels, physical devices and assistive technology are outside this regression scope. Axe retains manual contrast-review flags for pseudo-element button backgrounds in the independent apps. Linux pixel comparisons and the changed hosted workflow were not run from this Windows checkout; existing baselines are unchanged.
+- Evidence: audit/firefox-crash-checks.json; original local diagnostics and app outputs remain ignored. Changes are uncommitted; no push or external issue/comment was submitted.
+
+## DS-037 — Crash-fix review and revision plan
+
+- UTC: 2026-11-06T16:47:23Z
+- Actor: Codex
+- Request: Review the crash fix against the goals, identify gaps and revise the work.
+- Findings: Package/lock/container alignment is a documented convention without an enforced check. The new regression scans filter WCAG tags and do not assert that the isolated crash-triggering rule ran. Contributor instructions do not explain reinstalling matching browsers after a runner change or provide a focused reproduction command. The Windows result cannot validate the changed Linux browser environment or its existing pixel baselines.
+- Plan: Add a version-alignment validator and negative cases, strengthen the regression scan to use axe defaults and require the trigger rule, retain scan evidence, and document recovery/upgrade checks. Run a clean CI-style install, sequential build/core/external validation and the revised regressions; preserve historical receipts and frozen apps. Record remaining Linux/device/manual limits explicitly.
+- Affected: Validation scripts, regression tests, contributor/support guidance, generated context bundles and audit evidence. Design definitions, default selection, runtime app code and visual baselines remain outside the change scope.
+- Verification: Pending. Docker is unavailable and WSL reports not installed; no hosted run or Linux baseline approval is claimed.
+
+## DS-038 — Crash-fix review safeguards verified
+
+- UTC: 2026-11-06T16:55:21Z
+- Actor: Codex
+- Plan reference: DS-037.
+- Change: External checks now enforce agreement between installed/locked Playwright packages, nested driver copies, dependency edges, the linked override and digest-pinned CI image tag. Added eight invalid-configuration rejection cases. Strengthened the crash fixture to use axe defaults, assert the triggering rule's exact targets, repeat named region lookups around scans and attach raw scan results. Added contributor recovery/reinstall commands and candidate-version Linux acceptance instructions; clarified configured accessibility scope.
+- Verification: Clean npm ci --ignore-scripts reports no vulnerabilities. Nine version-guard cases and all six revised browser regression cases pass. Each of six scans passes 25 applicable rules, records 65 inapplicable rules and has zero violations/incomplete results. Build, core and external validation pass; the final documentation rebuild/core check also passes. Earlier 177-case repository and 45-group independent-app runs remain historical evidence and were not repeated in this review.
+- Affected: Validator and negative cases, external-check integration, browser regression fixture, contributor/support documentation, generated context bundles, review report/index and audit evidence.
+- Limits: Digest syntax validation does not verify registry identity. Linux visual comparisons and changed hosted CI remain unrun because no local Linux/container environment is available. Original independent-app contrast flags, native-device/AT/live-tool limits and the upstream Firefox bug remain explicit. No design, runtime component, default or visual-baseline change; no commit or push.
+- Evidence: reference/CRASH-FIX-REVIEW.md and audit/firefox-crash-review.json. Raw local evidence remains ignored; previous records are preserved.
