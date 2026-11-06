@@ -1,0 +1,207 @@
+{
+  "time": "2026-11-06T16:55:07.591Z",
+  "scope": "Review of the Firefox crash mitigation; test tooling and documentation only",
+  "release": "0.6.1",
+  "baseCommit": "ff7517520b9fae5afdcd1d966e6af1aa2161e3ac",
+  "platform": "win32",
+  "node": "v24.19.0",
+  "findings": [
+    {
+      "id": "R1",
+      "gap": "Runner/lock/CI version agreement was not enforced",
+      "resolution": "Validate installed versions, root and nested lock copies, dependency edges, linked override and digest-pinned CI tag",
+      "status": "fixed"
+    },
+    {
+      "id": "R2",
+      "gap": "Tag-filtered regression did not prove the triggering rule covered the affected elements",
+      "resolution": "Default axe rules, explicit labelled-region target assertions, named lookups before/after the scan and retained scan attachments",
+      "status": "fixed"
+    },
+    {
+      "id": "R3",
+      "gap": "Contributor recovery and candidate-upgrade sequence was incomplete",
+      "resolution": "Document clean installation, matching-browser installation, sequential validators, focused reproducer and Linux upgrade acceptance",
+      "status": "fixed"
+    },
+    {
+      "id": "R4",
+      "gap": "Changed Linux browser environment and existing pixel baselines lack execution evidence",
+      "resolution": "Retain the requirement; Docker unavailable and WSL not installed",
+      "status": "unverified"
+    }
+  ],
+  "validation": {
+    "cleanInstall": "npm ci --ignore-scripts passed; zero reported vulnerabilities",
+    "versionGuard": {
+      "positiveCases": 1,
+      "rejectedInvalidCases": 8,
+      "passed": 9,
+      "failed": 0
+    },
+    "regressions": {
+      "startTime": "2026-11-06T16:52:37.452Z",
+      "duration": 8091.829,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scans": [
+      {
+        "browser": "chromium",
+        "state": "axe-initial",
+        "axeVersion": "4.14.0",
+        "violations": 0,
+        "incomplete": 0,
+        "ruleOutcomes": 90,
+        "applicableRulesPassed": 25,
+        "inapplicableRules": 65,
+        "triggerTargets": [
+          [
+            "#save"
+          ],
+          [
+            "#empty"
+          ]
+        ]
+      },
+      {
+        "browser": "chromium",
+        "state": "axe-added-content",
+        "axeVersion": "4.14.0",
+        "violations": 0,
+        "incomplete": 0,
+        "ruleOutcomes": 90,
+        "applicableRulesPassed": 25,
+        "inapplicableRules": 65,
+        "triggerTargets": [
+          [
+            "#save"
+          ],
+          [
+            "#results"
+          ],
+          [
+            "article"
+          ]
+        ]
+      },
+      {
+        "browser": "firefox",
+        "state": "axe-initial",
+        "axeVersion": "4.14.0",
+        "violations": 0,
+        "incomplete": 0,
+        "ruleOutcomes": 90,
+        "applicableRulesPassed": 25,
+        "inapplicableRules": 65,
+        "triggerTargets": [
+          [
+            "#save"
+          ],
+          [
+            "#empty"
+          ]
+        ]
+      },
+      {
+        "browser": "firefox",
+        "state": "axe-added-content",
+        "axeVersion": "4.14.0",
+        "violations": 0,
+        "incomplete": 0,
+        "ruleOutcomes": 90,
+        "applicableRulesPassed": 25,
+        "inapplicableRules": 65,
+        "triggerTargets": [
+          [
+            "#save"
+          ],
+          [
+            "#results"
+          ],
+          [
+            "article"
+          ]
+        ]
+      },
+      {
+        "browser": "webkit",
+        "state": "axe-initial",
+        "axeVersion": "4.14.0",
+        "violations": 0,
+        "incomplete": 0,
+        "ruleOutcomes": 90,
+        "applicableRulesPassed": 25,
+        "inapplicableRules": 65,
+        "triggerTargets": [
+          [
+            "#save"
+          ],
+          [
+            "#empty"
+          ]
+        ]
+      },
+      {
+        "browser": "webkit",
+        "state": "axe-added-content",
+        "axeVersion": "4.14.0",
+        "violations": 0,
+        "incomplete": 0,
+        "ruleOutcomes": 90,
+        "applicableRulesPassed": 25,
+        "inapplicableRules": 65,
+        "triggerTargets": [
+          [
+            "#save"
+          ],
+          [
+            "#results"
+          ],
+          [
+            "article"
+          ]
+        ]
+      }
+    ],
+    "build": "pass",
+    "core": "pass",
+    "external": "pass",
+    "environment": {
+      "result": "pass",
+      "version": "1.64.1",
+      "lockedCopies": 3,
+      "installed": {
+        "@playwright/test": "1.64.1",
+        "playwright": "1.64.1",
+        "playwright-core": "1.64.1"
+      },
+      "image": "mcr.microsoft.com/playwright:v1.64.1-noble@sha256:2f05f8a734509a7b3f26a912639488ee08f58a7b292d14d62271bcff9038768f",
+      "limits": "Checks version alignment and digest syntax; registry digest identity and Linux execution are separate checks."
+    }
+  },
+  "sourceHashes": {
+    "scripts/check-browser-environment.mjs": "b4b7fe153140382a51f741ab90fc05b3eeb05ab7ac46ddb4ebdde8eb7c604662",
+    "scripts/check-browser-environment.test.mjs": "23b4fb2a7406f75f004885d2dc75a827f8dd988f55bc00cf633db7ffb4aaa457",
+    "scripts/check-external.mjs": "86e448e70f1b38b079cc6a1a6d0b1b50db3796be0023c9d16818928bd9209019",
+    "tests/aria-audit-regression.spec.mjs": "5235226f13781e05b030b0857a467cb1d2bc9bfd01bab68f8158d3507c784ca4"
+  },
+  "priorEvidence": {
+    "receipt": "audit/firefox-crash-checks.json",
+    "repositoryCases": 177,
+    "trialGroups": 45,
+    "trialScans": 27,
+    "trialManualContrastStates": 18,
+    "note": "Historical execution evidence retained; the full suite and frozen app evaluation were not repeated in this review. Revised regression cases were rerun in all three engines."
+  },
+  "limits": [
+    "Version validation checks container digest syntax, not registry identity or Linux execution.",
+    "Default axe rules in the small regression fixture do not make other WCAG-tagged suites or consuming apps a full accessibility certification.",
+    "The upstream Firefox engine bug and property-only reference-label behavior are not fixed by this mitigation.",
+    "Linux pixel comparisons, hosted CI, native assistive technology and live design tools remain unverified in this review.",
+    "Designs, Midnight/dark default, runtime components, visual baselines and original trial apps are unchanged.",
+    "No commit or push."
+  ]
+}

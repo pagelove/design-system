@@ -8,6 +8,8 @@ This directory retains public-safe change history and check results. Records des
 | --- | --- |
 | [CHANGELOG.md](CHANGELOG.md) | Scoped plans and implementation batches, with UTC timestamps and verification |
 | [files.sha256](files.sha256) | SHA-256 hashes of distributed tracked/unignored files; excludes the manifest itself |
+| [Crash-fix review checks](firefox-crash-review.json) | Version-drift rejection, strengthened scan coverage and remaining Linux acceptance |
+| [Firefox crash checks](firefox-crash-checks.json) | Reproduced label-reference crash, stable test-runner mitigation and regression results |
 | [Repository documentation checks](repository-documentation-checks.json) | README navigation, input ownership, command and clean-copy integration checks |
 | [Identity consumer core checks](identity-consumer-core-checks.json) | Replacement-input regressions and collection validation |
 | [Identity consumer external checks](identity-consumer-external-checks.json) | Independent format/tool validators |

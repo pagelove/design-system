@@ -1,0 +1,91 @@
+{
+  "time": "2026-11-06T15:50:47.739Z",
+  "release": "0.6.1",
+  "baseCommit": "ff7517520b9fae5afdcd1d966e6af1aa2161e3ac",
+  "revisionState": "Uncommitted test-environment fix",
+  "diagnosis": "Firefox ARIA element-reference reads across page and test-runner JavaScript contexts crash the content process; reproduced without collection code. Playwright 1.65.0 exposes this interaction. Pinning 1.64.1 avoids it for the attribute-based labels used here.",
+  "mitigation": {
+    "playwright": "1.64.1",
+    "coreOverride": "$@playwright/test",
+    "axe": "4.14.0",
+    "container": "mcr.microsoft.com/playwright:v1.64.1-noble@sha256:2f05f8a734509a7b3f26a912639488ee08f58a7b292d14d62271bcff9038768f",
+    "rulesDisabled": [],
+    "runtimeAppChanges": false
+  },
+  "regression": {
+    "before": {
+      "runner": "1.65.0",
+      "engine": "firefox",
+      "expectedFailures": 2,
+      "reason": "Page crashed"
+    },
+    "fullSuite": {
+      "platform": "Windows",
+      "startTime": "2026-11-06T15:39:55.779Z",
+      "duration": 350310.442,
+      "expected": 177,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "afterFinalCleanInstall": {
+      "startTime": "2026-11-06T15:46:34.816Z",
+      "duration": 7774.572,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "stableDriverSHA256": "829521b67ed7be90c7d6d6098ff39f2241562d47e4ad7ccab13710924a56001d",
+    "browsers": {
+      "chromium": "156.0.8078.4",
+      "firefox": "157.0",
+      "webkit": "27.2"
+    }
+  },
+  "independentTrials": {
+    "generations": 3,
+    "groupsPassed": 45,
+    "failed": 0,
+    "completeTaskRuns": 9,
+    "accessibilityScansCompleted": 27,
+    "reportedViolations": 0,
+    "manualReviewStates": 18,
+    "manualReviewReason": "Button pseudo-element backgrounds prevent automatic color-contrast determination.",
+    "inputsVerified": 277,
+    "outputsUnchanged": 14,
+    "modelLimit": "One inherited model, exact runtime/version unavailable; not a cross-model benchmark."
+  },
+  "dependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "validation": {
+    "completedAt": "2026-11-06T15:57:09.339Z",
+    "cleanInstall": "pass",
+    "build": "pass",
+    "core": "pass",
+    "external": "pass",
+    "commands": [
+      "npm ci",
+      "node scripts/build.mjs",
+      "node scripts/check.mjs",
+      "node scripts/check-external.mjs"
+    ],
+    "platform": "Windows",
+    "sequence": "Final core check completed sequentially after external validation."
+  },
+  "limits": [
+    "The Firefox engine bug itself remains upstream; this is a test-runner mitigation.",
+    "Script-assigned element-reference labels are outside this regression scope.",
+    "Windows task runs do not perform the Linux pixel comparisons; changed hosted CI has not been executed.",
+    "Axe incomplete results remain manual-review requirements, not accessibility passes.",
+    "Live design tools, physical devices and native assistive technology remain unavailable/unverified.",
+    "No commit, push or external issue/comment submitted."
+  ],
+  "upstream": "https://bugzilla.mozilla.org/show_bug.cgi?id=2090055"
+}
