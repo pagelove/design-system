@@ -1,3 +1,4 @@
+import {openConfirmation} from '../components/patterns.mjs';
 const catalog = window.designCatalog;
 const $ = selector => document.querySelector(selector);
 const designSelect = $('#design'), modeSelect = $('#mode');
@@ -16,6 +17,9 @@ function applySelection() {
   document.documentElement.dataset.theme = mode;
   currentScreen = ['overview','project','settings'].includes(params.get('screen')) ? params.get('screen') : 'overview';
   currentCollection = collectionById(params.get('collection')) ? params.get('collection') : 'fieldnotes';
+  if (dialog.open && (currentScreen !== 'project' || currentCollection !== dialogCollection)) {
+    dialog.close(); queueMicrotask(() => $('#main').focus());
+  }
   document.querySelectorAll('[data-page]').forEach(el => el.hidden = el.dataset.page !== currentScreen);
   collections.forEach(el => el.hidden = el.dataset.collection !== currentCollection);
   document.querySelectorAll('[data-screen]').forEach(a => {
@@ -73,16 +77,20 @@ function updateSummaries() {
   $('#review-total').textContent = String(reviews).padStart(2,'0');
 }
 const dialog = $('#story-dialog');
+const drafts = new Map();
+let dialogCollection = null;
 for (const collection of collections) {
   collection.querySelector('[data-search]').addEventListener('input', () => filterItems(collection));
   collection.querySelector('[data-clear-search]').addEventListener('click', () => {
     collection.querySelector('[data-search]').value = ''; filterItems(collection); collection.querySelector('[data-search]').focus();
   });
   collection.querySelector('[data-add-item]').addEventListener('click', () => {
+    dialogCollection = collection.dataset.collection;
+    $('#story-title').value = drafts.get(dialogCollection) || '';
     $('#dialog-collection').textContent = collection.querySelector('h1').textContent + ' / New ' + collection.dataset.noun;
     $('#item-title-label').textContent = collection.dataset.noun[0].toUpperCase() + collection.dataset.noun.slice(1) + ' title';
     $('#story-title').setCustomValidity('');
-    dialog.showModal(); $('#story-title').focus();
+    openConfirmation(dialog, collection.querySelector('[data-add-item]')); $('#story-title').focus();
   });
   filterItems(collection, false);
 }
@@ -91,17 +99,19 @@ $('#story-form').addEventListener('submit', e => {
   e.preventDefault();
   const title = $('#story-title').value.trim();
   if (!title) { $('#story-title').setCustomValidity('Enter a title.'); $('#story-title').reportValidity(); return; }
-  const collection = collectionById(currentCollection), list = collection.querySelector('[data-items]');
+  const collection = collectionById(dialogCollection), list = collection.querySelector('[data-items]');
   const article = document.createElement('article'), number = document.createElement('span'), body = document.createElement('div'), heading = document.createElement('h3'), description = document.createElement('p'), status = document.createElement('span');
-  article.id = currentCollection + '-item-' + (list.children.length + 1);
+  article.id = dialogCollection + '-item-' + (list.children.length + 1);
   number.className = 'story-number'; number.textContent = String(list.children.length + 1).padStart(2,'0');
   heading.textContent = title; description.textContent = $('#profile-name').textContent + ' · New draft';
   status.className = 'pill'; status.textContent = 'Draft';
   body.append(heading, description); article.append(number, body, status); list.prepend(article);
   collection.querySelector('[data-search]').value = ''; filterItems(collection); updateSummaries();
+  collection.querySelector('[data-search-status]').textContent = `Draft “${title}” added to ${collection.querySelector('h1').textContent}.`;
+  drafts.delete(dialogCollection);
   $('#story-form').reset(); dialog.close();
 });
-$('#story-title').addEventListener('input', () => $('#story-title').setCustomValidity(''));
+$('#story-title').addEventListener('input', () => { $('#story-title').setCustomValidity(''); drafts.set(dialogCollection, $('#story-title').value); });
 const form = $('#settings-form');
 const snapshot = () => JSON.stringify([...new FormData(form).entries()]);
 let savedSnapshot = snapshot(), pending = null;
@@ -121,6 +131,12 @@ function updateDirtyState() {
   $('#save-status').textContent = pending !== null ? 'Updating the submitted preferences. Newer edits will remain unsaved.' : dirty ? 'You have unsaved changes in this preview.' : 'Your preferences are up to date in this preview.';
 }
 form.addEventListener('input', updateDirtyState);
+form.addEventListener('input', event => {
+  const field = event.target;
+  if (['name','email'].includes(field.id) && field.value.trim() && field.checkValidity()) {
+    field.removeAttribute('aria-invalid'); $('#' + field.id + '-error').hidden = true;
+  }
+});
 form.addEventListener('change', updateDirtyState);
 $('#motion').addEventListener('change', applyReadingPreferences);
 $('#reading-size').addEventListener('change', applyReadingPreferences);

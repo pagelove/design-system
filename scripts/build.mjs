@@ -1,4 +1,5 @@
 import {enrich} from './adapters.mjs';
+import {lessValue} from './less-value.mjs';
 import {renderForcedColors} from './forced-colors.mjs';
 import {renderGallery} from './gallery.mjs';
 import fs from 'node:fs';
@@ -49,7 +50,7 @@ put('exports/tokens.mjs','// Generated. Values preserve CSS units; no runtime de
 put('exports/tokens.cjs','// Generated CommonJS adapter.\nmodule.exports = '+JSON.stringify(resolved,null,2)+';');
 put('exports/tokens.ts','// Generated; CSS strings remain unchanged across platforms.\nexport const tokens = '+JSON.stringify(resolved,null,2)+' as const;\nexport type Theme = keyof typeof tokens;\nexport type TokenName = keyof typeof tokens[Theme];');
 put('exports/_tokens.scss','// Generated resolved values. @use this module and sass:map.\n$tokens: (\n'+Object.entries(resolved).map(([m,v])=>`  "${m}": (\n${Object.entries(v).map(([k,x])=>`    ${JSON.stringify(k)}: ${JSON.stringify(x)},`).join('\n')}\n  ),`).join('\n')+'\n);');
-put('exports/tokens.less','// Generated initial-mode aliases, followed by explicit mode-prefixed values.\n'+Object.entries(resolved[defaultMode]).map(([k,v])=>`@${k}: ~${JSON.stringify(v)};`).join('\n')+'\n'+Object.entries(resolved).flatMap(([mode,values])=>Object.entries(values).map(([k,v])=>`@${mode}-${k}: ~${JSON.stringify(v)};`)).join('\n'));
+put('exports/tokens.less','// Generated initial-mode aliases, followed by explicit mode-prefixed values.\n// Decode string delimiters without leaking JSON escapes into CSS.\n'+Object.entries(resolved[defaultMode]).map(([k,v])=>`@${k}: ${lessValue(v)};`).join('\n')+'\n'+Object.entries(resolved).flatMap(([mode,values])=>Object.entries(values).map(([k,v])=>`@${mode}-${k}: ${lessValue(v)};`)).join('\n'));
 put('exports/Tokens.swift','// Generated portable CSS-string values. Convert units and colors explicitly for native UI.\nenum DesignTokens {\n'+Object.entries(resolved).map(([m,v])=>`  static let ${m}: [String: String] = [\n${Object.entries(v).map(([k,x])=>`    ${JSON.stringify(k)}: ${JSON.stringify(x)},`).join('\n')}\n  ]`).join('\n')+'\n}');
 put('exports/Tokens.kt','// Generated portable CSS-string values, not Android dp/sp or Compose Color values.\nobject DesignTokens {\n'+Object.entries(resolved).map(([m,v])=>`  val ${m}: Map<String, String> = mapOf(\n${Object.entries(v).map(([k,x])=>`    ${JSON.stringify(k)} to ${JSON.stringify(x).replaceAll('$','\\$')},`).join('\n')}\n  )`).join('\n')+'\n}');
 const dtcg=toDtcg(base,f.gradient);

@@ -270,3 +270,11 @@
 - Compatibility: Patch release 0.5.1; default and design palettes preserved. Copy base.css's forced-colors.css dependency with shared styles. Typography values of existing designs are unchanged; supported custom-unit conversions are corrected.
 - Limits: Live imports, screen readers, physical devices, actual browser zoom, cold-network measurements and independent LLM outputs remain unverified.
 - Publication: Prepared for normal fast-forward publication after final integrity and public-content checks.
+
+## DS-027 — Wider coverage review plan
+
+- UTC: 2026-11-06T02:47:40Z
+- Actor: Codex
+- Scope: Compare the complete collection against its original public reuse, multiple designs, default selection, portable formats, accessibility and premium app goals. Cover all eight design/modes and six export bundles, including previously unconsumed formats and workspace tasks.
+- Plan: Establish a coverage matrix; independently parse or compile portable exports; exercise complete workspace tasks and original control variants; inspect documentation, licensing, public content, generated consistency and automation. Fix reproducible defects in canonical sources, add checks that would have caught them, and inspect rendered output before publication.
+- Constraints: Preserve Midnight/dark and the five designs. Separate executable checks from file-presence checks, live-tool imports, manual assistive-technology testing and other unverified claims. No claim of exhaustive defect freedom.
