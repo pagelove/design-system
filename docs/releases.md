@@ -1,5 +1,15 @@
 # Releases
 
+## 0.6.1
+
+The identity consumer review fixes gaps exposed by replacement artwork and configuration.
+
+- Preserve SVG root presentation attributes, reject empty/unsupported artwork, and pad the maskable export separately so full-viewBox replacement marks fit the safe circle.
+- Support a site-wide custom social image with explicit page override precedence. Normalize public URLs consistently and enforce the same page/image URL rules in the generator and metadata helper.
+- Validate template dimensions/weights, convert rem frame radii correctly, and try the documented minimum text size even from odd starting sizes.
+- Render and validate the complete branding set before writing. Invalid late content or cleanup records preserve the previous outputs. Recorded stale files are still removed and unrelated artwork preserved.
+- Add replacement-content regression checks and cross-browser icon rendering. Five designs, eight modes and Midnight/dark remain unchanged.
+
 ## 0.6.0
 
 Adds app identity and social-sharing assets while retaining all five designs and Midnight/dark as default.

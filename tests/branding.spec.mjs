@@ -2,7 +2,8 @@ import {test, expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 import {loadDesigns, readJSON} from '../scripts/designs.mjs';
-import {socialSVG, readMark} from '../scripts/branding.mjs';
+import {socialSVG, readMark, parseMark, iconSVG} from '../scripts/branding.mjs';
+import {siteURL, validateImage} from '../components/metadata.mjs';
 const {catalog, designs} = loadDesigns();
 const site = readJSON('branding/site.json'), templates = readJSON('branding/templates.json');
 
@@ -72,13 +73,15 @@ test('identity preview: small icons, maskable safe area, accessibility and reflo
 
 test('metadata: emitted local assets are reachable with correct types', async ({request}) => {
   const index = readJSON('assets/social/index.json');
+  const base = siteURL(site.url);
+  const customImages = new Set([site.social.image, ...site.pages.map(page => page.image)].filter(Boolean).map(image => validateImage(image).url));
   for (const file of index.pages) {
     const meta = readJSON(file);
     const urls = [meta.image.url, ...Object.values(meta.icons), meta.manifest];
     for (const url of urls) {
-      if (url === meta.image.url && site.pages.some(page => page.image?.url === url)) continue;
-      if (!url.startsWith(site.url)) continue;
-      const local = '/' + url.slice(site.url.length);
+      if (url === meta.image.url && customImages.has(url)) continue;
+      if (!url.startsWith(base)) continue;
+      const local = '/' + url.slice(base.length);
       const response = await request.get(local);
       expect(response.status(), local).toBe(200);
       const extension = local.split('.').pop();
@@ -89,4 +92,32 @@ test('metadata: emitted local assets are reachable with correct types', async ({
     expect(head).toContain('name="twitter:card" content="summary_large_image"');
   }
   expect(index.defaultDesign).toBe(catalog.defaultDesign);
+});
+
+test('replacement artwork preserves strokes and survives icon masks', async ({page}, info) => {
+  const identity = {...site, icon: {background: '#100d17', foreground: '#f3efff'}};
+  const outline = parseMark('<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4"><rect x="8" y="8" width="48" height="48"/></svg>');
+  const solid = parseMark('<svg viewBox="0 0 64 64"><rect width="64" height="64" fill="currentColor"/></svg>');
+  const images = [iconSVG(identity, outline), iconSVG(identity, solid, {maskable: true})];
+  await page.goto('/examples/branding.html');
+  const result = await page.evaluate(async images => {
+    const data = [];
+    for (const svg of images) {
+      const image = new Image(); image.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg); await image.decode();
+      const canvas = document.createElement('canvas'); canvas.width = canvas.height = 512;
+      const ctx = canvas.getContext('2d'); ctx.drawImage(image, 0, 0);
+      data.push(ctx.getImageData(0, 0, 512, 512).data);
+    }
+    const at = (x,y) => (y * 512 + x) * 4;
+    let radius = 0;
+    for (let y = 0; y < 512; y++) for (let x = 0; x < 512; x++) {
+      const index = at(x, y);
+      if (data[1][index] !== data[1][0] || data[1][index+1] !== data[1][1] || data[1][index+2] !== data[1][2]) radius = Math.max(radius, Math.hypot(x-255.5, y-255.5));
+    }
+    return {center: [...data[0].slice(at(256,256),at(256,256)+4)], edge: [...data[0].slice(at(112,256),at(112,256)+4)], radius};
+  }, images);
+  expect(result.center).toEqual([16,13,23,255]); expect(result.edge).not.toEqual(result.center); expect(result.radius).toBeLessThanOrEqual(204.8);
+  await page.setContent('<!doctype html><html><head><style>svg{display:block}</style></head><body style="margin:0;display:flex;gap:16px;background:#eee;padding:24px"><div style="width:256px">' + images[0].replace('width="512" height="512"', 'width="256" height="256"') + '</div><div style="width:256px;border-radius:50%;overflow:hidden">' + images[1].replace('width="512" height="512"', 'width="256" height="256"') + '</div></body></html>');
+  await page.setViewportSize({width:576,height:304});
+  await page.screenshot({path:info.outputPath('replacement-icons.png')});
 });

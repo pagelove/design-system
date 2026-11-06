@@ -335,14 +335,16 @@ An app owns its name and mark. A design supplies the presentation. Keep the iden
 ## Start here
 
 1. Edit [branding/site.json](../branding/site.json): app name, description, public base URL, language/locale, icon colors, social title/label and optional page overrides. The reserved example.com address is illustrative. A deployment under a subpath needs the full trailing-slash base, such as `https://example.com/product/`.
-2. Replace [branding/mark.svg](../branding/mark.svg) with a simple original or licensed mark. Use a `0 0 64 64` viewBox and self-contained vector shapes. Use `currentColor` for a monochrome identity; no scripts, external images, fonts or linked content. Do not put a wordmark or slogan in a tiny favicon.
-3. Edit [branding/templates.json](../branding/templates.json) only for composition changes. Colors and font families come from each design's resolved tokens. Add a template entry when registering a new design. The renderer lives in [scripts/branding.mjs](../scripts/branding.mjs).
+2. Replace [branding/mark.svg](../branding/mark.svg) with a simple original or licensed mark. Use a `0 0 64 64` viewBox and self-contained vector shapes. Use `currentColor` for a monochrome identity. Root fills, strokes, opacity and transforms are preserved. Use inline SVG presentation attributes; flatten CSS classes/styles, linked definitions and text to supported shapes before importing. Empty/invisible artwork, scripts, external images and linked content are rejected. Do not put a wordmark or slogan in a tiny favicon.
+3. Edit [branding/templates.json](../branding/templates.json) only for composition changes. Colors and font families come from each design's resolved tokens. Title sizes are bounded to 48–96px and weights to the bundled 400/500/600 faces. Frame radii support px/rem with a 16px root conversion. Add a template entry when registering a new design. The renderer lives in [scripts/branding.mjs](../scripts/branding.mjs).
 4. Run `npm ci`, then `npm run build` and `npm run check`. Development-only image libraries and bundled fonts produce the files; consuming the exported PNG/SVG/ICO and HTML needs no Node runtime or image service.
 5. Open [the asset preview](../examples/branding.html) using `npm run serve`. Copy the assets and apply the generated metadata in your app. Publish only after checking the real URLs.
 
 Never independently edit generated files. The source mark, site content, template settings and design tokens are the authorities. Source JSON is build configuration, not a recommendation to replace document-first app content.
 
 The asset index records generated files. Rebuilding removes previously recorded outputs for deleted pages or modes, leaving unrelated files alone. Keep your original custom artwork outside these generated paths.
+
+All branding outputs are rendered and validated before replacing existing assets. Invalid artwork, unsupported glyphs, overflowing content, template settings or cleanup records leave the previous branding files intact. Filesystem failures during the final write still require recovery and a rebuild; this is not a filesystem transaction.
 
 ## Files and intended uses
 
@@ -374,7 +376,7 @@ Use one recognizable silhouette, substantial strokes and ample space. Inspect th
 
 For an adaptive SVG, preserve the silhouette and define explicit light/dark colors inside the SVG with `prefers-color-scheme`. Browser chrome preferences and an in-page theme toggle can differ. Keep a usable static fallback and test target browsers; adaptive export is not part of this generator.
 
-The generator scales the 64px source into the central 48px square. For arbitrary replacement artwork, a square's corners can extend beyond a maskable icon's safe circle: keep important source geometry inside the circle centered at (32,32), radius 34 source units (which becomes 25.5 output units). Inspect the circular crop as well as rounded-square masks. Leave the background full bleed. The sample mark fits this area. Keep icon contrast high; the checks require at least 3:1 between configured foreground and background.
+Regular icons place the 64px source inside a central 48px square. The separate maskable export uses a central 35.2px square, so even artwork reaching all four source corners fits inside the guaranteed safe circle. Source artwork is clipped to its declared viewBox; the background remains full bleed. Inspect circular and rounded-square crops with your actual mark. Keep icon contrast high; the checks require at least 3:1 between configured foreground and background. Multicolor marks need a visual contrast review in addition to that configuration check.
 
 Home-screen icons have different jobs from a browser favicon. Preserve separate size/purpose declarations even when sharing artwork. Do not infer native app-store icon, platform splash-screen or installability compliance from these web exports.
 
@@ -386,9 +388,23 @@ The five templates share the app mark and content but vary typography, alignment
 
 The title can wrap to three lines, reducing from the template size to 48px. The description allows two lines down to 22px. Long words break by grapheme. Content that still does not fit fails generation instead of being silently clipped. Exact local font metrics determine wrapping. Outlined SVGs and PNGs preserve those shapes without system-font fallback; editable SVGs retain live text and need the fonts installed.
 
-The bundled fonts cover a limited character set. Unsupported glyphs, including many emoji and writing systems, fail explicitly. Supply appropriate licensed fonts and register them in the renderer, or use a custom image. This release does not certify complex-script/RTL image composition. Keep generated image alt text meaningful; custom images require an explicit description.
+The bundled fonts cover a limited character set. Unsupported glyphs, including many emoji and writing systems, fail explicitly. Adapting the font pipeline requires suitable licensed fonts and corresponding validator updates. For prebuilt imagery, use the metadata helper directly; a page-specific custom image also bypasses rendering that page's title. This release does not certify complex-script/RTL image composition. Keep generated image alt text meaningful; custom images require an explicit description.
 
 ## Default and page overrides
+
+The generated default uses Midnight/dark unless the catalog selects another supported design/mode. To supply a site-wide custom sharing image, set `social.image` in branding/site.json to this object:
+
+```json
+{
+  "url": "https://example.com/brand/share.png",
+  "alt": "The app's illustrated workspace",
+  "width": 1200,
+  "height": 630,
+  "type": "image/png"
+}
+```
+
+Selection order is: a page's custom image; its requested generated image; the site's custom image; then the catalog-generated default. A custom URL is referenced without fetching it or guessing its dimensions. The generated design variants and assets/social/default.png remain available independently, and still require supported text/fonts. A custom URL does not bypass generation of the design collection. For fully prebuilt assets in other writing systems, use the metadata helper directly or adapt the font pipeline and its checks.
 
 Every page gets the site image unless it supplies one of these alternatives in `branding/site.json`:
 
@@ -404,13 +420,13 @@ Every page gets the site image unless it supplies one of these alternatives in `
 }
 ```
 
-With an explicit design and no mode, use that design's default mode. With neither, use the catalog defaults. Unknown designs, unavailable modes, duplicate slugs and conflicting custom/generated images fail validation. Page paths are relative to the public base URL; the slug is only the safe output filename. If `generateImage` is omitted/false, the root default image remains the fallback even when the page title differs.
+With an explicit design and no mode, use that design's default mode. With neither, use the catalog defaults. Unknown designs, unavailable modes, duplicate slugs/canonical URLs and conflicting custom/generated images fail validation. Output slugs also exclude Windows reserved filenames such as con and nul. Page paths must stay relative to the public base URL without fragments or control characters; these rules also apply through the public metadata helper. The slug is only the output filename. If `generateImage` is omitted/false, the site fallback remains in use even when the page title differs. Public URLs are normalized consistently, including host casing and default ports.
 
 For a hand-designed image, omit `generateImage`, `design` and `mode`, and supply `image` with an absolute HTTP(S) `url` and descriptive `alt`. Supply its true `width`, `height` and MIME `type` when known. The build does not fetch or validate remote images. Custom imagery takes precedence over the site fallback. Do not put private content into public preview images.
 
 ## Metadata and integration
 
-Copy the identity assets under the public base's `assets/identity/` and social images at the paths recorded in the generated metadata. Copy all referenced files, including manifest icons. The default requires `assets/social/default.png`; a page can instead reference `assets/social/pages/SLUG.png`. Per-design files can be used explicitly. Keep the actual deployment path and configured URL consistent.
+Copy the identity assets under the public base's `assets/identity/` and social images at the paths recorded in the generated metadata. Copy all referenced files, including manifest icons. The generated default uses `assets/social/default.png`; a page can instead reference `assets/social/pages/SLUG.png`, and custom imagery uses its supplied public URL. Per-design files can be used explicitly. Keep the actual deployment path and configured URL consistent.
 
 Insert the generated `.head.html` contents inside the document's existing `<head>`, alongside charset and viewport declarations. It includes title, description, canonical URL, favicon/touch-icon links, web manifest, theme color, Open Graph and large-image Twitter/X card metadata. Width, height, MIME type and image alt text accompany generated images. Values are escaped. Do not duplicate the same fields through another SEO plugin.
 

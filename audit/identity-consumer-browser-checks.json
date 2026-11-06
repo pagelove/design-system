@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-11-06T05:16:01.474Z",
+  "result": "pass",
+  "release": "0.6.1",
+  "testsPassed": 171,
+  "testsFailed": 0,
+  "testsSkipped": 0,
+  "flaky": 0,
+  "identityTests": 33,
+  "designModeCombinations": 8,
+  "browserEngines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "playwrightVersion": "1.65.0",
+  "environment": "Windows; pinned browsers; local HTTP server",
+  "visualBaselinesChanged": false,
+  "pixelComparisonsRun": false,
+  "finalReplacementCaptureRun": {
+    "testsPassed": 3,
+    "testsFailed": 0,
+    "testsSkipped": 0,
+    "flaky": 0
+  },
+  "reviewed": [
+    "All eight design/mode previews",
+    "Complete asset preview at desktop and 320px reduced-motion width",
+    "Outline preservation and full-viewBox maskable artwork in browser captures"
+  ],
+  "limits": [
+    "Linux pixel baseline comparisons do not run on Windows.",
+    "Live social crawlers, device installation and full Next/Nuxt consuming apps were not tested."
+  ]
+}

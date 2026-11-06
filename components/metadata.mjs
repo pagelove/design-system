@@ -2,23 +2,46 @@
 export const escapeAttribute = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
 
 export function webURL(value, base) {
+  if (typeof value !== 'string' || !value.trim() || /[\u0000-\u001f\u007f]/.test(value)) throw new Error('Expected a nonempty URL without control characters');
   const url = new URL(value, base);
   if (!['https:', 'http:'].includes(url.protocol) || url.username || url.password) throw new Error('Expected an HTTP(S) URL without credentials');
   return url.href;
 }
 
+export function siteURL(value) {
+  const base = webURL(value), url = new URL(base);
+  if (!url.pathname.endsWith('/') || url.search || url.hash) throw new Error('Site URL must end in / with no query or fragment');
+  return base;
+}
+
+export function pageURL(value, base) {
+  if (value === undefined || value === '') return siteURL(base);
+  if (typeof value === 'string' && !/[\u0000-\u001f\u007f]/.test(value)) value = value.trim();
+  if (typeof value !== 'string' || !value.trim() || /^(?:[a-z][a-z\d+.-]*:|\/|\\)/i.test(value) || value.includes('\\') || /(?:^|\/)\.\.(?:\/|$)/.test(value)) throw new Error('Page paths must be relative to the site base');
+  const root = new URL(siteURL(base)), url = new URL(webURL(value, root));
+  if (url.origin !== root.origin || !url.pathname.startsWith(root.pathname) || url.hash) throw new Error('Page URL must remain in the site base, without a fragment');
+  return url.href;
+}
+
+export function validateImage(image) {
+  if (!image || typeof image.alt !== 'string' || !image.alt.trim()) throw new Error('A social image needs descriptive alt text');
+  const url = webURL(image.url);
+  if (new URL(url).hash) throw new Error('Social image URL must not contain a fragment');
+  for (const key of ['width', 'height']) if (image[key] !== undefined && (!Number.isInteger(image[key]) || image[key] < 1)) throw new Error('Invalid image ' + key);
+  if (image.type !== undefined && !['image/png', 'image/jpeg', 'image/webp'].includes(image.type)) throw new Error('Unsupported social image MIME type');
+  return {...image, url};
+}
+
 export function createMetadata({site, page = {}, image}) {
-  const base = webURL(site.url);
-  if (!base.endsWith('/') || new URL(base).search || new URL(base).hash) throw new Error('Site URL must end in / with no query or fragment');
-  if (!image?.alt?.trim()) throw new Error('A social image needs descriptive alt text');
+  const base = siteURL(site.url);
   const result = {
     title: page.title || site.social.title,
     description: page.description || site.description,
     siteName: site.name,
     locale: site.locale,
-    url: webURL(page.path || '', base),
+    url: pageURL(page.path, base),
     themeColor: site.icon.background,
-    image: {...image, url: webURL(image.url, base)},
+    image: validateImage(image),
     icons: {
       svg: webURL('assets/identity/favicon.svg', base),
       ico: webURL('assets/identity/favicon.ico', base),
@@ -27,7 +50,6 @@ export function createMetadata({site, page = {}, image}) {
     manifest: webURL('assets/identity/site.webmanifest', base)
   };
   if (!result.title?.trim() || !result.description?.trim()) throw new Error('Title and description are required');
-  for (const key of ['width', 'height']) if (result.image[key] !== undefined && (!Number.isInteger(result.image[key]) || result.image[key] < 1)) throw new Error('Invalid image ' + key);
   return result;
 }
 

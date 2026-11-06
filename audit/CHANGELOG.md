@@ -314,3 +314,24 @@
 - Affected: Canonical branding configuration/artwork/templates, renderer and metadata helpers, generated assets, documentation, development dependencies, tests, preview server MIME types/optional port, audit evidence and integrity manifest.
 - Compatibility: Version 0.6.0; consuming exported files adds no runtime dependencies. Generation now uses pinned development image/font libraries. Existing components, palettes and design defaults are preserved.
 - Limits: Linux pixel comparisons, live social-crawler previews, actual-device installation and full Next/Nuxt app builds are separate acceptance tasks. See reference/IDENTITY-SHARING-REVIEW.md.
+
+## DS-031 — Identity consumer review plan
+
+- UTC: 2026-11-06T04:56:18Z
+- Actor: Codex
+- Scope: Recheck the identity/sharing implementation against customization, portable formats, stable identity, configurable defaults and reliable publication goals using replacement inputs rather than only the bundled sample.
+- Findings: SVG root presentation attributes are discarded; full-viewBox replacement marks can extend beyond the maskable safe circle; site-wide custom sharing imagery is missing; a late render error changes previously generated files; template sizes and rem radii are not interpreted safely; URL and file-name validation is inconsistent between generator and public helper.
+- Plan: Reproduce these boundaries, repair input handling and default precedence, render/validate before writing assets, add replacement-content/browser regressions, revise guidance and regenerate. Preserve Midnight/dark and existing component baselines. Record measured coverage and remaining live-platform limits.
+
+## DS-032 — Identity consumer revisions implemented
+
+- UTC: 2026-11-06T05:15:03Z
+- Actor: Codex
+- Plan reference: DS-031.
+- Change: Preserved root SVG presentation attributes, rejected invisible/unsupported artwork, separated maskable padding, added site-wide custom sharing imagery and explicit local preview paths, normalized public URLs, rejected duplicate routes/reserved output names, bounded template fitting and converted rem geometry. Complete rendering and output/cleanup validation now precede filesystem writes.
+- Review method: Replaced the bundled mark with ordinary outline and full-viewBox shapes; exercised custom site/page image precedence and normalized subpath URLs; compared every output hash before and after render/preflight failures. New consumer checks run with the standard asset validator, and all three browsers independently decode and inspect the replacement icons.
+- Verification: Clean pinned installation and audit report zero vulnerabilities. Build/core checks and independent format validators pass. All 171 local browser cases pass with zero failures, skips or flaky cases; the final three replacement-icon cases also pass after capture-layout adjustment. Inspected all eight preview modes, 320px reduced-motion reflow and replacement icons. Existing app pixel baselines remain unchanged.
+- Affected: Metadata helper, branding renderer/preview, input schemas, consumer/browser validators, generated assets/context bundles, release and identity guidance, review evidence and integrity manifest.
+- Compatibility: Patch release 0.6.1; five designs and Midnight/dark are preserved. Previously ambiguous or unsupported input now fails explicitly. Consumers can configure a custom site-wide image without repeating it on each page.
+- Limits: Validation/render failures preserve prior assets; final filesystem writes are not a transaction. Live social crawlers, physical devices and full Next/Nuxt app builds remain unverified. Local Windows browser results do not include Linux pixel comparisons. See reference/IDENTITY-CONSUMER-REVIEW.md.
+- Publication: Prepared for normal fast-forward publication after final public-content and integrity checks; hosted verification is recorded separately when available.

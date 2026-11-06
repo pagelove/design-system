@@ -18,7 +18,7 @@
     },
     "social": {
       "type": "object", "additionalProperties": false, "required": ["title", "label"],
-      "properties": {"title": {"$ref": "#/$defs/title"}, "label": {"type": "string", "minLength": 1, "maxLength": 70}}
+      "properties": {"title": {"$ref": "#/$defs/title"}, "label": {"type": "string", "minLength": 1, "maxLength": 70}, "image": {"$ref": "#/$defs/image"}}
     },
     "pages": {
       "type": "array", "items": {
@@ -31,19 +31,20 @@
           "generateImage": {"type": "boolean"},
           "design": {"type": "string"},
           "mode": {"enum": ["light", "dark"]},
-          "image": {
-            "type": "object", "additionalProperties": false, "required": ["url", "alt"],
-            "properties": {
-              "url": {"type": "string", "format": "uri"}, "alt": {"type": "string", "minLength": 1},
-              "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
-              "type": {"enum": ["image/png", "image/jpeg", "image/webp"]}
-            }
-          }
+          "image": {"$ref": "#/$defs/image"}
         }
       }
     }
   },
   "$defs": {
+    "image": {
+      "type": "object", "additionalProperties": false, "required": ["url", "alt"],
+      "properties": {
+        "url": {"type": "string", "format": "uri"}, "alt": {"type": "string", "minLength": 1},
+        "width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1},
+        "type": {"enum": ["image/png", "image/jpeg", "image/webp"]}
+      }
+    },
     "color": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
     "title": {"type": "string", "minLength": 1, "maxLength": 180}
   }

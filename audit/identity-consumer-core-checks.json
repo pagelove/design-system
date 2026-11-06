@@ -1,0 +1,2609 @@
+{
+  "branding": {
+    "result": "pass",
+    "consumers": {
+      "result": "pass",
+      "checks": [
+        "replacement SVG presentation attributes",
+        "full-viewBox maskable padding",
+        "empty and unsupported artwork rejection",
+        "rem frame geometry",
+        "bounded template and text fitting inputs",
+        "shared canonical URL rules and duplicate routes",
+        "portable output filenames",
+        "custom site image precedence",
+        "normalized public URL and preview links",
+        "failed-render and cleanup preflight preserve outputs"
+      ]
+    },
+    "designModes": 8,
+    "iconSizes": 7,
+    "checks": [
+      "PNG dimensions and budgets",
+      "ICO payloads",
+      "outlined and editable SVGs",
+      "long-title fitting",
+      "public metadata fields and escaping",
+      "subpath URL resolution",
+      "default/generated/custom overrides",
+      "framework adapter shapes",
+      "invalid configuration and unsupported glyph rejection"
+    ]
+  },
+  "result": "pass",
+  "portability": [
+    {
+      "bundle": "root",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/classic/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/editorial/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/forest/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/midnight/",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    },
+    {
+      "bundle": "designs/invitation/",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "DTCG type/value/alias contracts",
+        "executed ES module",
+        "executed CommonJS",
+        "CSV value parity"
+      ]
+    }
+  ],
+  "textFiles": 394,
+  "designs": 5,
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
+  "semanticRolesPerMode": 110,
+  "libraryEntries": 40,
+  "checks": [
+    "deterministic generation",
+    "per-design exports and mode availability",
+    "alternate default regeneration and stale-mode removal",
+    "invalid catalog rejection",
+    "JSON parsing",
+    "token reference resolution",
+    "DTCG subset validation",
+    "Stitch copy parity",
+    "escaping and state contracts",
+    "internal-content scan",
+    "repository allowlist",
+    "local links",
+    "selected contrast pairs across designs",
+    "control and focus contrast",
+    "guide title and tracking parity"
+  ],
+  "contrasts": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 10.35
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 19.28
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 14.63
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.06
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 9.9
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 18.41
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 4.83
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 17.85
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 20.17
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 18.94
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 20.17
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 16.83
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 8.22
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 18.41
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 17.85
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 8
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 13.97
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 8.09
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 10.14
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 15.06
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 12.27
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 6.17
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 9.46
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 13.77
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.76
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 14.57
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 16.15
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 14.73
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 16.15
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 12.9
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 13.77
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 14.57
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 10.53
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 7.03
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 8.56
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 13.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 8.56
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.93
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 7.98
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 12.45
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 12.7
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 14.51
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 13.64
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 14.51
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 11.83
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 6.92
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 12.45
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 12.7
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 9.02
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 6.17
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 13.44
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 16.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 10.96
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.51
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 12.69
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 14.49
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 7.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 8.04
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 5.6
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-light",
+      "ratio": 15.18
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-regular",
+      "ratio": 16.23
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-default",
+      "ratio": 12.3
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 9.37
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-regular",
+      "bg": "background-surface-regular",
+      "ratio": 14.28
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-strong",
+      "bg": "background-surface-strong",
+      "ratio": 15.05
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 8.81
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-hovered",
+      "ratio": 9.08
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-strong-text",
+      "bg": "button-strong-pressed",
+      "ratio": 6.52
+    }
+  ],
+  "controlContrasts": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.76
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.55
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 5.06
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 4.83
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.54
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.34
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.36
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.24
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 8.22
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 8
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 7.33
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 7.13
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.87
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.54
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 4.73
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 4.41
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.24
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.96
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 3.55
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 7.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 6.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.53
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 6.1
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 3.9
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.64
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 5.93
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 5.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.1
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.82
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.08
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.72
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 6.92
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.22
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 5.67
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 3.86
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 3.64
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 7.51
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 7.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.79
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 6.41
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-light",
+      "ratio": 4.38
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-strong",
+      "surface": "background-surface-regular",
+      "ratio": 4.12
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-light",
+      "ratio": 9.37
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-focused",
+      "surface": "background-surface-regular",
+      "ratio": 8.81
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-light",
+      "ratio": 6.78
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "role": "border-danger-strong",
+      "surface": "background-surface-regular",
+      "ratio": 6.38
+    }
+  ],
+  "interactionContrasts": [
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 4.76
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.06
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 6.6
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 8.63
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 6.6
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 9.38
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 6.25
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 4.55
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 4.83
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 8.25
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 8.96
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 5.98
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 13.35
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.58
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 7.24
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.58
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 7.24
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 13.98
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 14.63
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 13.98
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 14.63
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 13.98
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 13.35
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.85
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 17.06
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.85
+    },
+    {
+      "design": "classic",
+      "mode": "light",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 17.06
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 13.97
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 8.22
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 11.57
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 14.56
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 8.22
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 14.39
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 11.5
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 13.59
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 8
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 11.25
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 14.16
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 8
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 13.99
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 11.18
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 14.48
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 18.94
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 18.41
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 18.94
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 18.41
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 16.36
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 19.83
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 19.28
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 19.83
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 19.28
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 14.48
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 20.75
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 20.17
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 20.75
+    },
+    {
+      "design": "classic",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 20.17
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 4.87
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 6.17
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 6.17
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 8.07
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 6.17
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 8.77
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 5.85
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 4.54
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.76
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 5.76
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 7.52
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 5.76
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 8.18
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 5.45
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 10.46
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.09
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.61
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.09
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.61
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 11.44
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 12.27
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 11.44
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 12.27
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 11.44
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 10.46
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 14.57
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 13.59
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 14.57
+    },
+    {
+      "design": "editorial",
+      "mode": "light",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 13.59
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 10.53
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 10.3
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 12.97
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 7.32
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 12.81
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 10.24
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 9.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 9.63
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 12.12
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 6.85
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 11.98
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 9.57
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 10.88
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 14.73
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 13.77
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 14.73
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 13.77
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 12.06
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 16.11
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 15.06
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 16.11
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 15.06
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 10.88
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.28
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 16.15
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.28
+    },
+    {
+      "design": "editorial",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 16.15
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 5.72
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.93
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 7.79
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 9.51
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 7.79
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 8.47
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 5.65
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 5.34
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.53
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 7.26
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 8.86
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 7.26
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 7.9
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 5.27
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 8.99
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.72
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.34
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 5.72
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 5.34
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 9.77
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 10.48
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 9.77
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 10.48
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 9.77
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 8.99
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 12.7
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 11.84
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 12.7
+    },
+    {
+      "design": "forest",
+      "mode": "light",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 11.84
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 9.02
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 6.92
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 9.21
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 11.64
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 6.92
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 12.2
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 9.76
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 8.23
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 8.41
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 10.62
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 6.31
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 11.13
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 8.9
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 9.44
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 13.64
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 12.45
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 13.64
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 12.45
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 10.79
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 14.83
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 13.53
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 14.83
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 13.53
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 9.44
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 15.9
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 14.51
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 15.9
+    },
+    {
+      "design": "forest",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 14.51
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 8.04
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 7.51
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 9.52
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 12.12
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 7.51
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 13.34
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 10.66
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 7.6
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 7.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 8.99
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 11.44
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 7.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 12.59
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 10.07
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 9.32
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 13.44
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 12.69
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 13.44
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 12.69
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 10.35
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 15.25
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 14.4
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 15.25
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 14.4
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 9.32
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.03
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 16.09
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.03
+    },
+    {
+      "design": "midnight",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 16.09
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-light",
+      "ratio": 9.08
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-light",
+      "ratio": 9.37
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-light",
+      "ratio": 10.95
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 12.52
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-light",
+      "ratio": 9.37
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-light",
+      "ratio": 13.32
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-light",
+      "ratio": 10.65
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-light",
+      "bg": "background-surface-regular",
+      "ratio": 8.54
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 8.81
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-hover",
+      "bg": "background-surface-regular",
+      "ratio": 10.31
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 11.79
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "link-text-visited",
+      "bg": "background-surface-regular",
+      "ratio": 8.81
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "text-brand",
+      "bg": "background-surface-regular",
+      "ratio": 12.54
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "icon-discovery",
+      "bg": "background-surface-regular",
+      "ratio": 10.02
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-default",
+      "ratio": 10.74
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-light",
+      "ratio": 15.18
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-borderless-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 14.28
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-light",
+      "ratio": 15.18
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-secondary-text-default",
+      "bg": "background-surface-regular",
+      "ratio": 14.28
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-hovered",
+      "ratio": 11.58
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 15.77
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-borderless-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 14.84
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-light",
+      "ratio": 15.77
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-secondary-text-hovered",
+      "bg": "background-surface-regular",
+      "ratio": 14.84
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-regular-text",
+      "bg": "button-regular-pressed",
+      "ratio": 10.74
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.25
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-borderless-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 16.23
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-light",
+      "ratio": 17.25
+    },
+    {
+      "design": "invitation",
+      "mode": "dark",
+      "fg": "button-secondary-text-pressed",
+      "bg": "background-surface-regular",
+      "ratio": 16.23
+    }
+  ],
+  "limits": [
+    "DTCG subset checks are not an independent full-spec certification.",
+    "Figma/Stitch/native/framework imports are not executed here.",
+    "Browser task evidence is recorded separately."
+  ]
+}

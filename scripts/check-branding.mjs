@@ -6,7 +6,8 @@ import {pathToFileURL} from 'node:url';
 import {XMLParser, XMLValidator} from 'fast-xml-parser';
 import {loadDesigns, readJSON, sourceRoot} from './designs.mjs';
 import {buildBranding, socialSVG, readMark, validateSite} from './branding.mjs';
-import {createMetadata, renderHead, toNextMetadata, toNuxtHead} from '../components/metadata.mjs';
+import {createMetadata, renderHead, toNextMetadata, toNuxtHead, siteURL, validateImage} from '../components/metadata.mjs';
+import {checkBrandingConsumers} from './check-branding-consumers.mjs';
 
 export function pngSize(buffer) {
   assert.equal(buffer.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
@@ -35,7 +36,7 @@ export function checkBranding(root = sourceRoot) {
     assert.equal(XMLValidator.validate(svg), true);
     assert.doesNotMatch(svg, /<text\b|@font-face|font-family=/, 'Outlined SVG must not require installed fonts');
     const layout = json(prefix + '.layout.json');
-    assert.equal(layout.titleLines.join(' '), site.social.title);
+    assert.equal(layout.titleLines.join('').replace(/\s/gu, ''), site.social.title.normalize('NFC').replace(/\s/gu, ''));
     assert.ok(layout.titleSize >= 48 && layout.titleLines.length <= 3);
     const manifest = json('designs/' + design.id + '/exports/manifest.json');
     assert.ok(fs.existsSync(path.resolve(root, 'designs', design.id, 'exports', manifest.socialImages[mode])));
@@ -63,16 +64,16 @@ export function checkBranding(root = sourceRoot) {
   const [high, low] = [luminance(site.icon.foreground), luminance(site.icon.background)].sort((a,b) => b-a);
   assert.ok((high + .05) / (low + .05) >= 3, 'Identity foreground/background contrast');
   const manifest = json('assets/identity/site.webmanifest');
-  assert.equal(manifest.start_url, site.url); assert.equal(manifest.scope, site.url);
+  assert.equal(manifest.start_url, siteURL(site.url)); assert.equal(manifest.scope, siteURL(site.url));
   assert.ok(manifest.icons.some(icon => icon.purpose === 'maskable'));
   for (const icon of manifest.icons) {
     const buffer = fs.readFileSync(path.resolve(root, 'assets/identity', icon.src));
     assert.equal(pngSize(buffer).join('x'), icon.sizes);
   }
   const meta = json('assets/metadata/default.json');
-  assert.equal(meta.image.url, new URL('assets/social/default.png', site.url).href);
+  assert.equal(meta.image.url, site.social.image ? validateImage(site.social.image).url : new URL('assets/social/default.png', site.url).href);
   const tags = parser.parse('<head>' + renderHead(meta).replace(/<(meta|link)([^>]+)>/g, '<$1$2/>') + '</head>').head;
-  for (const key of ['og:title', 'og:type', 'og:url', 'og:image', 'og:image:width', 'og:image:height', 'og:image:alt']) assert.equal(tags.meta.filter(tag => tag.property === key).length, 1, key);
+  for (const key of ['og:title', 'og:type', 'og:url', 'og:image', 'og:image:alt', ...['width','height'].filter(key => meta.image[key] !== undefined).map(key => 'og:image:' + key)]) assert.equal(tags.meta.filter(tag => tag.property === key).length, 1, key);
   assert.equal(tags.link.filter(tag => tag.rel === 'canonical').length, 1);
   const next = toNextMetadata(meta), nuxt = toNuxtHead(meta);
   assert.equal(next.openGraph.images[0].url, meta.image.url);
@@ -90,7 +91,7 @@ export function checkBranding(root = sourceRoot) {
   assert.throws(() => socialSVG({design: designs[0], mode: designs[0].defaultMode, values: built.get(designs[0].id).resolved[designs[0].defaultMode], site, mark, template: templates[designs[0].id], page: {title: 'W'.repeat(180)}}), /does not fit/, 'Reject rather than clip content that exceeds the layout');
   const scratch = fs.mkdtempSync(path.join(os.tmpdir(), 'design-branding-check-'));
   try {
-    const fixtureSite = {...site, url: 'https://example.com/product/', pages: [
+    const fixtureSite = {...site, social: {title: site.social.title, label: site.social.label}, url: 'https://example.com/product/', pages: [
       {slug: 'fallback', path: 'fallback/', title: 'Fallback page', description: 'Uses site image'},
       {slug: 'generated', path: 'generated/', title: 'Generated page', description: 'Uses Forest dark', design: 'forest', mode: 'dark', generateImage: true},
       {slug: 'custom', path: 'custom/', title: 'Custom page', description: 'Uses supplied artwork', image: {url: 'https://example.com/product/custom.png', alt: 'A custom illustration'}}
@@ -117,7 +118,7 @@ export function checkBranding(root = sourceRoot) {
     assert.ok(path.resolve(scratch).startsWith(path.resolve(os.tmpdir()) + path.sep + 'design-branding-check-'));
     fs.rmSync(scratch, {recursive: true, force: true});
   }
-  return {result: 'pass', designModes: images, iconSizes: 7, checks: ['PNG dimensions and budgets', 'ICO payloads', 'outlined and editable SVGs', 'long-title fitting', 'public metadata fields and escaping', 'subpath URL resolution', 'default/generated/custom overrides', 'framework adapter shapes', 'invalid configuration and unsupported glyph rejection']};
+  return {result: 'pass', consumers: checkBrandingConsumers(), designModes: images, iconSizes: 7, checks: ['PNG dimensions and budgets', 'ICO payloads', 'outlined and editable SVGs', 'long-title fitting', 'public metadata fields and escaping', 'subpath URL resolution', 'default/generated/custom overrides', 'framework adapter shapes', 'invalid configuration and unsupported glyph rejection']};
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) console.log(JSON.stringify(checkBranding(), null, 2));

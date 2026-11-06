@@ -7,11 +7,9 @@ export function renderBrandingPreview({rows, selected, site, pages}) {
   <img width="1200" height="630" src="../${row.prefix}.png" alt="${esc(row.image.alt)}">
   <p><a href="../${row.prefix}.source.svg">Editable SVG</a> · <a href="../${row.prefix}.svg">Outlined SVG</a> · <a href="../${row.prefix}.png">PNG</a></p>
 </section>`).join('\n');
-  const pageCards = pages.slice(1).map(({slug, metadata}) => {
-    const customImage = site.pages.find(page => page.slug === slug)?.image;
-    const localImage = !customImage ? '../' + metadata.image.url.slice(site.url.length) : null;
+  const pageCards = pages.slice(1).map(({slug, metadata, localImage}) => {
     return `<section><h3>${esc(metadata.title)}</h3>
-${localImage ? `<img width="${metadata.image.width || 1200}" height="${metadata.image.height || 630}" src="${esc(localImage)}" alt="${esc(metadata.image.alt)}">` : `<p><a href="${esc(metadata.image.url)}">Custom image</a></p>`}
+${localImage ? `<img width="${metadata.image.width || 1200}" height="${metadata.image.height || 630}" src="../${esc(localImage)}" alt="${esc(metadata.image.alt)}">` : `<p><a href="${esc(metadata.image.url)}">Custom image</a></p>`}
 <p><a href="../assets/metadata/${slug}.head.html">Page head markup</a> · <a href="../assets/metadata/${slug}.json">Page metadata</a></p></section>`;
   }).join('\n');
   const icons = ['light', 'dark'].map(theme => `<div class="icon-context ${theme}" aria-label="${theme} browser background">${[16, 32, 48].map(size => `<img src="../assets/identity/favicon-${size}.png" width="${size}" height="${size}" alt="Sample favicon at ${size} pixels">`).join('')}</div>`).join('');
@@ -45,6 +43,7 @@ ${localImage ? `<img width="${metadata.image.width || 1200}" height="${metadata.
   <p>Source: <a href="../branding/mark.svg">sample mark</a>. Exports: <a href="../assets/identity/favicon.ico">ICO</a>, <a href="../assets/identity/favicon.svg">SVG</a>, <a href="../assets/identity/apple-touch-icon.png">Apple touch icon</a>, <a href="../assets/identity/site.webmanifest">web app manifest</a>.</p>
   <div class="cards">${cards}</div>
   <h2>Default and page metadata</h2>
+${site.social.image ? `  <p>Site-wide custom image: <a href="${esc(pages[0].metadata.image.url)}">${esc(pages[0].metadata.image.alt)}</a>. Design templates above remain available as alternatives.</p>` : ''}
   <p><a href="../assets/metadata/default.head.html">Default head markup</a> · <a href="../assets/metadata/default.json">Structured metadata</a></p>
   <div class="cards">${pageCards}</div>
   <p>Generated metadata uses the address in branding/site.json. Replace the illustrative identity and reserved example.com URL, rebuild, and check publicly hosted URLs before sharing.</p>

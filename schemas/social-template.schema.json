@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Social image composition",
+  "type": "object",
+  "required": ["align", "titleSize", "titleWeight", "frame"],
+  "additionalProperties": false,
+  "properties": {
+    "align": {"enum": ["left", "center"]},
+    "titleSize": {"type": "integer", "minimum": 48, "maximum": 96},
+    "titleWeight": {"enum": [400, 500, 600]},
+    "frame": {"enum": ["rule", "editorial", "panel", "invitation"]}
+  }
+}

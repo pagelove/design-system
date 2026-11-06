@@ -52,9 +52,9 @@ Node.js 22+ is needed for these scripts. Run npm ci for the pinned generators an
 
 Read [favicon and social-image guidance](docs/identity-and-sharing.md) and open [the asset preview](examples/branding.html). Replace the sample [app identity](branding/site.json) and [vector mark](branding/mark.svg), then run npm run build. App identity stays stable across design changes; social templates use each design's typography and colors. Midnight/dark remains the default.
 
-The kit includes SVG/ICO/PNG favicons, touch and maskable icons, a web manifest, editable and outlined SVG social sources, 1200×630 PNGs for all eight design/modes, and default/page-specific HTML and JSON metadata. Optional Next.js and Nuxt adapters share the same metadata. The [asset index](assets/social/index.json) records the generated paths. Placeholder addresses must be replaced before publication; live crawler/device verification is separate from repository checks.
+The kit includes SVG/ICO/PNG favicons, touch and maskable icons, a web manifest, editable and outlined SVG social sources, 1200×630 PNGs for all eight design/modes, and default/page-specific HTML and JSON metadata. Use social.image for a custom site-wide image; individual pages can override it. Optional Next.js and Nuxt adapters share the same metadata. The [asset index](assets/social/index.json) records the generated paths. Placeholder addresses must be replaced before publication; live crawler/device verification is separate from repository checks.
 
-See the [implementation review](reference/IDENTITY-SHARING-REVIEW.md) for coverage, rendered evidence and verification limits.
+See the [implementation review](reference/IDENTITY-SHARING-REVIEW.md) and [customization review](reference/IDENTITY-CONSUMER-REVIEW.md) for coverage, rendered evidence and verification limits.
 
 The original `tokens/profiles.json` is retained as historical reference. Its guides point to the complete selectable designs; `data-profile` is deprecated for design selection.
 
