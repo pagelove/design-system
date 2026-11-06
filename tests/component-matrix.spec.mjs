@@ -17,5 +17,13 @@ for(const design of catalog.designs)for(const mode of design.modes)test(`${desig
  await expect(page.locator('.pl-button').first()).toHaveCSS('transition-duration','0s');
  const gradient=page.locator('.pl-button--outlined-gradient:not(:disabled) .pl-button__label').first();
  await expect(gradient).not.toHaveCSS('color','rgba(0, 0, 0, 0)');
+ const pairs=await page.locator('.pl-button:not(.is-skeleton)').evaluateAll(buttons=>buttons.map(button=>({
+  disabled:button.disabled,foreground:getComputedStyle(button.querySelector('.pl-button__label')).color,background:getComputedStyle(button,'::after').backgroundColor
+ })));
+ const luminance=css=>{const c=css.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return c[0]*.2126+c[1]*.7152+c[2]*.0722;};
+ for(const pair of pairs) {
+  expect(pair.foreground).not.toEqual(pair.background);
+  if(!pair.disabled){const a=luminance(pair.foreground),b=luminance(pair.background);expect((Math.max(a,b)+.05)/(Math.min(a,b)+.05)).toBeGreaterThanOrEqual(4.5);}
+ }
  await page.screenshot({path:info.outputPath('component-matrix-forced.png'),fullPage:true});
 });

@@ -53,10 +53,9 @@ summary { min-height:44px; padding-block:10px; cursor:pointer; }
  *,*::before,*::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
 }
 @media (forced-colors:active) {
- .pl-button { border:1px solid ButtonText; }
- .pl-button:disabled { --_fg:GrayText; --_icon:GrayText; }
- .pl-button .pl-button__label { color:ButtonText; background-image:none; }
- .pl-button:disabled .pl-button__label { color:GrayText; }
+ .pl-button { --_bg:ButtonFace!important; --_fg:ButtonText!important; --_icon:ButtonText!important; --_border:ButtonText!important; border:1px solid ButtonText; }
+ .pl-button:disabled { --_fg:GrayText!important; --_icon:GrayText!important; --_border:GrayText!important; border-color:GrayText; }
+ .pl-button .pl-button__label { color:var(--_fg); background-image:none; }
  .pl-checkbox__box,.pl-radio__dot { border:1px solid CanvasText; }
  .pl-checkbox__input,.pl-radio__input { position:static; opacity:1; width:24px; height:24px; }
  .pl-checkbox__box,.pl-radio__dot { display:none; }
