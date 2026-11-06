@@ -59,8 +59,8 @@ for(const design of catalog.designs)for(const mode of design.modes) {
   await page.setViewportSize({width:320,height:900});
   await page.addStyleTag({content:'* {line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important} p {margin-bottom:2em!important}'});
   await page.evaluate(()=>document.documentElement.dir='rtl');
-  for(const screen of ['Settings 03','Collection 02','Overview 01']) {
-   await page.getByRole('link',{name:screen}).click();
+  for(const screen of ['settings','project','overview']) {
+   await page.locator('nav [data-screen="'+screen+'"]').click();
    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth),screen+' reflow').toBe(true);
   }
   await page.screenshot({path:info.outputPath('workspace-enlarged-rtl.png'),fullPage:true});
