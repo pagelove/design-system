@@ -17,9 +17,17 @@ for(const design of catalog.designs)for(const mode of design.modes)test(`${desig
  await expect(page.locator('.pl-button').first()).toHaveCSS('transition-duration','0s');
  const gradient=page.locator('.pl-button--outlined-gradient:not(:disabled) .pl-button__label').first();
  await expect(gradient).not.toHaveCSS('color','rgba(0, 0, 0, 0)');
- const pairs=await page.locator('.pl-button:not(.is-skeleton)').evaluateAll(buttons=>buttons.map(button=>({
-  disabled:button.disabled,foreground:getComputedStyle(button.querySelector('.pl-button__label')).color,background:getComputedStyle(button,'::after').backgroundColor
- })));
+ const pairs=await page.locator('.pl-button:not(.is-skeleton)').evaluateAll(buttons=>buttons.map(button=>{
+  // Transparent decoration is painted over the button/ancestor surfaces, not black.
+  const layers=[getComputedStyle(button,'::after').backgroundColor];
+  for(let node=button;node;node=node.parentElement)layers.push(getComputedStyle(node).backgroundColor);
+  let background=[255,255,255];
+  for(const layer of layers.reverse()) {
+   const rgba=layer.match(/[\d.]+/g).map(Number),alpha=rgba[3]??1;
+   background=background.map((channel,i)=>rgba[i]*alpha+channel*(1-alpha));
+  }
+  return {disabled:button.disabled,foreground:getComputedStyle(button.querySelector('.pl-button__label')).color,background:`rgb(${background.join(', ')})`};
+ }));
  const luminance=css=>{const c=css.match(/[\d.]+/g).slice(0,3).map(Number).map(v=>v/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);return c[0]*.2126+c[1]*.7152+c[2]*.0722;};
  for(const pair of pairs) {
   expect(pair.foreground).not.toEqual(pair.background);
