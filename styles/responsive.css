@@ -1,0 +1,33 @@
+/* Opt-in composition layer. Load after app.css and optional patterns.css. */
+.ds-responsive-surface { container-type:inline-size; min-inline-size:0; }
+.ds-toolbar,.ds-bulk-actions { display:flex; flex-wrap:wrap; align-items:end; gap:1rem; min-inline-size:0; }
+.ds-search { flex:1 1 16rem; min-inline-size:0; }
+.ds-search label { display:block; margin-block-end:.5rem; }
+.ds-search input { inline-size:100%; min-inline-size:0; }
+.ds-control-group { display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .75rem; max-inline-size:100%; min-inline-size:0; }
+.ds-toolbar > .ds-control-group { flex:1 1 22rem; }
+.ds-control-group > label { flex:0 0 auto; max-inline-size:100%; overflow-wrap:normal; word-break:normal; }
+.ds-control-group > select { flex:1 1 12rem; inline-size:auto; min-inline-size:0; max-inline-size:100%; margin:0; }
+.ds-actions,.ds-action-pair,.ds-dialog-actions { display:flex; flex-wrap:wrap; align-items:stretch; gap:.5rem; min-inline-size:0; max-inline-size:100%; }
+.ds-actions,.ds-action-pair { flex:0 1 auto; }
+.ds-actions > details[open] { flex-basis:100%; }
+.ds-toolbar:has(> .ds-actions > details[open]) > .ds-actions { flex-basis:100%; }
+.ds-action { flex:0 0 auto; inline-size:max-content; max-inline-size:100%; min-inline-size:0; white-space:normal; }
+.ds-action .pl-button__label { overflow-wrap:normal; word-break:normal; hyphens:manual; }
+.ds-action-pair > .ds-action,.ds-dialog-actions > .ds-action { flex:1 0 auto; }
+.ds-bulk-actions { align-items:center; }
+.ds-bulk-actions > p { flex:1 1 12rem; margin:0; }
+.ds-metric-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,14rem),1fr)); gap:1rem; margin:0; }
+.ds-metric { display:grid; grid-template-rows:subgrid; grid-row:span 2; min-inline-size:0; padding-block:1rem; border-block-start:1px solid var(--border-regular); }
+.ds-metric dt { overflow-wrap:normal; word-break:normal; }
+.ds-metric dd { margin:0; color:var(--text-strong); font-size:clamp(1rem,6cqi,1.75rem); font-variant-numeric:tabular-nums; }
+.ds-atomic { white-space:nowrap; overflow-wrap:normal; word-break:normal; }
+.ds-dialog-actions { margin-block-start:1.5rem; }
+/* Preserve the button palette when opting into the older dialog pattern styles. */
+.ds-dialog.ds-responsive-surface .pl-button.ds-action { color:var(--_fg); background:transparent; }
+@container (max-width:28rem) {
+  .ds-toolbar { display:grid; grid-template-columns:minmax(0,1fr); }
+  .ds-toolbar > .ds-actions,.ds-toolbar > .ds-action-pair { inline-size:100%; }
+  .ds-dialog-actions { flex-direction:column; }
+  .ds-dialog-actions > .ds-action { inline-size:100%; }
+}

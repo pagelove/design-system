@@ -11,6 +11,7 @@ List checks actually run and their results. For UI changes, include inspected sc
 - [ ] Edited canonical sources and regenerated dependent files where needed.
 - [ ] Recorded the plan and change batch in audit/CHANGELOG.md.
 - [ ] Ran the checks required by CONTRIBUTING.md.
+- [ ] For layout/control changes, reported actual widths, component states, inspected screenshots and remaining limits using the responsive acceptance template; marked not applicable with a reason otherwise.
 - [ ] Preserved supported modes and the configured default, or documented an intentional change.
 - [ ] Updated relevant guidance, compatibility notes and public-safe evidence.
 - [ ] Retained licenses and attribution; removed private data from the contribution.

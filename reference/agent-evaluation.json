@@ -7,6 +7,6 @@
     {"id":"explicit","brief":"Create an accessible project collection in Forest dark. Include search, empty state and keyboard navigation.","expectedDesign":"forest","expectedMode":"dark"},
     {"id":"unsupported","brief":"Use Invitation. Add a light mode only if the selected design declares one.","expectedDesign":"invitation","expectedMode":"dark"}
   ],
-  "checks": ["Loads selected guide and tokens", "Uses semantic roles rather than mixed palettes", "Does not invent unsupported modes", "Preserves labels and keyboard paths", "States persistence accurately", "Uses locally licensed fonts", "Matches reference typography and geometry", "Passes responsive and accessibility tasks"],
+  "checks": ["Loads selected guide and tokens", "Uses semantic roles rather than mixed palettes", "Does not invent unsupported modes", "Preserves labels and keyboard paths", "States persistence accurately", "Uses locally licensed fonts", "Matches reference typography and geometry", "Passes responsive and accessibility tasks", "Preserves short action labels, figures and related groups at constrained widths", "Reports actual viewport/container widths, component states and screenshots opened for visual review using reference/responsive-acceptance-template.md"],
   "results": []
 }

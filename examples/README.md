@@ -8,6 +8,7 @@ Run `npm run serve` from the repository root after installing development depend
 | [Component catalog](catalog.html) | Native controls, variants, states and supported modes |
 | [Workspace](workspace.html) | Overview, collections, detail, local draft creation and settings |
 | [App patterns](patterns.html) | Forms, tabs, disclosure, confirmation, error recovery, records and RTL |
+| [Responsive compositions](responsive.html) | Whole control groups, paired actions, intact metrics, menus and dialog footers at wide/intermediate/narrow sizes |
 | [Identity and sharing](branding.html) | Small icons, all eight social compositions and generated metadata |
 | [Quality checks](quality.html) | Font loading, motion preference and reading settings |
 

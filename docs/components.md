@@ -8,6 +8,10 @@ Use a native button for an action, with an explicit type. Use an anchor with a m
 
 Represent default, hover, pressed, focus, disabled, loading and skeleton states. Focus must remain visible. Disable a pending action when duplicate activation is invalid and keep an accessible label while its appearance changes. Skeletons are placeholders, not actionable unlabeled controls. Every icon-only action needs an accessible name describing its purpose. The recommended app layer expands small library sizes to at least 44px targets. It does not change the foundation scale.
 
+## Responsive Component Behavior and Visual Acceptance
+
+Read the [responsive contract](responsive.md) before placing controls in toolbars, metric grids or dialog footers. Short actions and meaningful figures need space to remain intact; related controls reflow as complete groups. Prose wraps naturally. Emergency wrapping in the base styles is a last-resort readability safeguard, not a composition strategy. Use the opt-in [responsive layouts](../styles/responsive.css) and [interactive examples](../examples/responsive.html), then report the actual width/state matrix and inspected screenshots.
+
 ## Links
 
 Use `pl-link--default` for standalone links and `pl-link--inline` for links in prose. Native underline, visited state, focus and useful link text matter more than decorative icons. Do not make a disabled-looking anchor navigate unexpectedly; if there is no destination, describe availability as text.

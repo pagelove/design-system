@@ -1,5 +1,10 @@
 # Releases
 
+## Unreleased
+
+- Add a content-specific responsive contract and required visual acceptance report for consuming agents.
+- Add opt-in layout classes and six interactive reference compositions, with component-level diagnostics and responsive/state regression cases. Existing design tokens, defaults and layout styles remain compatible; load styles/responsive.css explicitly to adopt the new compositions.
+
 ## 0.6.1
 
 The identity consumer review fixes gaps exposed by replacement artwork and configuration.

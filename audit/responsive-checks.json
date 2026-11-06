@@ -1,0 +1,3160 @@
+{
+  "time": "2026-11-06T19:03:13.495Z",
+  "scope": "Opt-in responsive component references, diagnostics and visual acceptance guidance",
+  "release": "0.6.1 with unreleased additions",
+  "baseCommit": "470ae12ccfcb782ab29c518fb06fa9b9b2d3bce1",
+  "publication": "uncommitted local changes",
+  "platform": "win32",
+  "node": "v24.19.0",
+  "playwright": "1.64.1",
+  "validation": {
+    "cleanInstall": "npm ci --ignore-scripts passed; zero reported vulnerabilities",
+    "finalBuildCoreExternal": {
+      "result": "pass",
+      "commands": [
+        "npm run build",
+        "npm run check",
+        "npm run check:external"
+      ],
+      "execution": "sequential, after final guidance/report additions",
+      "logs": [
+        {
+          "file": "final-build.log",
+          "sha256": "927e96d323d70c3440eb5a307938d425c9fa2bde52600c7c300ab9f2f8b3f537"
+        },
+        {
+          "file": "final-core.log",
+          "sha256": "2feb15119fefbc16b489c8706a39bd404b21ef98ba8d10d3646503b65fe4469b"
+        },
+        {
+          "file": "final-external.log",
+          "sha256": "4d8d6babf14cc6371a7114df2ecbadb0b82af6f54a9b1a3b0a57c32f13ab94a4"
+        }
+      ]
+    },
+    "fullSuite": {
+      "command": "npm run test:browser",
+      "startTime": "2026-11-06T18:41:38.423Z",
+      "duration": 390590.498,
+      "expected": 204,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "scope": "204 unique cases, before the final expanded-action-group row refinement"
+    },
+    "finalAffectedSuite": {
+      "command": "npm run test:browser -- tests/responsive.spec.mjs",
+      "startTime": "2026-11-06T18:49:31.990Z",
+      "duration": 134771.379,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "scope": "27 affected cases after the final menu refinement, including three deliberately broken-layout detector cases; these overlap the full suite"
+    },
+    "geometry": {
+      "fixtureEngineRuns": 24,
+      "stateAudits": 912,
+      "issues": 0,
+      "requestedViewportWidths": [
+        320,
+        375,
+        768,
+        1024,
+        1280,
+        1768
+      ],
+      "componentContainerTransitions": [
+        448,
+        464,
+        704,
+        944
+      ],
+      "neighborOffsets": [
+        -1,
+        0,
+        1
+      ],
+      "runs": [
+        {
+          "browser": "chromium",
+          "design": "classic",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1120
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "classic",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1120
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "editorial",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1040
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "editorial",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1040
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "forest",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1160
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "forest",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1160
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "midnight",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1200
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 28
+        },
+        {
+          "browser": "chromium",
+          "design": "invitation",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            494,
+            495,
+            496,
+            510,
+            511,
+            512,
+            750,
+            751,
+            752,
+            768,
+            990,
+            991,
+            992,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            273,
+            328,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            721,
+            943,
+            944,
+            945,
+            977,
+            1080
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 22
+        },
+        {
+          "browser": "firefox",
+          "design": "classic",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1120
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "classic",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1120
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "editorial",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1040
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "editorial",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1040
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "forest",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1160
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "forest",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1160
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "midnight",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1200
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 17
+        },
+        {
+          "browser": "firefox",
+          "design": "invitation",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1080
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 7
+        },
+        {
+          "browser": "webkit",
+          "design": "classic",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1120
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "classic",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1120
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "editorial",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1040
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "editorial",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1040
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "forest",
+          "mode": "light",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1160
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "forest",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1160
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "midnight",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1200
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 16
+        },
+        {
+          "browser": "webkit",
+          "design": "invitation",
+          "mode": "dark",
+          "states": 38,
+          "widths": [
+            320,
+            375,
+            479,
+            480,
+            481,
+            495,
+            496,
+            497,
+            735,
+            736,
+            737,
+            768,
+            975,
+            976,
+            977,
+            1024,
+            1280,
+            1768
+          ],
+          "containerWidths": [
+            288,
+            343,
+            447,
+            448,
+            449,
+            463,
+            464,
+            465,
+            560,
+            703,
+            704,
+            705,
+            736,
+            943,
+            944,
+            945,
+            992,
+            1080
+          ],
+          "stateNames": [
+            "populated/detail",
+            "open-menu",
+            "edit-dialog/validation",
+            "empty",
+            "filtered",
+            "selection-cleared",
+            "long-destination",
+            "next-week",
+            "200%-text/RTL/spacing",
+            "forced-colors/reduced-motion",
+            "200%-text/dialog"
+          ],
+          "exceptionOccurrences": 6
+        }
+      ],
+      "declaredExceptions": [
+        {
+          "state": "long-destination",
+          "viewport": 320,
+          "element": "#album",
+          "reason": "Native select's complete selected value is visibly repeated in #destination",
+          "fixtureEngineOccurrences": 8
+        },
+        {
+          "state": "next-week",
+          "viewport": 320,
+          "element": "#album",
+          "reason": "Native select's complete selected value is visibly repeated in #destination",
+          "fixtureEngineOccurrences": 8
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "#visibility",
+          "reason": "Native select's complete selected value is visibly repeated in #search-status",
+          "fixtureEngineOccurrences": 7
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "Export contacts",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 24
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "Move to album",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 29
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "#album",
+          "reason": "Native select's complete selected value is visibly repeated in #destination",
+          "fixtureEngineOccurrences": 8
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "Previous week",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "Download selected",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 24
+        },
+        {
+          "state": "200%-text/RTL/spacing",
+          "viewport": 320,
+          "element": "Clear selection",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "#visibility",
+          "reason": "Native select's complete selected value is visibly repeated in #search-status",
+          "fixtureEngineOccurrences": 7
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "Export contacts",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 24
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "Move to album",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 29
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "#album",
+          "reason": "Native select's complete selected value is visibly repeated in #destination",
+          "fixtureEngineOccurrences": 8
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "Previous week",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "Download selected",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 24
+        },
+        {
+          "state": "forced-colors/reduced-motion",
+          "viewport": 320,
+          "element": "Clear selection",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "#visibility",
+          "reason": "Native select's complete selected value is visibly repeated in #search-status",
+          "fixtureEngineOccurrences": 7
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "Export contacts",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 24
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "Move to album",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 29
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "#album",
+          "reason": "Native select's complete selected value is visibly repeated in #destination",
+          "fixtureEngineOccurrences": 8
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "Previous week",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "Download selected",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 24
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "Clear selection",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "#invoice-name",
+          "reason": "Native editable value scrolls within its field; not static clipped content",
+          "fixtureEngineOccurrences": 16
+        },
+        {
+          "state": "200%-text/dialog",
+          "viewport": 320,
+          "element": "Save changes",
+          "reason": "Label exceeds a full available row at this text size; whole-word wrapping checked separately",
+          "fixtureEngineOccurrences": 22
+        }
+      ]
+    },
+    "accessibility": {
+      "scope": "WCAG 2 A/AA, 2.1 AA and 2.2 AA tags; interacted main state at 320 CSS px and validation-dialog state at 375 CSS px",
+      "scans": 48,
+      "violations": 0,
+      "scansWithIncomplete": 48,
+      "incompleteRules": [
+        "color-contrast"
+      ],
+      "results": [
+        {
+          "browser": "chromium",
+          "fixture": "classic/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "classic/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "classic/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "classic/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "editorial/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "editorial/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "editorial/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "editorial/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "forest/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "forest/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "forest/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "forest/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "midnight/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "midnight/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "invitation/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "chromium",
+          "fixture": "invitation/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "classic/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "classic/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "classic/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "classic/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "editorial/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "editorial/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "editorial/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "editorial/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "forest/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "forest/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "forest/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "forest/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "midnight/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "midnight/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "invitation/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "firefox",
+          "fixture": "invitation/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "classic/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "classic/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "classic/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "classic/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "editorial/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "editorial/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "editorial/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "editorial/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "forest/light: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "forest/light: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "forest/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "forest/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "midnight/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "midnight/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "invitation/dark: responsive groups, figures and task states",
+          "state": "dialog-accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 3
+            }
+          ]
+        },
+        {
+          "browser": "webkit",
+          "fixture": "invitation/dark: responsive groups, figures and task states",
+          "state": "accessibility",
+          "axe": "4.14.0",
+          "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.2 Safari/605.1.15",
+          "violations": 0,
+          "incomplete": [
+            {
+              "rule": "color-contrast",
+              "nodes": 8
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "visualReview": {
+    "browser": "Chromium 156.0.8078.4",
+    "capturedCatalogImages": 198,
+    "catalogImagesOpened": 37,
+    "additionalEnlargedDialogOpened": 1,
+    "scope": "Representative component screenshots across eight design/mode combinations, six requested widths and all twelve component-edge widths; not every design/width/state combination was inspected",
+    "reviewer": "Codex",
+    "inspections": [
+      {
+        "file": "classic-light-375-toolbar.png",
+        "design": "classic",
+        "mode": "light",
+        "viewport": 375,
+        "container": 328,
+        "state": "toolbar",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "8630dd3e9f8a6f874cbc4b3ca909f0b92c2cebd61d615b272e75867a36739a97"
+      },
+      {
+        "file": "classic-dark-375-dialog.png",
+        "design": "classic",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "dialog",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "3f16782bdaa803a56589f02a36327036c8d160f65f0060b8795bcfa13be8c7dc"
+      },
+      {
+        "file": "editorial-light-375-metrics.png",
+        "design": "editorial",
+        "mode": "light",
+        "viewport": 375,
+        "container": 328,
+        "state": "metrics",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d975fb66c23707c5d3c21daf050d0dc32a5a8043134838b9931d4de8d56c54a2"
+      },
+      {
+        "file": "editorial-dark-375-dialog.png",
+        "design": "editorial",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "dialog",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "4d9fefcd40920c2b1e6b5e55640e88ed9813891052421a52f005d92220b4e018"
+      },
+      {
+        "file": "forest-light-375-toolbar.png",
+        "design": "forest",
+        "mode": "light",
+        "viewport": 375,
+        "container": 328,
+        "state": "toolbar",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "c39487195f3d38a30811284852edb22947cd3371956b2580de242e7089e98619"
+      },
+      {
+        "file": "forest-dark-375-metrics.png",
+        "design": "forest",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "metrics",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "81141788c17dd3ba8abe9714fed71ef50a92a8c44072a260b7e1078e2befc306"
+      },
+      {
+        "file": "midnight-dark-320-field.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "field",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "c8c3242175494a171830b8090ce69c6e1537a3b447397cc44b9e3ef569f25c6e"
+      },
+      {
+        "file": "midnight-dark-320-pair.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "pair",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "5ea62795a28a2e7d3a7664fee9f2324d64eb5a849c804756f414eddfcb0c0d53"
+      },
+      {
+        "file": "midnight-dark-320-bulk.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "bulk",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "ad3dc36b47459adc11185304a9d5d335cca9f971239eab02d7725e8918e860dd"
+      },
+      {
+        "file": "midnight-dark-320-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "metrics",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "0a68a3b379b1142c7887cbfecbe84cdb3d0581282c8d2c464e06039ec759ccc1"
+      },
+      {
+        "file": "midnight-dark-320-dialog.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "dialog",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "f8baf1780e6b199f7cf002673847268980aebdb974fd941487b5c8f0d6509c3a"
+      },
+      {
+        "file": "midnight-dark-375-toolbar.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "toolbar",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "f61c7d59db07f212faeb22eccef99b24578cda7fe0bd4792d77adf49e402533b"
+      },
+      {
+        "file": "midnight-dark-375-menu.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "menu",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "55260297eae1d71d81a834aec672d32f05843f670a626eb5572148580d6066a3"
+      },
+      {
+        "file": "midnight-dark-768-toolbar.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 768,
+        "container": 721,
+        "state": "toolbar",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d1291c38fd75590898b15fc38853500f41a93729ba2533af9bdc492a7dd76a92"
+      },
+      {
+        "file": "midnight-dark-768-menu.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 768,
+        "container": 721,
+        "state": "menu",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d3e846f63a00187771577fc5870c8f51222762b6c07996b6162d73ee66b6e98a"
+      },
+      {
+        "file": "midnight-dark-1024-overview.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 1024,
+        "container": 977,
+        "state": "overview",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "0394fe7157dc3199f70e0a39389248973c6135dcba767745bb466d3eaa531b8a"
+      },
+      {
+        "file": "midnight-dark-1280-toolbar.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 1280,
+        "container": 1200,
+        "state": "toolbar",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "2d4fb81ddcf4c3c436e8432831f09e38e8e983a69c9c30e5c0bc6c801a498c27"
+      },
+      {
+        "file": "midnight-dark-1768-menu.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 1768,
+        "container": 1200,
+        "state": "menu",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "defect: expanded actions left excessive empty space above fields; superseded by menu-revised",
+        "sha256": "2e85ea702b8e3b651b462fee3365429f6cca50962c1b9315acfb04df44253b25"
+      },
+      {
+        "file": "invitation-dark-375-dialog.png",
+        "design": "invitation",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "dialog",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "96e6b1151715b7a4f2dfe7740fde5a69b5721603162749cbff0c3c36d1287448"
+      },
+      {
+        "file": "midnight-dark-edge-448-0-toolbar.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 494,
+        "container": 447,
+        "state": "toolbar",
+        "edge": 448,
+        "delta": -1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "928b73431e990dfe4a3ce79eafa3e3dbd814de45d15c0419f95d11dfaeab8eea"
+      },
+      {
+        "file": "midnight-dark-edge-448-1-toolbar.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 495,
+        "container": 448,
+        "state": "toolbar",
+        "edge": 448,
+        "delta": 0,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "09987186136491213273d0320ec8fd0c36004f293e2d5b6bb2a948ad7a5553ad"
+      },
+      {
+        "file": "midnight-dark-edge-448-2-toolbar.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 496,
+        "container": 449,
+        "state": "toolbar",
+        "edge": 448,
+        "delta": 1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "22a31492e92e6ec5ffbfee4b3028318eacd64b22198cbf2f95e84ff8ea08c283"
+      },
+      {
+        "file": "midnight-dark-edge-464-0-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 510,
+        "container": 463,
+        "state": "metrics",
+        "edge": 464,
+        "delta": -1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d176a2fbedb0a06a5858348f4add6006708bb0632bb27d5d139cc968f66e90e3"
+      },
+      {
+        "file": "midnight-dark-edge-464-1-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 511,
+        "container": 464,
+        "state": "metrics",
+        "edge": 464,
+        "delta": 0,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "7a1c71108bca266a810efba491db16ef8274025072b0c5043f0be5923ebb1e55"
+      },
+      {
+        "file": "midnight-dark-edge-464-2-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 512,
+        "container": 465,
+        "state": "metrics",
+        "edge": 464,
+        "delta": 1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "5f45f717f099fa9046cfd88c5da466ebe448ae99040da04480724bfe86577e61"
+      },
+      {
+        "file": "midnight-dark-edge-704-0-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 750,
+        "container": 703,
+        "state": "metrics",
+        "edge": 704,
+        "delta": -1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "0f5def5b949b3ad8d3bcf77e22bb53cb8e957a59030f254613b88295042ab7e0"
+      },
+      {
+        "file": "midnight-dark-edge-704-1-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 751,
+        "container": 704,
+        "state": "metrics",
+        "edge": 704,
+        "delta": 0,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "6938dacd1a92c0ab68018306005d36d1ebfe318ecf10849a03fab0d8510be699"
+      },
+      {
+        "file": "midnight-dark-edge-704-2-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 752,
+        "container": 705,
+        "state": "metrics",
+        "edge": 704,
+        "delta": 1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "5db3fc9e368e1a958e8d24f836432d26216479725d7c036fc6ed14efe080abcf"
+      },
+      {
+        "file": "midnight-dark-edge-944-0-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 990,
+        "container": 943,
+        "state": "metrics",
+        "edge": 944,
+        "delta": -1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "43a168a61359f433b72a74f0ce34b61d0f0e78fcff15e5239b7a533bc5545f4b"
+      },
+      {
+        "file": "midnight-dark-edge-944-1-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 991,
+        "container": 944,
+        "state": "metrics",
+        "edge": 944,
+        "delta": 0,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "ccbeb3629f4feabdc8142c2a46c8b0e8ac882e27479e833eff3535dd8c2151c3"
+      },
+      {
+        "file": "midnight-dark-edge-944-2-metrics.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 992,
+        "container": 945,
+        "state": "metrics",
+        "edge": 944,
+        "delta": 1,
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "84b337b1de0d3349cf1539672aacb044cbfc993e0a5b70a19c95f7958ab041b7"
+      },
+      {
+        "file": "midnight-dark-320-menu-revised.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "menu-revised",
+        "supersedes": "midnight-dark-320-menu.png",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "56551b9823b7102a77918b49462202e620095aa5f3b01b323f48cf0a6939f742"
+      },
+      {
+        "file": "midnight-dark-375-menu-revised.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 375,
+        "container": 328,
+        "state": "menu-revised",
+        "supersedes": "midnight-dark-375-menu.png",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "55260297eae1d71d81a834aec672d32f05843f670a626eb5572148580d6066a3"
+      },
+      {
+        "file": "midnight-dark-768-menu-revised.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 768,
+        "container": 721,
+        "state": "menu-revised",
+        "supersedes": "midnight-dark-768-menu.png",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d3e846f63a00187771577fc5870c8f51222762b6c07996b6162d73ee66b6e98a"
+      },
+      {
+        "file": "midnight-dark-1024-menu-revised.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 1024,
+        "container": 977,
+        "state": "menu-revised",
+        "supersedes": "midnight-dark-1024-menu.png",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "468706a01a115af90292ff5abe9a52a7aa2c28247cf92d92d9e4d64188697747"
+      },
+      {
+        "file": "midnight-dark-1280-menu-revised.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 1280,
+        "container": 1200,
+        "state": "menu-revised",
+        "supersedes": "midnight-dark-1280-menu.png",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d950479c216267771edf60037ae64956ac9b871a5721ab9579cd668c90aab744"
+      },
+      {
+        "file": "midnight-dark-1768-menu-revised.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 1768,
+        "container": 1200,
+        "state": "menu-revised",
+        "supersedes": "midnight-dark-1768-menu.png",
+        "textSize": "100%",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed for the pictured component/state",
+        "sha256": "d950479c216267771edf60037ae64956ac9b871a5721ab9579cd668c90aab744"
+      },
+      {
+        "file": "320-text-dialog.png",
+        "design": "midnight",
+        "mode": "dark",
+        "viewport": 320,
+        "container": 273,
+        "state": "enlarged dialog; Save focused and scrolled fully into view",
+        "textSize": "200% with RTL and text-spacing overrides",
+        "actualZoom": "not tested",
+        "inspected": true,
+        "reviewer": "Codex",
+        "result": "passed; whole-word action wrapping and vertical body scrolling are intentional",
+        "sha256": "67f9523bf5df3ae8dd5c06183debf3e15ed889ccafe4e2f74c070e0cb1cf3a7f"
+      }
+    ],
+    "publicPreviews": [
+      {
+        "file": "reference/previews/responsive-toolbar-wide.png",
+        "sha256": "2d4fb81ddcf4c3c436e8432831f09e38e8e983a69c9c30e5c0bc6c801a498c27"
+      },
+      {
+        "file": "reference/previews/responsive-toolbar-intermediate.png",
+        "sha256": "d1291c38fd75590898b15fc38853500f41a93729ba2533af9bdc492a7dd76a92"
+      },
+      {
+        "file": "reference/previews/responsive-toolbar-narrow.png",
+        "sha256": "f61c7d59db07f212faeb22eccef99b24578cda7fe0bd4792d77adf49e402533b"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "gap": "No explicit component content-wrapping/grouping contract or required actual-review report",
+      "resolution": "Dedicated guide, generated contexts and contribution/consumer acceptance requirements"
+    },
+    {
+      "gap": "Page overflow alone missed compressed or poorly composed control contents",
+      "resolution": "Marked-element diagnostics, negative fixtures, whole-group reference styles and separate screenshot inspection"
+    },
+    {
+      "gap": "Long closed native select values clipped at narrow/enlarged sizes",
+      "resolution": "Visible complete-value mirrors tied to selected values and descriptions"
+    },
+    {
+      "gap": "Existing dialog button styles overrode semantic action color",
+      "resolution": "Opt-in semantic foreground preservation, palette assertion and dialog accessibility scans"
+    },
+    {
+      "gap": "Metric figures and expanded action groups were visually misaligned",
+      "resolution": "Subgrid figure alignment and expanded menu/action groups on their own rows, with regression checks"
+    }
+  ],
+  "sourceHashes": {
+    "styles/responsive.css": "d443276900c0f97e2cc81042c3c205d7aea402b5d656f0e0c7242f651ec68156",
+    "examples/responsive.html": "9f1a47148ceb6583a1a55f671a4e44b5482fa9e9795654c46959ffc4d5e6c553",
+    "examples/responsive.css": "317862b82906cd2e0ac2c018da7487f5a554ff35227dbeb53c58181a4658749b",
+    "examples/responsive.js": "68d5fa4f9314836711b85ab35428e323066319123f18e9d2b1d4ca10ca3fc76b",
+    "tests/helpers/responsive-audit.mjs": "8316a8da6ab45ac15863b6ad98492aedb8f05835cb62f15dc16d70402b5a7d8c",
+    "tests/responsive.spec.mjs": "95afd12609cf666f4bdb33db34a0688175b6213dd9834377df7909b6536b0534"
+  },
+  "limits": [
+    "The external 16 applications and the six reported repairs were not independently inspected; their source and correction evidence were not supplied.",
+    "Actual browser zoom, physical devices, native assistive technology and full localization were not tested. Root text enlargement, spacing and RTL are separate fixtures.",
+    "Axe incomplete color-contrast results remain review flags. Representative screenshots and semantic token assertions do not certify every flagged node or complete WCAG conformance.",
+    "The final local changes have not run in hosted CI or Linux pixel comparison. Existing baseline images and original design sources are unchanged.",
+    "Diagnostic coverage requires declared content and supported classes; it is finite and is not a universal layout validator.",
+    "Captured images without recorded inspection do not count as visual acceptance; consuming apps must perform and report their own gate.",
+    "Examples use local sample state, not durable persistence, backend export or third-party integration."
+  ],
+  "hostedFollowup": {
+    "time": "2026-11-06T19:25:52.147Z",
+    "pullRequest": "https://github.com/pagelove/design-system/pull/2",
+    "firstHostedRun": "https://github.com/pagelove/design-system/actions/runs/42277378677",
+    "firstHostedStats": {
+      "startTime": "2026-11-06T19:12:08.380Z",
+      "duration": 307191.718,
+      "expected": 197,
+      "skipped": 0,
+      "unexpected": 7,
+      "flaky": 0
+    },
+    "failure": "Seven Chromium enlarged-text/RTL cases overflowed because a selection checkbox and anonymous label text could not reflow as a group; the Windows root client width included reserved gutter space and masked a small document overflow.",
+    "revision": "Wrap the checkbox group with a marked flexible label; compare page overflow against actual root layout width; assert label scroll width does not exceed its client width.",
+    "localAffectedRerun": {
+      "startTime": "2026-11-06T19:22:27.452Z",
+      "duration": 146508.083,
+      "expected": 27,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "inspectedScreenshots": [
+      {
+        "file": "responsive-classic-dark-re-cfb9c-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "f1ce52387960b64c4a48e87d15f38869b9ad27bd1b1369c6015caa0fc43c8c7f"
+      },
+      {
+        "file": "responsive-classic-light-r-c879e-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "a8fc0b74db753103e7c0f08866bc24e95c90f5cc9e59436db5d60a6885a2171e"
+      },
+      {
+        "file": "responsive-editorial-dark--3b544-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "f3561ff30b619dcd4414cbfae16c4c505a1e5a704ad4e57a56097abaf35c6223"
+      },
+      {
+        "file": "responsive-editorial-light-16b9e-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "9565a764d2af09c5bfb59f13c64c2935a5f28d58c5ab1925b18bb8e808bdb0e6"
+      },
+      {
+        "file": "responsive-forest-dark-res-77804-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "e7af72749b4736768832feb67e7fa2757f82bd281fbdb5b28cf354fe1e9a241e"
+      },
+      {
+        "file": "responsive-forest-light-re-a4ac0-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "69b366265ed0f601b4e6586c17049df4f80b133581d5cf9d704cebb284fb0c9a"
+      },
+      {
+        "file": "responsive-invitation-dark-341f6-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "6bb32cf9c9b0373c1bac11439b8bb26c2519400f96dae2d2d6314d27d13a05f9"
+      },
+      {
+        "file": "responsive-midnight-dark-r-2923c-ups-figures-and-task-states-chromium/320-text-selection.png",
+        "viewport": 320,
+        "textSize": "200%",
+        "direction": "rtl",
+        "spacing": "expanded",
+        "component": "selection checkbox and label",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "7818d3efe1fb71142a2e4055645c51cb278be0d6d0e63dcdcb8c7ed89e517a69"
+      },
+      {
+        "file": "responsive-midnight-dark-r-2923c-ups-figures-and-task-states-chromium/320-bulk.png",
+        "viewport": 320,
+        "textSize": "100%",
+        "direction": "ltr",
+        "spacing": "normal",
+        "component": "bulk group",
+        "inspectedBy": "Codex",
+        "result": "pass",
+        "sha256": "e4fa8b3a3e1c86f7274442c1719acdde93217b8494766358dfd8454b755d452c"
+      }
+    ],
+    "sourceHashes": {
+      "examples/responsive.css": "16d3f7f40c71b2bd92c71a0467e8afaa61bcc826f83a5da6642091148ef3c9dd",
+      "examples/responsive.html": "ab7ffa1fdb33896da29b32f714521a68aa85aea71c087fe16d405d931929869c",
+      "tests/helpers/responsive-audit.mjs": "8e4a9c7bb60695a7db6b8cf54ec4fab5f527cb69705db9be02a72030e0f2de12",
+      "tests/responsive.spec.mjs": "1cfe805457a597342991d002b9bef2f0e98ae35ed304979894e8f5ae752bbbb1"
+    },
+    "hostedRevalidation": "pending before merge; see PR checks",
+    "staticValidation": {
+      "result": "pass",
+      "commands": [
+        "npm run build",
+        "npm run check",
+        "npm run check:external"
+      ],
+      "logs": [
+        {
+          "file": "correction-build.log",
+          "sha256": "927e96d323d70c3440eb5a307938d425c9fa2bde52600c7c300ab9f2f8b3f537"
+        },
+        {
+          "file": "correction-core.log",
+          "sha256": "2feb15119fefbc16b489c8706a39bd404b21ef98ba8d10d3646503b65fe4469b"
+        },
+        {
+          "file": "correction-external.log",
+          "sha256": "4d8d6babf14cc6371a7114df2ecbadb0b82af6f54a9b1a3b0a57c32f13ab94a4"
+        }
+      ]
+    }
+  }
+}

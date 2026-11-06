@@ -11,6 +11,7 @@ Start with the [repository README](../README.md) to preview the collection or in
 | Understand colors, scales and text styles | [Foundations](foundations.md) |
 | Use controls, states and HTML helpers | [Component contracts](components.md) |
 | Build keyboard interactions and recovery flows | [Reusable app patterns](patterns.md) |
+| Keep controls and figures readable after reflow | [Responsive behavior and visual acceptance](responsive.md) |
 | Compose polished app screens | [Product polish](polish.md) |
 | Write labels, empty states and errors | [Content guidance](content.md) |
 | Check inclusive interaction and readability | [Accessibility](accessibility.md) |

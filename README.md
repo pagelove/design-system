@@ -76,6 +76,7 @@ With no requested design, use the defaults in [designs/catalog.json](designs/cat
 | Colors, typography, spacing and component guidance | [Documentation index](docs/README.md) |
 | Working overview, collection/detail and settings screens | [Workspace example](examples/workspace.html) |
 | Controls, forms, dialogs, tabs and recovery patterns | [Example index](examples/README.md) |
+| Responsive toolbars, action groups and metric grids | [Responsive guidance](docs/responsive.md) and [working examples](examples/responsive.html) |
 | Tokens for code or design tools | Selected design's `exports/` and `tokens/`; [format contracts](docs/formats.md) |
 | Favicons, app icons, OG images and metadata | [Identity and sharing guide](docs/identity-and-sharing.md) |
 | Supported environments and verification limits | [Support contract](docs/support.md) |
