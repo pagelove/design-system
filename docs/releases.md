@@ -5,8 +5,9 @@
 The wider review retains all five designs and Midnight/dark as default.
 
 - Less output preserves quoted font names when compiled. New independent consumers verify all values in YAML, XML, Sass, Less, TypeScript, text, Markdown and SVG exports across every bundle. React/Vue/Svelte snippets now have pinned compiler and server-render checks; they remain source examples.
-- Cancelled workspace drafts stay with their collection. History navigation closes a stale creation dialog, modal keyboard focus stays contained, and corrected settings fields clear their errors. Pending saves preserve newer edits; reset cancels a pending preview save.
+- Cancelled workspace drafts stay with their collection. History navigation closes a stale creation dialog, modal keyboard focus stays contained, and corrected settings fields clear their errors. Pending saves preserve newer edits; reset cancels a pending preview save and restores the rendered reading/motion preferences.
 - Original button and field text responds to enlarged-text preferences. Forest secondary text and visited-link roles meet the checked contrast target. Forced-color gradient labels use system text colors.
+- Workspace heading/status content wraps under combined narrow, RTL, enlarged-text and spacing settings. Font diagnostics wait for imported styles before reading family values.
 - Expanded browser coverage follows full workspace tasks and all button appearances, sizes and states, and visits the remaining previews in every mode. See reference/WIDER-REVIEW.md for coverage and outstanding manual acceptance.
 - Corrected the bundled-font licensing notice. No token names, supported modes or default selection changed.
 

@@ -32,4 +32,6 @@ html[data-text-size="large"]{font-size:125%}html[data-text-size="extra-large"]{f
 [data-text-size="extra-large"] .section-heading{align-items:flex-start;flex-direction:column}
 @media(max-width:700px){.feature-copy h2{font-size:1.5rem}}
 .ui-button{max-width:100%;min-width:0;white-space:normal;overflow-wrap:anywhere;text-align:center}
+.page-heading>*{min-width:0;max-width:100%}
+.pill{max-width:100%;white-space:normal;overflow-wrap:anywhere}
 @media(forced-colors:active){.ui-button{border-color:ButtonText}}

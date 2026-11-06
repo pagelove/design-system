@@ -1,0 +1,208 @@
+{
+  "result": "pass",
+  "consumerFormats": [
+    {
+      "bundle": "root",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "YAML parser/value parity",
+        "XML parser/value parity",
+        "Sass compiler/map parity",
+        "Less compiler/default and mode parity",
+        "TypeScript type check and executed value parity",
+        "text and Markdown complete parity",
+        "SVG XML and swatch parity"
+      ]
+    },
+    {
+      "bundle": "designs/classic/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "YAML parser/value parity",
+        "XML parser/value parity",
+        "Sass compiler/map parity",
+        "Less compiler/default and mode parity",
+        "TypeScript type check and executed value parity",
+        "text and Markdown complete parity",
+        "SVG XML and swatch parity"
+      ]
+    },
+    {
+      "bundle": "designs/editorial/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "YAML parser/value parity",
+        "XML parser/value parity",
+        "Sass compiler/map parity",
+        "Less compiler/default and mode parity",
+        "TypeScript type check and executed value parity",
+        "text and Markdown complete parity",
+        "SVG XML and swatch parity"
+      ]
+    },
+    {
+      "bundle": "designs/forest/",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "checks": [
+        "YAML parser/value parity",
+        "XML parser/value parity",
+        "Sass compiler/map parity",
+        "Less compiler/default and mode parity",
+        "TypeScript type check and executed value parity",
+        "text and Markdown complete parity",
+        "SVG XML and swatch parity"
+      ]
+    },
+    {
+      "bundle": "designs/midnight/",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "YAML parser/value parity",
+        "XML parser/value parity",
+        "Sass compiler/map parity",
+        "Less compiler/default and mode parity",
+        "TypeScript type check and executed value parity",
+        "text and Markdown complete parity",
+        "SVG XML and swatch parity"
+      ]
+    },
+    {
+      "bundle": "designs/invitation/",
+      "modes": [
+        "dark"
+      ],
+      "checks": [
+        "YAML parser/value parity",
+        "XML parser/value parity",
+        "Sass compiler/map parity",
+        "Less compiler/default and mode parity",
+        "TypeScript type check and executed value parity",
+        "text and Markdown complete parity",
+        "SVG XML and swatch parity"
+      ]
+    }
+  ],
+  "frameworks": [
+    {
+      "framework": "React",
+      "checks": [
+        "compiler",
+        "server render: default, disabled, busy"
+      ],
+      "limits": "No hydrated client integration or consuming-app build claimed."
+    },
+    {
+      "framework": "Vue",
+      "checks": [
+        "compiler",
+        "server render: default, disabled, busy"
+      ],
+      "limits": "No hydrated client integration or consuming-app build claimed."
+    },
+    {
+      "framework": "Svelte",
+      "checks": [
+        "compiler",
+        "server render: default, disabled, busy"
+      ],
+      "limits": "No hydrated client integration or consuming-app build claimed."
+    }
+  ],
+  "typographyConversions": {
+    "validCases": 5,
+    "rejectedCases": 4,
+    "rootFontSizeForMixedUnits": 16
+  },
+  "schemas": 3,
+  "cssReferences": "pass",
+  "resolverBundles": 6,
+  "resolverChecks": [
+    "reference-driven composition",
+    "default and explicit mode parity",
+    "complete token coverage",
+    "invalid inputs",
+    "single-context rejection",
+    "cycles",
+    "source override order"
+  ],
+  "helperInputs": "pass",
+  "fontBytes": 1236628,
+  "stitch": [
+    {
+      "file": ".stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/classic/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/classic/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/editorial/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/editorial/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/forest/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/forest/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/midnight/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/invitation/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    }
+  ]
+}

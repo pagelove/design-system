@@ -683,6 +683,7 @@ Version 0.5.2 retains Midnight/dark as the collection default. This is a source 
 | Surface | Maturity | Evidence and boundary |
 | --- | --- | --- |
 | Five designs / eight modes, CSS and resolved JSON | Supported source contract | Deterministic generation, alias/value checks, selected contrast pairs |
+| YAML/XML/Sass/Less/TypeScript/text/Markdown/SVG | Checked interchange | Independent parsers/compilers and complete value parity across six bundles |
 | DTCG tokens and per-design resolver | Preview adapter | Typed values, typography composites, reference-driven composition and mode checks; dark-only bundles use sets; not full-spec certification |
 | Tokens Studio | Preview adapter | Typed values and composite typography generated; live Figma application remains pending |
 | Stitch guides | Preview adapter | Pinned official linter; exact role parity per mode; live Stitch import remains pending |
@@ -700,6 +701,8 @@ Every new component must cover visible labels, keyboard path, focus, disabled/pe
 Required environment checks: 320/768/1440 CSS px; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
 
 The original helper fixture at tests/fixtures/core-controls.html exercises checkbox checked/mixed states, native radio/switch keyboard paths, disabled choices, icon-only pending names, all six determinate progress sizes, RTL/enlarged-text reflow and native forced-color fallbacks. Tests also verify selected-mode guide links across catalog, workspace, gallery and standalone previews. These extend automated coverage without replacing manual acceptance.
+
+The wider suite adds all button appearances/sizes/states and full workspace tasks in every mode, including draft isolation, settings recovery, pending-edit preservation and preference reset. It also checks gallery, catalog, quality and standalone previews. See reference/WIDER-REVIEW.md for the coverage map and release receipts.
 
 ## Live import acceptance procedure
 

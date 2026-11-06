@@ -6,6 +6,9 @@ let fontRun = 0;
 async function inspectFonts() {
   const run = ++fontRun;
   $('#fonts').textContent = 'Checking fonts…';
+  // Imported theme styles may still be loading when a deferred script starts.
+  // Inspect computed families only after the document's styles have loaded.
+  if (document.readyState !== 'complete') await new Promise(resolve => window.addEventListener('load', resolve, {once:true}));
   const style = getComputedStyle(document.body);
   const roles = [['Heading','--design-heading-family'],['Body','--design-body-family'],['Code','--font-family-code']];
   const results = [];

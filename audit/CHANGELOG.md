@@ -278,3 +278,16 @@
 - Scope: Compare the complete collection against its original public reuse, multiple designs, default selection, portable formats, accessibility and premium app goals. Cover all eight design/modes and six export bundles, including previously unconsumed formats and workspace tasks.
 - Plan: Establish a coverage matrix; independently parse or compile portable exports; exercise complete workspace tasks and original control variants; inspect documentation, licensing, public content, generated consistency and automation. Fix reproducible defects in canonical sources, add checks that would have caught them, and inspect rendered output before publication.
 - Constraints: Preserve Midnight/dark and the five designs. Separate executable checks from file-presence checks, live-tool imports, manual assistive-technology testing and other unverified claims. No claim of exhaustive defect freedom.
+
+## DS-028 — Wider review revisions implemented
+
+- UTC: 2026-11-06T03:16:00Z
+- Actor: Codex
+- Plan reference: DS-027.
+- Change: Added independent consumers for every value in YAML/XML/Sass/Less/TypeScript/text/Markdown/SVG exports and pinned compiler/server-render checks for all three framework examples. Corrected Less font-string escaping, workspace draft ownership, modal focus, field recovery and reset timing. Made original control text scalable, strengthened Forest secondary text and visited-link contrast, corrected font notices and pinned current Node 24 workflow actions.
+- Review method: Added a retained goal/format/page coverage map, all-mode workspace tasks, every button appearance/size/state, remaining-preview accessibility/reflow and no-script reading. Browser artifacts and direct tasks remain separate from static results. A direct screenshot exposed the reset preference mismatch after initial task tests; the regression now checks controls and rendered attributes together.
+- Local verification: Clean pinned install, generation, core checks and independent consumers pass. Contrast coverage is 72 existing text pairs, 48 control/focus pairs and 232 secondary/link/action pairs. Direct browser checks confirm isolated drafts, visible field recovery, 16px to 32px enlarged control text, 305/305 narrow reflow, reduced motion and a consistent native reset.
+- Affected: Generators, development validators/dependencies, shared application CSS, semantic sources, workspace scripts, tests/fixtures, generated bundles, release/support/format documentation, licensing notice and review evidence.
+- Compatibility: Patch release 0.5.2. Five designs, supported modes, token names and Midnight/dark default remain unchanged. A generated classic-script modal bridge preserves local-file workspace loading.
+- Limits: Live tool imports, native compilers/rendering, hydrated framework apps, screen readers, physical devices, actual zoom, cold-network timing and independent LLM task outputs remain unverified. See reference/WIDER-REVIEW.md.
+- Publication: Final browser receipts and reviewed artifacts will be recorded before normal fast-forward publication.
