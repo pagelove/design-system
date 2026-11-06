@@ -7,6 +7,7 @@ Midnight/dark remains the default. This minor release corrects the Preview resol
 - Dark-only DTCG resolvers now use unconditional sets. Before: a consumer passed `{ "mode": "dark" }` to every resolver. After: pass `{}` to Midnight, Invitation and the default bundle; multi-mode bundles still accept a mode input. Read exports/manifest.json for declared modes and follow resolutionOrder instead of assuming a modifier exists.
 - Pattern CSS scopes table/dialog/tab styling to its own components. Generated helpers carry their hooks automatically. For copied table compositions, add ds-table, ds-table-scroll and ds-table-controls to the corresponding elements. Keep existing application classes as needed. The prior broad table/dialog rules were an unintended side effect and are removed.
 - Pattern buttons and panel spacing follow the selected design's geometry. Breadcrumbs show navigation hierarchy, and form feedback clears when its saved state becomes stale.
+- Confirmation now wraps Tab and Shift+Tab inside the active dialog and removes its handler on close, while preserving Escape and return focus.
 - The patterns preview switches designs/modes without discarding local drafts, supports history, and links the exact selected-mode guide.
 - Browser checks now use usable clientWidth, verify design geometry, modal focus containment, sorting, stale feedback and host-component isolation. Visual failures no longer prevent later task checks from running.
 

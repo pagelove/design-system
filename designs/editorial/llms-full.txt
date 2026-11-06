@@ -427,6 +427,8 @@ The patterns fixture demonstrates a captioned sortable table and bounded paginat
 
 Pattern styling is opt-in: helpers emit ds-select, ds-textarea, ds-dialog and data-ds-tabs hooks. Tables use ds-table inside ds-table-scroll, with ds-table-controls for pagination. Unrelated tables, dialogs and tab widgets retain their styling and event handling. enhancePatterns acts only on its own tab groups inside the supplied root. Keep the returned cleanup function when unmounting. Button corners, input corners, panel padding and section gaps use the selected design's separate appearance values.
 
+openConfirmation wraps Tab and Shift+Tab between the dialog's visible, enabled controls, preserves native Escape, resets prior results and returns focus to the opener on close. Its key handler is removed on close. Controls hidden by CSS, disabled or inside an inert region are omitted from the loop; browser shortcuts and already-handled widget keys are preserved.
+
 The patterns preview has design/mode controls with URL/history state. Switching design preserves form content; reloading resets the local example. Its design-guide link points to the exact mode. Text-spacing stress rules live only in the preview stylesheet, not in the reusable component styles.
 
 

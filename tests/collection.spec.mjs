@@ -73,6 +73,11 @@ for(const design of catalog.designs)for(const mode of design.modes){
   await page.emulateMedia({reducedMotion:'reduce',forcedColors:'active'});
   await expect(page.getByRole('button',{name:'Archive project',exact:true})).toBeVisible();
   await page.screenshot({path:info.outputPath('rtl-spacing-forced-colors.png'),fullPage:true});
+  await page.getByRole('button',{name:'Archive project',exact:true}).click();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth)).toBe(true);
+  await page.getByRole('button',{name:'Cancel',exact:true}).press('Shift+Tab');
+  await expect(page.getByRole('button',{name:'Archive',exact:true})).toBeFocused();
+  await page.keyboard.press('Escape');
   await page.goto(`/examples/workspace.html?design=${design.id}&mode=${mode}`);
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth)).toBe(true);
   await page.emulateMedia({forcedColors:'none'});

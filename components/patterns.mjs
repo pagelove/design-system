@@ -30,8 +30,8 @@ export function enhancePatterns(root=document){
 export function openConfirmation(dialog,trigger){
  if(dialog.open)return;
  const key=event=>{
-  if(event.key!=='Tab')return;
-  const controls=[...dialog.querySelectorAll('button,input,select,textarea,a[href],[tabindex]')].filter(el=>!el.disabled&&el.tabIndex>=0&&el.getClientRects().length);
+  if(event.key!=='Tab'||event.defaultPrevented||event.altKey||event.ctrlKey||event.metaKey)return;
+  const controls=[...dialog.querySelectorAll('button,input,select,textarea,a[href],[tabindex]')].filter(el=>!el.matches(':disabled')&&!el.closest('[inert]')&&el.tabIndex>=0&&el.getClientRects().length&&getComputedStyle(el).visibility==='visible');
   if(!controls.length){event.preventDefault();dialog.focus();return;}
   const first=controls[0],last=controls.at(-1),active=dialog.ownerDocument.activeElement;
   if(event.shiftKey&&active===first){event.preventDefault();last.focus();}
