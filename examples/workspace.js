@@ -161,7 +161,8 @@ form.addEventListener('submit', e => {
 form.addEventListener('reset', () => {
   clearTimeout(pending); pending = null; clearErrors(); showProfile('Alex Lee');
   $('#save').removeAttribute('aria-busy'); $('#save').textContent = 'Save preferences';
-  // The native reset updates form values after the reset event.
-  queueMicrotask(() => { savedSnapshot = snapshot(); applyReadingPreferences(); $('#save').disabled = true; $('#save-status').textContent = 'Original preview preferences restored.'; });
+  // A microtask can run before the native reset's default action. Read the
+  // restored controls in the next task, after that action has completed.
+  setTimeout(() => { savedSnapshot = snapshot(); applyReadingPreferences(); $('#save').disabled = true; $('#save-status').textContent = 'Original preview preferences restored.'; }, 0);
 });
 applySelection(); updateSummaries(); updateDirtyState(); applyReadingPreferences();

@@ -46,11 +46,16 @@ for(const design of catalog.designs)for(const mode of design.modes) {
   await expect(page.locator('#profile-name')).toHaveText('Submitted Reader');
   await expect(page.locator('#save-status')).toContainText('newer edits are still unsaved');
   await expect(page.getByRole('button',{name:'Save preferences'})).toBeEnabled();
+  await page.getByLabel('Reading size').selectOption('large');
+  await page.getByLabel('Interface motion').selectOption('reduce');
   await page.getByRole('button',{name:'Save preferences'}).click();
   await page.getByRole('button',{name:'Reset',exact:true}).click();await page.clock.fastForward(700);
   await expect(page.getByLabel('Display name')).toHaveValue('Alex Lee');
   await expect(page.locator('#profile-name')).toHaveText('Alex Lee');
   await expect(page.getByRole('button',{name:'Save preferences'})).toBeDisabled();
+  await expect(page.getByLabel('Reading size')).toHaveValue('standard');
+  await expect(page.locator('html')).toHaveAttribute('data-text-size','standard');
+  await expect(page.locator('html')).toHaveAttribute('data-motion','system');
   await page.clock.resume();
   await accessible(page);
   await page.getByLabel('Reading size').selectOption('extra-large');
