@@ -257,3 +257,16 @@
 - Findings: Checkbox helper/catalog omit the visible check glyph; choice labels prohibit wrapping; determinate progress ignores its size option. Several preview guide links still open a design's default-mode values after selecting another mode. Typography adapters assume every tracking value is em and every line height is an absolute length, despite allowing foundation overrides.
 - Plan: Reproduce control defects in a direct browser fixture; correct owned control states, wrapping, sizes and forced-color behavior; preserve selected-mode guide links throughout previews; normalize supported typography units with independent fixtures; add browser coverage for original helpers, regenerate outputs and record evidence.
 - Constraints: Preserve five designs and Midnight/dark. Do not imply live imports, assistive-technology or physical-device certification.
+
+## DS-026 — Core controls and handoff revisions implemented
+
+- UTC: 2026-11-06T02:28:07Z
+- Actor: Codex
+- Plan reference: DS-025.
+- Change: Added checkbox check/mixed glyphs, wrapping and scalable choice labels, stronger boundaries, native forced-color switches, requested progress sizes and named icon-only pending states. Corrected selected-mode guide links across previews and stale catalog/standalone acceptance messages. Added unit-aware DTCG/Tokens Studio typography conversion with independent override fixtures.
+- Visual follow-up: The first 60-test run passed but capture inspection exposed pale Chromium text on a forced white canvas. Added a generated system palette for all 110 semantic roles and explicit enabled-text contrast assertions. Final three-engine captures show readable text and native choice states.
+- Verification: Build/core and external checks pass. Hosted run 42150218210 passes 60 tests and 24 unchanged visual comparisons on fd80ffd5f05a0cce4f7e801dfcdffd6323b9d031. Direct browser checks confirm corrected marks, all six progress sizes, keyboard choices, reduced motion, selected-mode handoff and combined narrow/RTL/200%/spacing reflow (scroll/client widths 305/305, previously 686/305).
+- Affected: Original HTML helpers/app CSS, generated forced-color stylesheet, catalog/gallery/workspace/standalone handoffs, typography adapters, generated files/context bundles, tests/fixtures, review documentation, screenshots and audit records.
+- Compatibility: Patch release 0.5.1; default and design palettes preserved. Copy base.css's forced-colors.css dependency with shared styles. Typography values of existing designs are unchanged; supported custom-unit conversions are corrected.
+- Limits: Live imports, screen readers, physical devices, actual browser zoom, cold-network measurements and independent LLM outputs remain unverified.
+- Publication: Prepared for normal fast-forward publication after final integrity and public-content checks.

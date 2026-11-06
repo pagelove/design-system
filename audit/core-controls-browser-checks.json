@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-11-06T02:28:07Z",
+  "result": "pass",
+  "release": "0.5.1",
+  "defaultDesign": "midnight",
+  "defaultMode": "dark",
+  "implementationCommit": "fd80ffd5f05a0cce4f7e801dfcdffd6323b9d031",
+  "workflow": "https://github.com/pagelove/design-system/actions/runs/42150218210",
+  "testsPassed": 60,
+  "testsFailed": 0,
+  "additionalEngineTestCases": 27,
+  "visualComparisonsPassed": 24,
+  "visualBaselinesChanged": false,
+  "visualMaxDiffPixelRatio": 0.002,
+  "browserEngines": ["Chromium", "Firefox", "WebKit"],
+  "designModeCombinations": 8,
+  "checks": [
+    "Existing pattern, gallery, isolation, modal, recovery and responsive tests",
+    "Original checkbox checked/mixed glyphs and disabled state",
+    "Native checkbox, radio and switch keyboard operation",
+    "All six determinate progress dimensions and value semantics",
+    "Icon-only pending accessible name",
+    "Automated axe WCAG A/AA tags on original helper fixture",
+    "Original choices at 320px with RTL, 200% root text and expanded spacing",
+    "Native forced-color choice rendering and reduced motion",
+    "Forced-color enabled heading/label contrast at least 4.5:1",
+    "Selected-mode guides across catalog, workspace, standalone and gallery",
+    "Catalog and standalone valid-to-edited-to-invalid recovery",
+    "Mode-guide history, forward navigation and reload"
+  ],
+  "directReview": {
+    "before": {"checkboxGlyphs": 0, "allProgressSizes": 40, "narrowScrollWidth": 686, "narrowClientWidth": 305},
+    "after": {"checkboxGlyphs": 6, "progressSizes": [16,24,32,40,48,56], "narrowScrollWidth": 305, "narrowClientWidth": 305},
+    "keyboardChoices": "pass",
+    "explicitReducedMotion": "animation-name none",
+    "forestDarkGuide": "designs/forest/.stitch/dark.DESIGN.md",
+    "visualInspection": "Normal Midnight controls and final Midnight RTL/forced-color captures from all three engines",
+    "visualRevision": "Initial passing run still showed pale Chromium text on white; system palette and contrast checks corrected this."
+  },
+  "limits": [
+    "Live Stitch and Tokens Studio imports remain unverified",
+    "Screen-reader, physical-device and actual browser zoom tasks remain unverified",
+    "Cold-network performance remains unmeasured",
+    "Independent LLM evaluation cases are supplied but not run"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "result": "pass",
+  "typographyConversions": {
+    "validCases": 5,
+    "rejectedCases": 4,
+    "rootFontSizeForMixedUnits": 16
+  },
+  "schemas": 3,
+  "cssReferences": "pass",
+  "resolverBundles": 6,
+  "resolverChecks": [
+    "reference-driven composition",
+    "default and explicit mode parity",
+    "complete token coverage",
+    "invalid inputs",
+    "single-context rejection",
+    "cycles",
+    "source override order"
+  ],
+  "helperInputs": "pass",
+  "fontBytes": 1236628,
+  "stitch": [
+    {
+      "file": ".stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/classic/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/classic/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/editorial/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/editorial/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/forest/.stitch/light.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/forest/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/midnight/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    },
+    {
+      "file": "designs/invitation/.stitch/dark.DESIGN.md",
+      "errors": 0,
+      "warnings": 103,
+      "infos": 1,
+      "acceptedWarnings": "Unused palette roles remain available for consuming apps."
+    }
+  ]
+}
