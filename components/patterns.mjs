@@ -27,4 +27,17 @@ export function enhancePatterns(root=document){
  const key=event=>{const context=owned(event);if(!context)return;const {tab,list}=context;let index=list.indexOf(tab),dir=getComputedStyle(tab).direction==='rtl'?-1:1;if(event.key==='ArrowRight')index+=dir;else if(event.key==='ArrowLeft')index-=dir;else if(event.key==='Home')index=0;else if(event.key==='End')index=list.length-1;else return;event.preventDefault();const next=list[(index+list.length)%list.length];next.focus();next.click();};
  root.addEventListener('click',click);root.addEventListener('keydown',key);return()=>{root.removeEventListener('click',click);root.removeEventListener('keydown',key);};
 }
-export function openConfirmation(dialog,trigger){const close=()=>{if(trigger?.isConnected)trigger.focus();};dialog.addEventListener('close',close,{once:true});dialog.returnValue='';dialog.showModal();}
+export function openConfirmation(dialog,trigger){
+ if(dialog.open)return;
+ const key=event=>{
+  if(event.key!=='Tab')return;
+  const controls=[...dialog.querySelectorAll('button,input,select,textarea,a[href],[tabindex]')].filter(el=>!el.disabled&&el.tabIndex>=0&&el.getClientRects().length);
+  if(!controls.length){event.preventDefault();dialog.focus();return;}
+  const first=controls[0],last=controls.at(-1),active=dialog.ownerDocument.activeElement;
+  if(event.shiftKey&&active===first){event.preventDefault();last.focus();}
+  else if(!event.shiftKey&&active===last){event.preventDefault();first.focus();}
+ };
+ const close=()=>{dialog.removeEventListener('keydown',key);if(trigger?.isConnected)trigger.focus();};
+ dialog.returnValue='';dialog.showModal();
+ dialog.addEventListener('keydown',key);dialog.addEventListener('close',close,{once:true});
+}

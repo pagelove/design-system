@@ -69,4 +69,4 @@ assert.ok(fontBytes<2000000,'WOFF2 archive budget: 2 MB');
 for(const p of fonts)assert.equal(fs.readFileSync('assets/fonts/'+p).toString('ascii',0,4),'wOF2');
 assert.ok(fs.statSync('styles/designs.css').size<250000,'Collection CSS budget: 250 KB');
 assert.ok(fs.statSync('examples/designs.html').size<30000,'Gallery HTML budget: 30 KB');
-console.log(JSON.stringify({result:'pass',schemas:3,cssReferences:'pass',fontBytes,stitch:results},null,2));
+console.log(JSON.stringify({result:'pass',schemas:3,cssReferences:'pass',resolverBundles:catalog.designs.length+1,resolverChecks:['reference-driven composition','default and explicit mode parity','complete token coverage','invalid inputs','single-context rejection','cycles','source override order'],helperInputs:'pass',fontBytes,stitch:results},null,2));
