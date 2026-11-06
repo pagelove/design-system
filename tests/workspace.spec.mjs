@@ -2,7 +2,10 @@ import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 const catalog=JSON.parse(fs.readFileSync('designs/index.json','utf8'));
-const accessible=async page=>expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+const accessible=async page=>{
+ await page.evaluate(async()=>{await document.fonts.ready;await Promise.all(document.getAnimations().filter(a=>a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})));});
+ expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
+};
 for(const design of catalog.designs)for(const mode of design.modes) {
  test(`${design.id}/${mode}: full workspace tasks and settings recovery`,async({page},info)=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
@@ -48,6 +51,7 @@ for(const design of catalog.designs)for(const mode of design.modes) {
   await expect(page.getByLabel('Display name')).toHaveValue('Alex Lee');
   await expect(page.locator('#profile-name')).toHaveText('Alex Lee');
   await expect(page.getByRole('button',{name:'Save preferences'})).toBeDisabled();
+  await page.clock.resume();
   await accessible(page);
   await page.getByLabel('Reading size').selectOption('extra-large');
   await page.getByLabel('Interface motion').selectOption('reduce');

@@ -5,6 +5,7 @@ const catalog=JSON.parse(fs.readFileSync('designs/index.json','utf8'));
 for(const design of catalog.designs)for(const mode of design.modes)test(`${design.id}/${mode}: every button appearance and field state`,async({page},info)=>{
  const query=`design=${design.id}&mode=${mode}`;
  await page.goto('/tests/fixtures/component-matrix.html?'+query);
+ await page.evaluate(async()=>{await document.fonts.ready;await Promise.all(document.getAnimations().filter(a=>a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})));});
  expect((await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze()).violations).toEqual([]);
  const before=await page.locator('.pl-button--lg').first().evaluate(el=>parseFloat(getComputedStyle(el).fontSize));
  await page.goto('/tests/fixtures/component-matrix.html?'+query+'&size=200&dir=rtl&spacing=expanded');
