@@ -10,9 +10,10 @@ function selectDesign(id,mode,writeURL=false){
  document.documentElement.dataset.design=design.id;document.documentElement.dataset.theme=selectedMode;
  document.querySelector('#design-description').textContent=design.name+' — '+design.description+' '+(design.modes.length===1?'Available in '+selectedMode+' mode.':'Choose light or dark mode.');
  document.querySelector('#workspace-link').href=`workspace.html?design=${design.id}&mode=${selectedMode}`;
- document.querySelector('#design-guide').href='../'+design.guide;document.querySelector('#design-exports').href='../'+design.exports+'tokens.json';
+ const guide='../designs/'+design.id+'/.stitch/'+selectedMode+'.DESIGN.md';
+ document.querySelector('#design-guide').href=guide;document.querySelector('#design-exports').href='../'+design.exports+'tokens.json';
  document.querySelector('#foundations img').src='../designs/'+design.id+'/assets/palette.svg';
- document.querySelector('#palette-link').href='../designs/'+design.id+'/assets/palette.svg';document.querySelector('#foundation-guide').href='../'+design.guide;
+ document.querySelector('#palette-link').href='../designs/'+design.id+'/assets/palette.svg';document.querySelector('#foundation-guide').href=guide;
  if(writeURL){const url=new URL(location.href);url.searchParams.set('design',design.id);url.searchParams.set('mode',selectedMode);try{history.pushState(null,'',url);}catch{/* Local-file previews can still select without history. */}}
 }
 function readSelection(){const params=new URLSearchParams(location.search);selectDesign(params.get('design'),params.get('mode'));}
@@ -22,5 +23,7 @@ window.addEventListener('popstate',readSelection);readSelection();
 document.querySelectorAll('[data-notice]').forEach(button=>button.addEventListener('click',()=>{document.querySelector('#action-status').textContent=button.dataset.notice+'.';}));
 document.querySelector('#show-password').addEventListener('click',event=>{const input=document.querySelector('#password');const show=input.type==='password';input.type=show?'text':'password';event.currentTarget.textContent=show?'Hide password':'Show password';event.currentTarget.setAttribute('aria-pressed',String(show));});
 document.querySelector('#example-form').addEventListener('submit',event=>{event.preventDefault();document.querySelector('#save-status').textContent='Preview accepted locally. Nothing was sent or saved to a service.';});
+document.querySelector('#example-form').addEventListener('input',()=>{document.querySelector('#save-status').textContent='Changes are not saved yet.';});
+document.querySelector('#example-form').addEventListener('invalid',()=>{document.querySelector('#save-status').textContent='Check the highlighted fields. Changes are not saved yet.';},true);
 document.querySelector('#show-hints').addEventListener('change',event=>{const hints=document.querySelector('#guidance');hints.hidden=!event.target.checked;});
 document.querySelector('#advance-progress').addEventListener('click',()=>{const progress=document.querySelector('#export-progress');progress.value=progress.value>=100?0:Math.min(100,progress.value+20);document.querySelector('#progress-label').textContent=progress.value+'%';document.querySelector('#progress-status').textContent=progress.value===100?'Example export complete. Advance again to reset.':'Example export at '+progress.value+'%.';});

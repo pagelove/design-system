@@ -24,7 +24,7 @@ function applySelection() {
     if (a.closest('nav') && a.dataset.screen === currentScreen) a.setAttribute('aria-current','page');
     else a.removeAttribute('aria-current');
   });
-  $('#guide').href = '../' + design.guide;
+  $('#guide').href = `../designs/${design.id}/.stitch/${mode}.DESIGN.md`;
   $('#components-link').href = `catalog.html?design=${design.id}&mode=${mode}`;
   $('#quality-link').href = `quality.html?design=${design.id}&mode=${mode}`;
   const title = currentScreen === 'project' ? collectionById(currentCollection).querySelector('h1').textContent : currentScreen[0].toUpperCase() + currentScreen.slice(1);

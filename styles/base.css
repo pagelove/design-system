@@ -19,6 +19,11 @@ input:disabled,label:has(input:disabled) { cursor: not-allowed; }
 .pl-field__input { border-radius:var(--design-radius-input,8px); width: 100%; min-width: 0; min-height: 44px; letter-spacing: normal; }
 .pl-checkbox,.pl-radio,.pl-toggle { min-height: 44px; gap: 12px; }
 .pl-checkbox__label,.pl-radio__label,.pl-toggle__label { letter-spacing: normal; }
+.pl-checkbox,.pl-radio,.pl-toggle { min-width:0; max-width:100%; font-family:var(--design-body-family); }
+.pl-checkbox__label,.pl-radio__label,.pl-toggle__label { min-width:0; white-space:normal; overflow-wrap:anywhere; font-size:var(--design-text-small,.875rem); line-height:1.5; color:var(--text-regular); }
+.pl-checkbox__box,.pl-radio__dot { flex:none; }
+.pl-checkbox__box,.pl-radio__dot,.pl-toggle__switch { --_border:var(--border-strong); }
+.pl-checkbox__input:disabled + .pl-checkbox__box,.pl-radio__input:disabled + .pl-radio__dot,.pl-toggle__switch:disabled { opacity:.55; }
 .pl-checkbox,.pl-radio { position: relative; }
 code,pre { font-family: var(--font-family-code); }
 pre { overflow-x: auto; max-width: 100%; }
@@ -46,6 +51,11 @@ summary { min-height:44px; padding-block:10px; cursor:pointer; }
  .pl-checkbox__box,.pl-radio__dot { border:1px solid CanvasText; }
  .pl-checkbox__input,.pl-radio__input { position:static; opacity:1; width:24px; height:24px; }
  .pl-checkbox__box,.pl-radio__dot { display:none; }
+ .pl-toggle__switch { appearance:auto; width:24px; height:24px; background:revert; box-shadow:none; border:revert; }
+ .pl-toggle__switch::before { display:none; }
+ .pl-toggle__switch:focus-visible { outline:3px solid Highlight; outline-offset:3px; }
+ .pl-progress-det__bar { stroke:Highlight; }
+ .pl-progress-det__track { stroke:CanvasText; }
 }
 
 /* Explicit user preference mirrors the device reduced-motion safeguard. */

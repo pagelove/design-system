@@ -35,7 +35,7 @@ export function toDtcg(base, gradients) {
       description = 'No shadow, represented by a transparent zero-size shadow. Original CSS is none.';
     } else if (/^-?(?:\d*\.)?\d+(?:em)?$/.test(css)) {
       type = 'number'; value = parseFloat(css);
-      if (css.endsWith('em')) description = 'Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.';
+      if (css.endsWith('em')) description = 'Relative CSS multiplier in em; reconstruct CSS with the em suffix.';
     } else throw Error('No supported DTCG conversion for '+key+': '+css);
     const token = {$type:type,$value:value,$description:description,$extensions:{'com.pagelove.design-system':{css}}};
     result[key] = token; visiting.delete(key); return token;

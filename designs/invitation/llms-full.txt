@@ -268,6 +268,8 @@ All collection previews use examples/selection.js for the same selection rules. 
 
 Each bundle includes tokens/tokens.resolver.json. It combines foundations and composite typography with exactly one supported mode. Multiple-mode bundles expose a mode modifier with the bundle's default; single-mode bundles use unconditional sets and take no mode input. Mode-specific Stitch files are .stitch/light.DESIGN.md and/or .stitch/dark.DESIGN.md. exports/manifest.json identifies release/schema versions and these paths.
 
+Interactive guide links in the gallery, component catalog, workspace, patterns and standalone previews point to the displayed mode's .stitch/MODE.DESIGN.md. The unchanged DESIGN.md entry point still describes that bundle's configured initial mode. Use the mode-specific path when reproducing a selected preview.
+
 
 ===== docs/polish.md =====
 
@@ -411,7 +413,11 @@ Indeterminate progress has a name and no invented percentage. Determinate progre
 
 The helper provides a radial determinate indicator; the catalog also demonstrates native `progress`. Clamp numeric values to the supported range and reject non-finite values. Progress reaching 100% is evidence only for the measured operation, not proof of external delivery. Reduced-motion mode stops decorative spin while preserving the loading label.
 
+The size option applies to both determinate and indeterminate helpers: xxs/xs/sm/md/lg/xl correspond to 16/24/32/40/48/56 CSS pixels. Icon-only pending buttons include the original action and an in-progress indication in their accessible name.
+
 ## Integration limits
+
+Checkbox helper markup includes both check and mixed-state glyphs; set the native input's indeterminate property for a partial selection. Keep the glyph container hidden from assistive technology because the native input owns the state. The app layer lets long choice labels wrap, keeps control graphics from shrinking, and uses native checkbox/radio/switch rendering in forced colors. Keep styles/base.css after the preserved source-library stylesheet.
 
 React, Vue and Svelte files are small usage examples, not compiled framework packages. Native Swift/Kotlin outputs are dictionaries of CSS strings, not platform colors, dp/sp or SwiftUI views. The library's CSS is preserved separately; the recommended app layer makes documented readability, target-size, native-input and reduced-motion adaptations. Consult [the source inventory](../reference/library-inventory.json) for every observed public story and variant.
 
@@ -637,7 +643,7 @@ Shared foundation/semantic JSON, designs/catalog.json and each designs/<id>/desi
 - JSON: canonical design interchange and resolved exports. This is a design-tool requirement, not a new default for application domain data.
 - JSON Schema: `schemas/semantic.schema.json` describes the semantic source's shape and alias syntax using draft 2020-12. Alias resolution is separately checked by the build. Other interchange outputs do not claim this schema applies to them.
 - DTCG 2025.10: typed color, dimension, number, font, duration, cubic-bezier, gradient and shadow values. Load a design's `foundations.tokens.json` plus exactly one of its available mode files. Appearance aliases inherit the target type. Transition durations use duration objects; relative tracking uses numbers with CSS extensions. No-shadow is represented as a transparent zero-size shadow, with the original CSS none preserved in extensions. Unsupported CSS conversions stop the build instead of inventing a DTCG type. Modes are separate files rather than an invented DTCG theme field. Specification: https://www.designtokens.org/TR/2025.10/format/.
-- DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Individual properties remain available; tokens/typography.tokens.json adds named composite text styles. Relative tracking is converted to px at that style’s font size; line height becomes a ratio.
+- DTCG extension: gradient direction and original CSS strings live under `com.pagelove.design-system` extensions. Relative letter-spacing in em is represented as a number with the original CSS retained; DTCG dimensions use px/rem. Consumers must honor that documented conversion rather than interpreting the number as pixels. Individual properties remain available; tokens/typography.tokens.json adds named composite text styles. Relative tracking is converted to a dimension at that style’s font size; line height becomes a ratio.
 - Tokens Studio JSON: global foundation set plus the design's available semantic modes. Enable global and one available mode at a time. Dimensions, font properties, radii and composite typography have supported Tokens Studio types; gradients use color values. CSS-only motion and shadow-none properties remain other. Font stacks reduce to the first family. No plugin import has been claimed tested.
 - YAML, XML and CSV: portable structured views. XML is a repository interchange schema, not an Android resource file. YAML scalars are quoted to preserve leading-zero scale IDs and CSS strings.
 - CSS, Sass and Less: CSS supplies runtime theme aliases; Sass contains resolved theme maps and Less contains configured-default aliases and explicit mode-prefixed string variables. Native CSS custom properties remain the preferred browser runtime.
@@ -655,6 +661,8 @@ File readability does not guarantee automatic discovery or accurate visual inter
 
 ## Consumer checks
 
+Typography overrides support positive px/rem font sizes; px/rem/em tracking or unitless zero; and nonnegative unitless/em line-height multipliers or px/rem line heights. DTCG composites preserve px/rem tracking and convert em tracking using the associated font size. Line height is a ratio; mixed px/rem ratios assume a 16px root. Tokens Studio preserves absolute tracking/line heights and converts em tracking or multiplier line heights to percentages. Unsupported units fail generation instead of producing guessed values. These mappings follow [DTCG typography](https://www.designtokens.org/TR/2025.10/format/#typography), [Tokens Studio letter spacing](https://docs.tokens.studio/manage-tokens/token-types/typography/letter-spacing) and [line height](https://docs.tokens.studio/manage-tokens/token-types/typography/line-height). Live application in the target tools remains unverified.
+
 Dark-only resolver bundles use unconditional sets rather than a one-context modifier, following the [DTCG contexts recommendation](https://www.designtokens.org/TR/2025.10/resolver/#contexts). Supply no modifier input to those bundles. Classic, Editorial and Forest expose a mode modifier with light/dark contexts. The repository consumer follows the declared references and resolution order, rejects unsupported inputs and cycles, and checks output parity; it supports the emitted subset, not arbitrary resolver documents.
 
 The checks execute the ES module and CommonJS exports, parse CSV, and compare all values with the resolved canonical dictionaries for the root and each design. DTCG checks reject unknown emitted types, invalid units, mismatched aliases and malformed supported values. These are stricter repository contract checks, not independent full-spec certification or live proprietary-tool import tests.
@@ -666,7 +674,7 @@ Generated additions: per-design DTCG resolver, mode-specific Stitch guides, rele
 
 # Support and verification contract
 
-Version 0.5.0 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
+Version 0.5.1 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
 
 | Surface | Maturity | Evidence and boundary |
 | --- | --- | --- |
@@ -688,6 +696,8 @@ Every new component must cover visible labels, keyboard path, focus, disabled/pe
 Required environment checks: 320/768/1440 CSS px; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
 
 ## Live import acceptance procedure
+
+The original helper fixture at tests/fixtures/core-controls.html exercises checkbox checked/mixed states, native radio/switch keyboard paths, disabled choices, icon-only pending names, all six determinate progress sizes, RTL/enlarged-text reflow and native forced-color fallbacks. Tests also verify selected-mode guide links across catalog, workspace, gallery and standalone previews. These extend automated coverage without replacing manual acceptance.
 
 1. Record the target tool/version and the design/mode. Use an empty disposable document.
 2. For Tokens Studio, import exports/tokens-studio.json, enable global plus one mode, and apply dimensions, radius, fonts and colors to a panel, button and text. Check resolved values, not just token presence. The font family adapter uses the first family; CSS preserves fallbacks. CSS-only properties remain explicitly typed other.

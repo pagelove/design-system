@@ -3109,7 +3109,7 @@
   "letter-spacing-100": {
     "$type": "number",
     "$value": -0.02,
-    "$description": "Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.",
+    "$description": "Relative CSS multiplier in em; reconstruct CSS with the em suffix.",
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "-0.02em"
@@ -3119,7 +3119,7 @@
   "letter-spacing-200": {
     "$type": "number",
     "$value": -0.04,
-    "$description": "Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.",
+    "$description": "Relative CSS multiplier in em; reconstruct CSS with the em suffix.",
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "-0.04em"
@@ -3129,7 +3129,7 @@
   "letter-spacing-300": {
     "$type": "number",
     "$value": -0.06,
-    "$description": "Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.",
+    "$description": "Relative CSS multiplier in em; reconstruct CSS with the em suffix.",
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "-0.06em"
@@ -3737,7 +3737,7 @@
   "design-heading-tracking": {
     "$type": "number",
     "$value": -0.035,
-    "$description": "Relative letter spacing multiplier in em; reconstruct CSS with the em suffix.",
+    "$description": "Relative CSS multiplier in em; reconstruct CSS with the em suffix.",
     "$extensions": {
       "com.pagelove.design-system": {
         "css": "-.035em"

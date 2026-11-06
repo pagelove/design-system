@@ -13,7 +13,7 @@ export function renderGallery(catalog, designs) {
 <div class="gallery-copy"><h2 id="title-${d.id}">${esc(d.name)}</h2><p>${esc(d.description)}</p><p class="gallery-detail">${i===0?'Collection default · ':''}${modes.length===1?'Dark only':'Light and dark'}</p>
 ${modes.length>1?`<fieldset class="gallery-modes"><legend>${esc(d.name)} appearance</legend>${modes.map(m=>`<label><input type="radio" name="mode-${d.id}" value="${m}"${m===mode?' checked':''}><span>${m==='light'?'Light':'Dark'}</span></label>`).join('')}</fieldset>`:''}
 <a class="gallery-action" data-preview-link href="workspace.html?design=${d.id}&amp;mode=${mode}">Explore ${esc(d.name)}</a>
-<div class="gallery-resources"><a href="../designs/${d.id}/DESIGN.md">Design guide</a><a href="../designs/${d.id}/exports/tokens.json">Tokens</a><a href="../designs/${d.id}/.stitch/DESIGN.md">Stitch guide</a></div></div>
+<div class="gallery-resources"><a data-mode-guide href="../designs/${d.id}/.stitch/${mode}.DESIGN.md">Design guide</a><a href="../designs/${d.id}/exports/tokens.json">Tokens</a><a data-mode-guide href="../designs/${d.id}/.stitch/${mode}.DESIGN.md">Stitch guide</a></div></div>
 <a class="gallery-preview" data-preview-link href="workspace.html?design=${d.id}&amp;mode=${mode}" aria-label="Open ${esc(d.name)} ${mode} app preview"><img src="../designs/${d.id}/previews/workspace-${mode}.png" alt="${esc(d.name)} ${mode}: Studio overview with collections, activity and workspace navigation" width="1440" height="900"${i===0?' fetchpriority="high"':''}></a>
 <p class="gallery-status" role="status" aria-live="polite"></p></article>`;
   }).join('\n')}</div></main>

@@ -1,12 +1,12 @@
 // Derived adapters. CSS remains the lossless representation of unsupported tool properties.
+import {dtcgTracking,lineHeightRatio,studioTracking,studioLineHeight} from './typography.mjs';
 export function enrich({design,base,resolved,defaultMode,dtcg,json,put,guide,version}) {
   const modes=Object.keys(resolved), first=resolved[defaultMode];
-  const px=v=>parseFloat(v)*(String(v).endsWith('rem')?16:1);
   const family=v=>v.split(',')[0].replaceAll('"','').replaceAll("'",'').trim();
   const typography={};
   for(const [name,s] of Object.entries(design.foundation.textStyle)) {
     const size=first['font-size-'+s.size];
-    typography['text-style-'+name]={$type:'typography',$value:{fontFamily:'{font-family-'+s.family+'}',fontWeight:'{font-weight-'+s.weight+'}',fontSize:'{font-size-'+s.size+'}',letterSpacing:{value:parseFloat(first['letter-spacing-'+s.letterSpacing])*px(size),unit:'px'},lineHeight:px(first['line-height-'+s.lineHeight])/px(size)}};
+    typography['text-style-'+name]={$type:'typography',$value:{fontFamily:'{font-family-'+s.family+'}',fontWeight:'{font-weight-'+s.weight+'}',fontSize:'{font-size-'+s.size+'}',letterSpacing:dtcgTracking(first['letter-spacing-'+s.letterSpacing],size),lineHeight:lineHeightRatio(first['line-height-'+s.lineHeight],size)}};
   }
   json('tokens/typography.tokens.json',typography);
   const resolver={version:'2025.10',name:design.name,sets:{base:{sources:[{$ref:'./foundations.tokens.json'},{$ref:'./typography.tokens.json'}]}},resolutionOrder:[{$ref:'#/sets/base'}]};
@@ -24,8 +24,8 @@ export function enrich({design,base,resolved,defaultMode,dtcg,json,put,guide,ver
     if(dtcg[key].$type==='color')type='color';
     else if(dtcg[key].$type==='fontFamily'){type='fontFamilies';value=family(css);}
     else if(key.startsWith('font-weight-')){type='fontWeights';value=Number(css);}
-    else if(key.includes('letter-spacing')||key==='design-heading-tracking'){type='letterSpacing';value=css.endsWith('em')?parseFloat(css)*100+'%':css;}
-    else if(key.startsWith('line-height-'))type='lineHeights';
+    else if(key.includes('letter-spacing')||key==='design-heading-tracking'){type='letterSpacing';value=studioTracking(css);}
+    else if(key.startsWith('line-height-')){type='lineHeights';value=studioLineHeight(css);}
     else if(key.startsWith('font-size-')||/design-(title-size|text-)/.test(key))type='fontSizes';
     else if(key.startsWith('design-radius-'))type='borderRadius';
     else if(dtcg[key].$type==='dimension')type='dimension';
@@ -35,7 +35,7 @@ export function enrich({design,base,resolved,defaultMode,dtcg,json,put,guide,ver
   }
   for(const [key,t]of Object.entries(typography)){
     const s=design.foundation.textStyle[key.slice(11)];
-    global[key]={type:'typography',value:{fontFamily:family(first['font-family-'+s.family]),fontWeight:first['font-weight-'+s.weight],fontSize:first['font-size-'+s.size],lineHeight:first['line-height-'+s.lineHeight],letterSpacing:parseFloat(first['letter-spacing-'+s.letterSpacing])*100+'%'}};
+    global[key]={type:'typography',value:{fontFamily:family(first['font-family-'+s.family]),fontWeight:first['font-weight-'+s.weight],fontSize:first['font-size-'+s.size],lineHeight:studioLineHeight(first['line-height-'+s.lineHeight]),letterSpacing:studioTracking(first['letter-spacing-'+s.letterSpacing])}};
   }
   json('exports/tokens-studio.json',{global,...Object.fromEntries(modes.map(m=>[m,Object.fromEntries(Object.entries(design.modes[m]).map(([key,value])=>[key,{type:'color',value:value.replace(/^var\(--([\w-]+)\)$/,'{$1}') }]))])),$metadata:{tokenSetOrder:['global',...modes]}});
   for(const mode of modes)put('.stitch/'+mode+'.DESIGN.md',guide(mode));

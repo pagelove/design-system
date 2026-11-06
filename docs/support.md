@@ -1,6 +1,6 @@
 # Support and verification contract
 
-Version 0.5.0 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
+Version 0.5.1 retains Midnight/dark as the collection default. This is a source collection, not an installed framework component library.
 
 | Surface | Maturity | Evidence and boundary |
 | --- | --- | --- |
@@ -22,6 +22,8 @@ Every new component must cover visible labels, keyboard path, focus, disabled/pe
 Required environment checks: 320/768/1440 CSS px; 200% text; WCAG text-spacing overrides; RTL/mixed-direction text; reduced motion; forced colors; actual zoom; virtual keyboard occlusion; NVDA/Firefox and VoiceOver/Safari tasks. Automation covers a subset, and never substitutes for the latter manual checks. Results are pass/fail/untested, with build, browser/AT version, operating system, action and evidence.
 
 ## Live import acceptance procedure
+
+The original helper fixture at tests/fixtures/core-controls.html exercises checkbox checked/mixed states, native radio/switch keyboard paths, disabled choices, icon-only pending names, all six determinate progress sizes, RTL/enlarged-text reflow and native forced-color fallbacks. Tests also verify selected-mode guide links across catalog, workspace, gallery and standalone previews. These extend automated coverage without replacing manual acceptance.
 
 1. Record the target tool/version and the design/mode. Use an empty disposable document.
 2. For Tokens Studio, import exports/tokens-studio.json, enable global plus one mode, and apply dimensions, radius, fonts and colors to a panel, button and text. Check resolved values, not just token presence. The font family adapter uses the first family; CSS preserves fallbacks. CSS-only properties remain explicitly typed other.

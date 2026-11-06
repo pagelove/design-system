@@ -1,5 +1,15 @@
 # Releases
 
+## 0.5.1
+
+Compatible corrections retain all five designs and Midnight/dark as default.
+
+- Checkbox helpers and catalog examples now include check and mixed-state marks. Original choice labels wrap, scale with text preferences and use the selected design's body font. Switches use a native control in forced colors, and control boundaries use the stronger semantic border.
+- Determinate progress honors all six size options; pending icon-only buttons retain the action name plus an in-progress indication.
+- Gallery, catalog, workspace and standalone guide links follow the displayed mode. Catalog and standalone form edits clear stale acceptance messages.
+- DTCG/Tokens Studio typography adapters distinguish px, rem, em and unitless line heights. Existing design values are preserved; custom foundation overrides now retain the intended spacing. See docs/formats.md for the supported units and mixed-unit assumption.
+- Automated coverage now includes the original helpers and preview handoffs, in addition to the reusable patterns. Existing visual comparison thresholds remain unchanged.
+
 ## 0.5.0
 
 Midnight/dark remains the default. This minor release corrects the Preview resolver contract and makes reusable patterns safe to embed alongside other UI.

@@ -36,7 +36,11 @@ Indeterminate progress has a name and no invented percentage. Determinate progre
 
 The helper provides a radial determinate indicator; the catalog also demonstrates native `progress`. Clamp numeric values to the supported range and reject non-finite values. Progress reaching 100% is evidence only for the measured operation, not proof of external delivery. Reduced-motion mode stops decorative spin while preserving the loading label.
 
+The size option applies to both determinate and indeterminate helpers: xxs/xs/sm/md/lg/xl correspond to 16/24/32/40/48/56 CSS pixels. Icon-only pending buttons include the original action and an in-progress indication in their accessible name.
+
 ## Integration limits
+
+Checkbox helper markup includes both check and mixed-state glyphs; set the native input's indeterminate property for a partial selection. Keep the glyph container hidden from assistive technology because the native input owns the state. The app layer lets long choice labels wrap, keeps control graphics from shrinking, and uses native checkbox/radio/switch rendering in forced colors. Keep styles/base.css after the preserved source-library stylesheet.
 
 React, Vue and Svelte files are small usage examples, not compiled framework packages. Native Swift/Kotlin outputs are dictionaries of CSS strings, not platform colors, dp/sp or SwiftUI views. The library's CSS is preserved separately; the recommended app layer makes documented readability, target-size, native-input and reduced-motion adaptations. Consult [the source inventory](../reference/library-inventory.json) for every observed public story and variant.
 

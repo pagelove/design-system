@@ -248,3 +248,12 @@
 - Compatibility: Version 0.5.0 documents empty modifier input for single-mode resolvers and explicit table styling hooks. Five designs and Midnight/dark default are preserved.
 - Limits: Live tool imports, screen-reader/device/actual-zoom, cold-network performance and independent agent outputs remain unverified; see reference/CONSISTENCY-REVIEW.md and docs/support.md.
 - Publication: Prepared for normal fast-forward publication after final public-content and integrity checks.
+
+## DS-025 — Core controls and handoff review plan
+
+- UTC: 2026-11-06T02:10:09Z
+- Actor: Codex
+- Scope: Recheck original reusable controls, selected-mode handoff and extensible typography conversion beyond the recent pattern fixtures.
+- Findings: Checkbox helper/catalog omit the visible check glyph; choice labels prohibit wrapping; determinate progress ignores its size option. Several preview guide links still open a design's default-mode values after selecting another mode. Typography adapters assume every tracking value is em and every line height is an absolute length, despite allowing foundation overrides.
+- Plan: Reproduce control defects in a direct browser fixture; correct owned control states, wrapping, sizes and forced-color behavior; preserve selected-mode guide links throughout previews; normalize supported typography units with independent fixtures; add browser coverage for original helpers, regenerate outputs and record evidence.
+- Constraints: Preserve five designs and Midnight/dark. Do not imply live imports, assistive-technology or physical-device certification.

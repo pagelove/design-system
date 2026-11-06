@@ -8,6 +8,8 @@ import Ajv from 'ajv/dist/2020.js';
 import YAML from 'yaml';
 import {validateDtcg} from './validate-dtcg.mjs';
 import {resolveTokens} from './resolve-tokens.mjs';
+import {checkTypography} from './check-typography.mjs';
+const typographyConversions=checkTypography();
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const catalog=read('designs/catalog.json'), ajv=new Ajv({allErrors:true});
 for(const [schema,paths]of [['catalog',['designs/catalog.json']],['design',catalog.designs.map(d=>'designs/'+d.id+'/design.json')],['semantic',['tokens/semantic.json']]]){
@@ -69,4 +71,4 @@ assert.ok(fontBytes<2000000,'WOFF2 archive budget: 2 MB');
 for(const p of fonts)assert.equal(fs.readFileSync('assets/fonts/'+p).toString('ascii',0,4),'wOF2');
 assert.ok(fs.statSync('styles/designs.css').size<250000,'Collection CSS budget: 250 KB');
 assert.ok(fs.statSync('examples/designs.html').size<30000,'Gallery HTML budget: 30 KB');
-console.log(JSON.stringify({result:'pass',schemas:3,cssReferences:'pass',resolverBundles:catalog.designs.length+1,resolverChecks:['reference-driven composition','default and explicit mode parity','complete token coverage','invalid inputs','single-context rejection','cycles','source override order'],helperInputs:'pass',fontBytes,stitch:results},null,2));
+console.log(JSON.stringify({result:'pass',typographyConversions,schemas:3,cssReferences:'pass',resolverBundles:catalog.designs.length+1,resolverChecks:['reference-driven composition','default and explicit mode parity','complete token coverage','invalid inputs','single-context rejection','cycles','source override order'],helperInputs:'pass',fontBytes,stitch:results},null,2));

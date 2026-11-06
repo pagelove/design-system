@@ -94,6 +94,7 @@ test('gallery defaults, supported modes and rendered hover',async({page})=>{
    if(d.modes.length>1)await card.getByRole('radio',{name:mode==='light'?'Light':'Dark',exact:true}).check();
    await expect(card.locator('img')).toHaveAttribute('src',`../designs/${d.id}/previews/workspace-${mode}.png`);
    await expect(card.locator('[data-preview-link]').first()).toHaveAttribute('href',`workspace.html?design=${d.id}&mode=${mode}`);
+   for(const link of await card.locator('[data-mode-guide]').all())await expect(link).toHaveAttribute('href',`../designs/${d.id}/.stitch/${mode}.DESIGN.md`);
   }
  }
  const button=page.getByRole('link',{name:'Try Midnight',exact:true});await button.hover();
